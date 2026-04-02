@@ -1220,7 +1220,7 @@ AtlasLoot:AddItemData({
 	-------------------------------
 	--- Scarlet Monastery Armory ---
 	-------------------------------
-	["Scarlet Monastery Armory"] = {
+	["ScarletMonasteryArmory"] = {
 		{
 			{ itemID = 7719 }, --Raging Berserker's Helm
 			{ itemID = 7718 }, --Herod's Shoulder
@@ -1262,7 +1262,7 @@ AtlasLoot:AddItemData({
 	----------------------------------
 	--- Scarlet Monastery Cathedral ---
 	----------------------------------
-	["Scarlet Monastery Cathedral"] = {
+	["ScarletMonasteryCathedral"] = {
 		{
 			{ itemID = 19507 }, --Inquisitor's Shawl
 			{ itemID = 19508 }, --Branded Leather Bracers
@@ -1313,7 +1313,7 @@ AtlasLoot:AddItemData({
 	----------------------------------
 	--- Scarlet Monastery Graveyard ---
 	----------------------------------
-	["Scarlet Monastery Graveyard"] = {
+	["ScarletMonasteryGraveyard"] = {
 		{
 			{ itemID = 7683 }, --Bloody Brass Knuckles
 			{ itemID = 7682 }, --Torturing Poker
@@ -1370,7 +1370,7 @@ AtlasLoot:AddItemData({
 	--------------------------------
 	--- Scarlet Monastery Library ---
 	--------------------------------
-	["Scarlet Monastery Library"] = {
+	["ScarletMonasteryLibrary"] = {
 		{
 			{ itemID = 7756 }, --Dog Training Gloves
 			{ itemID = 7710 }, --Loksey's Training Stick
