@@ -135,7 +135,7 @@ function AtlasLoot:ShowItemsFrame(dataID, dataSource_backup, tablenum, pageNumbe
 		if dataSource.Map then
 		-- Stops map reseting to default while still in the same raid/instance table
 			if self.itemframe.refresh == nil or dataID ~= self.itemframe.refresh[1] then
-				self.MapNum = 1
+				self.MapNum = dataSource.MapNum or 1
 				self.CurrentMap = dataSource.Map
 			end
 		else
