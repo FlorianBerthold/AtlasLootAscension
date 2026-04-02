@@ -1,7 +1,6 @@
-local AL = LibStub("AceLocale-3.0"):GetLocale("AtlasLoot")
+local AtlasLoot = LibStub("AceAddon-3.0"):GetAddon("AtlasLoot")
+local BabbleSubZone = AtlasLoot_GetLocaleLibBabble("LibBabble-SubZone-3.0")
 
-local BabbleSubZone = AtlasLoot_GetLocaleLibBabble("LibBabble-SubZone-3.0");
-local BabbleZone = AtlasLoot_GetLocaleLibBabble("LibBabble-Zone-3.0")
 local _RED = "|cffcc6666"
 local PURP = "|cff9900ff"
 
@@ -9,668 +8,669 @@ local PURP = "|cff9900ff"
     --************************************************
     -- Wrath of the Lich King Instances
     --************************************************
-
-    AtlasLoot_MapData["AhnKahet"] = {
-        ZoneName = { BabbleZone["Ahn'kahet: The Old Kingdom"], 4494 };
-        Location = { BabbleZone["Dragonblight"], 65 };
-        LevelRange = "71-78";
-        MinLevel = "68";
-        PlayerLimit = "5";
-        Acronym = AL["AK, Kahet"];
-        MapName = "DireMaul";
+AtlasLoot:AddItemData("map",{
+    ["AhnKahet"] = {
+        ZoneName = { "Ahn'kahet: The Old Kingdom", 4494 },
+        Location = { "Dragonblight", 65 },
+        LevelRange = "71-78",
+        MinLevel = "68",
+        PlayerLimit = "5",
+        Acronym = "AK, Kahet",
+        MapName = "DireMaul",
         [1] = {
-        { AL["Entrance"] };
-        { AL["Exit"] };
-        { AL["Elder Nadox"] };
-        { AL["Prince Taldaram"] };
-        { AL["Amanitar"].." ("..AL["Heroic"]..")" };
-        { AL["Jedoga Shadowseeker"] };
-        { AL["Herald Volazj"] };
-        { AL["Ahn'kahet Brazier"] };
-        };
-    };
+        { "Entrance" },
+        { "Exit" },
+        { "Elder Nadox" },
+        { "Prince Taldaram" },
+        { "Amanitar".." (".."Heroic"..")" },
+        { "Jedoga Shadowseeker" },
+        { "Herald Volazj" },
+        { "Ahn'kahet Brazier" },
+        },
+    },
 
-    AtlasLoot_MapData["AzjolNerub"] = {
-        ZoneName = { BabbleZone["Azjol-Nerub"], 3477 };
-        Location = { BabbleZone["Dragonblight"], 65 };
-        LevelRange = "70-77";
-        MinLevel = "67";
-        PlayerLimit = "5";
-        Acronym = AL["AN, Nerub"];
-        MapName = "DireMaul";
+    ["AzjolNerub"] = {
+        ZoneName = { "Azjol-Nerub", 3477 },
+        Location = { "Dragonblight", 65 },
+        LevelRange = "70-77",
+        MinLevel = "67",
+        PlayerLimit = "5",
+        Acronym = "AN, Nerub",
+        MapName = "DireMaul",
         [1] = {
-        { AL["Entrance"] };
-        { AL["Connection"] };
-        { AL["Exit"] };
-        { AL["Krik'thir the Gatewatcher"] };
-        { AL["Watcher Gashra"] };
-        { AL["Watcher Narjil"] };
-        { AL["Watcher Silthik"] };
-        { AL["Hadronox"] };
-        { AL["Elder Nurgen"].." ("..AL["Lunar Festival"]..")" };
-        { AL["Anub'arak"] };
-        };
-    };
+        { "Entrance" },
+        { "Connection" },
+        { "Exit" },
+        { "Krik'thir the Gatewatcher" },
+        { "Watcher Gashra" },
+        { "Watcher Narjil" },
+        { "Watcher Silthik" },
+        { "Hadronox" },
+        { "Elder Nurgen".." (".."Lunar Festival"..")" },
+        { "Anub'arak" },
+        },
+    },
 
-    AtlasLoot_MapData["CoTOldStratholme"] = {
-        ZoneName = { BabbleZone["Caverns of Time"]..": "..BabbleZone["The Culling of Stratholme"], 4100 };
-        Location = { BabbleZone["Tanaris"], 440 };
-        LevelRange = "78-80";
-        MinLevel = "75";
-        PlayerLimit = "5";
-        Acronym = AL["CoT-Strat"];
-        MapName = "DireMaul";
+    ["CoTOldStratholme"] = {
+        ZoneName = { "Caverns of Time"..": ".."The Culling of Stratholme", 4100 },
+        Location = { "Tanaris", 440 },
+        LevelRange = "78-80",
+        MinLevel = "75",
+        PlayerLimit = "5",
+        Acronym = "CoT-Strat",
+        MapName = "DireMaul",
         [1] = {
-        { PURP..AL["Event"]..": "..AL["The Culling of Stratholme"] };
-        { AL["Entrance"] };
-        { AL["Exit"].." ("..AL["Portal"]..")" };
-        { "X) "..AL["Scourge Invasion Points"] };
-        { AL["Wave 5"]..": "..AL["Meathook"] };
-        { AL["Wave 10"]..": "..AL["Salramm the Fleshcrafter"] };
-        { AL["Chromie"] };
-        { AL["Chromie"] };
-        { AL["Chrono-Lord Epoch"] };
-        { AL["Infinite Corruptor"].." ("..AL["Heroic"]..")" };
-        { AL["Guardian of Time"] };
-        { AL["Mal'Ganis"] };
-        { AL["Chromie"] };
-        };
-    };
+        { PURP.."Event"..": ".."The Culling of Stratholme" },
+        { "Entrance" },
+        { "Exit".." (".."Portal"..")" },
+        { "X) ".."Scourge Invasion Points" },
+        { "Wave 5"..": ".."Meathook" },
+        { "Wave 10"..": ".."Salramm the Fleshcrafter" },
+        { "Chromie" },
+        { "Chromie" },
+        { "Chrono-Lord Epoch" },
+        { "Infinite Corruptor".." (".."Heroic"..")" },
+        { "Guardian of Time" },
+        { "Mal'Ganis" },
+        { "Chromie" },
+        },
+    },
 
-    AtlasLoot_MapData["DrakTharonKeep"] = {
-        ZoneName = { BabbleZone["Drak'Tharon Keep"], 4196 };
-        Location = { BabbleZone["Grizzly Hills"], 394 };
-        LevelRange = "72-78";
-        MinLevel = "69";
-        PlayerLimit = "5";
-        Acronym = AL["DTK"];
-        MapName = "DireMaul";
+    ["DrakTharonKeep"] = {
+        ZoneName = { "Drak'Tharon Keep", 4196 },
+        Location = { "Grizzly Hills", 394 },
+        LevelRange = "72-78",
+        MinLevel = "69",
+        PlayerLimit = "5",
+        Acronym = "DTK",
+        MapName = "DireMaul",
         [1] = {
-        { AL["Entrance"] };
-        { AL["Connection"] };
-        { AL["Connection"] };
-        { AL["Trollgore"] };
-        { AL["Kurzel"] };
-        { AL["Novos the Summoner"] };
-        { AL["Elder Kilias"].." ("..AL["Lunar Festival"]..")" };
-        { AL["King Dred"] };
-        { AL["The Prophet Tharon'ja"] };
-        { AL["Drakuru's Brazier"] };
-        };
-    };
+        { "Entrance" },
+        { "Connection" },
+        { "Connection" },
+        { "Trollgore" },
+        { "Kurzel" },
+        { "Novos the Summoner" },
+        { "Elder Kilias".." (".."Lunar Festival"..")" },
+        { "King Dred" },
+        { "The Prophet Tharon'ja" },
+        { "Drakuru's Brazier" },
+        },
+    },
 
-    AtlasLoot_MapData["FHHallsOfReflection"] = {
-        ZoneName = { BabbleSubZone["The Frozen Halls"]..": "..BabbleZone["Halls of Reflection"], 4820 };
-        Location = { BabbleZone["Icecrown Citadel"], 4812 };
-        LevelRange = "80+";
-        MinLevel = "80";
-        PlayerLimit = "5";
-        Acronym = AL["HoR"]..", "..AL["FH3"];
-        MapName = "DireMaul";
+    ["FHHallsOfReflection"] = {
+        ZoneName = { BabbleSubZone["The Frozen Halls"]..": ".."Halls of Reflection", 4820 },
+        Location = { "Icecrown Citadel", 4812 },
+        LevelRange = "80+",
+        MinLevel = "80",
+        PlayerLimit = "5",
+        Acronym = "HoR"..", ".."FH3",
+        MapName = "DireMaul",
         [1] = {
-        { AL["Attunement Required"] };
-        { AL["Entrance"] };
-        { AL["Portal"].." ("..BabbleZone["Dalaran"]..")" };
-        { AL["Lady Jaina Proudmoore"].." ("..AL["Alliance"]..")" };
-        { AL["Archmage Koreln <Kirin Tor>"].." ("..AL["Alliance"]..")" };
-        { AL["Lady Sylvanas Windrunner <Banshee Queen>"].." ("..AL["Horde"]..")" };
-        { AL["Dark Ranger Loralen"].." ("..AL["Horde"]..")" };
-        { AL["Falric"].." ("..AL["Wave 5"]..")" };
-        { AL["Marwyn"].." ("..AL["Wave 10"]..")" };
-        { AL["Wrath of the Lich King"].." ("..AL["Event"]..")" };
-        { AL["The Captain's Chest"] };
-        };
-    };
+        { "Attunement Required" },
+        { "Entrance" },
+        { "Portal".." (".."Dalaran"..")" },
+        { "Lady Jaina Proudmoore".." (".."Alliance"..")" },
+        { "Archmage Koreln <Kirin Tor>".." (".."Alliance"..")" },
+        { "Lady Sylvanas Windrunner <Banshee Queen>".." (".."Horde"..")" },
+        { "Dark Ranger Loralen".." (".."Horde"..")" },
+        { "Falric".." (".."Wave 5"..")" },
+        { "Marwyn".." (".."Wave 10"..")" },
+        { "Wrath of the Lich King".." (".."Event"..")" },
+        { "The Captain's Chest" },
+        },
+    },
 
-    AtlasLoot_MapData["FHPitOfSaron"] = {
-        ZoneName = { BabbleSubZone["The Frozen Halls"]..": "..BabbleZone["Pit of Saron"], 4813 };
-        Location = { BabbleZone["Icecrown Citadel"], 4812 };
-        LevelRange = "80+";
-        MinLevel = "80";
-        PlayerLimit = "5";
-        Acronym = AL["PoS"]..", "..AL["FH2"];
-        MapName = "DireMaul";
+    ["FHPitOfSaron"] = {
+        ZoneName = { BabbleSubZone["The Frozen Halls"]..": ".."Pit of Saron", 4813 },
+        Location = { "Icecrown Citadel", 4812 },
+        LevelRange = "80+",
+        MinLevel = "80",
+        PlayerLimit = "5",
+        Acronym = "PoS"..", ".."FH2",
+        MapName = "DireMaul",
         [1] = {
-        { AL["Attunement Required"] };
-        { AL["Entrance"] };
-        { AL["Portal"].." ("..BabbleZone["Halls of Reflection"]..")" };
-        { AL["Lady Jaina Proudmoore"].." ("..AL["Alliance"]..")" };
-        { AL["Archmage Koreln <Kirin Tor>"].." ("..AL["Alliance"]..")" };
-        { AL["Archmage Elandra <Kirin Tor>"].." ("..AL["Alliance"]..")" };
-        { AL["Lady Sylvanas Windrunner <Banshee Queen>"].." ("..AL["Horde"]..")" };
-        { AL["Dark Ranger Loralen"].." ("..AL["Horde"]..")" };
-        { AL["Dark Ranger Kalira"].." ("..AL["Horde"]..")" };
-        { AL["Forgemaster Garfrost"] };
-        { AL["Martin Victus"].." ("..AL["Alliance"]..")" };
-        { AL["Gorkun Ironskull"].." ("..AL["Horde"]..")" };
-        { AL["Krick and Ick"] };
-        { AL["Scourgelord Tyrannus"] };
-        { AL["Rimefang"] };
-        };
-    };
+        { "Attunement Required" },
+        { "Entrance" },
+        { "Portal".." (".."Halls of Reflection"..")" },
+        { "Lady Jaina Proudmoore".." (".."Alliance"..")" },
+        { "Archmage Koreln <Kirin Tor>".." (".."Alliance"..")" },
+        { "Archmage Elandra <Kirin Tor>".." (".."Alliance"..")" },
+        { "Lady Sylvanas Windrunner <Banshee Queen>".." (".."Horde"..")" },
+        { "Dark Ranger Loralen".." (".."Horde"..")" },
+        { "Dark Ranger Kalira".." (".."Horde"..")" },
+        { "Forgemaster Garfrost" },
+        { "Martin Victus".." (".."Alliance"..")" },
+        { "Gorkun Ironskull".." (".."Horde"..")" },
+        { "Krick and Ick" },
+        { "Scourgelord Tyrannus" },
+        { "Rimefang" },
+        },
+    },
 
-    AtlasLoot_MapData["FHTheForgeOfSouls"] = {
-        ZoneName = { BabbleSubZone["The Frozen Halls"]..": "..BabbleZone["The Forge of Souls"], 4809 };
-        Location = { BabbleZone["Icecrown Citadel"], 4812 };
-        LevelRange = "80+";
-        MinLevel = "80";
-        PlayerLimit = "5";
-        Acronym = AL["FoS"]..", "..AL["FH1"];
-        MapName = "DireMaul";
+    ["FHTheForgeOfSouls"] = {
+        ZoneName = { BabbleSubZone["The Frozen Halls"]..": ".."The Forge of Souls", 4809 },
+        Location = { "Icecrown Citadel", 4812 },
+        LevelRange = "80+",
+        MinLevel = "80",
+        PlayerLimit = "5",
+        Acronym = "FoS"..", ".."FH1",
+        MapName = "DireMaul",
         [1] = {
-        { AL["Entrance"] };
-        { AL["Portal"].." ("..BabbleZone["Pit of Saron"]..")" };
-        { AL["Lady Jaina Proudmoore"].." ("..AL["Alliance"]..")" };
-        { AL["Archmage Koreln <Kirin Tor>"].." ("..AL["Alliance"]..")" };
-        { AL["Archmage Elandra <Kirin Tor>"].." ("..AL["Alliance"]..")" };
-        { AL["Lady Sylvanas Windrunner <Banshee Queen>"].." ("..AL["Horde"]..")" };
-        { AL["Dark Ranger Loralen"].." ("..AL["Horde"]..")" };
-        { AL["Dark Ranger Kalira"].." ("..AL["Horde"]..")" };
-        { AL["Bronjahm <Godfather of Souls>"] };
-        { AL["Devourer of Souls"] };
-        };
-    };
+        { "Entrance" },
+        { "Portal".." (".."Pit of Saron"..")" },
+        { "Lady Jaina Proudmoore".." (".."Alliance"..")" },
+        { "Archmage Koreln <Kirin Tor>".." (".."Alliance"..")" },
+        { "Archmage Elandra <Kirin Tor>".." (".."Alliance"..")" },
+        { "Lady Sylvanas Windrunner <Banshee Queen>".." (".."Horde"..")" },
+        { "Dark Ranger Loralen".." (".."Horde"..")" },
+        { "Dark Ranger Kalira".." (".."Horde"..")" },
+        { "Bronjahm <Godfather of Souls>" },
+        { "Devourer of Souls" },
+        },
+    },
 
-    AtlasLoot_MapData["Gundrak"] = {
-        ZoneName = { BabbleZone["Gundrak"], 4375 };
-        Location = { BabbleZone["Zul'Drak"], 66 };
-        LevelRange = "76-80";
-        MinLevel = "71";
-        PlayerLimit = "5";
-        Acronym = AL["Gun"];
-        MapName = "DireMaul";
+    ["Gundrak"] = {
+        ZoneName = { "Gundrak", 4375 },
+        Location = { "Zul'Drak", 66 },
+        LevelRange = "76-80",
+        MinLevel = "71",
+        PlayerLimit = "5",
+        Acronym = "Gun",
+        MapName = "DireMaul",
         [1] = {
-        { AL["Entrance"] };
-        { AL["Exit"] };
-        { AL["Slad'ran <High Prophet of Sseratus>"] };
-        { AL["Drakkari Colossus"] };
-        { AL["Elder Ohanzee"].." ("..AL["Lunar Festival"]..")" };
-        { AL["Moorabi <High Prophet of Mam'toth>"] };
-        { AL["Eck the Ferocious"].." ("..AL["Heroic"]..", "..AL["Summon"]..")" };
-        { AL["Gal'darah <High Prophet of Akali>"] };
-        };
-    };
+        { "Entrance" },
+        { "Exit" },
+        { "Slad'ran <High Prophet of Sseratus>" },
+        { "Drakkari Colossus" },
+        { "Elder Ohanzee".." (".."Lunar Festival"..")" },
+        { "Moorabi <High Prophet of Mam'toth>" },
+        { "Eck the Ferocious".." (".."Heroic"..", ".."Summon"..")" },
+        { "Gal'darah <High Prophet of Akali>" },
+        },
+    },
 
-    AtlasLoot_MapData["IcecrownCitadelA"] = {
-        ZoneName = { BabbleZone["Icecrown Citadel"].." [A] ("..AL["Lower"]..")", 4812 };
-        Location = { BabbleZone["Icecrown"], 210 };
-        LevelRange = "80+";
-        MinLevel = "80";
-        PlayerLimit = "10/25";
-        Acronym = AL["IC"];
-        MapName = "DireMaul";
+    ["IcecrownCitadelA"] = {
+        ZoneName = { "Icecrown Citadel".." [A] (".."Lower"..")", 4812 },
+        Location = { "Icecrown", 210 },
+        LevelRange = "80+",
+        MinLevel = "80",
+        PlayerLimit = "10/25",
+        Acronym = "IC",
+        MapName = "DireMaul",
         [1] = {
-        { AL["Reputation"]..": "..AL["The Ashen Verdict"] };
-        { AL["Entrance"] };
-        { AL["Connection"] };
-        { AL["To next map"] };
-        { AL["Lord Marrowgar"] };
-        { AL["Lady Deathwhisper"] };
-        { AL["Gunship Battle"].." ("..AL["Alliance"]..")" };
-        { AL["Gunship Battle"].." ("..AL["Horde"]..")" };
-        { AL["Deathbringer Saurfang"] };
-        { BabbleSubZone["Light's Hammer"].." ("..AL["Teleporter"]..")" };
-        { BabbleSubZone["Oratory of the Damned"].." ("..AL["Teleporter"]..")" };
-        { BabbleSubZone["Rampart of Skulls"].." ("..AL["Teleporter"]..", "..AL["Lower"]..")" };
-        { BabbleSubZone["Deathbringer's Rise"].." ("..AL["Teleporter"]..", "..AL["Upper"]..")" };
-        };
-    };
+        { "Reputation"..": ".."The Ashen Verdict" },
+        { "Entrance" },
+        { "Connection" },
+        { "To next map" },
+        { "Lord Marrowgar" },
+        { "Lady Deathwhisper" },
+        { "Gunship Battle".." (".."Alliance"..")" },
+        { "Gunship Battle".." (".."Horde"..")" },
+        { "Deathbringer Saurfang" },
+        { BabbleSubZone["Light's Hammer"].." (".."Teleporter"..")" },
+        { BabbleSubZone["Oratory of the Damned"].." (".."Teleporter"..")" },
+        { BabbleSubZone["Rampart of Skulls"].." (".."Teleporter"..", ".."Lower"..")" },
+        { BabbleSubZone["Deathbringer's Rise"].." (".."Teleporter"..", ".."Upper"..")" },
+        },
+    },
 
-    AtlasLoot_MapData["IcecrownCitadelB"] = {
-        ZoneName = { BabbleZone["Icecrown Citadel"].." [B] ("..AL["Upper"]..")", 4812 };
-        Location = { BabbleZone["Icecrown"], 210 };
-        LevelRange = "80+";
-        MinLevel = "80";
-        PlayerLimit = "10/25";
-        Acronym = AL["IC"];
-        MapName = "DireMaul";
+    ["IcecrownCitadelB"] = {
+        ZoneName = { "Icecrown Citadel".." [B] (".."Upper"..")", 4812 },
+        Location = { "Icecrown", 210 },
+        LevelRange = "80+",
+        MinLevel = "80",
+        PlayerLimit = "10/25",
+        Acronym = "IC",
+        MapName = "DireMaul",
         [1] = {
-        { AL["Reputation"]..": "..AL["The Ashen Verdict"] };
-        { AL["From previous map"] };
-        { "D-H) "..AL["Connection"] };
-        { "I) "..AL["To next map"] };
-        { AL["Festergut"] };
-        { AL["Rotface"] };
-        { AL["Professor Putricide"] };
-        { AL["Blood Prince Council"] };
-        { AL["Prince Keleseth"] };
-        { AL["Prince Taldaram"] };
-        { AL["Prince Valanar"] };
-        { AL["Blood-Queen Lana'thel"] };
-        { AL["Valithria Dreamwalker"] };
-        { AL["Sindragosa <Queen of the Frostbrood>"] };
-        { "4') "..AL["Upper Spire"].." ("..AL["Teleporter"]..")" };
-        { "5') "..AL["Sindragosa's Lair"].." ("..AL["Teleporter"]..")" };
-        };
-    };
+        { "Reputation"..": ".."The Ashen Verdict" },
+        { "From previous map" },
+        { "D-H) ".."Connection" },
+        { "I) ".."To next map" },
+        { "Festergut" },
+        { "Rotface" },
+        { "Professor Putricide" },
+        { "Blood Prince Council" },
+        { "Prince Keleseth" },
+        { "Prince Taldaram" },
+        { "Prince Valanar" },
+        { "Blood-Queen Lana'thel" },
+        { "Valithria Dreamwalker" },
+        { "Sindragosa <Queen of the Frostbrood>" },
+        { "4') ".."Upper Spire".." (".."Teleporter"..")" },
+        { "5') ".."Sindragosa's Lair".." (".."Teleporter"..")" },
+        },
+    },
 
-    AtlasLoot_MapData["IcecrownCitadelC"] = {
-        ZoneName = { BabbleZone["Icecrown Citadel"].." [C] ("..BabbleSubZone["The Frozen Throne"]..")", 4812 };
-        Location = { BabbleZone["Icecrown"], 210 };
-        LevelRange = "80+";
-        MinLevel = "80";
-        PlayerLimit = "10/25";
-        Acronym = AL["IC"];
-        MapName = "DireMaul";
+    ["IcecrownCitadelC"] = {
+        ZoneName = { "Icecrown Citadel".." [C] ("..BabbleSubZone["The Frozen Throne"]..")", 4812 },
+        Location = { "Icecrown", 210 },
+        LevelRange = "80+",
+        MinLevel = "80",
+        PlayerLimit = "10/25",
+        Acronym = "IC",
+        MapName = "DireMaul",
         [1] = {
-        { AL["Reputation"]..": "..AL["The Ashen Verdict"] };
-        { "I) "..AL["From previous map"] };
-        { AL["The Lich King"] };
-        };
-    };
+        { "Reputation"..": ".."The Ashen Verdict" },
+        { "I) ".."From previous map" },
+        { "The Lich King" },
+        },
+    },
 
-    AtlasLoot_MapData["Naxxramas"] = {
-        ZoneName = { BabbleZone["Naxxramas"], 3456 };
-        Location = { BabbleZone["Dragonblight"], 65 };
-        LevelRange = "80+";
-        MinLevel = "80";
-        PlayerLimit = "10/25";
-        Acronym = AL["Nax"];
-        MapName = "DireMaul";
+    ["Naxxramas"] = {
+        ZoneName = { "Naxxramas", 3456 },
+        Location = { "Dragonblight", 65 },
+        LevelRange = "80+",
+        MinLevel = "80",
+        PlayerLimit = "10/25",
+        Acronym = "Nax",
+        MapName = "DireMaul",
         [1] = {
-        { AL["Entrance"] };
-        { AL["Mr. Bigglesworth"].." ("..AL["Wanders"]..")" };
-        { BabbleSubZone["The Construct Quarter"] };
-        { AL["Patchwerk"] };
-        { AL["Grobbulus"] };
-        { AL["Gluth"] };
-        { AL["Thaddius"] };
-        { BabbleSubZone["The Arachnid Quarter"] };
-        { AL["Anub'Rekhan"] };
-        { AL["Grand Widow Faerlina"] };
-        { AL["Maexxna"] };
-        { _RED..BabbleSubZone["The Military Quarter"] };
-        { _RED..AL["Instructor Razuvious"] };
-        { _RED..AL["Gothik the Harvester"] };
-        { _RED..AL["The Four Horsemen"] };
-        { _RED..AL["Thane Korth'azz"] };
-        { _RED..AL["Lady Blaumeux"] };
-        { _RED..AL["Baron Rivendare"] };
-        { _RED..AL["Sir Zeliek"] };
-        { _RED..AL["Four Horsemen Chest"] };
-        { PURP..BabbleSubZone["The Plague Quarter"] };
-        { PURP..AL["Noth the Plaguebringer"] };
-        { PURP..AL["Heigan the Unclean"] };
-        { PURP..AL["Loatheb"] };
-        { AL["Frostwyrm Lair"] };
-        { AL["Sapphiron"] };
-        { AL["Kel'Thuzad"] };
-        };
-    };
+        { "Entrance" },
+        { "Mr. Bigglesworth".." (".."Wanders"..")" },
+        { BabbleSubZone["The Construct Quarter"] },
+        { "Patchwerk" },
+        { "Grobbulus" },
+        { "Gluth" },
+        { "Thaddius" },
+        { BabbleSubZone["The Arachnid Quarter"] },
+        { "Anub'Rekhan" },
+        { "Grand Widow Faerlina" },
+        { "Maexxna" },
+        { _RED..BabbleSubZone["The Military Quarter"] },
+        { _RED.."Instructor Razuvious" },
+        { _RED.."Gothik the Harvester" },
+        { _RED.."The Four Horsemen" },
+        { _RED.."Thane Korth'azz" },
+        { _RED.."Lady Blaumeux" },
+        { _RED.."Baron Rivendare" },
+        { _RED.."Sir Zeliek" },
+        { _RED.."Four Horsemen Chest" },
+        { PURP..BabbleSubZone["The Plague Quarter"] },
+        { PURP.."Noth the Plaguebringer" },
+        { PURP.."Heigan the Unclean" },
+        { PURP.."Loatheb" },
+        { "Frostwyrm Lair" },
+        { "Sapphiron" },
+        { "Kel'Thuzad" },
+        },
+    },
 
-    AtlasLoot_MapData["ObsidianSanctum"] = {
-        ZoneName = { BabbleSubZone["Chamber of the Aspects"]..": "..BabbleZone["The Obsidian Sanctum"], 4493 };
-        Location = { BabbleZone["Dragonblight"], 65 };
-        LevelRange = "80";
-        MinLevel = "80";
-        PlayerLimit = "10/25";
-        Acronym = AL["OS"];
-        MapName = "DireMaul";
+    ["ObsidianSanctum"] = {
+        ZoneName = { BabbleSubZone["Chamber of the Aspects"]..": ".."The Obsidian Sanctum", 4493 },
+        Location = { "Dragonblight", 65 },
+        LevelRange = "80",
+        MinLevel = "80",
+        PlayerLimit = "10/25",
+        Acronym = "OS",
+        MapName = "DireMaul",
         [1] = {
-        { AL["AKA"]..": "..AL["Black Dragonflight Chamber"] };
-        { AL["Entrance"] };
-        { AL["Tenebron"] };
-        { AL["Shadron"] };
-        { AL["Vesperon"] };
-        { AL["Sartharion <The Onyx Guardian>"] };
-        };
-    };
+        { "AKA"..": ".."Black Dragonflight Chamber" },
+        { "Entrance" },
+        { "Tenebron" },
+        { "Shadron" },
+        { "Vesperon" },
+        { "Sartharion <The Onyx Guardian>" },
+        },
+    },
 
-    AtlasLoot_MapData["OnyxiasLair"] = {
-        ZoneName = { BabbleZone["Onyxia's Lair"] };
-        Acronym = AL["Ony"];
-        MapName = "DireMaul";
-        Location = { BabbleZone["Dustwallow Marsh"] };
-        LevelRange = "80+";
-        MinLevel = "80";
-        PlayerLimit = "10/25";
+    ["OnyxiasLair"] = {
+        ZoneName = { "Onyxia's Lair" },
+        Acronym = "Ony",
+        MapName = "DireMaul",
+        Location = { "Dustwallow Marsh" },
+        LevelRange = "80+",
+        MinLevel = "80",
+        PlayerLimit = "10/25",
         [1] = {
-        { AL["Entrance"] };
-        { AL["Onyxian Warders"] };
-        { AL["Whelp Eggs"] };
-        { AL["Onyxia"] };
-        };
-    };
+        { "Entrance" },
+        { "Onyxian Warders" },
+        { "Whelp Eggs" },
+        { "Onyxia" },
+        },
+    },
 
-    AtlasLoot_MapData["RubySanctum"] = {
-        ZoneName = { BabbleSubZone["Chamber of the Aspects"]..": "..BabbleZone["The Ruby Sanctum"], 4987 };
-        Location = { BabbleZone["Dragonblight"], 65 };
-        LevelRange = "80";
-        MinLevel = "80";
-        PlayerLimit = "10/25";
-        Acronym = AL["RS"];
-        MapName = "DireMaul";
+    ["RubySanctum"] = {
+        ZoneName = { BabbleSubZone["Chamber of the Aspects"]..": ".."The Ruby Sanctum", 4987 },
+        Location = { "Dragonblight", 65 },
+        LevelRange = "80",
+        MinLevel = "80",
+        PlayerLimit = "10/25",
+        Acronym = "RS",
+        MapName = "DireMaul",
         [1] = {
-        { AL["AKA"]..": "..AL["self.Colors.RED Dragonflight Chamber"] };
-        { AL["Entrance"] };
-        { AL["Baltharus the Warborn"] };
-        { AL["Saviana Ragefire"] };
-        { AL["General Zarithrian"] };
-        { AL["Halion <The Twilight Destroyer>"] };
-        };
-    };
+        { "AKA"..": ".."self.Colors.RED Dragonflight Chamber" },
+        { "Entrance" },
+        { "Baltharus the Warborn" },
+        { "Saviana Ragefire" },
+        { "General Zarithrian" },
+        { "Halion <The Twilight Destroyer>" },
+        },
+    },
 
-    AtlasLoot_MapData["TheEyeOfEternity"] = {
-        ZoneName = { BabbleZone["The Nexus"]..": "..BabbleZone["The Eye of Eternity"], 4500 };
-        Location = { BabbleZone["Borean Tundra"], 3537 };
-        LevelRange = "80+";
-        MinLevel = "80";
-        PlayerLimit = "10/25";
-        Acronym = AL["TEoE"];
-        MapName = "DireMaul";
+    ["TheEyeOfEternity"] = {
+        ZoneName = { "The Nexus"..": ".."The Eye of Eternity", 4500 },
+        Location = { "Borean Tundra", 3537 },
+        LevelRange = "80+",
+        MinLevel = "80",
+        PlayerLimit = "10/25",
+        Acronym = "TEoE",
+        MapName = "DireMaul",
         [1] = {
-        { AL["Key"]..": "..AL["Key to the Focusing Iris"] };
-        { AL["Malygos"] };
-        };
-    };
+        { "Key"..": ".."Key to the Focusing Iris" },
+        { "Malygos" },
+        },
+    },
 
-    AtlasLoot_MapData["TheNexus"] = {
-        ZoneName = { BabbleZone["The Nexus"]..": "..BabbleZone["The Nexus"], 4120 };
-        Location = { BabbleZone["Borean Tundra"], 3537 };
-        LevelRange = "70-75";
-        MinLevel = "66";
-        PlayerLimit = "5";
-        Acronym = AL["Nex, Nexus"];
-        MapName = "DireMaul";
+    ["TheNexus"] = {
+        ZoneName = { "The Nexus"..": ".."The Nexus", 4120 },
+        Location = { "Borean Tundra", 3537 },
+        LevelRange = "70-75",
+        MinLevel = "66",
+        PlayerLimit = "5",
+        Acronym = "Nex, Nexus",
+        MapName = "DireMaul",
         [1] = {
-        { AL["Entrance"] };
-        { AL["Berinand's Research"] };
-        { AL["Commander Stoutbeard"].." ("..AL["Horde"]..", "..AL["Heroic"]..")" };
-        { AL["Commander Kolurg"].." ("..AL["Alliance"]..", "..AL["Heroic"]..")" };
-        { AL["Grand Magus Telestra"] };
-        { AL["Anomalus"] };
-        { AL["Elder Igasho"].." ("..AL["Lunar Festival"]..")" };
-        { AL["Ormorok the Tree-Shaper"] };
-        { AL["Keristrasza"] };
-        };
-    };
+        { "Entrance" },
+        { "Berinand's Research" },
+        { "Commander Stoutbeard".." (".."Horde"..", ".."Heroic"..")" },
+        { "Commander Kolurg".." (".."Alliance"..", ".."Heroic"..")" },
+        { "Grand Magus Telestra" },
+        { "Anomalus" },
+        { "Elder Igasho".." (".."Lunar Festival"..")" },
+        { "Ormorok the Tree-Shaper" },
+        { "Keristrasza" },
+        },
+    },
 
-    AtlasLoot_MapData["TheOculus"] = {
-        ZoneName = { BabbleZone["The Nexus"]..": "..BabbleZone["The Oculus"], 4228 };
-        Location = { BabbleZone["The Nexus"], 4120 };
-        LevelRange = "78-80";
-        MinLevel = "75";
-        PlayerLimit = "5";
-        Acronym = AL["Ocu"];
-        MapName = "DireMaul";
+    ["TheOculus"] = {
+        ZoneName = { "The Nexus"..": ".."The Oculus", 4228 },
+        Location = { "The Nexus", 4120 },
+        LevelRange = "78-80",
+        MinLevel = "75",
+        PlayerLimit = "5",
+        Acronym = "Ocu",
+        MapName = "DireMaul",
         [1] = {
-        { AL["Entrance"] };
-        { AL["Portal"] };
-        { AL["Drakos the Interrogator"] };
-        { AL["Varos Cloudstrider <Azure-Lord of the self.Colors.BLUE Dragonflight>"] };
-        { AL["Mage-Lord Urom"] };
-        { AL["Ley-Guardian Eregos"] };
-        { AL["Cache of Eregos"] };
-        { AL["Centrifuge Construct"] };
-        };
-    };
+        { "Entrance" },
+        { "Portal" },
+        { "Drakos the Interrogator" },
+        { "Varos Cloudstrider <Azure-Lord of the self.Colors.BLUE Dragonflight>" },
+        { "Mage-Lord Urom" },
+        { "Ley-Guardian Eregos" },
+        { "Cache of Eregos" },
+        { "Centrifuge Construct" },
+        },
+    },
 
-    AtlasLoot_MapData["TrialOfTheChampion"] = {
-        ZoneName = { AL["Crusaders' Coliseum"]..": "..BabbleZone["Trial of the Champion"], 4723 };
-        Location = { BabbleZone["Icecrown"], 210 };
-        LevelRange = "80+";
-        MinLevel = "80";
-        PlayerLimit = "5";
-        Acronym = AL["Champ"];
-        MapName = "DireMaul";
+    ["TrialOfTheChampion"] = {
+        ZoneName = { "Crusaders' Coliseum"..": ".."Trial of the Champion", 4723 },
+        Location = { "Icecrown", 210 },
+        LevelRange = "80+",
+        MinLevel = "80",
+        PlayerLimit = "5",
+        Acronym = "Champ",
+        MapName = "DireMaul",
         [1] = {
-        { AL["Entrance"] };
-        { AL["Grand Champions"] };
-        { AL["Champions of the Alliance"] };
-        { AL["Marshal Jacob Alerius"] };
-        { AL["Ambrose Boltspark"] };
-        { AL["Colosos"] };
-        { AL["Jaelyne Evensong"] };
-        { AL["Lana Stouthammer"] };
-        { AL["Champions of the Horde"] };
-        { AL["Mokra the Skullcrusher"] };
-        { AL["Eressea Dawnsinger"] };
-        { AL["Runok Wildmane"] };
-        { AL["Zul'tore"] };
-        { AL["Deathstalker Visceri"] };
-        { AL["Eadric the Pure <Grand Champion of the Argent Crusade>"] };
-        { AL["Argent Confessor Paletress"] };
-        { AL["The Black Knight"] };
-        };
-    };
+        { "Entrance" },
+        { "Grand Champions" },
+        { "Champions of the Alliance" },
+        { "Marshal Jacob Alerius" },
+        { "Ambrose Boltspark" },
+        { "Colosos" },
+        { "Jaelyne Evensong" },
+        { "Lana Stouthammer" },
+        { "Champions of the Horde" },
+        { "Mokra the Skullcrusher" },
+        { "Eressea Dawnsinger" },
+        { "Runok Wildmane" },
+        { "Zul'tore" },
+        { "Deathstalker Visceri" },
+        { "Eadric the Pure <Grand Champion of the Argent Crusade>" },
+        { "Argent Confessor Paletress" },
+        { "The Black Knight" },
+        },
+    },
 
-    AtlasLoot_MapData["TrialOfTheCrusader"] = {
-        ZoneName = { AL["Crusaders' Coliseum"]..": "..BabbleZone["Trial of the Crusader"], 4722 };
-        Location = { BabbleZone["Icecrown"], 210 };
-        LevelRange = "80+";
-        MinLevel = "80";
-        PlayerLimit = "10/25";
-        Acronym = AL["Crus"];
-        MapName = "DireMaul";
+    ["TrialOfTheCrusader"] = {
+        ZoneName = { "Crusaders' Coliseum"..": ".."Trial of the Crusader", 4722 },
+        Location = { "Icecrown", 210 },
+        LevelRange = "80+",
+        MinLevel = "80",
+        PlayerLimit = "10/25",
+        Acronym = "Crus",
+        MapName = "DireMaul",
         [1] = {
-        { AL["Heroic: Trial of the Grand Crusader"] };
-        { AL["Entrance"] };
-        { AL["Cavern Entrance"] };
-        { AL["Northrend Beasts"] };
-        { AL["Gormok the Impaler"] };
-        { AL["Acidmaw"] };
-        { AL["Dreadscale"] };
-        { AL["Icehowl"] };
-        { AL["Lord Jaraxxus"] };
-        { AL["Faction Champions"] };
-        { AL["Twin Val'kyr"] };
-        { AL["Fjola Lightbane"] };
-        { AL["Eydis Darkbane"] };
-        { AL["Anub'arak"] };
-        };
-    };
+        { "Heroic: Trial of the Grand Crusader" },
+        { "Entrance" },
+        { "Cavern Entrance" },
+        { "Northrend Beasts" },
+        { "Gormok the Impaler" },
+        { "Acidmaw" },
+        { "Dreadscale" },
+        { "Icehowl" },
+        { "Lord Jaraxxus" },
+        { "Faction Champions" },
+        { "Twin Val'kyr" },
+        { "Fjola Lightbane" },
+        { "Eydis Darkbane" },
+        { "Anub'arak" },
+        },
+    },
 
-    AtlasLoot_MapData["UlduarA"] = {
-        ZoneName = { BabbleZone["Ulduar"].." [A] ("..AL["The Siege"]..")", 4273 };
-        Location = { BabbleZone["The Storm Peaks"], 67 };
-        LevelRange = "80+";
-        MinLevel = "80";
-        PlayerLimit = "10/25";
-        Acronym = AL["Uldu"];
-        MapName = "DireMaul";
+    ["UlduarA"] = {
+        ZoneName = { "Ulduar".." [A] (".."The Siege"..")", 4273 },
+        Location = { "The Storm Peaks", 67 },
+        LevelRange = "80+",
+        MinLevel = "80",
+        PlayerLimit = "10/25",
+        Acronym = "Uldu",
+        MapName = "DireMaul",
         [1] = {
-        { AL["Entrance"] };
-        { BabbleSubZone["The Antechamber"] };
-        { "A') "..AL["Tower of Life"] };
-        { "B') "..AL["Tower of Flame"] };
-        { "C') "..AL["Tower of Frost"] };
-        { "D') "..AL["Tower of Storms"] };
-        { AL["Flame Leviathan"] };
-        { AL["Razorscale"].." ("..AL["Optional"]..")" };
-        { AL["Ignis the Furnace Master"].." ("..AL["Optional"]..")" };
-        { AL["XT-002 Deconstructor"] };
-        { BabbleSubZone["Expedition Base Camp"].." ("..AL["Teleporter"]..")" };
-        { BabbleSubZone["Formation Grounds"].." ("..AL["Teleporter"]..")" };
-        { BabbleSubZone["The Colossal Forge"].." ("..AL["Teleporter"]..")" };
-        { "4') "..BabbleSubZone["The Scrapyard"].." ("..AL["Teleporter"]..")" };
-        };
-    };
+        { "Entrance" },
+        { BabbleSubZone["The Antechamber"] },
+        { "A') ".."Tower of Life" },
+        { "B') ".."Tower of Flame" },
+        { "C') ".."Tower of Frost" },
+        { "D') ".."Tower of Storms" },
+        { "Flame Leviathan" },
+        { "Razorscale".." (".."Optional"..")" },
+        { "Ignis the Furnace Master".." (".."Optional"..")" },
+        { "XT-002 Deconstructor" },
+        { BabbleSubZone["Expedition Base Camp"].." (".."Teleporter"..")" },
+        { BabbleSubZone["Formation Grounds"].." (".."Teleporter"..")" },
+        { BabbleSubZone["The Colossal Forge"].." (".."Teleporter"..")" },
+        { "4') "..BabbleSubZone["The Scrapyard"].." (".."Teleporter"..")" },
+        },
+    },
 
-    AtlasLoot_MapData["UlduarB"] = {
-        ZoneName = { BabbleZone["Ulduar"].." [B] ("..BabbleSubZone["The Antechamber"]..")", 4273 };
-        Location = { BabbleZone["The Storm Peaks"], 67 };
-        LevelRange = "80+";
-        MinLevel = "80";
-        PlayerLimit = "10/25";
-        Acronym = AL["Uldu"];
-        MapName = "DireMaul";
+    ["UlduarB"] = {
+        ZoneName = { "Ulduar".." [B] ("..BabbleSubZone["The Antechamber"]..")", 4273 },
+        Location = { "The Storm Peaks", 67 },
+        LevelRange = "80+",
+        MinLevel = "80",
+        PlayerLimit = "10/25",
+        Acronym = "Uldu",
+        MapName = "DireMaul",
         [1] = {
-        { AL["Key"]..": "..AL["Celestial Planetarium Key"] };
-        { AL["The Siege"] };
-        { AL["The Keepers"] };
-        { AL["Assembly of Iron"].." ("..AL["Optional"]..")" };
-        { AL["Steelbreaker"] };
-        { AL["Runemaster Molgeim"] };
-        { AL["Stormcaller Brundir"] };
-        { AL["Prospector Doren"] };
-        { AL["Archivum Console"] };
-        { AL["Kologarn"] };
-        { AL["Algalon the Observer"].." ("..AL["Optional"]..")" };
-        { "5') "..BabbleSubZone["The Antechamber"].." ("..AL["Teleporter"]..")" };
-        };
-    };
+        { "Key"..": ".."Celestial Planetarium Key" },
+        { "The Siege" },
+        { "The Keepers" },
+        { "Assembly of Iron".." (".."Optional"..")" },
+        { "Steelbreaker" },
+        { "Runemaster Molgeim" },
+        { "Stormcaller Brundir" },
+        { "Prospector Doren" },
+        { "Archivum Console" },
+        { "Kologarn" },
+        { "Algalon the Observer".." (".."Optional"..")" },
+        { "5') "..BabbleSubZone["The Antechamber"].." (".."Teleporter"..")" },
+        },
+    },
 
-    AtlasLoot_MapData["UlduarC"] = {
-        ZoneName = { BabbleZone["Ulduar"].." [C] ("..AL["The Keepers"]..")", 4273 };
-        Location = { BabbleZone["The Storm Peaks"], 67 };
-        LevelRange = "80+";
-        MinLevel = "80";
-        PlayerLimit = "10/25";
-        Acronym = AL["Uldu"];
-        MapName = "DireMaul";
+    ["UlduarC"] = {
+        ZoneName = { "Ulduar".." [C] (".."The Keepers"..")", 4273 },
+        Location = { "The Storm Peaks", 67 },
+        LevelRange = "80+",
+        MinLevel = "80",
+        PlayerLimit = "10/25",
+        Acronym = "Uldu",
+        MapName = "DireMaul",
         [1] = {
-        { BabbleSubZone["The Antechamber"] };
-        { "D) "..BabbleSubZone["The Spark of Imagination"] };
-        { "E) "..BabbleSubZone["The Descent into Madness"] };
-        { AL["Auriaya"].." ("..AL["Optional"]..")" };
-        { AL["Hodir"] };
-        { AL["Thorim"] };
-        { AL["Freya"] };
-        { "6') "..BabbleSubZone["The Shattered Walkway"].." ("..AL["Teleporter"]..")" };
-        { "7') "..BabbleSubZone["The Conservatory of Life"].." ("..AL["Teleporter"]..")" };
-        };
-    };
+        { BabbleSubZone["The Antechamber"] },
+        { "D) "..BabbleSubZone["The Spark of Imagination"] },
+        { "E) "..BabbleSubZone["The Descent into Madness"] },
+        { "Auriaya".." (".."Optional"..")" },
+        { "Hodir" },
+        { "Thorim" },
+        { "Freya" },
+        { "6') "..BabbleSubZone["The Shattered Walkway"].." (".."Teleporter"..")" },
+        { "7') "..BabbleSubZone["The Conservatory of Life"].." (".."Teleporter"..")" },
+        },
+    },
     
-    AtlasLoot_MapData["UlduarD"] = {
-        ZoneName = { BabbleZone["Ulduar"].." [D] ("..BabbleSubZone["The Spark of Imagination"]..")", 4273 };
-        Location = { BabbleZone["The Storm Peaks"], 67 };
-        LevelRange = "80+";
-        MinLevel = "80";
-        PlayerLimit = "10/25";
-        Acronym = AL["Uldu"];
-        MapName = "DireMaul";
+    ["UlduarD"] = {
+        ZoneName = { "Ulduar".." [D] ("..BabbleSubZone["The Spark of Imagination"]..")", 4273 },
+        Location = { "The Storm Peaks", 67 },
+        LevelRange = "80+",
+        MinLevel = "80",
+        PlayerLimit = "10/25",
+        Acronym = "Uldu",
+        MapName = "DireMaul",
         [1] = {
-        { "D) "..AL["The Keepers"] };
-        { AL["Mimiron"] };
-        { "8') "..BabbleSubZone["The Spark of Imagination"].." ("..AL["Teleporter"]..")" };
-        };
-    };
+        { "D) ".."The Keepers" },
+        { "Mimiron" },
+        { "8') "..BabbleSubZone["The Spark of Imagination"].." (".."Teleporter"..")" },
+        },
+    },
 
-    AtlasLoot_MapData["UlduarE"] = {
-        ZoneName = { BabbleZone["Ulduar"].." [E] ("..BabbleSubZone["The Descent into Madness"]..")", 4273 };
-        Location = { BabbleZone["The Storm Peaks"], 67 };
-        LevelRange = "80+";
-        MinLevel = "80";
-        PlayerLimit = "10/25";
-        Acronym = AL["Uldu"];
-        MapName = "DireMaul";
+    ["UlduarE"] = {
+        ZoneName = { "Ulduar".." [E] ("..BabbleSubZone["The Descent into Madness"]..")", 4273 },
+        Location = { "The Storm Peaks", 67 },
+        LevelRange = "80+",
+        MinLevel = "80",
+        PlayerLimit = "10/25",
+        Acronym = "Uldu",
+        MapName = "DireMaul",
         [1] = {
-        { "E) "..AL["The Keepers"] };
-        { AL["General Vezax"] };
-        { AL["Yogg-Saron"] };
-        { "9') "..BabbleSubZone["The Prison of Yogg-Saron"].." ("..AL["Teleporter"]..")" };
-        };
-    };
+        { "E) ".."The Keepers" },
+        { "General Vezax" },
+        { "Yogg-Saron" },
+        { "9') "..BabbleSubZone["The Prison of Yogg-Saron"].." (".."Teleporter"..")" },
+        },
+    },
 
-    AtlasLoot_MapData["UlduarHallsofLightning"] = {
-        ZoneName = { BabbleZone["Ulduar"]..": "..BabbleZone["Halls of Lightning"], 4272 };
-        Location = { BabbleZone["The Storm Peaks"], 67 };
-        LevelRange = "78-80";
-        MinLevel = "75";
-        PlayerLimit = "5";
-        Acronym = AL["HoL"];
-        MapName = "DireMaul";
+    ["UlduarHallsofLightning"] = {
+        ZoneName = { "Ulduar"..": ".."Halls of Lightning", 4272 },
+        Location = { "The Storm Peaks", 67 },
+        LevelRange = "78-80",
+        MinLevel = "75",
+        PlayerLimit = "5",
+        Acronym = "HoL",
+        MapName = "DireMaul",
         [1] = {
-        { AL["Entrance"] };
-        { AL["General Bjarngrim"].." ("..AL["Wanders"]..")" };
-        { AL["Volkhan"] };
-        { AL["Ionar"] };
-        { AL["Loken"] };
-        };
-    };
+        { "Entrance" },
+        { "General Bjarngrim".." (".."Wanders"..")" },
+        { "Volkhan" },
+        { "Ionar" },
+        { "Loken" },
+        },
+    },
 
-    AtlasLoot_MapData["UlduarHallsofStone"] = {
-        ZoneName = { BabbleZone["Ulduar"]..": "..BabbleZone["Halls of Stone"], 4264 };
-        Location = { BabbleZone["The Storm Peaks"], 67 };
-        LevelRange = "75-80";
-        MinLevel = "72";
-        PlayerLimit = "5";
-        Acronym = AL["HoS"];
-        MapName = "DireMaul";
+    ["UlduarHallsofStone"] = {
+        ZoneName = { "Ulduar"..": ".."Halls of Stone", 4264 },
+        Location = { "The Storm Peaks", 67 },
+        LevelRange = "75-80",
+        MinLevel = "72",
+        PlayerLimit = "5",
+        Acronym = "HoS",
+        MapName = "DireMaul",
         [1] = {
-        { AL["Entrance"] };
-        { AL["Elder Yurauk"].." ("..AL["Lunar Festival"]..")" };
-        { AL["Krystallus"] };
-        { AL["Maiden of Grief"] };
-        { AL["Brann Bronzebeard"] };
-        { AL["Tribunal Chest"] };
-        { AL["Sjonnir the Ironshaper"] };
-        };
-    };
+        { "Entrance" },
+        { "Elder Yurauk".." (".."Lunar Festival"..")" },
+        { "Krystallus" },
+        { "Maiden of Grief" },
+        { "Brann Bronzebeard" },
+        { "Tribunal Chest" },
+        { "Sjonnir the Ironshaper" },
+        },
+    },
 
-    AtlasLoot_MapData["UtgardeKeep"] = {
-        ZoneName = { BabbleZone["Utgarde Keep"]..": "..BabbleZone["Utgarde Keep"], 206 };
-        Location = { BabbleZone["Howling Fjord"], 495 };
-        LevelRange = "68-75";
-        MinLevel = "65";
-        PlayerLimit = "5";
-        Acronym = AL["UK, Keep"];
-        MapName = "DireMaul";
+    ["UtgardeKeep"] = {
+        ZoneName = { "Utgarde Keep"..": ".."Utgarde Keep", 206 },
+        Location = { "Howling Fjord", 495 },
+        LevelRange = "68-75",
+        MinLevel = "65",
+        PlayerLimit = "5",
+        Acronym = "UK, Keep",
+        MapName = "DireMaul",
         [1] = {
-        { AL["Entrance"] };
-        { AL["Dark Ranger Marrah"] };
-        { "B-C) "..AL["Connection"] };
-        { AL["Prince Keleseth <The San'layn>"] };
-        { AL["Elder Jarten"].." ("..AL["Lunar Festival"]..", "..AL["Lower"]..")" };
-        { AL["Dalronn the Controller"] };
-        { AL["Skarvald the Constructor"] };
-        { AL["Ingvar the Plunderer"] };
-        };
-    };
+        { "Entrance" },
+        { "Dark Ranger Marrah" },
+        { "B-C) ".."Connection" },
+        { "Prince Keleseth <The San'layn>" },
+        { "Elder Jarten".." (".."Lunar Festival"..", ".."Lower"..")" },
+        { "Dalronn the Controller" },
+        { "Skarvald the Constructor" },
+        { "Ingvar the Plunderer" },
+        },
+    },
 
-    AtlasLoot_MapData["UtgardePinnacle"] = {
-        ZoneName = { BabbleZone["Utgarde Keep"]..": "..BabbleZone["Utgarde Pinnacle"], 1196 };
-        Location = { BabbleZone["Utgarde Keep"], 206 };
-        LevelRange = "78-80";
-        MinLevel = "75";
-        PlayerLimit = "5";
-        Acronym = AL["UP, Pinn"];
-        MapName = "DireMaul";
+    ["UtgardePinnacle"] = {
+        ZoneName = { "Utgarde Keep"..": ".."Utgarde Pinnacle", 1196 },
+        Location = { "Utgarde Keep", 206 },
+        LevelRange = "78-80",
+        MinLevel = "75",
+        PlayerLimit = "5",
+        Acronym = "UP, Pinn",
+        MapName = "DireMaul",
         [1] = {
-        { AL["Entrance"] };
-        { AL["Brigg Smallshanks"] };
-        { AL["Svala Sorrowgrave"] };
-        { AL["Gortok Palehoof"] };
-        { AL["Skadi the Ruthless"] };
-        { AL["Elder Chogan'gada"].." ("..AL["Lunar Festival"]..")" };
-        { AL["King Ymiron"] };
-        };
-    };
+        { "Entrance" },
+        { "Brigg Smallshanks" },
+        { "Svala Sorrowgrave" },
+        { "Gortok Palehoof" },
+        { "Skadi the Ruthless" },
+        { "Elder Chogan'gada".." (".."Lunar Festival"..")" },
+        { "King Ymiron" },
+        },
+    },
 
-    AtlasLoot_MapData["VaultOfArchavon"] = {
-        ZoneName = { BabbleZone["Vault of Archavon"], 4603 };
-        Location = { BabbleZone["Wintergrasp"], 4197 };
-        LevelRange = "80+";
-        MinLevel = "80";
-        PlayerLimit = "10/25";
-        Acronym = AL["VoA"];
-        MapName = "DireMaul";
+    ["VaultOfArchavon"] = {
+        ZoneName = { "Vault of Archavon", 4603 },
+        Location = { "Wintergrasp", 4197 },
+        LevelRange = "80+",
+        MinLevel = "80",
+        PlayerLimit = "10/25",
+        Acronym = "VoA",
+        MapName = "DireMaul",
         [1] = {
-        { AL["Entrance"] };
-        { AL["Archavon the Stone Watcher"] };
-        { AL["Emalon the Storm Watcher"] };
-        { AL["Koralon the Flame Watcher"] };
-        { AL["Toravon the Ice Watcher"] };
-        };
-    };
+        { "Entrance" },
+        { "Archavon the Stone Watcher" },
+        { "Emalon the Storm Watcher" },
+        { "Koralon the Flame Watcher" },
+        { "Toravon the Ice Watcher" },
+        },
+    },
 
-    AtlasLoot_MapData["VioletHold"] = {
-        ZoneName = { BabbleZone["The Violet Hold"], 4415 };
-        Location = { BabbleZone["Dalaran"], 4395 };
-        LevelRange = "73-79";
-        MinLevel = "70";
-        PlayerLimit = "5";
-        Acronym = AL["VH"];
-        MapName = "DireMaul";
+    ["VioletHold"] = {
+        ZoneName = { "The Violet Hold", 4415 },
+        Location = { "Dalaran", 4395 },
+        LevelRange = "73-79",
+        MinLevel = "70",
+        PlayerLimit = "5",
+        Acronym = "VH",
+        MapName = "DireMaul",
         [1] = {
-        { AL["Key"]..": "..AL["The Violet Hold Key"] };
-        { AL["Entrance"] };
-        { AL["Erekem"].." ("..AL["Random"]..")" };
-        { AL["Zuramat the Obliterator"].." ("..AL["Upper"]..", "..AL["Random"]..")" };
-        { AL["Xevozz"].." ("..AL["Lower"]..", "..AL["Random"]..")" };
-        { AL["Ichoron"].." ("..AL["Random"]..")" };
-        { AL["Moragg"].." ("..AL["Random"]..")" };
-        { AL["Lavanthor"].." ("..AL["Random"]..")" };
-        { AL["Cyanigosa"].." ("..AL["Wave 18"]..")" };
-        };
-    };
+        { "Key"..": ".."The Violet Hold Key" },
+        { "Entrance" },
+        { "Erekem".." (".."Random"..")" },
+        { "Zuramat the Obliterator".." (".."Upper"..", ".."Random"..")" },
+        { "Xevozz".." (".."Lower"..", ".."Random"..")" },
+        { "Ichoron".." (".."Random"..")" },
+        { "Moragg".." (".."Random"..")" },
+        { "Lavanthor".." (".."Random"..")" },
+        { "Cyanigosa".." (".."Wave 18"..")" },
+        },
+    },
+})

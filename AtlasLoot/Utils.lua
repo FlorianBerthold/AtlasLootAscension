@@ -1,5 +1,4 @@
 local AtlasLoot = LibStub("AceAddon-3.0"):GetAddon("AtlasLoot")
-local AL = LibStub("AceLocale-3.0"):GetLocale("AtlasLoot")
 
 --------------------------------- DewDrop Dropdownmenu ---------------------------------
 -- Used to create a dewdrop menus from tables
@@ -38,7 +37,7 @@ function AtlasLoot:OpenDewdropMenu(frame, menuList, ...)
 			local textLength = menuList.dividerLength or 35
 			for i, menu in pairs(menuList[level]) do
 				if menu.showOnCondition == nil or menu.showOnCondition == true then
-					if menu.show == nil or menu.show == value then
+					if menu.show == nil or menu.show == value or menu.show == true then
 						if menu.divider then
 							addDiviver(textLength)
 						end
@@ -69,7 +68,7 @@ function AtlasLoot:OpenDewdropMenu(frame, menuList, ...)
 				if i == #menuList[level] then
 					addDiviver(textLength)
 					self.Dewdrop:AddLine(
-						"text", self.Colors.CYAN..AL["Close Menu"],
+						"text", self.Colors.CYAN.."Close Menu",
 						"textHeight", textSize,
 						"textWidth", textSize,
 						"closeWhenClicked", true,
@@ -99,7 +98,7 @@ end
 --drop down map menu
 function AtlasLoot:OpenDB(frame, type, text)
     local menuList = { [1] = {
-        {text = self.Colors.ORANGE..AL["Open AscensionDB To NPC"], func = function() self:OpenDBURL(text , type) end},
+        {text = self.Colors.ORANGE.."Open AscensionDB To NPC", func = function() self:OpenDBURL(text , type) end},
 		}
 	}
     self:OpenDewdropMenu(frame, menuList)
@@ -116,7 +115,9 @@ local itemEquipLocConversion = {
 
 -- custom getiteminfo returns same formate as getiteminfo but will use info from either getiteminfo or getiteminfoinstant
 function AtlasLoot:GetItemInfo(item, dontCache)
+	if not item or item == 0 then return end
 	item = tonumber(item) and Item:CreateFromID(item) or Item:CreateFromLink(item)
+	if not item then return end
 	local itemDescription
 	local itemName, itemLink, itemQuality, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount, itemEquipLoc, itemTexture, itemSellPrice = GetItemInfo(item.itemID)
 	if not dontCache and not item:GetInfo() then
@@ -198,7 +199,7 @@ AtlasLoot:PopoupItemFrame(item, data)
 Used to create a popup item frame for items like gem sacks to show what they contain
 ]] 
 function AtlasLoot:PopoupItemFrame(frame, data)
-	if not data then self.mainUI.itemPopupframe:Hide() return end
+	if not data then self.ui.itemPopupframe:Hide() return end
 	--hide the unused buttons
 	for i = 1, 15 do
 		local button = _G["AtlasLoot_PopupButton_"..i]
@@ -209,7 +210,7 @@ function AtlasLoot:PopoupItemFrame(frame, data)
 	--creates a button only if one dosnt already exist re use old one if it does
 	local function createButton(num)
 		if _G["AtlasLoot_PopupButton_"..num] then return end
-		local button = CreateFrame("Button", "AtlasLoot_PopupButton_"..num, self.mainUI.itemPopupframe, "ItemButtonTemplate")
+		local button = CreateFrame("Button", "AtlasLoot_PopupButton_"..num, self.ui.itemPopupframe, "ItemButtonTemplate")
 		button:SetID(num)
 		button:SetSize(30,30)
 		button:EnableMouse()
@@ -217,7 +218,7 @@ function AtlasLoot:PopoupItemFrame(frame, data)
 		button:SetScript("OnClick", function(btn, arg1) self:ItemOnClick(btn, arg1) end)
 		button:SetScript("OnEnter", function(btn)
 			self:ItemOnEnter(btn)
-			self.mainUI.itemPopupframe:Show()
+			self.ui.itemPopupframe:Show()
 		end)
 		button:SetScript("OnLeave", function(btn)
 			if not self.Dewdrop:IsOpen(_G["AtlasLoot_PopupButton_"..num]) then
@@ -226,7 +227,7 @@ function AtlasLoot:PopoupItemFrame(frame, data)
 		end)
 
 		if num == 1 then
-			button:SetPoint("TOPLEFT", self.mainUI.itemPopupframe, 9, -8)
+			button:SetPoint("TOPLEFT", self.ui.itemPopupframe, 9, -8)
 		elseif num == 7 then
 			button:SetPoint("BOTTOM", "AtlasLoot_PopupButton_1", 0, -33)
 		elseif num == 13 then
@@ -271,21 +272,21 @@ function AtlasLoot:PopoupItemFrame(frame, data)
 		numberBtns = i
 	end
 	if numberBtns < 6 then
-		self.mainUI.itemPopupframe:SetWidth((numberBtns*33)+16)
+		self.ui.itemPopupframe:SetWidth((numberBtns*33)+16)
 	else
-		self.mainUI.itemPopupframe:SetWidth(214)
+		self.ui.itemPopupframe:SetWidth(214)
 	end
 	if numberBtns > 6 then
-		self.mainUI.itemPopupframe:SetHeight(79)
+		self.ui.itemPopupframe:SetHeight(79)
 	elseif numberBtns > 12 then
-		self.mainUI.itemPopupframe:SetHeight(107)
+		self.ui.itemPopupframe:SetHeight(107)
 	else
-		self.mainUI.itemPopupframe:SetHeight(46)
+		self.ui.itemPopupframe:SetHeight(46)
 	end
-	self.mainUI.itemPopupframe:SetParent(frame)
-	self.mainUI.itemPopupframe:ClearAllPoints()
-	self.mainUI.itemPopupframe:SetPoint("TOPLEFT",frame,0,-25)
-	self.mainUI.itemPopupframe:Show()
+	self.ui.itemPopupframe:SetParent(frame)
+	self.ui.itemPopupframe:ClearAllPoints()
+	self.ui.itemPopupframe:SetPoint("TOPLEFT",frame,0,-25)
+	self.ui.itemPopupframe:Show()
 end
 
 
@@ -306,20 +307,20 @@ AtlasLoot:IsLootTableAvailable(dataID):
 Checks if a loot table is in memory and attempts to load the correct LoD module if it isn't
 dataID: Loot table dataID
 ]]
-function AtlasLoot:IsLootTableAvailable(dataSource)
-	local moduleName
-	moduleName = self.ModuleName[dataSource]
-	if moduleName and IsAddOnLoaded(moduleName) then
+local loadedModules = {}
+function AtlasLoot:IsLootTableAvailable(moduleName)
+	if moduleName and IsAddOnLoaded(moduleName) and loadedModules[moduleName] then
 		return true
 	elseif moduleName then
 		LoadAddOn(moduleName)
+		loadedModules[moduleName] = true
 	end
 end
 
 --------- rate limited item frame refresh ---------
 local refreshTimer
 function AtlasLoot:ItemRefreshTimer()
-    self:ShowItemsFrame(self.itemframe.refresh[1], self.itemframe.refresh[2], self.itemframe.refresh[3])
+    self:ShowItemsFrame("refresh")
     refreshTimer = false
 end
 
@@ -433,15 +434,15 @@ end
 function AtlasLoot:GetDropRate(refLootEntry, groupID)
 	if not refLootEntry or not groupID then return end
 
-	if AtlasLoot_ItemDropRates[refLootEntry] and AtlasLoot_ItemDropRates[refLootEntry][groupID] then
-		return string.format("%.2f%%",(AtlasLoot_ItemDropRates[refLootEntry][groupID])*100) or nil
+	if self.data.itemDropRates[refLootEntry] and self.data.itemDropRates[refLootEntry][groupID] then
+		return string.format("%.2f%%",(self.data.itemDropRates[refLootEntry][groupID])*100) or nil
 	end
 end
 
 local function IgnoreTables(dataSource)
 	local cTable = {"CraftingCLASSIC", "CraftingTBC", "CraftingWRATH", "CollectionsAscensionCLASSIC", "CollectionsAscensionTBC", "CollectionsAscensionWRATH"}
 	for _, t in pairs(cTable) do
-		for _, crafting in  ipairs(AtlasLoot_SubMenus[t]) do
+		for _, crafting in  ipairs(AtlasLoot.ui.menus.collection[t]) do
 			if crafting[3] then
 				for _, ignore in pairs(crafting[3]) do
 					if dataSource == ignore[2] then return true end
@@ -456,34 +457,35 @@ function AtlasLoot:CreateItemSourceList(overRide)
 	if overRide then elseif not self.selectedProfile.showdropLocationTooltips then return end
 	if overRide or not AtlasLootDB.ItemSources or (AtlasLootDB.ItemSources.Version and AtlasLootDB.ItemSources.Version ~= self.Version) then
 		self:LoadAllModules()
-		AtlasLootDB.ItemSources = {Version = AtlasLoot.Version, List = {}}
+		AtlasLootDB.ItemSources = {Version = self.Version, List = {}}
 		local list = AtlasLootDB.ItemSources.List
-			for dataSource, instance in pairs(AtlasLoot_Data) do
-				for _, boss in pairs(instance) do
-					if type(boss) == "table" then
-						for _, side in pairs(boss) do
-							if type(side) == "table" then
-								for _, item in pairs(side) do
-									if type(item) == "table" and item.itemID and instance.Name and boss.Name and not IgnoreTables(dataSource) then
-										list[item.itemID] = self.Colors.CYAN..instance.Name .. self.Colors.WHITE .." - " .. boss.Name
-										if ItemIDsDatabase[item.itemID] then
-											for _, varID in pairs(ItemIDsDatabase[item.itemID]) do
-												list[varID] = self.Colors.CYAN..instance.Name .. self.Colors.WHITE .." - " .. boss.Name
-											end
-										end
-										if item.spellID then
-											local recipeID = self:GetRecipeID(item.spellID) or nil
-											if recipeID and (list[recipeID] and not IgnoreTables(dataSource) or not list[recipeID]) then
-												list[recipeID] = self.Colors.CYAN..instance.Name .. self.Colors.WHITE .." - " .. boss.Name
-											end
-										end
-									end
-								end
-							end
+		local function addItem(itemData, dataType)
+			if type(itemData) == "table" then
+				local sourceData = self:GetSourcesExtendedInfo(dataType)
+				if sourceData and sourceData.Source and itemData.itemID then
+					list[itemData.itemID] = sourceData.Source
+					if ItemIDsDatabase[itemData.itemID] then
+						for _, varID in pairs(ItemIDsDatabase[itemData.itemID]) do
+							list[varID] = sourceData.Source
 						end
+					end
+					if itemData.spellID then
+						local recipeID = self:GetRecipeID(itemData.spellID) or nil
+						if recipeID and (list[recipeID] and not IgnoreTables(dataType) or not list[recipeID]) then
+							list[recipeID] = sourceData.Source
+						end
+					end
+				else
+					for _, nextData in pairs(itemData) do
+						addItem(nextData, dataType)
 					end
 				end
 			end
+		end
+
+		for dataType, data in pairs(self.data.item) do
+			addItem(data, dataType)
+		end
 	end
 	self.ItemSourceList = AtlasLootDB.ItemSources.List
 end
@@ -491,9 +493,11 @@ end
 function AtlasLoot:ItemSourceTooltip(itemID, tooltip)
 	local button = GetMouseFocus()
 	if not self.selectedProfile.showdropLocationTooltips or not self.ItemSourceList or (button and button.isAtlasLoot) then return end
-	local text = self.ItemSourceList[itemID] and "Item Source: " .. self.ItemSourceList[itemID] or nil
-	if text and not CheckTooltipForDuplicate(tooltip, text) then
-		tooltip:AddLine(text)
+	if self.ItemSourceList[itemID] and self.ItemSourceList[itemID][1] and self.ItemSourceList[itemID][2] then
+		local text = "Item Source: " .. self.Colors.CYAN.. self:GetDataDisplayName(self.ItemSourceList[itemID][1]) .. self.Colors.WHITE .. " - " .. self:GetDataPageName(self.ItemSourceList[itemID][1], self.ItemSourceList[itemID][2]) or nil
+		if text and not CheckTooltipForDuplicate(tooltip, text) then
+			tooltip:AddLine(text)
+		end
 	end
 end
 
@@ -609,9 +613,10 @@ function AtlasLoot:GetTooltipItemInfo(link, bag, slot)
     return binds
 end
 
-function AtlasLoot:SetGameTooltip(button, text)
+function AtlasLoot:SetGameTooltip(button, text, bottom)
+	local anchor = bottom or "ANCHOR_TOPLEFT"
 	GameTooltip:ClearLines()
-	GameTooltip:SetOwner(button, "ANCHOR_TOPLEFT")
+	GameTooltip:SetOwner(button, anchor)
 	if type(text) == "table" then
 		for _, textLine in pairs(text) do
 			GameTooltip:AddLine(textLine)
@@ -628,4 +633,24 @@ function AtlasLoot:DewdropToggle(button)
 	else
 		self.Dewdrop:Open(button)
 	end
+end
+
+function AtlasLoot:RateLimitLoadTable(taskData, taskFunction)
+	-- rate limit tied to half the current frame rate
+	local maxDuration = (self.selectedProfile.ItemLoadingSpeed*500)/GetFramerate()
+	local startTime = debugprofilestop()
+	local function continue()
+		startTime = debugprofilestop()
+		local task = table.remove(taskData)
+		while (task) do
+			taskFunction(task)
+			if (debugprofilestop() - startTime > maxDuration) then
+				Timer.After(0, continue)
+				return
+			end
+			task = table.remove(taskData)
+		end
+	end
+
+	return continue()
 end

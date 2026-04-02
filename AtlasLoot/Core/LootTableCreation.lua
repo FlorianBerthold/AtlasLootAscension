@@ -1,5 +1,5 @@
 local AtlasLoot = LibStub("AceAddon-3.0"):GetAddon("AtlasLoot")
-local BabbleInventory = AtlasLoot_GetLocaleLibBabble("LibBabble-Inventory-3.0")
+
 
 --Creates tables for raid tokens from the collections tables
 function AtlasLoot:CreateToken(dataID)
@@ -20,43 +20,32 @@ function AtlasLoot:CreateToken(dataID)
 		end
 	end
 	--Creates data set of the item type
-	if (AtlasLoot_TokenData[orgID] == nil) then
-		AtlasLoot_TokenData[orgID] = {
+	if (self.data.token[orgID] == nil) then
+		self.data.token[orgID] = {
 			Name = itemName,
-			Type = AtlasLoot_Data[dataID].Type,
+			Type = self:GetDataType(dataID),
 			Back = true,
 			NoSubt = true,
-			{
-				Name = itemName,
-				{},
-				{},
-			},
+			[1] = {}
 		}
 	end
-	local count = 1
 	local function addItem(itemID, desc)
-		local pageSide = AtlasLoot_TokenData[orgID][1][1]
-		if count >= 16 then
-			pageSide = AtlasLoot_TokenData[orgID][1][2]
-		end
-		if itemType == select(9, AtlasLoot:GetItemInfo(itemID)) or itemType2 == select(9, AtlasLoot:GetItemInfo(itemID)) then
-			table.insert(pageSide, {itemID = itemID, desc = desc})
-			count = count + 1
+		local itemT = select(9, self:GetItemInfo(itemID))
+		if itemType == itemT or itemType2 == itemT then
+			table.insert(self.data.token[orgID][1], {itemID = itemID, desc = desc})
 		end
 	end
+	local count = 1
 	--Fills table with items
-	for _, t in ipairs(AtlasLoot_Data[dataID]) do
-		for _, side in ipairs(t) do
-			for _, v in ipairs(side) do
-				if type(v) == "table" then
-					if v.itemID then
-						addItem(v.itemID, t.Name)
-					end
-				end
+	while self.data.item[dataID..count] do
+		for _, item in ipairs(self.data.item[dataID..count]) do
+			if item.itemID then
+				addItem(item.itemID, self:GetDataPageName(dataID..count))
 			end
 		end
+		count = count + 1
 	end
-	self:ShowItemsFrame(self.itemframe.refresh[1], self.itemframe.refresh[2], self.itemframe.refresh[3])
+	self:ShowItemsFrame("refresh")
 end
 
 local function checkForWorldforgedUpdate(typeL)
@@ -64,13 +53,11 @@ local function checkForWorldforgedUpdate(typeL)
 	-- Check if cache exists and count items in it
 	if AtlasLoot_Data_Cache and AtlasLoot_Data_Cache[typeL] then
 		for _, t in ipairs(AtlasLoot_Data_Cache[typeL]) do
-			for _, side in ipairs(t) do
-				for _, v in ipairs(side) do
+				for _, v in ipairs(t) do
 					if type(v) == "table" and v.itemID then
 						currentNumber = currentNumber + 1
 					end
 				end
-			end
 		end
 	end
 	-- Check if the global list exists and compare item count
@@ -83,34 +70,32 @@ end
 function AtlasLoot:CreateOnDemandLootTable(typeL, isDungeon, name)
 	if isDungeon then
 		-- Return and show loot table if its already been created
-		if AtlasLoot_OnDemand and AtlasLoot_OnDemand[typeL] then return self:ShowItemsFrame(typeL, "AtlasLoot_OnDemand", 1) end
+		if self.data.onDemand and self.data.onDemand[typeL] then return self:ShowItemsFrame(typeL, "AtlasLoot_OnDemand", 1, 1) end
 	else
 		-- Return and show loot table if its already been created and up to date
 		if not AtlasLoot_Data_Cache or checkForWorldforgedUpdate(typeL) then
 			AtlasLoot_Data_Cache = {}
 		elseif AtlasLoot_Data_Cache and AtlasLoot_Data_Cache[typeL] then
-			return self:ShowItemsFrame(typeL, "AtlasLoot_Data_Cache", 1)
+			return self:ShowItemsFrame(typeL, "AtlasLoot_Data_Cache", 1, 1)
 		end
 	end
 	-- Create ondemand loot table if it dosnt exist
-	if not AtlasLoot_OnDemand then AtlasLoot_OnDemand = {} end
+	if not self.data.onDemand then self.data.onDemand = {} end
 
 	if isDungeon then
 		--Creates a table of all dungeon items
 		local itemList = {}
 		local checkList = {}
-		for dataID, data in pairs(AtlasLoot_Data) do
-			if data.Type == typeL then
-				for tableNum, t in ipairs(data) do
-					for _, side in ipairs(t) do
-						for _, itemData in ipairs(side) do
-							if type(itemData) == "table" and itemData.itemID and not checkList[itemData.itemID] then
-								itemData.dropLoc = {data.DisplayName or data.Name, t.Name}
-								itemData.lootTable = {{dataID, "AtlasLoot_Data", tableNum}, "Source"}
-								checkList[itemData.itemID] = true
-								tinsert(itemList, itemData)
-							end
-						end
+		for dataID, data in pairs(self.data.item) do
+			local dataType = self:GetDataType(dataID)
+			if dataType and dataType == typeL then
+				for _, itemData in ipairs(data) do
+					if type(itemData) == "table" and itemData.itemID and not checkList[itemData.itemID] then
+						itemData.dropLoc = {self:GetDataDisplayName(dataID), self:GetDataPageName(dataID)}
+						local dataSource, tableNum = self:GetSourceLocation(dataID)
+						itemData.sourcePage = {{dataSource, "AtlasLoot_Data", tableNum}, "Source"}
+						checkList[itemData.itemID] = true
+						table.insert(itemList, itemData)
 					end
 				end
 			end
@@ -127,10 +112,10 @@ function AtlasLoot:PopulateOnDemandLootTable(itemList, typeL, name, isDungeon)
 	-- Text Conversion
 	local function getEquipSlot(slot)
 		local equipSlots = {
-			INVTYPE_HEAD = BabbleInventory["Head"], INVTYPE_SHOULDER = BabbleInventory["Shoulder"], INVTYPE_CHEST = BabbleInventory["Chest"],
-			INVTYPE_WRIST = BabbleInventory["Wrist"], INVTYPE_HAND = BabbleInventory["Hands"], INVTYPE_WAIST = BabbleInventory["Waist"],
-			INVTYPE_LEGS = BabbleInventory["Legs"], INVTYPE_FEET = BabbleInventory["Feet"], INVTYPE_FINGER = BabbleInventory["Ring"],
-			INVTYPE_CLOAK = BabbleInventory["Back"], INVTYPE_NECK = BabbleInventory["Neck"], INVTYPE_WEAPONOFFHAND = BabbleInventory["Off Hand"],
+			INVTYPE_HEAD = "Head", INVTYPE_SHOULDER = "Shoulder", INVTYPE_CHEST = "Chest",
+			INVTYPE_WRIST = "Wrist", INVTYPE_HAND = "Hands", INVTYPE_WAIST = "Waist",
+			INVTYPE_LEGS = "Legs", INVTYPE_FEET = "Feet", INVTYPE_FINGER = "Ring",
+			INVTYPE_CLOAK = "Back", INVTYPE_NECK = "Neck", INVTYPE_WEAPONOFFHAND = "Off Hand",
 			INVTYPE_WEAPONMAINHAND = "Mainhand", INVTYPE_TRINKET = "Trinket", INVTYPE_HOLDABLE = "Caster Offhand"}
 		return equipSlots[slot] and " - "..equipSlots[slot] or nil
 	end
@@ -155,13 +140,13 @@ function AtlasLoot:PopulateOnDemandLootTable(itemList, typeL, name, isDungeon)
 	local firstLoad
 	local function showTable()
 		if firstLoad then
-			self:ShowItemsFrame(self.itemframe.refresh[1], self.itemframe.refresh[2], self.itemframe.refresh[3])
+			self:ShowItemsFrame("refresh")
 		else
-			self:ShowItemsFrame(typeL, "AtlasLoot_OnDemand", 1)
+			self:ShowItemsFrame(typeL, "AtlasLoot_OnDemand", 1, 1)
 			firstLoad = true
 		end
 		if not isDungeon then
-			AtlasLoot_Data_Cache[typeL] = AtlasLoot_OnDemand[typeL]
+			AtlasLoot_Data_Cache[typeL] = self.data.onDemand[typeL]
 		end
 	end
 
@@ -171,30 +156,29 @@ function AtlasLoot:PopulateOnDemandLootTable(itemList, typeL, name, isDungeon)
 		if not unsorted[armorSubType] then unsorted[armorSubType] = {} end
 		if equipLoc and not unsorted[armorSubType][getEquip(equipLoc)] then unsorted[armorSubType][getEquip(equipLoc)] = {} end
 		if equipLoc then
-			tinsert(unsorted[armorSubType][getEquip(equipLoc)], {item, armorType})
+			table.insert(unsorted[armorSubType][getEquip(equipLoc)], {item, armorType})
 		else
 			local type = armorType or "Misc"
 			local subType = armorSubType or "Misc"
 			if not unsorted[subType] then unsorted[subType] = {} end
 			if not unsorted[subType]["Misc"] then unsorted[subType]["Misc"] = {} end
-			tinsert(unsorted[subType]["Misc"], {item, type})
+			table.insert(unsorted[subType]["Misc"], {item, type})
 		end
 
-		AtlasLoot_OnDemand[typeL] = {Name = name, Type = typeL, filter = true }
-
+		self.data.onDemand[typeL] = {Name = name, Type = typeL, filter = true }
 		for aType, v in pairs(unsorted) do
 			for eLoc, t in pairs(v) do
 				for i, items in ipairs(t) do
 					local slot = getEquipSlot(getEquip(eLoc))
 					local name = slot and items[2] and aType.." "..items[2]..slot or aType or ""
+					local lootType = self.data.onDemand[typeL]
 					if i == 1 then
-						tinsert(AtlasLoot_OnDemand[typeL],{Name = correctText(name), {}, {}})
+						table.insert(lootType,{Name = correctText(name), {}})
 					end
-					local side = AtlasLoot_OnDemand[typeL][#AtlasLoot_OnDemand[typeL]][1]
-					if i > 15 and i > (#t/2) then
-						side = AtlasLoot_OnDemand[typeL][#AtlasLoot_OnDemand[typeL]][2]
-					end
-					tinsert(side, items[1])
+					if #lootType[#lootType][#lootType[#lootType]] >= 30 then
+                		table.insert(lootType[#lootType], {})
+            		end
+					table.insert(lootType[#lootType][#lootType[#lootType]], items[1])
 				end
 			end
 		end
@@ -212,23 +196,7 @@ function AtlasLoot:PopulateOnDemandLootTable(itemList, typeL, name, isDungeon)
 			end
 		end
 	end
-
 	-- rate limit tied to half the current frame rate
 	self:ItemsLoading(#itemList)
-	local maxDuration = (self.selectedProfile.ItemLoadingSpeed*500)/GetFramerate()
-	local startTime = debugprofilestop()
-	local function continue()
-		startTime = debugprofilestop()
-		local task = tremove(itemList)
-		while (task) do
-			processItem(task)
-			if (debugprofilestop() - startTime > maxDuration) then
-				Timer.After(0, continue)
-				return
-			end
-			task = tremove(itemList)
-		end
-	end
-
-	return continue()
+	self:RateLimitLoadTable(itemList, processItem)
 end
