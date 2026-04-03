@@ -474,23 +474,11 @@ AtlasLoot:AddItemData({
 	--------------------------------------------
 	["BlackrockCavernsCLASSIC"] = {
 		{
-			{ itemID = 241661 }, -- Amber Messenger
-			{ itemID = 241833 }, -- Witching Hourglass
-			{ itemID = 241876 }, -- Crepuscular Shield
-			{ itemID = 240379 }, -- Raz's Pauldrons
-			{ itemID = 241500 }, -- Twitching Shadows
-			{ itemID = 241543 }, -- Carrier Wave Pendant
-			{ itemID = 241704 }, -- Clutches of Dying Light
-			{ itemID = 241747 }, -- Willowy Crown
-			{ itemID = 241790 }, -- Kyrstel Mantle
-			{ itemID = 6011 }, -- Recipe: Flask of Mighty Power
-		},
-		{
-			{ itemID = 223128 }, -- Beauty's Favorite Bone
-			{ itemID = 219576 }, -- Beauty's Chew Toy
-			{ itemID = 222146 }, -- Beauty's Plate
-			{ itemID = 222844 }, -- Beauty's Silken Ribbon
-			{ itemID = 223076 }, -- Kibble
+			{ itemID = 232104 }, -- Torturer's Mercy
+			{ itemID = 232147 }, -- Shield of the Iron Maiden
+			{ itemID = 231828 }, -- Inquisition Robes
+			{ itemID = 231871 }, -- Manacles of Pain
+			{ itemID = 232061 }, -- Skullcracker Ring
 		},
 		{
 			{ itemID = 212713 }, -- Grace of the Herald
@@ -508,11 +496,23 @@ AtlasLoot:AddItemData({
 			{ itemID = 1180884 }, -- Draconic Warhorn: Karsh Steelbender
 		},
 		{
-			{ itemID = 232104 }, -- Torturer's Mercy
-			{ itemID = 232147 }, -- Shield of the Iron Maiden
-			{ itemID = 231828 }, -- Inquisition Robes
-			{ itemID = 231871 }, -- Manacles of Pain
-			{ itemID = 232061 }, -- Skullcracker Ring
+			{ itemID = 223128 }, -- Beauty's Favorite Bone
+			{ itemID = 219576 }, -- Beauty's Chew Toy
+			{ itemID = 222146 }, -- Beauty's Plate
+			{ itemID = 222844 }, -- Beauty's Silken Ribbon
+			{ itemID = 223076 }, -- Kibble
+		},
+		{
+			{ itemID = 241661 }, -- Amber Messenger
+			{ itemID = 241833 }, -- Witching Hourglass
+			{ itemID = 241876 }, -- Crepuscular Shield
+			{ itemID = 240379 }, -- Raz's Pauldrons
+			{ itemID = 241500 }, -- Twitching Shadows
+			{ itemID = 241543 }, -- Carrier Wave Pendant
+			{ itemID = 241704 }, -- Clutches of Dying Light
+			{ itemID = 241747 }, -- Willowy Crown
+			{ itemID = 241790 }, -- Kyrstel Mantle
+			{ itemID = 6011 }, -- Recipe: Flask of Mighty Power
 		},
 	},
 	-------------------------------------------------
@@ -691,13 +691,13 @@ AtlasLoot:AddItemData({
 			{ itemID = 11879 }, --Medallion of Binding Shard
 		},
 		{
-			{ itemID = 2522363, sourcePage = {"TONEWAIST","Token"} }, --Molten Handgaurds
-			{ itemID = 17332 }, --Hand of Shazzrah
-		},
-		{
 			{ itemID = 2522361, sourcePage = {"TONESHOULDER","Token"} }, --Molten Spaulders
 			{ itemID = 18563 }, --Bindings of the Windseeker
 			{ itemID = 19019 }, --Thunderfury, Blessed Blade of the Windseeker
+		},
+		{
+			{ itemID = 2522363, sourcePage = {"TONEWAIST","Token"} }, --Molten Handgaurds
+			{ itemID = 17332 }, --Hand of Shazzrah
 		},
 		{
 			{ itemID = 2522350, sourcePage = {"TONECHEST","Token"} }, --Molten Tunic
