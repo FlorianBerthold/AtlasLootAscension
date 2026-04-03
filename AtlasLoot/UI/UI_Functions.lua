@@ -155,11 +155,17 @@ function AtlasLoot:InitializeUIFunctions()
         if self.currentTable then
             self.currentTable = cleanDataID(self.currentTable, 1) .. self.Expac
             self:IsLootTableAvailable(AtlasLoot.ui.menus.collection[self.currentTable].Module)
-            local tablename = AtlasLoot.ui.menus.collection[self.currentTable][1][2]
+            local tablename
+            for _, entry in ipairs(AtlasLoot.ui.menus.collection[self.currentTable]) do
+                if type(entry) == "table" and not entry.Header and not entry.OnDamand then
+                    tablename = entry[1]
+                    break
+                end
+            end
             local lasttable = self.db.profile.savedState[self.currentTable]
             if lasttable then
                 self:ShowItemsFrame(lasttable[1], lasttable[2], lasttable[3], lasttable[7])
-            else
+            elseif tablename and self.ui.menus.data[tablename] then
                 local tablenum = self.ui.menus.data[tablename].Loadfirst or 1
                 self:ShowItemsFrame(tablename, "AtlasLoot_Data", tablenum, 1)
             end
