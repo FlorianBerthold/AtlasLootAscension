@@ -576,7 +576,7 @@ AtlasLoot:AddNewMenus({
 		{ "Baelog", {2060219} },
 		{ "Revelosh", {} },
 		{ "Ironaya", {2075372} },
-		{ "Obsidian Sentinel", {} },
+		{ "Obsidian Sentinel", {2075372} },
 		{ "Ancient Stone Keeper", {} },
 		{ "Galgann Firehammer", {2060239} },
 		{ "Tablet of Will", {} },
