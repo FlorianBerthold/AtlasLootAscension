@@ -474,8 +474,6 @@ AtlasLoot:AddItemData("dontSort", {
 	-----------------------
 
 	["ChildrensWeek"] = {
-		Module = "AtlasLoot_WorldEvents",
-		Name = "Children's Week",
 		{
 			{ icon = "INV_Box_01", name = "Azeroth" },
 			{ itemID = 23007 }, --Piglet's Collar
