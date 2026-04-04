@@ -360,7 +360,7 @@ AtlasLoot:AddNewMenus({
 		Type = "ClassicDungeon",
 		Map = "RazorfenDowns",
 		{ "Tuten'kash", {} },
-		{ "Henry Stern", {23863} },
+		{ "Henry Stern", {5594} },
 		{ "Mordresh Fire Eye", {} },
 		{ "Glutton", {} },
 		{ "Ragglesnout", {2075397} },
