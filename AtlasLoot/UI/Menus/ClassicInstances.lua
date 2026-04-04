@@ -23,7 +23,7 @@ AtlasLoot:AddNewMenus({
 		Name = "Onyxia's Lair",
 		Type = "ClassicRaid",
 		Map = "Onyxia60",
-		{ "Basalthane", {} },
+		{ "Basalthane", { 10185 } },
 		{ "Onyxia", { 10184 } },
 	},
 
