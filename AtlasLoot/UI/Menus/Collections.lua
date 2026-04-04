@@ -261,7 +261,7 @@ AtlasLoot:AddNewMenus({
 	},
 
 	["TFOUR"] = {
-		Module = "AtlasLoot_OriginalWoW",
+		Module = "AtlasLoot_BurningCrusade",
 		Name = "Tier 4",
         Type = "BCRaid",
 		{ LOCALIZED_CLASS_NAMES_MALE["DRUID"] .. " - Feral", {} },
@@ -286,7 +286,7 @@ AtlasLoot:AddNewMenus({
 	},
 
 	["TFIVE"] = {
-		Module = "AtlasLoot_OriginalWoW",
+		Module = "AtlasLoot_BurningCrusade",
 		Name = "Tier 5",
         Type = "BCRaid",
 		{ LOCALIZED_CLASS_NAMES_MALE["DRUID"] .. " - Feral", {} },
@@ -311,7 +311,7 @@ AtlasLoot:AddNewMenus({
 	},
 
 	["TSIX"] = {
-		Module = "AtlasLoot_OriginalWoW",
+		Module = "AtlasLoot_BurningCrusade",
 		Name = "Tier 6",
         Type = "BCRaid",
 		{ LOCALIZED_CLASS_NAMES_MALE["DRUID"] .. " - Feral", {} },

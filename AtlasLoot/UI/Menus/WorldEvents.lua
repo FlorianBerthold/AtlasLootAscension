@@ -103,7 +103,6 @@ AtlasLoot:AddNewMenus({
 		Module = "AtlasLoot_WorldEvents",
 		Name = "Midsummer Fire Festival",
 		{ "Midsummer Fire Festival", {} },
-		{ "Lord Ahune", {} },
 	},
 
 	["MidsummerFestivalTBC"] = {

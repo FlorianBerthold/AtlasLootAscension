@@ -186,8 +186,7 @@ AtlasLoot:AddItemData("dontSort", {
 			{ itemID = 40959, spellID = 54981 }, --Reinforced Cobalt Chestpiece
 			{ itemID = 39085, spellID = 52570 }, --Cobalt Chestpiece
 		},
-	},
-	{ 		{
+		{
 			{ itemID = 49907, spellID = 70568 }, --Boots of Kingly Upheaval
 			{ itemID = 49906, spellID = 70566 }, --Hellfrozen Bonegrinders
 			{ itemID = 45559, spellID = 63188 }, --Battlelord's Plate Boots

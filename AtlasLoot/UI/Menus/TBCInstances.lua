@@ -372,7 +372,7 @@ AtlasLoot:AddNewMenus({
 	},
 
 	["FrozenReachTBC"] = {
-		Module = "AtlasLoot_OriginalWoW",
+		Module = "AtlasLoot_BurningCrusade",
 		Name = "Frozen Reach",
 		Type = "ManastormTBC",
 		{ "Frozen Reach", {}, WebID = {1298888,"item"} },

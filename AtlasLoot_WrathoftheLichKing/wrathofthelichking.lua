@@ -6555,7 +6555,6 @@ AtlasLoot:AddItemData({
 --- Wrathful Gladiator Weapons ---
 ------------------------------------
 	["WeaponsWRATH"] = {
-	{
 		{
 			{ icon = "INV_Box_01", name =  "Low Level" },
 			{ itemID = 51523,"38500 #faction# 1090 #arena# ".."Rating:".." 1800" }, --Wrathful Gladiator's Right Ripper
