@@ -325,9 +325,11 @@ function AtlasLoot:WishListCheck(itemID, all, typ, tableNum)
 				end
 			end
             for k,_ in pairs(AtlasLootWishList.Shared) do
+				if type(AtlasLootWishList.Shared[k]) == "table" then
 				for i,_ in pairs(AtlasLootWishList.Shared[k]) do
+					if type(AtlasLootWishList.Shared[k][i]) == "table" then
 					for b,_ in pairs(AtlasLootWishList.Shared[k][i]) do
-						if AtlasLootWishList.Shared[k][i][b].itemID == itemID then
+						if type(AtlasLootWishList.Shared[k][i][b]) == "table" and AtlasLootWishList.Shared[k][i][b].itemID == itemID then
 							if AtlasLootWishList.Shared[k][i].Icon ~= "" then
 								rettex = rettex.."|T"..AtlasLootWishList.Shared[k][i].Icon..":0|t"
 							else
@@ -336,6 +338,8 @@ function AtlasLoot:WishListCheck(itemID, all, typ, tableNum)
 							break
 						end
 					end
+					end
+				end
 				end
 			end
 		end
