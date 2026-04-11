@@ -119,9 +119,11 @@ function AtlasLoot:GetWishListVanityItems(name)
 		if wishlist.Name == name then
 			if type(wishlist) == "table" then
 				for _, item in pairs(wishlist) do
+					if type(item) == "table" then
 					local vanityData = VANITY_ITEMS[item.itemID]
 					if item.itemID and vanityData and C_VanityCollection.IsCollectionItemOwned(item.itemID) and (vanityData.learnedSpell == 0 or not CA_IsSpellKnown(vanityData.learnedSpell)) then
 						table.insert(itemList, item.itemID)
+					end
 					end
 				end
 			end
@@ -164,7 +166,7 @@ function AtlasLoot:SortWishList(refresh,type,tNumb)
 		AtlasLootWishList[type][tNumb].Name = name
 		AtlasLootWishList[type][tNumb].Icon = icon
 		if refresh then
-		self:ShowWishList(type)
+		self:ShowWishList(tNumb)
 		end
 end
 
@@ -374,7 +376,7 @@ function AtlasLoot:WishListOptionsOpen(button)
 	local menuList = {{
 			{text = "Add Wishlist", func = function() self:AddWishList() end},
 			{text = "Edit Wishlist", func = function() self:EditWishList() end, showOnCondition = self.itemframe.refresh[2] == "currentWishList"},
-			{text = "Sort Wishlist", func = function() self:SortWishList(true,self.ui.tabs.Loot.TableScrollFrame.tablenum) end,  showOnCondition = self.itemframe.refresh[2] == "currentWishList"},
+			{text = "Sort Wishlist", func = function() self:SortWishList(true,self.currentWishList.Show.ListType,self.ui.tabs.Loot.TableScrollFrame.tablenum) end,  showOnCondition = self.itemframe.refresh[2] == "currentWishList"},
 			{text = "Copy Wishlist To Own", func = function() self:CloneSharedWishList() end, showOnCondition = self.itemframe.refresh[2] == "currentWishList" and self.currentWishList.Show.ListType == "Shared"},
 			{text = "Make Wishlist Default", func = function() self:SetDefaultWishList() end, showOnCondition = self.itemframe.refresh[2] == "currentWishList" and self.currentWishList.Show.ListType == "Own"},
 			{text = "Delete Wishlist", func = function() self:DeleteWishList() end,  showOnCondition = self.itemframe.refresh[2] == "currentWishList"},

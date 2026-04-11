@@ -57,6 +57,7 @@ function AtlasLoot:InitializeItemFrame()
 		itemData = itemData[pageNumber]
 		local displayItems = {}
 		for _, item in pairs(itemData) do
+			if type(item) == "table" then
 			local show, itemID, recipeID = self:GetItemConditionals(item, dataSource)
 			local newItemData = {}
 				if (show and self:FilterItem(item, dataSource)) then
@@ -66,6 +67,7 @@ function AtlasLoot:InitializeItemFrame()
 				elseif item[1] == "blankLine" then
 					table.insert(displayItems, {item})
 				end
+			end
 		end
 		for i = 1, 30 do
 			local button = self.itemframe.buttons[i]
