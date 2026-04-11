@@ -133,11 +133,11 @@ function AtlasLoot:GetWishListVanityItems(name)
 end
 
 -- Sort wishlist
-function AtlasLoot:SortWishList(refresh,type,tNumb)
+function AtlasLoot:SortWishList(refresh,listType,tNumb)
 	local sorted = {}
-	local name = AtlasLootWishList[type][tNumb].Name
-	local icon = AtlasLootWishList[type][tNumb].Icon
-		for _,v in ipairs(AtlasLootWishList[type][tNumb]) do
+	local name = AtlasLootWishList[listType][tNumb].Name
+	local icon = AtlasLootWishList[listType][tNumb].Icon
+		for _,v in ipairs(AtlasLootWishList[listType][tNumb]) do
 			local function tableCheck()
 				for _,t in ipairs(sorted) do
 					if t[2][5] == v[5] then
@@ -151,20 +151,20 @@ function AtlasLoot:SortWishList(refresh,type,tNumb)
 					table.insert(sorted,{{0, 0, "INV_Box_01", self.Colors.WHITE..v[5], ""},v})
 				end
 		end
-		AtlasLootWishList[type][tNumb] = {}
+		AtlasLootWishList[listType][tNumb] = {}
 		local num = 1
 		for _,v in ipairs(sorted) do
 			for _,t in ipairs(v) do
 				if num ~= 1 and t[3] == "INV_Box_01" then
-					table.insert(AtlasLootWishList[type][tNumb],{num, 0, "Blank", self.Colors.WHITE.." ", ""})
+					table.insert(AtlasLootWishList[listType][tNumb],{num, 0, "Blank", self.Colors.WHITE.." ", ""})
 					num = num + 1
 				end
-					table.insert(AtlasLootWishList[type][tNumb],{num,t[2],t[3],t[4],t[5],t[6],t[7],t[8]})
+					table.insert(AtlasLootWishList[listType][tNumb],{num,t[2],t[3],t[4],t[5],t[6],t[7],t[8]})
 					num = num + 1
 			end
 		end
-		AtlasLootWishList[type][tNumb].Name = name
-		AtlasLootWishList[type][tNumb].Icon = icon
+		AtlasLootWishList[listType][tNumb].Name = name
+		AtlasLootWishList[listType][tNumb].Icon = icon
 		if refresh then
 		self:ShowWishList(tNumb)
 		end
@@ -312,18 +312,18 @@ function AtlasLoot:WishListCheck(itemID, all, typ, tableNum)
 				end
 			end
 		elseif AtlasLootWishList.Options[playerName].markInTable == "all" then
-			for k,_ in ipairs(AtlasLootWishList.Own) do
+			for k,v in ipairs(AtlasLootWishList.Own) do
+				if type(v) == "table" then
 				for i,_ in ipairs(AtlasLootWishList.Own[k]) do
-					for b,_ in ipairs(AtlasLootWishList.Own[k][i]) do
-						if AtlasLootWishList.Own[k][i][b].itemID == itemID then
-							if AtlasLootWishList.Own[k][i].Icon ~= "" then
-								rettex = rettex.."|T"..AtlasLootWishList.Own[k][i].Icon..":0|t"
-							else
-								rettex = rettex.."|TInterface\\Icons\\INV_Misc_QuestionMark:0|t"
-							end
-							break
+					if type(AtlasLootWishList.Own[k][i]) == "table" and AtlasLootWishList.Own[k][i].itemID == itemID then
+						if AtlasLootWishList.Own[k].Icon ~= "" then
+							rettex = rettex.."|T"..AtlasLootWishList.Own[k].Icon..":0|t"
+						else
+							rettex = rettex.."|TInterface\\Icons\\INV_Misc_QuestionMark:0|t"
 						end
+						break
 					end
+				end
 				end
 			end
             for k,_ in pairs(AtlasLootWishList.Shared) do
