@@ -169,7 +169,8 @@ AtlasLoot.Difficulties = {
 
 function AtlasLoot:GetMaxDifficulty(instanceType, max)
     if not instanceType and not max then return end
-    return self.Difficulties[max] or self.Difficulties[instanceType].Max
+    if self.Difficulties[max] then return self.Difficulties[max] end
+    if self.Difficulties[instanceType] then return self.Difficulties[instanceType].Max end
 end
 
 function AtlasLoot:GetMinDifficulty(min)

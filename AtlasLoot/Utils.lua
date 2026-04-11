@@ -530,6 +530,7 @@ local ArmorTypes = {
 
 function AtlasLoot:ArenaCost(price, itemEquipLoc, itemQuality)
 	if price ~= "Arena" then return price end
+	if not ArmorTypes[itemEquipLoc] then return price end
 	if itemQuality == 3 or not ArmorTypes[itemEquipLoc][2] then
 		return ArmorTypes[itemEquipLoc][1]
 	else

@@ -144,7 +144,7 @@ function AtlasLoot:ItemOnLeave(frame)
     else
 		GameTooltip:Hide()
     end
-    if ( ShoppingTooltip2:IsVisible() or ShoppingTooltip1.IsVisible) then
+    if ( ShoppingTooltip2:IsVisible() or ShoppingTooltip1:IsVisible()) then
        ShoppingTooltip2:Hide()
        ShoppingTooltip1:Hide()
     end
@@ -292,7 +292,7 @@ function AtlasLoot:ItemContextMenu(data, Type, recipeData)
     local wishList
     local wayPointList
     local isWishlist = (self.itemframe.refresh[2] == "currentWishList") or false
-    local notWishlist = notWishlist and nil
+    local notWishlist = not isWishlist or nil
     local wList = AtlasLootWishList.Options[playerName].DefaultWishList
     local isCollectionItem = itemID and C_VanityCollection.IsCollectionItemOwned(itemID)
     if not self.ui.itemPopupframe or self.ui.itemPopupframe and not self.ui.itemPopupframe:IsVisible()  then
@@ -331,7 +331,7 @@ function AtlasLoot:ItemContextMenu(data, Type, recipeData)
                     if v.cords and tonumber(v.cords[1]) ~= 0 and tonumber(v.cords[2]) ~= 0 then
                         local line1 = v[1]
                         local line2 = v[2]
-                        if v.fac and (v.fac[2] == playerFaction or v.fac[2] == "Netural") then line1 = v.fac[1]..line1 end
+                        if v.fac and (v.fac[2] == playerFaction or v.fac[2] == "Neutral") then line1 = v.fac[1]..line1 end
                         if not wayPoint then wayPoint = {} end
                         table.insert(wayPoint, { line2, tonumber(v.cords[1]), tonumber(v.cords[2]), line1})
                     end

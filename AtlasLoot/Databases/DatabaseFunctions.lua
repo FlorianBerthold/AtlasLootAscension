@@ -66,7 +66,7 @@ end
 local updateFrameCreated
 function AtlasLoot:CreateUpdateText()
     if updateFrameCreated then return end
-    local updateCounterFrame = CreateFrame("Frame", "AtlasLootDbUpdate", UIParrnt, nil)
+    local updateCounterFrame = CreateFrame("Frame", "AtlasLootDbUpdate", UIParent, nil)
 	updateCounterFrame:SetPoint("CENTER",0,200)
 	updateCounterFrame:SetSize(400,50)
 	updateCounterFrame:Hide()
@@ -493,7 +493,7 @@ function AtlasLoot:GetSourceData(dataSource_backup, dataID, tablenum)
 		itemData = self.data.onDemand[dataID][tablenum]
 	elseif dataSource_backup == "AtlasLoot_Data_Cache" then
 		dataSource = AtlasLoot_Data_Cache[dataID]
-		itemData = AtlasLoot_Data_Cache[dataID]
+		itemData = AtlasLoot_Data_Cache[dataID][tablenum]
 	elseif dataID == "SearchResult" then
 		dataSource = AtlasLootCharDB[dataID]
 		itemData = AtlasLootCharDB[dataID][1]

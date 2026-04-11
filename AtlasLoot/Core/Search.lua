@@ -584,7 +584,7 @@ function AtlasLoot:InitializeSearch()
 
     local showSearch
     local function processItem(data)
-        if not data and not data[1] then return end
+        if not data or not data[1] then return end
         local itemData, dataID, tableNum, searchTerms, searchText = unpack(data[1])
         if type(itemData) == "table" then
             local itemID = itemData.itemID

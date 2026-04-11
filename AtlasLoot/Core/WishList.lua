@@ -252,7 +252,7 @@ local function wishListSettings()
 	},
 	
 	{isRadio = true, text = "Enable Wishlist Sharing", checked = allowShare, show = "Settings",
-	func = function() allowShare = not allowShare end},
+	func = function() AtlasLootWishList.Options[playerName].AllowShareWishlist = not AtlasLootWishList.Options[playerName].AllowShareWishlist end},
 	{isRadio = true, text = "Auto reject in combat", checked = AtlasLootWishList.Options[playerName].AllowShareWishlistInCombat or false, show = "Settings",
 	func = function() AtlasLootWishList.Options[playerName].AllowShareWishlistInCombat = not AtlasLootWishList.Options[playerName].AllowShareWishlistInCombat end},
 	{isRadio = true, text = "Auto Sort WishLists", checked = AtlasLootWishList.Options[playerName].AutoSortWishlist or false, show = "Settings",

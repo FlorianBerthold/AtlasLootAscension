@@ -197,10 +197,10 @@ function AtlasLoot:FixText(text)
             textSub = gsub(textSub, ",%f[%W]", "")
         end
             text = BabbleBoss[textSub] or text
-            text = BabbleInventory[textSub]
-            text = BabbleZone[textSub]
-            text = BabbleFaction[textSub]
-            text = AL[textSub]
+            text = BabbleInventory[textSub] or text
+            text = BabbleZone[textSub] or text
+            text = BabbleFaction[textSub] or text
+            text = AL[textSub] or text
             newText = newText and newText .. " " .. text..commaFound or text
     end
 

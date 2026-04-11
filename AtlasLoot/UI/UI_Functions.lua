@@ -216,7 +216,7 @@ function AtlasLoot:InitializeUIFunctions()
                 if favButton[2] == "AtlasLootWishList" then
                     self:ShowWishList(favButton[3])
                 else
-                    self:ShowItemsFrame(favButton[1], favButton[2], favButton[3], favButton[4])
+                    self:ShowItemsFrame(favButton[1], favButton[2], favButton[3], 1)
                 end
             end
         end

@@ -182,7 +182,7 @@ function AtlasLoot:ShowItemsFrame(dataID, dataSource_backup, tablenum, pageNumbe
 
 	-- Finds the tablenumber to set where the difficulty slider should be.
 	local function findTypeNumber()
-		if not dataSource.Type and not self.Difficulties[dataSource.Type] then return end
+		if not dataSource.Type or not self.Difficulties[dataSource.Type] then return end
 		for i,v in ipairs(self.Difficulties[dataSource.Type]) do
 			if v[2] == self.ItemindexID then
 				return i
@@ -276,9 +276,9 @@ function AtlasLoot:ShowItemsFrame(dataID, dataSource_backup, tablenum, pageNumbe
 		self.ui.learnSpellbtn:Show()
 	end
 
-	local refreshOri_dataSource = self:GetSourceData(self.itemframe.refreshOri[2], self.itemframe.refreshOri[1], tablenum)
+	local refreshOri_dataSource = self.itemframe.refreshOri and self:GetSourceData(self.itemframe.refreshOri[2], self.itemframe.refreshOri[1], tablenum)
 	local refresh_dataSource = self:GetSourceData(self.itemframe.refresh[2], self.itemframe.refresh[1], tablenum)
-	if (self.itemframe.refreshOri and tablenum ~= #refreshOri_dataSource) or (tablenum ~= #refresh_dataSource or pageNumber ~= numberPages) then
+	if (refreshOri_dataSource and tablenum ~= #refreshOri_dataSource) or (tablenum ~= #refresh_dataSource or pageNumber ~= numberPages) then
 		self.ui.nextbutton:Show()
 		self.ui.nextbutton.dataID = dataID
 		self.ui.nextbutton.dataSource = dataSource
