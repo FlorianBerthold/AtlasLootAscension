@@ -1,6 +1,20 @@
 
 local AtlasLoot = LibStub("AceAddon-3.0"):GetAddon("AtlasLoot")
 local patchNotes = {
+    {"Version 8.0.7", "12th April, 2026"},
+    "Fixed crash when viewing Worldforged items (string.rep collision)",
+    "Fixed WishList Sort crashing due to missing argument",
+    "Fixed WishList 'mark all' mode not highlighting Own wishlist items",
+    "Fixed Favorites loading crash (module name passed as page number)",
+    "Fixed FixText crash from missing babble lookup fallbacks",
+    "Fixed search crash from inverted nil guard",
+    "Fixed various nil crashes (refreshOri, GetMaxDifficulty, ArenaCost, VanityCollection)",
+    "Fixed WishList sharing toggle not saving",
+    "Fixed context menu showing wishlist options at wrong times",
+    "Fixed neutral faction vendor labels not displaying",
+    "Fixed tooltip comparison always hiding ShoppingTooltip1",
+    "Fixed LimitedVendor recipe display crash on non-sequential iteration",
+    "Improved item database update performance (getMythicLevel)",
     {"Version 7.6.7", "1st November, 2025"},
     "Updated highrisk tailoring recipes",
     {"Version 7.6.6", "24th October, 2025"},
