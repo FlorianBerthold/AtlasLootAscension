@@ -184,11 +184,11 @@ function AtlasLoot:CreateVanityCollection()
         local groupByName = setGroupByName(item)
 		if item.quality == 7 then
             group = setGroup("Heirlooms")
-		elseif flavor:lower():find("|cff33fff0manastorm", 1, true) then
+		elseif flavor and flavor:lower():find("|cff33fff0manastorm", 1, true) then
             group = setGroup("Manastorm")
 		elseif groupByName then
             group = setGroup(groupByName[1], groupByName[2])
-        elseif itemDescription:find("A Cosmetic set", 1, true) then
+        elseif itemDescription and itemDescription:find("A Cosmetic set", 1, true) then
             group = setGroup("Sets")
         elseif itemType == "Pet" and excludePets(item) then
             group = setGroup("Pets")

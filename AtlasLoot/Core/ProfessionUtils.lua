@@ -220,15 +220,8 @@ function AtlasLoot:GetRecipeSource(spellID)
 	if limitedVendor then
 		tinsert(data, {"Source"..": "..self.Colors.WHITE.."Limited Stock"})
 		local sort = {}
-		local limited = false
-		for i,v in pairs(limitedVendor) do
-			 if limited then
-				 tinsert(sort[i-1],v)
-				 limited = false
-			 else
-				 sort[i] = {v}
-				 limited = true
-			 end
+		for i = 1, #limitedVendor, 2 do
+			sort[#sort + 1] = {limitedVendor[i], limitedVendor[i + 1]}
 		end
 		for _,v in pairs(sort) do
 			 local vendor = self.data.crafting["VendorList"][v[1]]

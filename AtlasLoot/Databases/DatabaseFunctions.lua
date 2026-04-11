@@ -25,14 +25,10 @@ local function getNormalLevel(discription)
 end
 
 local function getMythicLevel(description)
-	for i = 1, 40 do
-  		local mythicNumber = string.match(description, "Mythic (%d+)")
-
-		if mythicNumber then
-			if tonumber(mythicNumber) == i then
-				return "Mythic "..i, (5 + i)
-			end
-		end
+	local mythicNumber = string.match(description, "Mythic (%d+)")
+	if mythicNumber then
+		local num = tonumber(mythicNumber)
+		return "Mythic "..num, (5 + num)
 	end
 	if string.match(description, "Mythic") then
 		return "Mythic", 5
@@ -47,7 +43,7 @@ function AtlasLoot:GetDifficultyFromDescription(item)
 	if dif then
 		return dif, difNum
 	else
-		return getNormalLevel(item.description)
+		return getNormalLevel(description)
 	end
 end
 
@@ -98,9 +94,9 @@ function AtlasLoot:GetSourceList()
 			if typeData and self.Difficulties[typeData] and itemData.itemID then
 				for _, dif in ipairs(self.Difficulties[typeData]) do
 					local itemType = GetItemInfoInstant(itemData.itemID) or nil
-					if dif[2] ~= 3 and itemType then
+					if dif[2] ~= 3 and itemType and itemType.name then
 						itemSource[dif[1]] = itemSource[dif[1]] or {}
-						local name = itemType.name:gsub( "%W", "" )..itemType.inventoryType
+						local name = itemType.name:gsub( "%W", "" )..(itemType.inventoryType or "")
 						itemSource[dif[1]][name] = itemSource[dif[1]][name] or {}
 						local itemTable = itemSource[dif[1]][name]
 							local function checkForDuplicate(itemID)
