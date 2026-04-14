@@ -149,6 +149,8 @@ AtlasLoot:AddItemData("dontSort", {
 			{ itemID = 277940 }, -- Etched Emerald Ring
 			{ itemID = 277941 }, -- Etched Amethyst Ring
 			{ itemID = 277942 }, -- Etched Ruby Ring
+			{ itemID = 18398 },  -- Tidal Loop
+			{ itemID = 18399 },  -- Ocean's Breeze
 		},
 		{
 			{ itemID = 22754 }, -- Eternal Quintessence
@@ -268,6 +270,7 @@ AtlasLoot:AddItemData("dontSort", {
             { itemID = 21190 },   --Wrath of Cenarius
             { itemID = 21180 },   --Earthstrike
             { itemID = 21188 },   --Fist of Cenarius
+            { itemID = 17647 },   --Fist of Cenarius (Ascension)
         },
     },
 
