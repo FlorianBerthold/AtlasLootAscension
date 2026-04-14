@@ -91,6 +91,27 @@ AtlasLoot:AddNewMenus({
 		{ "Miscellaneous", {} },
 		{ "High Risk", {} },
 	},
+	------------------------
+	--- Enchant Items   ---
+	------------------------
+	["EnchantItemsCLASSIC"] = {
+		Module = "AtlasLoot_Crafting_OriginalWoW",
+		Name = "Enchant Items",
+		Type = "Vendor",
+		{ "Head Enchants", {} },
+		{ "Shoulder Enchants", {} },
+		{ "Cloak Enchants", {} },
+		{ "Chest Enchants", {} },
+		{ "Bracer Enchants", {} },
+		{ "Glove Enchants", {} },
+		{ "Belt Enchants", {} },
+		{ "Leg Enchants", {} },
+		{ "Boot Enchants", {} },
+		{ "1H Weapon Enchants", {} },
+		{ "2H Weapon Enchants", {} },
+		{ "Ranged Weapon Enchants", {} },
+		{ "Shield Enchants", {} },
+	},
 	-------------------
 	--- Engineering ---
 	-------------------

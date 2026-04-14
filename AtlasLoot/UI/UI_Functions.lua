@@ -118,7 +118,7 @@ function AtlasLoot:InitializeUIFunctions()
     Generates the sub menu needed by passing a table of loot tables and titles
     ]]
     function self:SubMenuOpen(loottable)
-        local menuList = {dividerLength = 50, {{text = "Categorys", isTitle = true}}, {}}
+        local menuList = {dividerLength = 50, {{text = "Categories", isTitle = true}}, {}}
             for _, menu in pairs(loottable) do
                 if type(menu) == "table" then
                     if type(menu[2]) == "table" then

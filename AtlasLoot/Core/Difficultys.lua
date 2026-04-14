@@ -127,6 +127,10 @@ AtlasLoot.Difficulties = {
         {"Superior", 4 },
         Max = 4
     },
+    Vendor = {
+        {"Normal", 3 },
+        Max = 3
+    },
     BCCrafting = {
         {"Normal", 3 },
         Max = 3

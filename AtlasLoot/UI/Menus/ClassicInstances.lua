@@ -106,7 +106,7 @@ AtlasLoot:AddNewMenus({
 	["BlackfathomDeeps"] = {
 		Module = "AtlasLoot_OriginalWoW",
 		Name = "Blackfathom Deeps",
-		Type = "ClassicDungeon",
+		Type = "ClassicDungeonExt",
 		Map = "BlackfathomDeeps",
 		{ "Ghamoo-ra", { 4887 } },
 		{ "Lady Sarevess", { 4831 } },
@@ -301,7 +301,7 @@ AtlasLoot:AddNewMenus({
 	["Gnomeregan"] = {
 		Module = "AtlasLoot_OriginalWoW",
 		Name = "Gnomeregan",
-		Type = "ClassicDungeon",
+		Type = "ClassicDungeonExt",
 		Map = "Gnomeregan",
 		{ "Namdo Bizzfizzle", {} },
 		{ "Techbot", { 6231 } },
@@ -329,7 +329,7 @@ AtlasLoot:AddNewMenus({
 	["Maraudon"] = {
 		Module = "AtlasLoot_OriginalWoW",
 		Name = "Maraudon",
-		Type = "ClassicDungeon",
+		Type = "ClassicDungeonExt",
 		Map = "Maraudon",
 		{ "Noxxion", {} },
 		{ "Razorlash", {} },
@@ -346,7 +346,7 @@ AtlasLoot:AddNewMenus({
 	["RagefireChasm"] = {
 		Module = "AtlasLoot_OriginalWoW",
 		Name = "Ragefire Chasm",
-		Type = "ClassicDungeon",
+		Type = "ClassicDungeonExt",
 		Map = "RagefireChasm",
 		{ "Taragaman the Hungerer", {11520,2075751} },
 		{ "Zelemar the Wrathful", {17830} },
@@ -357,7 +357,7 @@ AtlasLoot:AddNewMenus({
 	["RazorfenDowns"] = {
 		Module = "AtlasLoot_OriginalWoW",
 		Name = "Razorfen Downs",
-		Type = "ClassicDungeon",
+		Type = "ClassicDungeonExt",
 		Map = "RazorfenDowns",
 		{ "Tuten'kash", {} },
 		{ "Henry Stern", {5594} },
@@ -373,7 +373,7 @@ AtlasLoot:AddNewMenus({
 	["RazorfenKraul"] = {
 		Module = "AtlasLoot_OriginalWoW",
 		Name = "Razorfen Kraul",
-		Type = "ClassicDungeon",
+		Type = "ClassicDungeonExt",
 		Map = "RazorfenKraul",
 		{ "Roogug", { 6168,2075273 } },
 		{ "Aggem Thorncurse", { 4424,2074993 } },
@@ -390,7 +390,7 @@ AtlasLoot:AddNewMenus({
 	["ScarletMonasteryArmory"] = {
 		Module = "AtlasLoot_OriginalWoW",
 		Name = "Scarlet Monastery Armory",
-		Type = "ClassicDungeon",
+		Type = "ClassicDungeonExt",
 		Map = "ScarletMonastery",
 		MapNum = 3,
 		{ "Herod", {} },
@@ -400,7 +400,7 @@ AtlasLoot:AddNewMenus({
 	["ScarletMonasteryCathedral"] = {
 		Module = "AtlasLoot_OriginalWoW",
 		Name = "Scarlet Monastery Cathedral",
-		Type = "ClassicDungeon",
+		Type = "ClassicDungeonExt",
 		Map = "ScarletMonastery",
 		MapNum = 4,
 		{ "High Inquisitor Fairbanks", {2060073} },
@@ -412,7 +412,7 @@ AtlasLoot:AddNewMenus({
 	["ScarletMonasteryGraveyard"] = {
 		Module = "AtlasLoot_OriginalWoW",
 		Name = "Scarlet Monastery Graveyard",
-		Type = "ClassicDungeon",
+		Type = "ClassicDungeonExt",
 		Map = "ScarletMonastery",
 		MapNum = 1,
 		{ "Interrogator Vishas", {3983,2060013} },
@@ -426,7 +426,7 @@ AtlasLoot:AddNewMenus({
 	["ScarletMonasteryLibrary"] = {
 		Module = "AtlasLoot_OriginalWoW",
 		Name = "Scarlet Monastery Library",
-		Type = "ClassicDungeon",
+		Type = "ClassicDungeonExt",
 		Map = "ScarletMonastery",
 		MapNum = 2,
 		{ "Houndmaster Loksey", {2062271} },
@@ -463,7 +463,7 @@ AtlasLoot:AddNewMenus({
 	["ShadowfangKeep"] = {
 		Module = "AtlasLoot_OriginalWoW",
 		Name = "Shadowfang Keep",
-		Type = "ClassicDungeon",
+		Type = "ClassicDungeonExt",
 		Map = "ShadowfangKeep",
 		{ "Apothecary Hummel", { 36296,2061045 } },
 		{ "Deathsworn Captain", {} },
@@ -514,7 +514,7 @@ AtlasLoot:AddNewMenus({
 	["TheDeadmines"] = {
 		Module = "AtlasLoot_OriginalWoW",
 		Name = "The Deadmines",
-		Type = "ClassicDungeon",
+		Type = "ClassicDungeonExt",
 		Map = "TheDeadmines",
 		{ "Marisa du'Paige", {} },
 		{ "Brainwashed Noble", {} },
@@ -533,7 +533,7 @@ AtlasLoot:AddNewMenus({
 	["TheStockade"] = {
 		Module = "AtlasLoot_OriginalWoW",
 		Name = "The Stockade",
-		Type = "ClassicDungeon",
+		Type = "ClassicDungeonExt",
 		Map = "TheStockade",
 		{ "Targorr the Dread", { 1696,2074427 } },
 		{ "Kam Deepfury", { 1666,2062387 } },
@@ -547,7 +547,7 @@ AtlasLoot:AddNewMenus({
 	["SunkenTemple"] = {
 		Module = "AtlasLoot_OriginalWoW",
 		Name = "Sunken Temple",
-		Type = "ClassicDungeon",
+		Type = "ClassicDungeonExt",
 		Map = "TheSunkenTemple",
 		{ "Spawn of Hakkar", { 5708 } },
 		{ "Troll Minibosses", {} },
@@ -566,7 +566,7 @@ AtlasLoot:AddNewMenus({
 	["Uldaman"] = {
 		Module = "AtlasLoot_OriginalWoW",
 		Name = "Uldaman",
-		Type = "ClassicDungeon",
+		Type = "ClassicDungeonExt",
 		Map = "Uldaman",
 		{ "Magregan Deepshadow", {} },
 		{ "Tablet of Ryun'eh", {} },
@@ -589,7 +589,7 @@ AtlasLoot:AddNewMenus({
 	["WailingCaverns"] = {
 		Module = "AtlasLoot_OriginalWoW",
 		Name = "Wailing Caverns",
-		Type = "ClassicDungeon",
+		Type = "ClassicDungeonExt",
 		Map = "WailingCaverns",
 		{ "Kalldan Felmoon", {} },
 		{ "Mad Magglish", {} },
@@ -609,7 +609,7 @@ AtlasLoot:AddNewMenus({
 	["ZulFarrak"] = {
 		Module = "AtlasLoot_OriginalWoW",
 		Name = "Zul'Farrak",
-		Type = "ClassicDungeon",
+		Type = "ClassicDungeonExt",
 		Map = "ZulFarrak",
 		{ "Antu'sul", {2062888} },
 		{ "Theka the Martyr", { 7272,2061278 } },

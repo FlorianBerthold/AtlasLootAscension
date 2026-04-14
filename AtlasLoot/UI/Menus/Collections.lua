@@ -23,7 +23,7 @@ AtlasLoot:AddNewMenus({
     ["MarkOfTriumph"] = {
 		Module = "AtlasLoot_OriginalWoW",
 		Name = "Mark of Triumph Vendor",
-        Type = "ClassicDungeonExt",
+        Type = "Vendor",
         WebID = {1414503,"npc"},
 		{ "Mark of Triumph Vendor", {} },
 	},
@@ -55,7 +55,7 @@ AtlasLoot:AddNewMenus({
     ["DungeonSetsUpgradedCLASSIC"] = {
 		Module = "AtlasLoot_OriginalWoW",
 		Name = "Dungeon Sets Quest Upgrades",
-        Type = "ClassicDungeonExt",
+        Type = "Vendor",
 		{ "Feralheart Raiment", {} },
 		{ "Beastmaster Armor", {} },
 		{ "Sorcerer's Regalia", {} },
@@ -65,6 +65,24 @@ AtlasLoot:AddNewMenus({
 		{ "The Five Thunders", {} },
 		{ "Deathmist Raiment", {} },
         { "Battlegear of Heroism", {} },
+	},
+
+    ["VendorClassic"] = {
+		Module = "AtlasLoot_OriginalWoW",
+		Name = "Vendor Items",
+        Type = "Vendor",
+		{ "Engraved Ring Vendor", {} },
+		{ "Misc Vendor Items", {} },
+	},
+
+    ["QuestRewardsCLASSIC"] = {
+		Module = "AtlasLoot_OriginalWoW",
+		Name = "Quest Rewards",
+        Type = "Vendor",
+		{ "iLvl 10-52", {} },
+		{ "iLvl 52-60", {} },
+		{ "iLvl 60-63", {} },
+		{ "iLvl 63-70", {} },
 	},
 
     ["TONE"] = {

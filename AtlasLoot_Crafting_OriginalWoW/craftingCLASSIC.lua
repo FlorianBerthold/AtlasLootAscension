@@ -1789,5 +1789,239 @@ AtlasLoot:AddItemData("dontSort", {
 			{ itemID = 967227, spellID = 968073 }, --Absorptive Cloak Lining
 			{ itemID = 967230, spellID = 968076 }, --Nimble Cloak Lining
 		},
-	}
+	},
+	["EnchantItemsCLASSIC"] = {
+		{
+			{ icon = "INV_Misc_QuestionMark", name = "Head Enchants" },
+			{ itemID = 1979001 }, --Animist's Caress
+			{ itemID = 1979601 }, --Animist's Embrace
+			{ itemID = 1833001 }, --Arcanum of Focus
+			{ itemID = 1833101 }, --Arcanum of Protection
+			{ itemID = 1832901 }, --Arcanum of Rapidity
+			{ itemID = 1978401 }, --Death's Embrace
+			{ itemID = 1978501 }, --Falcon's Call
+			{ itemID = 1978801 }, --Hoodoo Hex
+			{ itemID = 1164201 }, --Lesser Arcanum of Constitution
+			{ itemID = 1164401 }, --Lesser Arcanum of Resilience
+			{ itemID = 1162201 }, --Lesser Arcanum of Rumination
+			{ itemID = 1164301 }, --Lesser Arcanum of Tenacity
+			{ itemID = 1164601 }, --Lesser Arcanum of Voracity
+			{ itemID = 11646041 }, --Lesser Arcanum of Voracity
+			{ itemID = 11646091 }, --Lesser Arcanum of Voracity
+			{ itemID = 11646092 }, --Lesser Arcanum of Voracity
+			{ itemID = 11646541 }, --Lesser Arcanum of Voracity
+			{ itemID = 1978201 }, --Presence of Might
+			{ itemID = 1978701 }, --Presenece of Sight
+			{ itemID = 1978901 }, --Prophetic Aura
+			{ itemID = 1979501 }, --Prophetic Focus
+			{ itemID = 2263501 }, --Savage Guard
+			{ itemID = 1979301 }, --Syncretist's Blessing
+			{ itemID = 1978301 }, --Syncretist's Sigil
+			{ itemID = 1979201 }, --Syncretist's Vengeance
+			{ itemID = 1979401 }, --Vodouisant's Danger
+			{ itemID = 1978601 }, --Vodouisant's Vigilant Embrace
+			{ itemID = 1979101 }, --Warrior's Might
+		},
+		{
+			{ icon = "INV_Misc_QuestionMark", name = "Shoulder Enchants" },
+			{ itemID = 1818202 }, --Chromatic Mantle of the Dawn
+			{ itemID = 2354902 }, --Fortitude of the Scourge
+			{ itemID = 131978301 }, --Inscription of the Avenger
+			{ itemID = 131978201 }, --Inscription of the Conqueror
+			{ itemID = 131978401 }, --Inscription of the Deathdealer
+			{ itemID = 131978801 }, --Inscription of the Doomcaller
+			{ itemID = 131978701 }, --Inscription of the Enigma
+			{ itemID = 131979001 }, --Inscription of the Genesis
+			{ itemID = 131978901 }, --Inscription of the Oracle
+			{ itemID = 131978501 }, --Inscription of the Stalker
+			{ itemID = 131978601 }, --Inscription of the Stormcaller
+			{ itemID = 2354802 }, --Might of the Scourge
+			{ itemID = 2354502 }, --Power of the Scourge
+			{ itemID = 2354702 }, --Resilience of the Scourge
+			{ itemID = 1976002 }, --Zandalar Signet of Endurance
+			{ itemID = 2007702 }, --Zandalar Signet of Might
+			{ itemID = 2007602 }, --Zandalar Signet of Mojo
+			{ itemID = 2007802 }, --Zandalar Signet of Serenity
+		},
+		{
+			{ icon = "INV_Misc_QuestionMark", name = "Cloak Enchants" },
+			{ itemID = 96807303 }, --Absorptive Cloak Lining
+			{ itemID = 5314403 }, --Blazing
+			{ itemID = 96806103 }, --Chain Cloak Lining
+			{ itemID = 2073603 }, --Dodge
+			{ itemID = 5314203 }, --Draconic Might
+			{ itemID = 5314003 }, --Dragon Fire
+			{ itemID = 96806703 }, --Flowing Cloak Lining
+			{ itemID = 2508103 }, --Greater Fire Resistance
+			{ itemID = 2508203 }, --Greater Nature Resistance
+			{ itemID = 2001403 }, --Greater Resistance
+			{ itemID = 13882013 }, --Lesser Agility
+			{ itemID = 90142903 }, --Lesser Armor Penetration
+			{ itemID = 1352203 }, --Lesser Shadow Resistance
+			{ itemID = 90143103 }, --Lesser Spell Penetration
+			{ itemID = 96807603 }, --Nimble Cloak Lining
+			{ itemID = 96807003 }, --Rampager's Cloak Lining
+			{ itemID = 2073403 }, --Stealth
+			{ itemID = 2073503 }, --Subtlety
+			{ itemID = 2001503 }, --Superior Defense
+			{ itemID = 96806403 }, --Sustaining Cloak Lining
+		},
+		{
+			{ icon = "INV_Misc_QuestionMark", name = "Chest Enchants" },
+			{ itemID = 35428104 }, --Blue Dragonscale Armor Kit
+			{ itemID = 1825104 }, --Core Armor Kit
+			{ itemID = 96800404 }, --Devilsaur Gambeson
+			{ itemID = 96801304 }, --Earth Warder Gambeson
+			{ itemID = 96800104 }, --Flamescale Gambeson
+			{ itemID = 35429404 }, --Flameweave Armor Patch
+			{ itemID = 2002504 }, --Greater Stats
+			{ itemID = 96800704 }, --Magescale Gambeson
+			{ itemID = 2002604 }, --Major Health
+			{ itemID = 2002804 }, --Major Mana
+			{ itemID = 65429404 }, --Mossflayer Armor Patch
+			{ itemID = 96801604 }, --Riverscale Gambeson
+			{ itemID = 96801004 }, --Scorpion Strike Gambeson
+			{ itemID = 1394104 }, --Stats
+		},
+		{
+			{ icon = "INV_Misc_QuestionMark", name = "Bracer Enchants" },
+			{ itemID = 13931059 }, --Deflection
+			{ itemID = 2000805 }, --Greater Intellect
+			{ itemID = 2380205 }, --Healing Power
+			{ itemID = 4464705 }, --Lesser Expertise
+			{ itemID = 2380105 }, --Mana Regeneration
+			{ itemID = 2000905 }, --Superior Spirit
+			{ itemID = 2001105 }, --Superior Stamina
+			{ itemID = 2001005 }, --Superior Strength
+		},
+		{
+			{ icon = "INV_Misc_QuestionMark", name = "Glove Enchants" },
+			{ itemID = 35428106 }, --Blue Dragonscale Armor Kit
+			{ itemID = 1825106 }, --Core Armor Kit
+			{ itemID = 2072906 }, --Fire Power
+			{ itemID = 35429406 }, --Flameweave Armor Patch
+			{ itemID = 2072806 }, --Frost Power
+			{ itemID = 2001206 }, --Greater Agility
+			{ itemID = 2001306 }, --Greater Strength
+			{ itemID = 2073006 }, --Healing Power
+			{ itemID = 4448606 }, --Lesser Expertise
+			{ itemID = 1394806 }, --Minor Haste
+			{ itemID = 65429406 }, --Mossflayer Armor Patch
+			{ itemID = 2072706 }, --Shadow Power
+			{ itemID = 2073106 }, --Superior Agility
+			{ itemID = 2072606 }, --Threat
+		},
+		{
+			{ icon = "INV_Misc_QuestionMark", name = "Belt Enchants" },
+			{ itemID = 96803407 }, --Cleric's Belt Buckle
+			{ itemID = 96802807 }, --Dancing Belt Buckle
+			{ itemID = 96802207 }, --Deflecting Belt Buckle
+			{ itemID = 96804007 }, --Guardman's Blet Buckle
+			{ itemID = 96803107 }, --Magus Belt Buckle
+			{ itemID = 96801907 }, --Mountainous Belt Buckle
+			{ itemID = 96802507 }, --Roguish Belt Buckle
+			{ itemID = 96803707 }, --Warlord's Belt Buckle
+		},
+		{
+			{ icon = "INV_Misc_QuestionMark", name = "Leg Enchants" },
+			{ itemID = 1979008 }, --Animist's Caress
+			{ itemID = 1979608 }, --Animist's Embrace
+			{ itemID = 1833008 }, --Arcanum of Focus
+			{ itemID = 1833108 }, --Arcanum of Protection
+			{ itemID = 1832908 }, --Arcanum of Rapidity
+			{ itemID = 35428108 }, --Blue Dragonscale Armor Kit
+			{ itemID = 1825108 }, --Core Armor Kit
+			{ itemID = 1978408 }, --Death's Embrace
+			{ itemID = 1978508 }, --Falcon's Call
+			{ itemID = 35429408 }, --Flameweave Armor Patch
+			{ itemID = 1978808 }, --Hoodoo Hex
+			{ itemID = 1164208 }, --Lesser Arcanum of Constitution
+			{ itemID = 1164408 }, --Lesser Arcanum of Resilience
+			{ itemID = 1162208 }, --Lesser Arcanum of Rumination
+			{ itemID = 1164308 }, --Lesser Arcanum of Tenacity
+			{ itemID = 1164608 }, --Lesser Arcanum of Voracity
+			{ itemID = 11646018 }, --Lesser Arcanum of Voracity
+			{ itemID = 11646048 }, --Lesser Arcanum of Voracity
+			{ itemID = 11646098 }, --Lesser Arcanum of Voracity
+			{ itemID = 11646548 }, --Lesser Arcanum of Voracity
+			{ itemID = 65429408 }, --Mossflayer Armor Patch
+			{ itemID = 1978208 }, --Presence of Might
+			{ itemID = 1978708 }, --Presenece of Sight
+			{ itemID = 1978908 }, --Prophetic Aura
+			{ itemID = 1979508 }, --Prophetic Focus
+			{ itemID = 2263508 }, --Savage Guard
+			{ itemID = 1979308 }, --Syncretist's Blessing
+			{ itemID = 1978308 }, --Syncretist's Sigil
+			{ itemID = 1979208 }, --Syncretist's Vengeance
+			{ itemID = 1979408 }, --Vodouisant's Danger
+		},
+		{
+			{ icon = "INV_Misc_QuestionMark", name = "Leg Enchants" },
+			{ itemID = 1978608 }, --Vodouisant's Vigilant Embrace
+			{ itemID = 1979108 }, --Warrior's Might
+		},
+		{
+			{ icon = "INV_Misc_QuestionMark", name = "Boot Enchants" },
+			{ itemID = 35428109 }, --Blue Dragonscale Armor Kit
+			{ itemID = 1825109 }, --Core Armor Kit
+			{ itemID = 35429409 }, --Flameweave Armor Patch
+			{ itemID = 2002309 }, --Greater Agility
+			{ itemID = 2002009 }, --Greater Stamina
+			{ itemID = 6374609 }, --Lesser Accuracy
+			{ itemID = 13890019 }, --Minor Speed
+			{ itemID = 65429409 }, --Mossflayer Armor Patch
+			{ itemID = 2002409 }, --Spirit
+		},
+		{
+			{ icon = "INV_Misc_QuestionMark", name = "1H Weapon Enchants" },
+			{ itemID = 2380012 }, --Agility
+			{ itemID = 96869812 }, --Arcane Artillery
+			{ itemID = 96869512 }, --Arcane Dexterity
+			{ itemID = 96870112 }, --Arcane Precision
+			{ itemID = 96877012 }, --Brutal Crusader
+			{ itemID = 2003412 }, --Crusader
+			{ itemID = 96868912 }, --Grovewarden's Blessing
+			{ itemID = 1826012 }, --Healing Power
+			{ itemID = 96868012 }, --Lucid Assault
+			{ itemID = 2380412 }, --Mighty Intellect
+			{ itemID = 2380312 }, --Mighty Spirit
+			{ itemID = 96868612 }, --Ninja's Focus
+			{ itemID = 1825912 }, --Spell Power
+			{ itemID = 96868312 }, --Spellbinder's Rage
+			{ itemID = 2379912 }, --Strength
+			{ itemID = 2004412 }, --Strider
+			{ itemID = 96867712 }, --Unstoppable Assault
+			{ itemID = 96869212 }, --Viscious Assault
+		},
+		{
+			{ icon = "INV_Misc_QuestionMark", name = "2H Weapon Enchants" },
+			{ itemID = 2783711 }, --Agility
+			{ itemID = 35510711 }, --Leyline Conduit
+		},
+		{
+			{ icon = "INV_Misc_QuestionMark", name = "Ranged Weapon Enchants" },
+			{ itemID = 2279314 }, --Biznicks 247x128 Accurascope
+			{ itemID = 96805514 }, --Focused Precision Scope
+			{ itemID = 96805515 }, --Focused Precision Scope
+			{ itemID = 96804316 }, --Gold Magnification Polish
+			{ itemID = 96805214 }, --Iron Sights Scope
+			{ itemID = 96805215 }, --Iron Sights Scope
+			{ itemID = 96804616 }, --Mithril Sharpening Polish
+			{ itemID = 400548 }, --Radley's Scope
+			{ itemID = 96805814 }, --Reflex Scope
+			{ itemID = 96805815 }, --Reflex Scope
+			{ itemID = 96804916 }, --Silver Prismatic Polish
+			{ itemID = 1262014 }, --Sniper Scope
+		},
+		{
+			{ icon = "INV_Misc_QuestionMark", name = "Shield Enchants" },
+			{ itemID = 13933193 }, --Frost Resistance
+			{ itemID = 1390513 }, --Greater Spirit
+			{ itemID = 2001713 }, --Greater Stamina
+			{ itemID = 1368913 }, --Lesser Block
+			{ itemID = 1661601 }, --Power Crystal Resonance
+			{ itemID = 1665113 }, --Thorium Shield Spike
+			{ itemID = 2001613 }, --Vitality
+		},
+	},
 })

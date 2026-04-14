@@ -1344,5 +1344,171 @@ AtlasLoot:AddItemData("dontSort", {
 			{ itemID = 1168 },--Skullflame Shield
 			{ itemID = 2099 },--Dwarven Hand Cannon
 		},
+		{
+			{ icon = "INV_Misc_Coin_06", name = "Additional World Drops" },
+			{ itemID = 13968 },  --Eye of the Beast
+			{ itemID = 253153 }, --Sorrow of the Eclipse
+			{ itemID = 253636 }, --Dakrya, Hand of the Second Eidolon
+			{ itemID = 315020 }, --Royal Cloak of Lord Victor Nefarius
+		},
+	},
+	---------------------------------
+	------ Vendor Items (Misc) ------
+	---------------------------------
+	["VendorClassic"] = {
+		{
+			{ icon = "INV_Jewelry_Ring_05", name = "Engraved Ring Vendor" },
+			{ itemID = 1540585 }, --Cleric's Circle
+			{ itemID = 1545691 }, --Inscribed Cleric's Circle
+			{ itemID = 1548957 }, --Etched Cleric's Circle
+			{ itemID = 1551557 }, --Runed Cleric's Circle
+			{ itemID = 1540586 }, --Assassin's Ring
+			{ itemID = 1545688 }, --Inscribed Assassin's Ring
+			{ itemID = 1548954 }, --Etched Assassin's Ring
+			{ itemID = 1551560 }, --Runed Assassin's Ring
+			{ itemID = 1540587 }, --Ranger's Ring
+			{ itemID = 1545587 }, --Inscribed Ranger's Ring
+			{ itemID = 1548587 }, --Etched Ranger's Ring
+			{ itemID = 1551587 }, --Runed Ranger's Ring
+			{ itemID = 1540588 }, --Protector's Ring
+			{ itemID = 1545588 }, --Inscribed Protector's Ring
+			{ itemID = 1548588 }, --Etched Protector's Ring
+			{ itemID = 1551588 }, --Runed Protector's Ring
+			{ itemID = 1544934 }, --Arcane Loop
+			{ itemID = 1545689 }, --Inscribed Arcane Loop
+			{ itemID = 1548955 }, --Etched Arcane Loop
+			{ itemID = 1551558 }, --Runed Arcane Loop
+			{ itemID = 1544935 }, --Warrior's Band
+			{ itemID = 1545690 }, --Inscribed Warrior's Band
+			{ itemID = 1548956 }, --Etched Warrior's Band
+			{ itemID = 1551559 }, --Runed Warrior's Band
+		},
+		{
+			{ icon = "INV_Misc_QuestionMark", name = "Misc Vendor Items" },
+			{ itemID = 1414516 }, --Spellbound Demonic Rune
+			{ itemID = 1414528 }, --Signet of Vitality
+			{ itemID = 1414548 }, --Centurion's Barbute
+			{ itemID = 1414550 }, --Microscopic Focusing Lens
+		},
+	},
+	-----------------------------
+	------ Quest Rewards --------
+	-----------------------------
+	["QuestRewardsCLASSIC"] = {
+		{
+			{ icon = "INV_Misc_QuestionMark", name = "Quest Rewards iLvl 10-52" },
+			{ itemID = 12344 }, --Seal of Ascension
+			{ itemID = 9533 }, --Masons Fraternity Ring
+			{ itemID = 16309 }, --Drakefire Amulet
+			{ itemID = 4743 }, --Pulsating Crystalline Shard
+			{ itemID = 19121 }, --Deep Woodlands Cloak
+			{ itemID = 20534 }, --Abyss Shard
+			{ itemID = 20037 }, --Arcane Crystal Pendant
+			{ itemID = 20369 }, --Azurite Fists
+			{ itemID = 19990 }, --Blessed Prayer Beads
+			{ itemID = 20505 }, --Chivalrous Signet
+			{ itemID = 20006 }, --Circle of Hope
+			{ itemID = 19991 }, --Devilsaur Eye
+			{ itemID = 19992 }, --Devilsaur Tooth
+			{ itemID = 20130 }, --Diamond Flask
+			{ itemID = 19982 }, --Duskbat Drape
+			{ itemID = 19984 }, --Ebon Mask
+			{ itemID = 20503 }, --Enamored Water Spirit
+			{ itemID = 20036 }, --Fire Ruby
+			{ itemID = 22272 }, --Forest's Embrace
+			{ itemID = 20521 }, --Fury Visor
+			{ itemID = 20035 }, --Glacial Spike
+			{ itemID = 22274 }, --Grizzled Pelt
+			{ itemID = 20083 }, --Hunting Spear
+			{ itemID = 20504 }, --Lightforged Blade
+			{ itemID = 22458 }, --Moonshadow Stave
+			{ itemID = 20517 }, --Razorsteel Shoulders
+			{ itemID = 20530 }, --Robes of Servitude
+			{ itemID = 20512 }, --Sanctified Orb
+			{ itemID = 20536 }, --Soul Harvester
+			{ itemID = 20255 }, --Whisperwalk Boots
+		},
+		{
+			{ icon = "INV_Misc_QuestionMark", name = "Quest Rewards iLvl 52-60" },
+			{ itemID = 20556 }, --Wildstaff
+			{ itemID = 20082 }, --Woestave
+			{ itemID = 17705 }, --Thrash Blade
+			{ itemID = 9650 }, --Honorguard Chestpiece
+			{ itemID = 11866 }, --Nagmara's Whipping Belt
+			{ itemID = 11123 }, --Rainstrider Leggings
+			{ itemID = 9649 }, --Royal Highmark Vestments
+			{ itemID = 18491 }, --Lorespinner
+			{ itemID = 12059 }, --Conqueror's Medallion
+			{ itemID = 15799 }, --Heroic Commendation Medal
+			{ itemID = 15800 }, --Intrepid Shortsword
+			{ itemID = 15801 }, --Valiant Shortsword
+			{ itemID = 20647 }, --Black Crystal Dagger
+			{ itemID = 34424 }, --Power of the High Chief
+			{ itemID = 16999 }, --Royal Seal of Alexis
+			{ itemID = 20646 }, --Sandstrider's Mark
+			{ itemID = 34423 }, --Strength of the High Chief
+			{ itemID = 15856 }, --Archlight Talisman
+			{ itemID = 12545 }, --Eye of Orgrimmar
+			{ itemID = 18367 }, --Gordok's Gauntlets
+			{ itemID = 18368 }, --Gordok's Gloves
+			{ itemID = 18366 }, --Gordok's Handguards
+			{ itemID = 18369 }, --Gordok's Handwraps
+			{ itemID = 13961 }, --Halycon's Muzzle
+			{ itemID = 12548 }, --Magni's Will
+			{ itemID = 17759 }, --Mark of Resolution
+			{ itemID = 13959 }, --Omokk's Girth Restrainer
+			{ itemID = 15873 }, --Ragged John's Neverending Cup
+			{ itemID = 15855 }, --Ring of Protection
+			{ itemID = 12543 }, --Songstone of Ironforge
+		},
+		{
+			{ icon = "INV_Misc_QuestionMark", name = "Quest Rewards iLvl 60-63" },
+			{ itemID = 12544 }, --Thrall's Resolve
+			{ itemID = 13962 }, --Vosh'gajin's Strand
+			{ itemID = 13958 }, --Wyrmthalak's Shackles
+			{ itemID = 17045 }, --Blood of the Martyr
+			{ itemID = 17044 }, --Will of the Martyr
+			{ itemID = 13246 }, --Argent Avenger
+			{ itemID = 14023 }, --Barov Peasant Caller
+			{ itemID = 12757 }, --Breastplate of Bloodthirst
+			{ itemID = 16996 }, --Gorewood Bow
+			{ itemID = 12756 }, --Leggings of Arcana
+			{ itemID = 18421 }, --Backwood Helm
+			{ itemID = 22150 }, --Beads of Ogre Might
+			{ itemID = 13965 }, --Blackhand's Breadth
+			{ itemID = 18420 }, --Bonecrusher
+			{ itemID = 20704 }, --Cenarion Reservist's Leggings
+			{ itemID = 20701 }, --Cenarion Reservist's Legguards
+			{ itemID = 20699 }, --Cenarion Reservist's Legplates
+			{ itemID = 20707 }, --Cenarion Reservist's Pants
+			{ itemID = 20710 }, --Crystal Encrusted Greaves
+			{ itemID = 20711 }, --Crystal Lined Greaves
+			{ itemID = 20717 }, --Desert Bloom Gloves
+			{ itemID = 20713 }, --Desertstalkers's Gauntlets
+			{ itemID = 20715 }, --Dunestalker's Boots
+			{ itemID = 16058 }, --Fordring's Seal
+			{ itemID = 15411 }, --Mark of Fordring
+			{ itemID = 13966 }, --Mark of Tyranny
+			{ itemID = 15413 }, --Ornate Adamantium Breastplate
+			{ itemID = 20714 }, --Sandstorm Boots
+			{ itemID = 20716 }, --Sandworm Skin Gloves
+			{ itemID = 18424 }, --Sedge Boots
+		},
+		{
+			{ icon = "INV_Misc_QuestionMark", name = "Quest Rewards iLvl 63-70" },
+			{ itemID = 15421 }, --Shroud of the Exile
+			{ itemID = 20712 }, --Wastewalker's Gauntlets
+			{ itemID = 22348 }, --Doomulus Prime
+			{ itemID = 22347 }, --Fahrad's Reloading Repeater
+			{ itemID = 22379 }, --Shivsprocket's Shiv
+			{ itemID = 22380 }, --Simone's Cultivating Hammer
+			{ itemID = 18621 }, --Blue Resilence
+			{ itemID = 3118621 }, --Wavecrest Ring
+			{ itemID = 22725 }, --Band of Cenarius
+			{ itemID = 20216 }, --Belt of Preserved Heads
+			{ itemID = 20215 }, --Belt of Shriveled Heads
+			{ itemID = 20213 }, --Belt of Shrunken Heads
+			{ itemID = 20217 }, --Belt of Tiny Heads
+		},
 	},
 })
