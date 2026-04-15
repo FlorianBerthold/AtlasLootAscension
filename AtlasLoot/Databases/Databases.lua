@@ -211,26 +211,26 @@ function AtlasLoot:InitializeDatabases()
 		{ itemID = 217850 }, --Fel Infused Rifle
 		{ itemID = 217851 }, --Junglewood Recurve
 		{ itemID = 217860 }, --Shadow Cowl
-		{ itemID = 278843 }, --Flesh Flayer Hook
-		{ itemID = 278844 }, --Andorhal Manual
-		{ itemID = 278845 }, --Reliever's Burden
-		{ itemID = 278846 }, --Plague Mask
-		{ itemID = 278847 }, --Libram of Remembrance
-		{ itemID = 278848 }, --Blightbloom Talisman
-		{ itemID = 278849 }, --Wraithbone Ring
-		{ itemID = 278850 }, --Lost Scout's Idol
-		{ itemID = 278851 }, --Skeletal Club
-		{ itemID = 278852 }, --Infantry Gauntlets
-		{ itemID = 278853 }, --Manacles of Eternal Shadow
+		{ itemID = 278843, desc = "Western Plaguelands (40, 68)" }, --Flesh Flayer Hook
+		{ itemID = 278844, desc = "Western Plaguelands (43, 70)" }, --Andorhal Manual
+		{ itemID = 278845, desc = "Western Plaguelands (48, 70)" }, --Reliever's Burden
+		{ itemID = 278846, desc = "Western Plaguelands (48, 78)" }, --Plague Mask
+		{ itemID = 278847, desc = "Western Plaguelands (52, 81)" }, --Libram of Remembrance
+		{ itemID = 278848, desc = "Western Plaguelands (53, 66)" }, --Blightbloom Talisman
+		{ itemID = 278849, desc = "Western Plaguelands (54, 80)" }, --Wraithbone Ring
+		{ itemID = 278850, desc = "The Hinterlands (16, 19)" }, --Lost Scout's Idol
+		{ itemID = 278851, desc = "Western Plaguelands (65, 73)" }, --Skeletal Club
+		{ itemID = 278852, desc = "Western Plaguelands (68, 78)" }, --Infantry Gauntlets
+		{ itemID = 278853, desc = "Western Plaguelands (69, 74)" }, --Manacles of Eternal Shadow
 		{ itemID = 278854 }, --Vampire Blood
 		{ itemID = 354059 }, --Prodigy's Staff
 		{ itemID = 354060 }, --Tarothae's Vow
 		{ itemID = 354061 }, --Sunwoven Satchel
-		{ itemID = 354062 }, --Travel Cloak
+		{ itemID = 354062, desc = "Swamp of Sorrows (53, 50)" }, --Travel Cloak
 		{ itemID = 354063 }, --Bottle of Endless Melon Juice
 		{ itemID = 354064 }, --Cloak of Owlkin Feathers
 		{ itemID = 354065 }, --Lost Rangari Ring
-		{ itemID = 354066 }, --Crystalline Crown
+		{ itemID = 354066, desc = "Feralas (40, 23)" }, --Crystalline Crown
 		{ itemID = 354067 }, --Exodar Fragment
 		{ itemID = 354068 }, --Totem of the Vale
 		{ itemID = 354069 }, --Scourgewarped Bow
@@ -256,11 +256,11 @@ function AtlasLoot:InitializeDatabases()
 		{ itemID = 354093 }, --Ravager Quill
 		{ itemID = 354095 }, --Tempered Mail
 		{ itemID = 354096 }, --Light of the Highborne
-		{ itemID = 354097 }, --Dread Satchel
-		{ itemID = 354098 }, --Sigil of the Unmarked Mausoleum
-		{ itemID = 354099 }, --Obsidian Smithing Hammer
-		{ itemID = 354100 }, --Shield of Fading Light
-		{ itemID = 354101 }, --Silkwrapped Cloak
+		{ itemID = 354097, desc = "Deathknell (69, 40)" }, --Dread Satchel
+		{ itemID = 354098, desc = "Tirisfal Glades (33, 71)" }, --Sigil of the Unmarked Mausoleum
+		{ itemID = 354099, desc = "Deathknell (55, 46)" }, --Obsidian Smithing Hammer
+		{ itemID = 354100, desc = "Deathknell (74, 66)" }, --Shield of Fading Light
+		{ itemID = 354101, desc = "Tirisfal Glades (31, 25)" }, --Silkwrapped Cloak
 		{ itemID = 354102 }, --Bloodweave Bindings
 		{ itemID = 354103 }, --Sil'Vedore
 		{ itemID = 354104 }, --Blessed Robes
@@ -285,769 +285,768 @@ function AtlasLoot:InitializeDatabases()
 		{ itemID = 354124 }, --Veridian Scale Mail
 		{ itemID = 354125 }, --Warp Engineer's Boots
 		{ itemID = 354126 }, --Bloodwashed Gloves
-		{ itemID = 354127 }, --Flower of Tranquility
-		{ itemID = 354128 }, --Staff of Talons
-		{ itemID = 354130 }, --Venture Co. Logging Axe
-		{ itemID = 354131 }, --Ziz's Alchemy Goggles
-		{ itemID = 354132 }, --Light of the Talondeep Path
-		{ itemID = 354133 }, --Grim Sorcerer Totem
-		{ itemID = 354134 }, --Resonite Band
-		{ itemID = 354135 }, --Barrel Smasher
-		{ itemID = 354136 }, --Venture Co. Union Buster
-		{ itemID = 354137 }, --Woven Ceremonial Belt
-		{ itemID = 354138 }, --Unclaimed Sack
-		{ itemID = 354139 }, --Fire Strike
-		{ itemID = 354140 }, --Bloodfury Feather Cloak
-		{ itemID = 354141 }, --Wind Shearer
-		{ itemID = 354142 }, --Breastplate of the Current
-		{ itemID = 354143 }, --Boulder Greaves
-		{ itemID = 354144 }, --Vengeful Heart
-		{ itemID = 354146 }, --Crimson Dragonscale
-		{ itemID = 354147 }, --Balgaras's Foul Amulet
-		{ itemID = 354148 }, --Wyrmscale Spaulders
-		{ itemID = 354149 }, --Kixxle's Experimental Potion
-		{ itemID = 354150 }, --Recipe: Kixxle's Experimental Potion
-		{ itemID = 354151 }, --Cursed Legguards of the Intrepid
-		{ itemID = 354152 }, --Cursed Cape of the Wave Mistress
-		{ itemID = 354153 }, --Mossy Hide Armor
-		{ itemID = 354154 }, --Chewed Wrappings
+		{ itemID = 354127, desc = "Stonetalon Mountains (39, 9)" }, --Flower of Tranquility
+		{ itemID = 354128, desc = "Stonetalon Mountains (27, 13)" }, --Staff of Talons
+		{ itemID = 354130, desc = "Stonetalon Mountains (67, 51)" }, --Venture Co. Logging Axe
+		{ itemID = 354131, desc = "Stonetalon Mountains (59, 63)" }, --Ziz's Alchemy Goggles
+		{ itemID = 354132, desc = "Stonetalon Mountains (79, 40)" }, --Light of the Talondeep Path
+		{ itemID = 354133, desc = "Stonetalon Mountains (75, 89)" }, --Grim Sorcerer Totem
+		{ itemID = 354134, desc = "Stonetalon Mountains (61, 91)" }, --Resonite Band
+		{ itemID = 354135, desc = "Stonetalon Mountains (41, 46)" }, --Barrel Smasher
+		{ itemID = 354136, desc = "Stonetalon Mountains (63, 54)" }, --Venture Co. Union Buster
+		{ itemID = 354137, desc = "Stonetalon Mountains (73, 95)" }, --Woven Ceremonial Belt
+		{ itemID = 354138, desc = "Stonetalon Mountains (36, 6)" }, --Unclaimed Sack
+		{ itemID = 354139, desc = "Stonetalon Mountains (52, 72)" }, --Fire Strike
+		{ itemID = 354140, desc = "Stonetalon Mountains (27, 69)" }, --Bloodfury Feather Cloak
+		{ itemID = 354141, desc = "Stonetalon Mountains (73, 63)" }, --Wind Shearer
+		{ itemID = 354142, desc = "Stonetalon Mountains (63, 40)" }, --Breastplate of the Current
+		{ itemID = 354143, desc = "Stonetalon Mountains (63, 94)" }, --Boulder Greaves
+		{ itemID = 354144, desc = "Stonetalon Mountains (49, 40)" }, --Vengeful Heart
+		{ itemID = 354146, desc = "Wetlands (74, 69)" }, --Crimson Dragonscale
+		{ itemID = 354147, desc = "Wetlands (63, 28)" }, --Balgaras's Foul Amulet
+		{ itemID = 354148, desc = "Wetlands (48, 74)" }, --Wyrmscale Spaulders
+		{ itemID = 354149, desc = "Wetlands (50, 38)" }, --Kixxle's Experimental Potion
+		{ itemID = 354150, desc = "Wetlands (50, 38)" }, --Recipe: Kixxle's Experimental Potion
+		{ itemID = 354151, desc = "Wetlands (14, 30)" }, --Cursed Legguards of the Intrepid
+		{ itemID = 354152, desc = "Wetlands (15, 24)" }, --Cursed Cape of the Wave Mistress
+		{ itemID = 354153, desc = "Wetlands (32, 30)" }, --Mossy Hide Armor
+		{ itemID = 354154, desc = "Wetlands (27, 46)" }, --Chewed Wrappings
 		{ itemID = 354157 }, --Frightened Kitten
 		{ itemID = 354158 }, --Arkonite Orb
-		{ itemID = 354159 }, --Abandoned Boots
-		{ itemID = 354160 }, --Shoulderpads of the Conjuror
-		{ itemID = 354161 }, --Flamescoured Bow
-		{ itemID = 354162 }, --Burning Gauntlets
-		{ itemID = 354163 }, --Ritual Robes
-		{ itemID = 354164 }, --Blade of Thunder
-		{ itemID = 354165 }, --Moonglow Bag
-		{ itemID = 354166 }, --Shadowprey Bag
-		{ itemID = 354167 }, --Hatefury Skull Totem
-		{ itemID = 354168 }, --Hatefury Wand
-		{ itemID = 354169 }, --Spear of Hatred
-		{ itemID = 354170 }, --Circlet of Desolation
-		{ itemID = 354172 }, --Woven Flowers
-		{ itemID = 354173 }, --Caravan Guard Vest
-		{ itemID = 354174 }, --Caravan Guard Pauldrons
-		{ itemID = 354175 }, --Sorrow of the Kodo
-		{ itemID = 354176 }, --Bone Splitter
-		{ itemID = 354177 }, --Offering to Azshara
-		{ itemID = 354178 }, --Water Seer's Headdress
-		{ itemID = 354180 }, --Zelyn'Theris
-		{ itemID = 354181 }, --Lost Mariner Leggings
-		{ itemID = 354182 }, --Lost Mariner Bracers
-		{ itemID = 354183 }, --Orb of Dawn
-		{ itemID = 354184 }, --Kodo Hide Cloak
-		{ itemID = 354185 }, --Burning Blade Ritual Knife
-		{ itemID = 354186 }, --Heretical Libram
-		{ itemID = 354187 }, --Doomwarden
-		{ itemID = 354188 }, --Pillaged Legguards
-		{ itemID = 354189 }, --Gelkis Cleaver
-		{ itemID = 354190 }, --Shell Cracker
-		{ itemID = 354191 }, --Sunken Ring
-		{ itemID = 354192 }, --Gloves of Patience
-		{ itemID = 354193 }, --The Undying Eye
-		{ itemID = 354194 }, --Magram Hatchet
-		{ itemID = 354195 }, --Crown of the Great Khan
-		{ itemID = 354196 }, --Jairal'Kesh, Staff of Summoning
-		{ itemID = 354197 }, --Shadowbreaker
-		{ itemID = 354198 }, --Kodo Hunter
-		{ itemID = 354199 }, --The Winning Javelin
-		{ itemID = 354200 }, --Bone Harvester
-		{ itemID = 354201 }, --Buried Bracers
-		{ itemID = 354202 }, --Stormpiercer
-		{ itemID = 354203 }, --Maraudine Breastplate
-		{ itemID = 354204 }, --Maraudine Cape
-		{ itemID = 354205 }, --Maraudine Gloves
-		{ itemID = 354206 }, --Icon of Khan Maraudos
-		{ itemID = 354207 }, --Ambereye Amulet
-		{ itemID = 354208 }, --Greataxe of Kolk
-		{ itemID = 354209 }, --Shadowshard Shield
-		{ itemID = 354210 }, --Ring of Arakosh
-		{ itemID = 354211 }, --Ring of Korvaix
-		{ itemID = 354212 }, --Antique Alteraci Skirt
-		{ itemID = 354213 }, --Alteraci Avenger
-		{ itemID = 354214 }, --Embrace of the Fifth
-		{ itemID = 354215 }, --Crushridge Fingerguards
-		{ itemID = 354216 }, --Battleplate of Crimson Resolve
-		{ itemID = 354217 }, --Syndicate Chopping Axe
-		{ itemID = 354218 }, --Libram of the Third Host
-		{ itemID = 354219 }, --Sentry Shot
-		{ itemID = 354220 }, --Staff of Argus
-		{ itemID = 354221 }, --Icecracker
-		{ itemID = 354222 }, --Ogre Toothpick
-		{ itemID = 354223 }, --Frozen Alterac Banner
-		{ itemID = 354224 }, --Frostwatch Defender
-		{ itemID = 354225 }, --Tempered Syndicate Boots
-		{ itemID = 354226 }, --Dandred's Harvester
-		{ itemID = 354228 }, --Cape of the Mire
-		{ itemID = 354229 }, --Fallow Tunic
-		{ itemID = 354230 }, --Kreil's Gauntlets
-		{ itemID = 354231 }, --Sorrow's Light
-		{ itemID = 354232 }, --Grave Leggings
-		{ itemID = 354233 }, --Holy Atal'ai Band
-		{ itemID = 354234 }, --Spear of Emerald
-		{ itemID = 354235 }, --Icon of Blood
-		{ itemID = 354236 }, --Defiled Necklace
-		{ itemID = 354237 }, --Dragoncarver
+		{ itemID = 354159, desc = "Desolace (54, 14)" }, --Abandoned Boots
+		{ itemID = 354160, desc = "Desolace (57, 18)" }, --Shoulderpads of the Conjuror
+		{ itemID = 354161, desc = "Desolace (57, 26)" }, --Flamescoured Bow
+		{ itemID = 354162, desc = "Desolace (54, 31)" }, --Burning Gauntlets
+		{ itemID = 354163, desc = "Desolace (55, 27)" }, --Ritual Robes
+		{ itemID = 354164, desc = "Desolace (53, 28)" }, --Blade of Thunder
+		{ itemID = 354165, desc = "Desolace (64, 8)" }, --Moonglow Bag
+		{ itemID = 354166, desc = "Desolace (24, 68)" }, --Shadowprey Bag
+		{ itemID = 354167, desc = "Desolace (71, 23)" }, --Hatefury Skull Totem
+		{ itemID = 354168, desc = "Desolace (77, 18)" }, --Hatefury Wand
+		{ itemID = 354169, desc = "Desolace (74, 13)" }, --Spear of Hatred
+		{ itemID = 354170, desc = "Desolace (69, 29)" }, --Circlet of Desolation
+		{ itemID = 354172, desc = "Desolace (75, 49)" }, --Woven Flowers
+		{ itemID = 354173, desc = "Desolace (62, 40)" }, --Caravan Guard Vest
+		{ itemID = 354174, desc = "Desolace (61, 62)" }, --Caravan Guard Pauldrons
+		{ itemID = 354175, desc = "Desolace (50, 63)" }, --Sorrow of the Kodo
+		{ itemID = 354176, desc = "Desolace (51, 58)" }, --Bone Splitter
+		{ itemID = 354177, desc = "Desolace (28, 7)" }, --Offering to Azshara
+		{ itemID = 354178, desc = "Desolace (33, 22)" }, --Water Seer's Headdress
+		{ itemID = 354180, desc = "Desolace (37, 14)" }, --Zelyn'Theris
+		{ itemID = 354181, desc = "Desolace (33, 33)" }, --Lost Mariner Leggings
+		{ itemID = 354182, desc = "Desolace (36, 30)" }, --Lost Mariner Bracers
+		{ itemID = 354183, desc = "Desolace (39, 27)" }, --Orb of Dawn
+		{ itemID = 354184, desc = "Desolace (48, 62)" }, --Kodo Hide Cloak
+		{ itemID = 354185, desc = "Desolace (50, 72)" }, --Burning Blade Ritual Knife
+		{ itemID = 354186, desc = "Desolace (54, 78)" }, --Heretical Libram
+		{ itemID = 354187, desc = "Desolace (51, 82)" }, --Doomwarden
+		{ itemID = 354188, desc = "Desolace (36, 92)" }, --Pillaged Legguards
+		{ itemID = 354189, desc = "Desolace (40, 93)" }, --Gelkis Cleaver
+		{ itemID = 354190, desc = "Desolace (26, 80)" }, --Shell Cracker
+		{ itemID = 354191, desc = "Desolace (44, 81)" }, --Sunken Ring
+		{ itemID = 354192, desc = "Desolace (61, 69)" }, --Gloves of Patience
+		{ itemID = 354193, desc = "Desolace (63, 89)" }, --The Undying Eye
+		{ itemID = 354194, desc = "Desolace (73, 74)" }, --Magram Hatchet
+		{ itemID = 354195, desc = "Desolace (66, 81)" }, --Crown of the Great Khan
+		{ itemID = 354196, desc = "Desolace (82, 81)" }, --Jairal'Kesh, Staff of Summoning
+		{ itemID = 354197, desc = "Desolace (81, 77)" }, --Shadowbreaker
+		{ itemID = 354198, desc = "Desolace (73, 60)" }, --Kodo Hunter
+		{ itemID = 354199, desc = "Desolace (57, 48)" }, --The Winning Javelin
+		{ itemID = 354200, desc = "Desolace (41, 42)" }, --Bone Harvester
+		{ itemID = 354201, desc = "Desolace (44, 54)" }, --Buried Bracers
+		{ itemID = 354202, desc = "Desolace (30, 54)" }, --Stormpiercer
+		{ itemID = 354203, desc = "Desolace (31, 66)" }, --Maraudine Breastplate
+		{ itemID = 354204, desc = "Desolace (35, 61)" }, --Maraudine Cape
+		{ itemID = 354205, desc = "Desolace (33, 61)" }, --Maraudine Gloves
+		{ itemID = 354206, desc = "Desolace (27, 63)" }, --Icon of Khan Maraudos
+		{ itemID = 354207, desc = "Desolace (33, 65)" }, --Ambereye Amulet
+		{ itemID = 354208, desc = "Desolace (29, 60)" }, --Greataxe of Kolk
+		{ itemID = 354209, desc = "Desolace (28, 54)" }, --Shadowshard Shield
+		{ itemID = 354210, desc = "Desolace (81, 39)" }, --Ring of Arakosh
+		{ itemID = 354211, desc = "Desolace (47, 13)" }, --Ring of Korvaix
+		{ itemID = 354212, desc = "Alterac Mountains (39, 42)" }, --Antique Alteraci Skirt
+		{ itemID = 354213, desc = "Alterac Mountains (36, 52)" }, --Alteraci Avenger
+		{ itemID = 354214, desc = "Alterac Mountains (42, 40)" }, --Embrace of the Fifth
+		{ itemID = 354215, desc = "Alterac Mountains (54, 46)" }, --Crushridge Fingerguards
+		{ itemID = 354216, desc = "Alterac Mountains (48, 32)" }, --Battleplate of Crimson Resolve
+		{ itemID = 354217, desc = "Alterac Mountains (58, 43)" }, --Syndicate Chopping Axe
+		{ itemID = 354218, desc = "Alterac Mountains (63, 40)" }, --Libram of the Third Host
+		{ itemID = 354219, desc = "Alterac Mountains (59, 30)" }, --Sentry Shot
+		{ itemID = 354220, desc = "Alterac Mountains (48, 19)" }, --Staff of Argus
+		{ itemID = 354221, desc = "Alterac Mountains (50, 57)" }, --Icecracker
+		{ itemID = 354222, desc = "Alterac Mountains (40, 49)" }, --Ogre Toothpick
+		{ itemID = 354223, desc = "Alterac Mountains (38, 40)" }, --Frozen Alterac Banner
+		{ itemID = 354224, desc = "Alterac Mountains (40, 60)" }, --Frostwatch Defender
+		{ itemID = 354225, desc = "Alterac Mountains (37, 16)" }, --Tempered Syndicate Boots
+		{ itemID = 354226, desc = "Alterac Mountains (40, 21)" }, --Dandred's Harvester
+		{ itemID = 354228, desc = "Swamp of Sorrows (5, 31)" }, --Cape of the Mire
+		{ itemID = 354229, desc = "Swamp of Sorrows (61, 23)" }, --Fallow Tunic
+		{ itemID = 354230, desc = "Swamp of Sorrows (65, 19)" }, --Kreil's Gauntlets
+		{ itemID = 354231, desc = "Swamp of Sorrows (76, 45)" }, --Sorrow's Light
+		{ itemID = 354232, desc = "Swamp of Sorrows (83, 46)" }, --Grave Leggings
+		{ itemID = 354233, desc = "Swamp of Sorrows (79, 57)" }, --Holy Atal'ai Band
+		{ itemID = 354234, desc = "Swamp of Sorrows (83, 66)" }, --Spear of Emerald
+		{ itemID = 354235, desc = "Swamp of Sorrows (71, 66)" }, --Icon of Blood
+		{ itemID = 354236, desc = "The Temple of Atal'hakkar (54, 79)" }, --Defiled Necklace
+		{ itemID = 354237, desc = "The Temple of Atal'hakkar (54, 79)" }, --Dragoncarver
 		{ itemID = 354238 }, --Sharpened Dragon Bone
-		{ itemID = 354239 }, --Pauldrons of the Ancient Prophet
-		{ itemID = 354240 }, --Kazkaz's Ceremonial Mask
-		{ itemID = 354241 }, --Atal'ai Alchemy Gloves
-		{ itemID = 354242 }, --Sha-Bane Staff
-		{ itemID = 354243 }, --Splinterspear Belt
-		{ itemID = 354244 }, --Itharius's Bracers
-		{ itemID = 354245 }, --Biggs's Spare Legguards
-		{ itemID = 354246 }, --Atal'ai Angler Boots
-		{ itemID = 354247 }, --Emerald Tear
-		{ itemID = 354248 }, --Idol to Hakkar
-		{ itemID = 354249 }, --Distant Wanderer Pack
-		{ itemID = 354250 }, --Sawtooth Jaw
-		{ itemID = 354251 }, --Signet of Lire'kes
-		{ itemID = 354252 }, --Bracers of Emerald Will
-		{ itemID = 354253 }, --Swamp Talker's Crossbow
-		{ itemID = 354254 }, --Marsh Bonebreaker
-		{ itemID = 354255 }, --Cartographer's Cape
-		{ itemID = 354256 }, --Exile's Amulet
-		{ itemID = 354257 }, --Dusksinger Band
-		{ itemID = 354258 }, --Choker of Hakkar
-		{ itemID = 354259 }, --Murloc Crown
-		{ itemID = 354260 }, --Rusted Shield
-		{ itemID = 354261 }, --Marsh Adventurer Boots
-		{ itemID = 354262 }, --Unusual Emerald Scales
-		{ itemID = 354263 }, --Robe of Woven Dreams
-		{ itemID = 354264 }, --Scout's Bracers
-		{ itemID = 354265 }, --Giant Ruby Eye
-		{ itemID = 354266 }, --The Wanderer's Stirring Rod
-		{ itemID = 354268 }, --Everdark Shard
-		{ itemID = 354269 }, --Woodcleaving Axe
-		{ itemID = 354271 }, --Drape of the Lost
-		{ itemID = 354273 }, --Vigilant Glaive
-		{ itemID = 354275 }, --On the Importance of Arcane Foci
+		{ itemID = 354239, desc = "Echo Ridge Mine (54, 79)" }, --Pauldrons of the Ancient Prophet
+		{ itemID = 354240, desc = "Echo Ridge Mine (54, 79)" }, --Kazkaz's Ceremonial Mask
+		{ itemID = 354241, desc = "Azeroth (54, 79)" }, --Atal'ai Alchemy Gloves
+		{ itemID = 354242, desc = "Swamp of Sorrows (22, 49)" }, --Sha-Bane Staff
+		{ itemID = 354243, desc = "Swamp of Sorrows (17, 51)" }, --Splinterspear Belt
+		{ itemID = 354244, desc = "Swamp of Sorrows (14, 69)" }, --Itharius's Bracers
+		{ itemID = 354245, desc = "Swamp of Sorrows (27, 60)" }, --Biggs's Spare Legguards
+		{ itemID = 354246, desc = "Swamp of Sorrows (64, 49)" }, --Atal'ai Angler Boots
+		{ itemID = 354247, desc = "Swamp of Sorrows (74, 61)" }, --Emerald Tear
+		{ itemID = 354248, desc = "Swamp of Sorrows (54, 79)" }, --Idol to Hakkar
+		{ itemID = 354249, desc = "Swamp of Sorrows (89, 79)" }, --Distant Wanderer Pack
+		{ itemID = 354250, desc = "Swamp of Sorrows (83, 94)" }, --Sawtooth Jaw
+		{ itemID = 354251, desc = "Swamp of Sorrows (70, 97)" }, --Signet of Lire'kes
+		{ itemID = 354252, desc = "Swamp of Sorrows (82, 81)" }, --Bracers of Emerald Will
+		{ itemID = 354253, desc = "Swamp of Sorrows (63, 89)" }, --Swamp Talker's Crossbow
+		{ itemID = 354254, desc = "Swamp of Sorrows (62, 84)" }, --Marsh Bonebreaker
+		{ itemID = 354255, desc = "Swamp of Sorrows (50, 49)" }, --Cartographer's Cape
+		{ itemID = 354256, desc = "Swamp of Sorrows (25, 30)" }, --Exile's Amulet
+		{ itemID = 354257, desc = "Swamp of Sorrows (48, 55)" }, --Dusksinger Band
+		{ itemID = 354258, desc = "Swamp of Sorrows (75, 66)" }, --Choker of Hakkar
+		{ itemID = 354259, desc = "Swamp of Sorrows (91, 27)" }, --Murloc Crown
+		{ itemID = 354260, desc = "Swamp of Sorrows (31, 42)" }, --Rusted Shield
+		{ itemID = 354261, desc = "Swamp of Sorrows (48, 40)" }, --Marsh Adventurer Boots
+		{ itemID = 354262, desc = "Swamp of Sorrows (61, 40)" }, --Unusual Emerald Scales
+		{ itemID = 354263, desc = "Swamp of Sorrows (77, 26)" }, --Robe of Woven Dreams
+		{ itemID = 354264, desc = "Swamp of Sorrows (37, 30)" }, --Scout's Bracers
+		{ itemID = 354265, desc = "Swamp of Sorrows (54, 80)" }, --Giant Ruby Eye
+		{ itemID = 354266, desc = "Swamp of Sorrows (71, 2)" }, --The Wanderer's Stirring Rod
+		{ itemID = 354268, desc = "Palemane Rock (50, 69)" }, --Everdark Shard
+		{ itemID = 354269, desc = "Dustwallow Marsh (40, 30)" }, --Woodcleaving Axe
+		{ itemID = 354271, desc = "Azshara (14, 78)" }, --Drape of the Lost
+		{ itemID = 354273, desc = "Azshara (21, 62)" }, --Vigilant Glaive
+		{ itemID = 354275, desc = "Azshara (29, 40)" }, --On the Importance of Arcane Foci
 		{ itemID = 354276 }, --Bear's Head Apprentice Robe
-		{ itemID = 354277 }, --Totem of Venc
-		{ itemID = 354278 }, --Legashi Hellmail
-		{ itemID = 354279 }, --Kim'Jael's "Trustworthy" Boots
+		{ itemID = 354277, desc = "Azshara (61, 33)" }, --Totem of Venc
+		{ itemID = 354278, desc = "Azshara (52, 19)" }, --Legashi Hellmail
+		{ itemID = 354279, desc = "Azshara (54, 22)" }, --Kim'Jael's "Trustworthy" Boots
 		{ itemID = 354280 }, --Pattern: Blue Dragonscale Armor Kit
-		{ itemID = 354283 }, --Vuna'thell
+		{ itemID = 354283, desc = "Azshara (58, 52)" }, --Vuna'thell
 		{ itemID = 354286 }, --Recipe: Miru Berry Strudel
 		{ itemID = 354289 }, --Mushroom Growth Formula
 		{ itemID = 354292 }, --Recipe: Freshly Brewed Firewater
 		{ itemID = 354293 }, --Pattern: Flameweave Armor Patch
-		{ itemID = 354295 }, --Cardinal Power Crystal
-		{ itemID = 354300 }, --Hexed Staff
-		{ itemID = 354312 }, --Leyline Research
-		{ itemID = 354325 }, --Torn Cloak
-		{ itemID = 354326 }, --Hive Regal Claw
-		{ itemID = 354327 }, --Hercular's Unstable Orb
-		{ itemID = 354328 }, --Burning Vanguard Hauberk
-		{ itemID = 354446 }, --Bastion of the Fallen
-		{ itemID = 354447 }, --Faded Promise Ring
-		{ itemID = 354448 }, --Veneration to the Ancient Ones
-		{ itemID = 354449 }, --Axe of Slaughter
-		{ itemID = 354450 }, --Bloodied Gauntlets
-		{ itemID = 354451 }, --Vulture Hide Leggings
-		{ itemID = 354452 }, --Betrayal's Edge
-		{ itemID = 354453 }, --Banner of the Dark Riders
-		{ itemID = 354454 }, --Reverence of the Ancient Ones
-		{ itemID = 354455 }, --Kire, Exaltation of the Ancient Ones
-		{ itemID = 354456 }, --Girdle of the Shadowslayer
-		{ itemID = 354457 }, --Ariden's Circlet
-		{ itemID = 354458 }, --Branch of Mourning
-		{ itemID = 354459 }, --Aion of Desolation
-		{ itemID = 354460 }, --Pauldrons of Shadow
-		{ itemID = 354461 }, --Celsalia's Luxorious Robes
-		{ itemID = 354462 }, --Shorean's Ironwood Longbow
-		{ itemID = 354463 }, --Ashen Boots
-		{ itemID = 354464 }, --Volkmar's Enchanting Rod
-		{ itemID = 354465 }, --The Master's Bottle
-		{ itemID = 354466 }, --Vintner's Wristguards
+		{ itemID = 354295, desc = "Un'Goro Crater (81, 39)" }, --Cardinal Power Crystal
+		{ itemID = 354300, desc = "Caverns of Time (55, 77)" }, --Hexed Staff
+		{ itemID = 354312, desc = "Deadwind Pass (41, 64)" }, --Leyline Research
+		{ itemID = 354325, desc = "Silithus (67, 83)" }, --Torn Cloak
+		{ itemID = 354326, desc = "Silithus (57, 100)" }, --Hive Regal Claw
+		{ itemID = 354327, desc = "Alterac Mountains (37, 66)" }, --Hercular's Unstable Orb
+		{ itemID = 354328, desc = "Burning Steppes (95, 31)" }, --Burning Vanguard Hauberk
+		{ itemID = 354446, desc = "Deadwind Pass (40, 72)" }, --Bastion of the Fallen
+		{ itemID = 354447, desc = "Deadwind Pass (53, 73)" }, --Faded Promise Ring
+		{ itemID = 354448, desc = "Redridge Mountains (34, 56)" }, --Veneration to the Ancient Ones
+		{ itemID = 354449, desc = "Swamp of Sorrows (54, 56)" }, --Axe of Slaughter
+		{ itemID = 354450, desc = "Deadwind Pass (65, 74)" }, --Bloodied Gauntlets
+		{ itemID = 354451, desc = "Deadwind Pass (52, 61)" }, --Vulture Hide Leggings
+		{ itemID = 354452, desc = "Deadwind Pass (35, 35)" }, --Betrayal's Edge
+		{ itemID = 354453, desc = "Deadwind Pass (38, 31)" }, --Banner of the Dark Riders
+		{ itemID = 354454, desc = "Redridge Mountains (41, 47)" }, --Reverence of the Ancient Ones
+		{ itemID = 354455, desc = "Deadwind Pass (33, 65)" }, --Kire, Exaltation of the Ancient Ones
+		{ itemID = 354456, desc = "Deadwind Pass (43, 74)" }, --Girdle of the Shadowslayer
+		{ itemID = 354457, desc = "Deadwind Pass (52, 34)" }, --Ariden's Circlet
+		{ itemID = 354458, desc = "Deadwind Pass (48, 25)" }, --Branch of Mourning
+		{ itemID = 354459, desc = "Swamp of Sorrows (43, 29)" }, --Aion of Desolation
+		{ itemID = 354460, desc = "Deadwind Pass (43, 46)" }, --Pauldrons of Shadow
+		{ itemID = 354461, desc = "Swamp of Sorrows (43, 74)" }, --Celsalia's Luxorious Robes
+		{ itemID = 354462, desc = "Deadwind Pass (43, 74)" }, --Shorean's Ironwood Longbow
+		{ itemID = 354463, desc = "Deadwind Pass (49, 78)" }, --Ashen Boots
+		{ itemID = 354464, desc = "Deadwind Pass (50, 75)" }, --Volkmar's Enchanting Rod
+		{ itemID = 354465, desc = "Deadwind Pass (55, 73)" }, --The Master's Bottle
+		{ itemID = 354466, desc = "Deadwind Pass (56, 81)" }, --Vintner's Wristguards
 		{ itemID = 354467 }, --Recipe: Miru Berry Wine
-		{ itemID = 354468 }, --Bag of Folding
-		{ itemID = 354469 }, --Fragment of K'aresh
+		{ itemID = 354468, desc = "Deadwind Pass (45, 77)" }, --Bag of Folding
+		{ itemID = 354469, desc = "Deadwind Pass (44, 79)" }, --Fragment of K'aresh
 		{ itemID = 354471 }, --Mineral Fragment
 		{ itemID = 354472 }, --Watcher of Tomes
-		{ itemID = 354473 }, --Slayer's Claymore
-		{ itemID = 354474 }, --Cord of Reverence
-		{ itemID = 354475 }, --Aloof Tauren's Herbs
+		{ itemID = 354473, desc = "Valley of Trials (48, 40)" }, --Slayer's Claymore
+		{ itemID = 354474, desc = "Mulgore (62, 81)" }, --Cord of Reverence
+		{ itemID = 354475, desc = "Mulgore (43, 92)" }, --Aloof Tauren's Herbs
 		{ itemID = 354478 }, --Goldenmist Waterblade
-		{ itemID = 354479 }, --Earth Reverent's Sash
-		{ itemID = 354480 }, --Staff of the Wind Sisters
-		{ itemID = 354481 }, --Needlewind Crossbow
-		{ itemID = 354482 }, --Engine Safety Belt
-		{ itemID = 354483 }, --Freewind Gloves
-		{ itemID = 354485 }, --Warcaster Slippers
-		{ itemID = 354486 }, --Dustscour Courier Belt
-		{ itemID = 354487 }, --Alteraci Band
-		{ itemID = 354488 }, --Shredder's Medallion
-		{ itemID = 354489 }, --Syndicate Crossbow
-		{ itemID = 354490 }, --Tombbound Warhammer
-		{ itemID = 354491 }, --Bloodscalp Cord
-		{ itemID = 354492 }, --Tinkering Belt
-		{ itemID = 354493 }, --Sky Shot Cloak
-		{ itemID = 354494 }, --Bloodsail Longbow
-		{ itemID = 354495 }, --Grom'gol Hunting Rifle
-		{ itemID = 354497 }, --Wind Ritual Staff
-		{ itemID = 354498 }, --Axe of the Lost
-		{ itemID = 354499 }, --Nightmare's Edge
-		{ itemID = 354500 }, --Khazno's Shotgun
-		{ itemID = 354501 }, --Crocolisk Hunter's Bow
-		{ itemID = 354502 }, --Wand of the Ancients
-		{ itemID = 354503 }, --Sandworn Arcanist Staff
-		{ itemID = 354504 }, --Duststorm Sash
-		{ itemID = 354505 }, --Cracked Earth Vest
-		{ itemID = 354506 }, --Planned Strike Cord
-		{ itemID = 354507 }, --Quel'Danil Amulet
-		{ itemID = 354509 }, --Sash of Contemplation
-		{ itemID = 354510 }, --Ancient Vilebranch Gloves
-		{ itemID = 354511 }, --Nightmarish Bracers
-		{ itemID = 354512 }, --Fractured Shoulderpads
-		{ itemID = 354513 }, --Wand of the Sands
-		{ itemID = 354514 }, --Belt of the Shen'dralar
-		{ itemID = 354515 }, --Beezil's Pants
-		{ itemID = 354516 }, --Drywallow Gloves
-		{ itemID = 354517 }, --Inscribed Sash
-		{ itemID = 354518 }, --Theramore Girdle
-		{ itemID = 354519 }, --Burnt Spaulders
-		{ itemID = 354521 }, --Old Theramore Guard Plate
-		{ itemID = 354522 }, --Draenic Longbow
-		{ itemID = 354523 }, --Felshot
-		{ itemID = 410010 }, --Phylactery Shard
-		{ itemID = 410011 }, --Wagon Sack
-		{ itemID = 410012 }, --Shimmering Scarlet Cane
-		{ itemID = 410013 }, --Scarlet Overalls
-		{ itemID = 410014 }, --Scarlet Slicer
+		{ itemID = 354479, desc = "Arathi Highlands (62, 37)" }, --Earth Reverent's Sash
+		{ itemID = 354480, desc = "Thousand Needles (31, 46)" }, --Staff of the Wind Sisters
+		{ itemID = 354481, desc = "Thousand Needles (52, 55)" }, --Needlewind Crossbow
+		{ itemID = 354482, desc = "Thousand Needles (80, 77)" }, --Engine Safety Belt
+		{ itemID = 354483, desc = "Thousand Needles (41, 48)" }, --Freewind Gloves
+		{ itemID = 354485, desc = "Desolace (35, 81)" }, --Warcaster Slippers
+		{ itemID = 354486, desc = "Desolace (62, 39)" }, --Dustscour Courier Belt
+		{ itemID = 354487, desc = "Alterac Mountains (34, 54)" }, --Alteraci Band
+		{ itemID = 354488, desc = "Alterac Mountains (33, 48)" }, --Shredder's Medallion
+		{ itemID = 354489, desc = "Alterac Mountains (60, 44)" }, --Syndicate Crossbow
+		{ itemID = 354490, desc = "Alterac Mountains (43, 38)" }, --Tombbound Warhammer
+		{ itemID = 354491, desc = "Stranglethorn Vale (34, 16)" }, --Bloodscalp Cord
+		{ itemID = 354492, desc = "Stranglethorn Vale (42, 45)" }, --Tinkering Belt
+		{ itemID = 354493, desc = "Stranglethorn Vale (31, 13)" }, --Sky Shot Cloak
+		{ itemID = 354494, desc = "Stranglethorn Vale (32, 54)" }, --Bloodsail Longbow
+		{ itemID = 354495, desc = "Stranglethorn Vale (31, 24)" }, --Grom'gol Hunting Rifle
+		{ itemID = 354497, desc = "Desolace (73, 42)" }, --Wind Ritual Staff
+		{ itemID = 354498, desc = "Swamp of Sorrows (49, 29)" }, --Axe of the Lost
+		{ itemID = 354499, desc = "Swamp of Sorrows (89, 57)" }, --Nightmare's Edge
+		{ itemID = 354500, desc = "Swamp of Sorrows (15, 37)" }, --Khazno's Shotgun
+		{ itemID = 354501, desc = "Swamp of Sorrows (71, 18)" }, --Crocolisk Hunter's Bow
+		{ itemID = 354502, desc = "Badlands (54, 54)" }, --Wand of the Ancients
+		{ itemID = 354503, desc = "Badlands (18, 51)" }, --Sandworn Arcanist Staff
+		{ itemID = 354504, desc = "Badlands (13, 64)" }, --Duststorm Sash
+		{ itemID = 354505, desc = "Badlands (23, 43)" }, --Cracked Earth Vest
+		{ itemID = 354506, desc = "Swamp of Sorrows (30, 58)" }, --Planned Strike Cord
+		{ itemID = 354507, desc = "The Hinterlands (33, 48)" }, --Quel'Danil Amulet
+		{ itemID = 354509, desc = "The Hinterlands (47, 51)" }, --Sash of Contemplation
+		{ itemID = 354510, desc = "The Hinterlands (57, 56)" }, --Ancient Vilebranch Gloves
+		{ itemID = 354511, desc = "The Hinterlands (61, 35)" }, --Nightmarish Bracers
+		{ itemID = 354512, desc = "The Hinterlands (39, 51)" }, --Fractured Shoulderpads
+		{ itemID = 354513, desc = "Tanaris (40, 29)" }, --Wand of the Sands
+		{ itemID = 354514, desc = "Dire Maul (44, 67)" }, --Belt of the Shen'dralar
+		{ itemID = 354515, desc = "Dustwallow Marsh (55, 53)" }, --Beezil's Pants
+		{ itemID = 354516, desc = "Dustwallow Marsh (39, 34)" }, --Drywallow Gloves
+		{ itemID = 354517, desc = "Dustwallow Marsh (56, 69)" }, --Inscribed Sash
+		{ itemID = 354518, desc = "Dustwallow Marsh (47, 24)" }, --Theramore Girdle
+		{ itemID = 354519, desc = "Dustwallow Marsh (40, 67)" }, --Burnt Spaulders
+		{ itemID = 354521, desc = "Dustwallow Marsh (44, 60)" }, --Old Theramore Guard Plate
+		{ itemID = 354522, desc = "Blasted Lands (56, 32)" }, --Draenic Longbow
+		{ itemID = 354523, desc = "Blasted Lands (48, 53)" }, --Felshot
+		{ itemID = 410010, desc = "Western Plaguelands (46, 53)" }, --Phylactery Shard
+		{ itemID = 410011, desc = "Western Plaguelands (54, 56)" }, --Wagon Sack
+		{ itemID = 410012, desc = "Western Plaguelands (52, 44)" }, --Shimmering Scarlet Cane
+		{ itemID = 410013, desc = "Western Plaguelands (49, 32)" }, --Scarlet Overalls
+		{ itemID = 410014, desc = "Western Plaguelands (53, 37)" }, --Scarlet Slicer
 		{ itemID = 410015 }, --Radley's Special Scope
-		{ itemID = 410016 }, --Northridge Hatchet
-		{ itemID = 410017 }, --Bloodied Pants
-		{ itemID = 410018 }, --Tracker's Plagued Spike
-		{ itemID = 410019 }, --Sentinel Sharpshooter
-		{ itemID = 410020 }, --Ebonblight Slippers
-		{ itemID = 410021 }, --Burning Judgement
-		{ itemID = 410022 }, --Scarlet Band
-		{ itemID = 410023 }, --Scarlet Shield
-		{ itemID = 410024 }, --Brightflame Codex
-		{ itemID = 410025 }, --Scarlet Robe
-		{ itemID = 410026 }, --Scarlet Pauldrons
-		{ itemID = 410028 }, --Staff of the Twisted Spirit
-		{ itemID = 410029 }, --Scourgestalker’s Girdle
-		{ itemID = 410030 }, --Bonescourge Dagger
-		{ itemID = 410031 }, --Ghoul-Stitched Shoulders
-		{ itemID = 410032 }, --Fetid Mace
-		{ itemID = 410033 }, --Graveyard Striker
-		{ itemID = 410034 }, --Decayed Grippers
-		{ itemID = 410035 }, --Plagued Cloak
-		{ itemID = 410036 }, --Apothecary Cowl
-		{ itemID = 410038 }, --Bravecrest Chain
-		{ itemID = 410039 }, --Dustsworn Sash
-		{ itemID = 410040 }, --Excavator's Pick
-		{ itemID = 410041 }, --The Eternal's Journal
-		{ itemID = 410042 }, --Wand of Twilight
-		{ itemID = 410043 }, --Twilight Talisman
-		{ itemID = 410044 }, --Shadow Slinger Pants
-		{ itemID = 410045 }, --Infested Pauldrons
-		{ itemID = 410046 }, --Trigdy's Pistol
-		{ itemID = 410047 }, --Standard Cenarion Spear
-		{ itemID = 410048 }, --Ancient Sentinel Headdress
-		{ itemID = 410049 }, --Southwind Defender
-		{ itemID = 410050 }, --Runaway's Tunic
-		{ itemID = 410051 }, --Darnell's Blade
-		{ itemID = 410052 }, --Scarab Smasher
+		{ itemID = 410016, desc = "Western Plaguelands (44, 33)" }, --Northridge Hatchet
+		{ itemID = 410017, desc = "Western Plaguelands (55, 24)" }, --Bloodied Pants
+		{ itemID = 410018, desc = "Western Plaguelands (52, 19)" }, --Tracker's Plagued Spike
+		{ itemID = 410019, desc = "Western Plaguelands (48, 22)" }, --Sentinel Sharpshooter
+		{ itemID = 410020, desc = "Western Plaguelands (45, 62)" }, --Ebonblight Slippers
+		{ itemID = 410021, desc = "Western Plaguelands (44, 18)" }, --Burning Judgement
+		{ itemID = 410022, desc = "Western Plaguelands (42, 15)" }, --Scarlet Band
+		{ itemID = 410023, desc = "Western Plaguelands (44, 13)" }, --Scarlet Shield
+		{ itemID = 410024, desc = "Western Plaguelands (46, 13)" }, --Brightflame Codex
+		{ itemID = 410025, desc = "Western Plaguelands (45, 15)" }, --Scarlet Robe
+		{ itemID = 410026, desc = "Western Plaguelands (45, 44)" }, --Scarlet Pauldrons
+		{ itemID = 410028, desc = "Western Plaguelands (75, 84)" }, --Staff of the Twisted Spirit
+		{ itemID = 410029, desc = "Western Plaguelands (61, 72)" }, --Scourgestalker’s Girdle
+		{ itemID = 410030, desc = "Western Plaguelands (42, 59)" }, --Bonescourge Dagger
+		{ itemID = 410031, desc = "Western Plaguelands (31, 62)" }, --Ghoul-Stitched Shoulders
+		{ itemID = 410032, desc = "Western Plaguelands (64, 57)" }, --Fetid Mace
+		{ itemID = 410033, desc = "Western Plaguelands (60, 53)" }, --Graveyard Striker
+		{ itemID = 410034, desc = "Western Plaguelands (62, 35)" }, --Decayed Grippers
+		{ itemID = 410035, desc = "Western Plaguelands (40, 79)" }, --Plagued Cloak
+		{ itemID = 410036, desc = "Western Plaguelands (80, 74)" }, --Apothecary Cowl
+		{ itemID = 410038, desc = "Silithus (81, 21)" }, --Bravecrest Chain
+		{ itemID = 410039, desc = "Silithus (76, 25)" }, --Dustsworn Sash
+		{ itemID = 410040, desc = "Silithus (61, 35)" }, --Excavator's Pick
+		{ itemID = 410041, desc = "Silithus (70, 25)" }, --The Eternal's Journal
+		{ itemID = 410042, desc = "Silithus (46, 78)" }, --Wand of Twilight
+		{ itemID = 410043, desc = "Twilight's Run (40, 36)" }, --Twilight Talisman
+		{ itemID = 410044, desc = "Twilight's Run (84, 29)" }, --Shadow Slinger Pants
+		{ itemID = 410045, desc = "Sinister Lair (57, 14)" }, --Infested Pauldrons
+		{ itemID = 410046, desc = "Silithus (54, 25)" }, --Trigdy's Pistol
+		{ itemID = 410047, desc = "Silithus (49, 34)" }, --Standard Cenarion Spear
+		{ itemID = 410048, desc = "Silithus (63, 56)" }, --Ancient Sentinel Headdress
+		{ itemID = 410049, desc = "Silithus (45, 82)" }, --Southwind Defender
+		{ itemID = 410050, desc = "Silithus (67, 70)" }, --Runaway's Tunic
+		{ itemID = 410051, desc = "Silithus (40, 57)" }, --Darnell's Blade
+		{ itemID = 410052, desc = "Silithus (26, 91)" }, --Scarab Smasher
 		{ itemID = 410053 }, --Horde Recruitment Insignia
 		{ itemID = 410054 }, --Alliance Recruitment Badge
-		{ itemID = 410055 }, --Twilight's Presence
-		{ itemID = 410056 }, --Geo Band
-		{ itemID = 410057 }, --Cursed Ritual Carver
-		{ itemID = 410058 }, --Wind Pendant
-		{ itemID = 410059 }, --Qiraji Scale Greaves
-		{ itemID = 410060 }, --Chitin Thread Wraps
-		{ itemID = 410061 }, --Silithic Scale Hauberk
-		{ itemID = 410062 }, --Hardened Scarab Gauntlets
-		{ itemID = 410063 }, --Soldier's Bulwark
-		{ itemID = 410064 }, --Rockstalker Silk Robe
-		{ itemID = 410065 }, --Idol of Shifting Sands
-		{ itemID = 410066 }, --Sandreaver Longbow
-		{ itemID = 410067 }, --Twilight Prophet Staff
-		{ itemID = 410068 }, --Scorpionscale Mantle
-		{ itemID = 410069 }, --Carapace Clasps
-		{ itemID = 410070 }, --Lost Cenarion Bolter
-		{ itemID = 410071 }, --Sandstone Sniper
-		{ itemID = 410072 }, --Bracers of the Bound Storm
-		{ itemID = 410073 }, --Old God Carving
-		{ itemID = 410074 }, --Sandstorm Shaper
-		{ itemID = 410075 }, --Brigade Blunderbuss
-		{ itemID = 410076 }, --Purple Steppers
-		{ itemID = 410077 }, --Chitinsunder Greataxe
-		{ itemID = 410079 }, --Timbermaw Idol
-		{ itemID = 410080 }, --Thermal Pendant
-		{ itemID = 410081 }, --Researcher's Dish
-		{ itemID = 410082 }, --Chillbane Cleaver
-		{ itemID = 410083 }, --Winter Band
-		{ itemID = 410085 }, --Winter's Last Embrace
-		{ itemID = 410086 }, --Fur-Lined Vest
-		{ itemID = 410087 }, --Excavator's Buckler
-		{ itemID = 410088 }, --Windsong Totem
-		{ itemID = 410089 }, --Glacierpaw Bindings
-		{ itemID = 410090 }, --Flattened Shoulderpad
-		{ itemID = 410091 }, --Snowtalon Crossbow
-		{ itemID = 410092 }, --Icemaw Greatmaul
-		{ itemID = 410093 }, --Aurorawhirl Pick
-		{ itemID = 410094 }, --Frostglade Saber
-		{ itemID = 410095 }, --Wailing Talisman
-		{ itemID = 410096 }, --Lonely Gauntlets
-		{ itemID = 410097 }, --Wintergale Cloak
-		{ itemID = 410098 }, --Snowstalker Rifle
-		{ itemID = 410099 }, --Frostsaber Halberd
-		{ itemID = 410100 }, --Coldsnap Girdle
-		{ itemID = 410101 }, --Owlbeast Pantaloons
-		{ itemID = 410102 }, --Owlbeast Talon
-		{ itemID = 410103 }, --Horror Horns
-		{ itemID = 410104 }, --Non-Slip Winter Boots
-		{ itemID = 410105 }, --Winterbite Legguards
-		{ itemID = 410106 }, --Winterfall Dagger
-		{ itemID = 410107 }, --Cold Wristguards
-		{ itemID = 410108 }, --Chillhammer
-		{ itemID = 410109 }, --Ice Thistle Cape
-		{ itemID = 410110 }, --Hunter's Knife
-		{ itemID = 410111 }, --Aurora Orb
-		{ itemID = 410112 }, --Stormchill Spaulders
-		{ itemID = 410113 }, --Azure Focusing Staff
-		{ itemID = 410114 }, --Maddening Signet
-		{ itemID = 410115 }, --Eversleet Handguards
-		{ itemID = 410116 }, --Frostweave Vestment
-		{ itemID = 410117 }, --Starfall Longbow
-		{ itemID = 410118 }, --Ice Shaver
-		{ itemID = 410119 }, --The Leaping Arc
+		{ itemID = 410055, desc = "Silithus (18, 82)" }, --Twilight's Presence
+		{ itemID = 410056, desc = "Silithus (40, 45)" }, --Geo Band
+		{ itemID = 410057, desc = "Silithus (25, 34)" }, --Cursed Ritual Carver
+		{ itemID = 410058, desc = "Silithus (22, 9)" }, --Wind Pendant
+		{ itemID = 410059, desc = "Silithus (44, 14)" }, --Qiraji Scale Greaves
+		{ itemID = 410060, desc = "Silithus (46, 29)" }, --Chitin Thread Wraps
+		{ itemID = 410061, desc = "Silithus (24, 62)" }, --Silithic Scale Hauberk
+		{ itemID = 410062, desc = "Silithus (19, 68)" }, --Hardened Scarab Gauntlets
+		{ itemID = 410063, desc = "Silithus (44, 79)" }, --Soldier's Bulwark
+		{ itemID = 410064, desc = "Silithus (33, 76)" }, --Rockstalker Silk Robe
+		{ itemID = 410065, desc = "Silithus (47, 54)" }, --Idol of Shifting Sands
+		{ itemID = 410066, desc = "Silithus (20, 21)" }, --Sandreaver Longbow
+		{ itemID = 410067, desc = "Silithus (43, 79)" }, --Twilight Prophet Staff
+		{ itemID = 410068, desc = "Sinister Lair (45, 93)" }, --Scorpionscale Mantle
+		{ itemID = 410069, desc = "Sinister Lair (36, 71)" }, --Carapace Clasps
+		{ itemID = 410070, desc = "Silithus (55, 48)" }, --Lost Cenarion Bolter
+		{ itemID = 410071, desc = "Silithus (69, 43)" }, --Sandstone Sniper
+		{ itemID = 410072, desc = "Silithus (31, 20)" }, --Bracers of the Bound Storm
+		{ itemID = 410073, desc = "Silithus (55, 77)" }, --Old God Carving
+		{ itemID = 410074, desc = "Silithus (27, 22)" }, --Sandstorm Shaper
+		{ itemID = 410075, desc = "Silithus (26, 55)" }, --Brigade Blunderbuss
+		{ itemID = 410076, desc = "Silithus (28, 31)" }, --Purple Steppers
+		{ itemID = 410077, desc = "Silithus (41, 81)" }, --Chitinsunder Greataxe
+		{ itemID = 410079, desc = "Winterspring (28, 34)" }, --Timbermaw Idol
+		{ itemID = 410080, desc = "Winterspring (29, 36)" }, --Thermal Pendant
+		{ itemID = 410081, desc = "Winterspring (30, 47)" }, --Researcher's Dish
+		{ itemID = 410082, desc = "Winterspring (35, 45)" }, --Chillbane Cleaver
+		{ itemID = 410083, desc = "Winterspring (59, 11)" }, --Winter Band
+		{ itemID = 410085, desc = "Winterspring (50, 46)" }, --Winter's Last Embrace
+		{ itemID = 410086, desc = "Winterspring (38, 39)" }, --Fur-Lined Vest
+		{ itemID = 410087, desc = "Winterspring (56, 24)" }, --Excavator's Buckler
+		{ itemID = 410088, desc = "Winterspring (40, 43)" }, --Windsong Totem
+		{ itemID = 410089, desc = "Winterspring (46, 47)" }, --Glacierpaw Bindings
+		{ itemID = 410090, desc = "Winterspring (46, 37)" }, --Flattened Shoulderpad
+		{ itemID = 410091, desc = "Winterspring (67, 51)" }, --Snowtalon Crossbow
+		{ itemID = 410092, desc = "Winterspring (45, 41)" }, --Icemaw Greatmaul
+		{ itemID = 410093, desc = "Winterspring (53, 50)" }, --Aurorawhirl Pick
+		{ itemID = 410094, desc = "Winterspring (52, 42)" }, --Frostglade Saber
+		{ itemID = 410095, desc = "Winterspring (58, 26)" }, --Wailing Talisman
+		{ itemID = 410096, desc = "Winterspring (49, 30)" }, --Lonely Gauntlets
+		{ itemID = 410097, desc = "Winterspring (53, 27)" }, --Wintergale Cloak
+		{ itemID = 410098, desc = "Winterspring (51, 18)" }, --Snowstalker Rifle
+		{ itemID = 410099, desc = "Winterspring (50, 10)" }, --Frostsaber Halberd
+		{ itemID = 410100, desc = "Winterspring (58, 13)" }, --Coldsnap Girdle
+		{ itemID = 410101, desc = "Winterspring (63, 18)" }, --Owlbeast Pantaloons
+		{ itemID = 410102, desc = "Winterspring (65, 19)" }, --Owlbeast Talon
+		{ itemID = 410103, desc = "Winterspring (61, 30)" }, --Horror Horns
+		{ itemID = 410104, desc = "Winterspring (58, 22)" }, --Non-Slip Winter Boots
+		{ itemID = 410105, desc = "Winterspring (68, 27)" }, --Winterbite Legguards
+		{ itemID = 410106, desc = "Winterspring (67, 36)" }, --Winterfall Dagger
+		{ itemID = 410107, desc = "Winterspring (67, 37)" }, --Cold Wristguards
+		{ itemID = 410108, desc = "Winterspring (70, 42)" }, --Chillhammer
+		{ itemID = 410109, desc = "Winterspring (71, 38)" }, --Ice Thistle Cape
+		{ itemID = 410110, desc = "Winterspring (63, 48)" }, --Hunter's Knife
+		{ itemID = 410111, desc = "Winterspring (55, 51)" }, --Aurora Orb
+		{ itemID = 410112, desc = "Winterspring (53, 54)" }, --Stormchill Spaulders
+		{ itemID = 410113, desc = "Winterspring (57, 48)" }, --Azure Focusing Staff
+		{ itemID = 410114, desc = "Winterspring (59, 39)" }, --Maddening Signet
+		{ itemID = 410115, desc = "Winterspring (59, 60)" }, --Eversleet Handguards
+		{ itemID = 410116, desc = "Winterspring (66, 60)" }, --Frostweave Vestment
+		{ itemID = 410117, desc = "Winterspring (64, 69)" }, --Starfall Longbow
+		{ itemID = 410118, desc = "Winterspring (63, 70)" }, --Ice Shaver
+		{ itemID = 410119, desc = "Winterspring (59, 31)" }, --The Leaping Arc
 		{ itemID = 410120 }, --Ve'il's Unstable Fel Potion
-		{ itemID = 410121 }, --Darkwhisper Spear
+		{ itemID = 410121, desc = "Winterspring (58, 88)" }, --Darkwhisper Spear
 		{ itemID = 410122 }, --Concentrated Fel Crystal
-		{ itemID = 410123 }, --Hyjal Protector's Knuckleduster
-		{ itemID = 410124 }, --Libram of Amphibious Devotion
-		{ itemID = 410125 }, --Snowpeak Claymore
-		{ itemID = 410127 }, --Cryptfiend Fang
-		{ itemID = 410128 }, --Revival Garments
-		{ itemID = 410129 }, --Argent Sentry Pauldrons
-		{ itemID = 410130 }, --Fungal Cleaver
-		{ itemID = 410131 }, --Forbidden Fruit
+		{ itemID = 410123, desc = "Winterspring (51, 84)" }, --Hyjal Protector's Knuckleduster
+		{ itemID = 410124, desc = "Winterspring (51, 89)" }, --Libram of Amphibious Devotion
+		{ itemID = 410125, desc = "Winterspring (57, 28)" }, --Snowpeak Claymore
+		{ itemID = 410127, desc = "Eastern Plaguelands (5.34, 35.65)" }, --Cryptfiend Fang
+		{ itemID = 410128, desc = "Eastern Plaguelands (24.17, 78.31)" }, --Revival Garments
+		{ itemID = 410129, desc = "Eastern Plaguelands (37, 63)" }, --Argent Sentry Pauldrons
+		{ itemID = 410130, desc = "Eastern Plaguelands (36.07, 43.81)" }, --Fungal Cleaver
+		{ itemID = 410131, desc = "Eastern Plaguelands (37.61, 79.97)" }, --Forbidden Fruit
 		{ itemID = 410132 }, --Mossflayer Lost Totem
-		{ itemID = 410133 }, --Tainted Wasteblade
-		{ itemID = 410134 }, --Resilient Stompers
-		{ itemID = 410135 }, --Idol of Breathing Life
-		{ itemID = 410136 }, --Deadcapitator
-		{ itemID = 410137 }, --Scarlet Doctrine
-		{ itemID = 410138 }, --Scarlet Crossbow
-		{ itemID = 410139 }, --Scarlet Cauterizer
-		{ itemID = 410140 }, --Scorched Runeblade
-		{ itemID = 410141 }, --Malleus Haereticorum
-		{ itemID = 410142 }, --Ghoulbane Gauntlets
-		{ itemID = 410143 }, --The Silver Blade
-		{ itemID = 410144 }, --Plague Purger
+		{ itemID = 410133, desc = "Eastern Plaguelands (48.19, 62.16)" }, --Tainted Wasteblade
+		{ itemID = 410134, desc = "Eastern Plaguelands (45.62, 52.6)" }, --Resilient Stompers
+		{ itemID = 410135, desc = "Eastern Plaguelands (73, 53)" }, --Idol of Breathing Life
+		{ itemID = 410136, desc = "Eastern Plaguelands (65, 24)" }, --Deadcapitator
+		{ itemID = 410137, desc = "Eastern Plaguelands (77.62, 73.2)" }, --Scarlet Doctrine
+		{ itemID = 410138, desc = "Eastern Plaguelands (71.11, 75.83)" }, --Scarlet Crossbow
+		{ itemID = 410139, desc = "Eastern Plaguelands (58, 35)" }, --Scarlet Cauterizer
+		{ itemID = 410140, desc = "Eastern Plaguelands (81.45, 43.17)" }, --Scorched Runeblade
+		{ itemID = 410141, desc = "Eastern Plaguelands (81.99, 79.87)" }, --Malleus Haereticorum
+		{ itemID = 410142, desc = "Eastern Plaguelands (56, 43)" }, --Ghoulbane Gauntlets
+		{ itemID = 410143, desc = "Eastern Plaguelands (46.5, 44.32)" }, --The Silver Blade
+		{ itemID = 410144, desc = "Eastern Plaguelands (66.02, 13.65)" }, --Plague Purger
 		{ itemID = 410145 }, --Pattern: Mossflayer Armor Patch
 		{ itemID = 410146 }, --Robin the Young Plaguebat
-		{ itemID = 410147 }, --Bubbling Blood of Heroes
-		{ itemID = 410148 }, --Ring of Memorial
-		{ itemID = 410149 }, --Deathguard Vambraces
-		{ itemID = 410150 }, --Cryptsilk Cuffs
-		{ itemID = 410151 }, --Adon's Second Blade
-		{ itemID = 410152 }, --Watchman Helm
-		{ itemID = 410153 }, --Quel'thalas Commander Aegis
-		{ itemID = 410154 }, --Plaguebloom Spear
-		{ itemID = 410155 }, --Ghost-thread Shroud
-		{ itemID = 410156 }, --Red Metal Pauldrons
-		{ itemID = 410157 }, --Spiritwoven Vestments
-		{ itemID = 410158 }, --Blight Bomber
-		{ itemID = 410159 }, --Mushroom Pickin' Bag
-		{ itemID = 410160 }, --Ghost Buster
-		{ itemID = 410161 }, --Assisting Hand
-		{ itemID = 410162 }, --Junior Mallet
-		{ itemID = 410163 }, --Sorrow Leggings
-		{ itemID = 410164 }, --Gravewood Belt
-		{ itemID = 410165 }, --Plague Fiend Chain
-		{ itemID = 410166 }, --Wailing Spirit Amulet
+		{ itemID = 410147, desc = "Eastern Plaguelands (23, 57)" }, --Bubbling Blood of Heroes
+		{ itemID = 410148, desc = "Eastern Plaguelands (35.05, 86.55)" }, --Ring of Memorial
+		{ itemID = 410149, desc = "Eastern Plaguelands (61.81, 44.27)" }, --Deathguard Vambraces
+		{ itemID = 410150, desc = "Eastern Plaguelands (67, 30)" }, --Cryptsilk Cuffs
+		{ itemID = 410151, desc = "Eastern Plaguelands (54, 12)" }, --Adon's Second Blade
+		{ itemID = 410152, desc = "Eastern Plaguelands (72.26, 70.23)" }, --Watchman Helm
+		{ itemID = 410153, desc = "Eastern Plaguelands (48.13, 14.26)" }, --Quel'thalas Commander Aegis
+		{ itemID = 410154, desc = "Eastern Plaguelands (62, 68)" }, --Plaguebloom Spear
+		{ itemID = 410155, desc = "Eastern Plaguelands (34, 79)" }, --Ghost-thread Shroud
+		{ itemID = 410156, desc = "Eastern Plaguelands (8.13, 29.72)" }, --Red Metal Pauldrons
+		{ itemID = 410157, desc = "Eastern Plaguelands (76.05, 41.24)" }, --Spiritwoven Vestments
+		{ itemID = 410158, desc = "Eastern Plaguelands (22, 68)" }, --Blight Bomber
+		{ itemID = 410159, desc = "Eastern Plaguelands (38, 17)" }, --Mushroom Pickin' Bag
+		{ itemID = 410160, desc = "Eastern Plaguelands (59, 55)" }, --Ghost Buster
+		{ itemID = 410161, desc = "Eastern Plaguelands (33.11, 15.03)" }, --Assisting Hand
+		{ itemID = 410162, desc = "Eastern Plaguelands (58.48, 18.19)" }, --Junior Mallet
+		{ itemID = 410163, desc = "Eastern Plaguelands (33, 51)" }, --Sorrow Leggings
+		{ itemID = 410164, desc = "Eastern Plaguelands (56.69, 73.44)" }, --Gravewood Belt
+		{ itemID = 410165, desc = "Eastern Plaguelands (35, 69)" }, --Plague Fiend Chain
+		{ itemID = 410166, desc = "Eastern Plaguelands (16, 56)" }, --Wailing Spirit Amulet
 		{ itemID = 410167 }, --Ebonshadow Breeches
-		{ itemID = 410169 }, --Havenfire Crown
-		{ itemID = 410170 }, --Ravenridge Shotgun
-		{ itemID = 410171 }, --Bleakfang Handwraps
-		{ itemID = 410172 }, --Gravecall Staff
-		{ itemID = 410173 }, --Eboncrypt Band
-		{ itemID = 410174 }, --Scourge Cloak
-		{ itemID = 410175 }, --Deathwhisper Wand
-		{ itemID = 410176 }, --Plagued Pitchfork
-		{ itemID = 410177 }, --Shadowgrasp Sash
-		{ itemID = 410178 }, --Borelgore's Chewtoy
-		{ itemID = 410179 }, --Flamefist Claw
-		{ itemID = 410180 }, --Darkflight Totem
-		{ itemID = 410181 }, --Cinderstrike Mace
-		{ itemID = 410182 }, --Ashfall Vambraces
-		{ itemID = 410183 }, --Dark Iron Handwraps
-		{ itemID = 410184 }, --Magmaweave Pantaloons
-		{ itemID = 410185 }, --Flamescale Spire
-		{ itemID = 410186 }, --Charfall Mantle
-		{ itemID = 410187 }, --Firestorm Cloak
-		{ itemID = 410188 }, --Red Chain Belt
-		{ itemID = 410189 }, --Ancient Whetstone
-		{ itemID = 410190 }, --Volcanic Aegis
-		{ itemID = 410191 }, --Inferno Gavel
-		{ itemID = 410192 }, --Smolderwing Decapitator
-		{ itemID = 410193 }, --Madness Crown
-		{ itemID = 410194 }, --Ashenpeak Band
-		{ itemID = 410195 }, --Blackrock Side Blade
-		{ itemID = 410196 }, --Blackrock Hatchet
-		{ itemID = 410197 }, --Blackrock Pike
-		{ itemID = 410198 }, --Emberstep Sabatons
-		{ itemID = 410199 }, --Charblaze Rifle
+		{ itemID = 410169, desc = "Eastern Plaguelands (25.75, 18.38)" }, --Havenfire Crown
+		{ itemID = 410170, desc = "Eastern Plaguelands (74, 59)" }, --Ravenridge Shotgun
+		{ itemID = 410171, desc = "Eastern Plaguelands (72, 45)" }, --Bleakfang Handwraps
+		{ itemID = 410172, desc = "Eastern Plaguelands (35, 29)" }, --Gravecall Staff
+		{ itemID = 410173, desc = "Eastern Plaguelands (27, 16)" }, --Eboncrypt Band
+		{ itemID = 410174, desc = "Eastern Plaguelands (23.74, 29.89)" }, --Scourge Cloak
+		{ itemID = 410175, desc = "Eastern Plaguelands (18.44, 31.29)" }, --Deathwhisper Wand
+		{ itemID = 410176, desc = "Eastern Plaguelands (14.1, 29.14)" }, --Plagued Pitchfork
+		{ itemID = 410177, desc = "Eastern Plaguelands (46, 33)" }, --Shadowgrasp Sash
+		{ itemID = 410178, desc = "Eastern Plaguelands (51, 27)" }, --Borelgore's Chewtoy
+		{ itemID = 410179, desc = "Burning Steppes (89, 35)" }, --Flamefist Claw
+		{ itemID = 410180, desc = "Burning Steppes (92, 56)" }, --Darkflight Totem
+		{ itemID = 410181, desc = "Burning Steppes (84, 28)" }, --Cinderstrike Mace
+		{ itemID = 410182, desc = "Burning Steppes (77, 62)" }, --Ashfall Vambraces
+		{ itemID = 410183, desc = "Burning Steppes (31, 62)" }, --Dark Iron Handwraps
+		{ itemID = 410184, desc = "Burning Steppes (36, 48)" }, --Magmaweave Pantaloons
+		{ itemID = 410185, desc = "Burning Steppes (21, 46)" }, --Flamescale Spire
+		{ itemID = 410186, desc = "Burning Steppes (82, 48)" }, --Charfall Mantle
+		{ itemID = 410187, desc = "Burning Steppes (77, 51)" }, --Firestorm Cloak
+		{ itemID = 410188, desc = "Burning Steppes (80, 46)" }, --Red Chain Belt
+		{ itemID = 410189, desc = "Burning Steppes (50, 70)" }, --Ancient Whetstone
+		{ itemID = 410190, desc = "Burning Steppes (61, 38)" }, --Volcanic Aegis
+		{ itemID = 410191, desc = "Burning Steppes (54, 41)" }, --Inferno Gavel
+		{ itemID = 410192, desc = "Burning Steppes (55, 54)" }, --Smolderwing Decapitator
+		{ itemID = 410193, desc = "Burning Steppes (51, 61)" }, --Madness Crown
+		{ itemID = 410194, desc = "Burning Steppes (47, 54)" }, --Ashenpeak Band
+		{ itemID = 410195, desc = "Burning Steppes (43, 55)" }, --Blackrock Side Blade
+		{ itemID = 410196, desc = "Burning Steppes (41, 34)" }, --Blackrock Hatchet
+		{ itemID = 410197, desc = "Burning Steppes (43, 34)" }, --Blackrock Pike
+		{ itemID = 410198, desc = "Burning Steppes (49, 35)" }, --Emberstep Sabatons
+		{ itemID = 410199, desc = "Burning Steppes (44, 44)" }, --Charblaze Rifle
 		{ itemID = 410200 }, --Spiked Maul
-		{ itemID = 410201 }, --Obsidian Boltthrower
-		{ itemID = 410202 }, --The Final Strike
-		{ itemID = 410203 }, --Grave Offering
-		{ itemID = 410204 }, --Burnscorch Wand
-		{ itemID = 410205 }, --Wyrmkin Shiv
-		{ itemID = 410206 }, --Empty Ogre Loot Sack
-		{ itemID = 410207 }, --Blisterhide Headguard
-		{ itemID = 410208 }, --Ashendawn Bow
-		{ itemID = 410209 }, --Lava Absorbing Blade
-		{ itemID = 410210 }, --Firegut Emblem
-		{ itemID = 410211 }, --Ashen Cape
-		{ itemID = 410212 }, --Moltenflow Tome
-		{ itemID = 410213 }, --Charred Signet
-		{ itemID = 410214 }, --Embershard Choker
-		{ itemID = 410215 }, --Flamescale Leggings
-		{ itemID = 410216 }, --Blazing Ember
-		{ itemID = 410217 }, --Smokeshell Gauntlets
-		{ itemID = 410218 }, --Cinderthread Sash
-		{ itemID = 410219 }, --Bloodspire Staff
-		{ itemID = 410220 }, --Infernal Fang
-		{ itemID = 410221 }, --Ashstone Robes
+		{ itemID = 410201, desc = "Burning Steppes (66, 22)" }, --Obsidian Boltthrower
+		{ itemID = 410202, desc = "Burning Steppes (66, 32)" }, --The Final Strike
+		{ itemID = 410203, desc = "Burning Steppes (72, 49)" }, --Grave Offering
+		{ itemID = 410204, desc = "Burning Steppes (63, 48)" }, --Burnscorch Wand
+		{ itemID = 410205, desc = "Burning Steppes (87, 60)" }, --Wyrmkin Shiv
+		{ itemID = 410206, desc = "Burning Steppes (84, 49)" }, --Empty Ogre Loot Sack
+		{ itemID = 410207, desc = "Burning Steppes (93, 46)" }, --Blisterhide Headguard
+		{ itemID = 410208, desc = "Burning Steppes (89, 23)" }, --Ashendawn Bow
+		{ itemID = 410209, desc = "Burning Steppes (70, 31)" }, --Lava Absorbing Blade
+		{ itemID = 410210, desc = "Burning Steppes (87, 36)" }, --Firegut Emblem
+		{ itemID = 410211, desc = "Burning Steppes (63, 23)" }, --Ashen Cape
+		{ itemID = 410212, desc = "Burning Steppes (58, 22)" }, --Moltenflow Tome
+		{ itemID = 410213, desc = "Burning Steppes (30, 39)" }, --Charred Signet
+		{ itemID = 410214, desc = "Burning Steppes (30, 44)" }, --Embershard Choker
+		{ itemID = 410215, desc = "Burning Steppes (30, 71)" }, --Flamescale Leggings
+		{ itemID = 410216, desc = "Burning Steppes (35, 58)" }, --Blazing Ember
+		{ itemID = 410217, desc = "Burning Steppes (47, 72)" }, --Smokeshell Gauntlets
+		{ itemID = 410218, desc = "Burning Steppes (16, 58)" }, --Cinderthread Sash
+		{ itemID = 410219, desc = "Burning Steppes (46, 70)" }, --Bloodspire Staff
+		{ itemID = 410220, desc = "Burning Steppes (13, 31)" }, --Infernal Fang
+		{ itemID = 410221, desc = "Burning Steppes (16, 26)" }, --Ashstone Robes
 		{ itemID = 410222 }, --Moltengore Spaulders
-		{ itemID = 410223 }, --Searsteel Claymore
-		{ itemID = 410224 }, --Charbite Mace
-		{ itemID = 410225 }, --Embercarve Greataxe
-		{ itemID = 410226 }, --Blackbreach Handaxe
-		{ itemID = 410227 }, --Lavasilk Footpads
-		{ itemID = 410228 }, --Magma Poker
-		{ itemID = 410229 }, --Firebrand Libram
-		{ itemID = 410230 }, --Searwind Wand
-		{ itemID = 410231 }, --Flayer's Helmet
-		{ itemID = 410232 }, --Sticky Sabatons
-		{ itemID = 410233 }, --Scarlet Blunderbuss
-		{ itemID = 410234 }, --Skippy's Bone
-		{ itemID = 410235 }, --Spiced Rum
-		{ itemID = 410238 }, --Flame-Kissed Wraps
-		{ itemID = 415001 }, --Stromgarde Spell Tome
-		{ itemID = 415002 }, --Stromgarde Buckler
-		{ itemID = 415003 }, --Caretaker's Burden
-		{ itemID = 415004 }, --Peace of the Dead
-		{ itemID = 415005 }, --Syndicate Shanker
-		{ itemID = 415006 }, --Blade of the Syndicate Lord
-		{ itemID = 415007 }, --Muffled Boots
-		{ itemID = 415008 }, --Onestone's One Stone
-		{ itemID = 415009 }, --Water Drawing Cap
-		{ itemID = 415010 }, --Musty Horse Blanket
-		{ itemID = 415011 }, --Syndiclap
-		{ itemID = 415012 }, --Commode Cleaver
-		{ itemID = 415013 }, --Witherbark Headsmasher
-		{ itemID = 415014 }, --The Withered Totem
-		{ itemID = 415015 }, --Rough Weathered Ring
-		{ itemID = 415016 }, --Skullknocker
-		{ itemID = 415017 }, --Heavy Tempered Blade
-		{ itemID = 415018 }, --Withered Trollkin Shoulders
-		{ itemID = 415019 }, --Poacher's Bow
-		{ itemID = 415020 }, --Dark Iron Blaster
-		{ itemID = 415021 }, --Ancient Dark Iron Mace
-		{ itemID = 415022 }, --Stolen War Pendant
-		{ itemID = 415023 }, --Forgotten Fitted Pants
-		{ itemID = 415024 }, --Abandonded Wristguard
-		{ itemID = 415025 }, --Interlinked Fingerguards
-		{ itemID = 415026 }, --Watchguard's Prized Plate
-		{ itemID = 415027 }, --Thunder Infused Offering
-		{ itemID = 415028 }, --Suprisingly Sturdy Helm
-		{ itemID = 415029 }, --Ancient Wavepiercer
-		{ itemID = 415030 }, --Boarder's Axe
-		{ itemID = 415031 }, --Circle of Waves Idol
-		{ itemID = 415032 }, --Hammerfall Wristguards
-		{ itemID = 415033 }, --Brumn's Unfinished Project
-		{ itemID = 415034 }, --Deadweight Pauldrons
-		{ itemID = 415035 }, --Versatile Fishing Blanket
-		{ itemID = 415036 }, --Offering Pendant
-		{ itemID = 415037 }, --Mountain Climbers
-		{ itemID = 415038 }, --Plains Bolter
-		{ itemID = 415039 }, --Earth Infused Offering
-		{ itemID = 415040 }, --Loose Treasure Pants
-		{ itemID = 415041 }, --Grave Spite
-		{ itemID = 415042 }, --Arcane Impaler
-		{ itemID = 415043 }, --Silken Travel Gloves
-		{ itemID = 415044 }, --Flame Infused Offering Band
-		{ itemID = 415045 }, --Mok'rash's Circlet
-		{ itemID = 415046 }, --Hull Breaker
-		{ itemID = 415047 }, --Keelhaul's Saber
-		{ itemID = 415048 }, --Cannon Loaders
-		{ itemID = 415049 }, --Tamas's Black Powder Pouch
-		{ itemID = 415050 }, --Bloodsail Decksweeper
-		{ itemID = 415051 }, --Gorilla Pelt
-		{ itemID = 415052 }, --Blackwater Booty Band
-		{ itemID = 415053 }, --Gorlash's Seaweed Salad
-		{ itemID = 415054 }, --Premium Banana
-		{ itemID = 415055 }, --Pilfered Plate Pants
+		{ itemID = 410223, desc = "Blackrock Mountain (35, 20)" }, --Searsteel Claymore
+		{ itemID = 410224, desc = "Lower Blackrock Mountain (56, 83)" }, --Charbite Mace
+		{ itemID = 410225, desc = "Blackrock Mountain (47, 69)" }, --Embercarve Greataxe
+		{ itemID = 410226, desc = "Burning Steppes (34, 25)" }, --Blackbreach Handaxe
+		{ itemID = 410227, desc = "Burning Steppes (47, 71)" }, --Lavasilk Footpads
+		{ itemID = 410228, desc = "Burning Steppes (52, 51)" }, --Magma Poker
+		{ itemID = 410229, desc = "Burning Steppes (34, 51)" }, --Firebrand Libram
+		{ itemID = 410230, desc = "Burning Steppes (87, 55)" }, --Searwind Wand
+		{ itemID = 410231, desc = "Western Plaguelands (36, 56)" }, --Flayer's Helmet
+		{ itemID = 410232, desc = "Western Plaguelands (38, 55)" }, --Sticky Sabatons
+		{ itemID = 410233, desc = "Western Plaguelands (40, 52)" }, --Scarlet Blunderbuss
+		{ itemID = 410234, desc = "Western Plaguelands (35, 69)" }, --Skippy's Bone
+		{ itemID = 410235, desc = "Western Plaguelands (41, 75)" }, --Spiced Rum
+		{ itemID = 410238, desc = "Burning Steppes (65, 69)" }, --Flame-Kissed Wraps
+		{ itemID = 415001, desc = "Arathi Highlands (28, 61)" }, --Stromgarde Spell Tome
+		{ itemID = 415002, desc = "Arathi Highlands (22, 59)" }, --Stromgarde Buckler
+		{ itemID = 415003, desc = "Arathi Highlands (29, 60)" }, --Caretaker's Burden
+		{ itemID = 415004, desc = "Arathi Highlands (28, 57)" }, --Peace of the Dead
+		{ itemID = 415005, desc = "Arathi Highlands (29, 62)" }, --Syndicate Shanker
+		{ itemID = 415006, desc = "Arathi Highlands (26, 66)" }, --Blade of the Syndicate Lord
+		{ itemID = 415007, desc = "Arathi Highlands (27, 65)" }, --Muffled Boots
+		{ itemID = 415008, desc = "Arathi Highlands (18, 69)" }, --Onestone's One Stone
+		{ itemID = 415009, desc = "Arathi Highlands (30, 64)" }, --Water Drawing Cap
+		{ itemID = 415010, desc = "Arathi Highlands (33, 30)" }, --Musty Horse Blanket
+		{ itemID = 415011, desc = "Arathi Highlands (33, 32)" }, --Syndiclap
+		{ itemID = 415012, desc = "Arathi Highlands (57, 36)" }, --Commode Cleaver
+		{ itemID = 415013, desc = "Arathi Highlands (67, 80)" }, --Witherbark Headsmasher
+		{ itemID = 415014, desc = "Arathi Highlands (71, 70)" }, --The Withered Totem
+		{ itemID = 415015, desc = "Arathi Highlands (67, 29)" }, --Rough Weathered Ring
+		{ itemID = 415016, desc = "Arathi Highlands (37, 45)" }, --Skullknocker
+		{ itemID = 415017, desc = "Arathi Highlands (31, 43)" }, --Heavy Tempered Blade
+		{ itemID = 415018, desc = "Arathi Highlands (31, 46)" }, --Withered Trollkin Shoulders
+		{ itemID = 415019, desc = "Arathi Highlands (26, 20)" }, --Poacher's Bow
+		{ itemID = 415020, desc = "Arathi Highlands (48, 88)" }, --Dark Iron Blaster
+		{ itemID = 415021, desc = "Arathi Highlands (44, 93)" }, --Ancient Dark Iron Mace
+		{ itemID = 415022, desc = "Arathi Highlands (84, 28)" }, --Stolen War Pendant
+		{ itemID = 415023, desc = "Arathi Highlands (42, 61)" }, --Forgotten Fitted Pants
+		{ itemID = 415024, desc = "Arathi Highlands (49, 56)" }, --Abandonded Wristguard
+		{ itemID = 415025, desc = "Arathi Highlands (47, 61)" }, --Interlinked Fingerguards
+		{ itemID = 415026, desc = "Arathi Highlands (26, 65)" }, --Watchguard's Prized Plate
+		{ itemID = 415027, desc = "Arathi Highlands (52, 50)" }, --Thunder Infused Offering
+		{ itemID = 415028, desc = "Arathi Highlands (21, 47)" }, --Suprisingly Sturdy Helm
+		{ itemID = 415029, desc = "Arathi Highlands (21, 90)" }, --Ancient Wavepiercer
+		{ itemID = 415030, desc = "Arathi Highlands (21, 85)" }, --Boarder's Axe
+		{ itemID = 415031, desc = "Arathi Highlands (36, 80)" }, --Circle of Waves Idol
+		{ itemID = 415032, desc = "Arathi Highlands (63, 56)" }, --Hammerfall Wristguards
+		{ itemID = 415033, desc = "Arathi Highlands (28, 45)" }, --Brumn's Unfinished Project
+		{ itemID = 415034, desc = "Arathi Highlands (61, 64)" }, --Deadweight Pauldrons
+		{ itemID = 415035, desc = "Arathi Highlands (29, 51)" }, --Versatile Fishing Blanket
+		{ itemID = 415036, desc = "Arathi Highlands (62, 33)" }, --Offering Pendant
+		{ itemID = 415037, desc = "Arathi Highlands (38, 22)" }, --Mountain Climbers
+		{ itemID = 415038, desc = "Arathi Highlands (43, 31)" }, --Plains Bolter
+		{ itemID = 415039, desc = "Arathi Highlands (36, 57)" }, --Earth Infused Offering
+		{ itemID = 415040, desc = "Arathi Highlands (45, 75)" }, --Loose Treasure Pants
+		{ itemID = 415041, desc = "Arathi Highlands (64, 49)" }, --Grave Spite
+		{ itemID = 415042, desc = "Arathi Highlands (70, 54)" }, --Arcane Impaler
+		{ itemID = 415043, desc = "Arathi Highlands (52, 48)" }, --Silken Travel Gloves
+		{ itemID = 415044, desc = "Arathi Highlands (26, 31)" }, --Flame Infused Offering Band
+		{ itemID = 415045, desc = "Stranglethorn Vale (24, 72)" }, --Mok'rash's Circlet
+		{ itemID = 415046, desc = "Stranglethorn Vale (27, 83)" }, --Hull Breaker
+		{ itemID = 415047, desc = "Stranglethorn Vale (29, 88)" }, --Keelhaul's Saber
+		{ itemID = 415048, desc = "Stranglethorn Vale (31, 89)" }, --Cannon Loaders
+		{ itemID = 415049, desc = "Stranglethorn Vale (33, 88)" }, --Tamas's Black Powder Pouch
+		{ itemID = 415050, desc = "Stranglethorn Vale (34, 87)" }, --Bloodsail Decksweeper
+		{ itemID = 415051, desc = "Stranglethorn Vale (38, 81)" }, --Gorilla Pelt
+		{ itemID = 415052, desc = "Stranglethorn Vale (35, 79)" }, --Blackwater Booty Band
+		{ itemID = 415053, desc = "Stranglethorn Vale (36, 69)" }, --Gorlash's Seaweed Salad
+		{ itemID = 415054, desc = "Stranglethorn Vale (35, 62)" }, --Premium Banana
+		{ itemID = 415055, desc = "Stranglethorn Vale (39, 59)" }, --Pilfered Plate Pants
 		{ itemID = 415056 }, --Zanzil Vial Pendant
-		{ itemID = 415058 }, --Sea Cleaver
-		{ itemID = 415059 }, --Special Seashell
-		{ itemID = 415060 }, --Buccaneer Shiv
-		{ itemID = 415061 }, --Naga Throwing Trident
-		{ itemID = 415062 }, --Jose's Best Slacks
-		{ itemID = 415063 }, --Mangled Wraps
-		{ itemID = 415064 }, --Sharpened Raptor Tooth
-		{ itemID = 415065 }, --A Guide to a Succubus' Darkest Secrets
-		{ itemID = 415066 }, --Pristine Tethis Feather
-		{ itemID = 415067 }, --Ancient Sea-dweller Charm
-		{ itemID = 415068 }, --Voodoo Bonemaker
-		{ itemID = 415069 }, --South Sea Dress
-		{ itemID = 415070 }, --Jungle Stalker Pauldrons
+		{ itemID = 415058, desc = "Stranglethorn Vale (26, 86)" }, --Sea Cleaver
+		{ itemID = 415059, desc = "Stranglethorn Vale (32, 82)" }, --Special Seashell
+		{ itemID = 415060, desc = "Stranglethorn Vale (27, 70)" }, --Buccaneer Shiv
+		{ itemID = 415061, desc = "Stranglethorn Vale (28, 65)" }, --Naga Throwing Trident
+		{ itemID = 415062, desc = "Stranglethorn Vale (29, 59)" }, --Jose's Best Slacks
+		{ itemID = 415063, desc = "Stranglethorn Vale (25, 59)" }, --Mangled Wraps
+		{ itemID = 415064, desc = "Stranglethorn Vale (23, 49)" }, --Sharpened Raptor Tooth
+		{ itemID = 415065, desc = "Stranglethorn Vale (24, 53)" }, --A Guide to a Succubus' Darkest Secrets
+		{ itemID = 415066, desc = "Stranglethorn Vale (29, 45)" }, --Pristine Tethis Feather
+		{ itemID = 415067, desc = "Stranglethorn Vale (28, 39)" }, --Ancient Sea-dweller Charm
+		{ itemID = 415068, desc = "Stranglethorn Vale (32, 43)" }, --Voodoo Bonemaker
+		{ itemID = 415069, desc = "Stranglethorn Vale (42, 85)" }, --South Sea Dress
+		{ itemID = 415070, desc = "Stranglethorn Vale (32, 37)" }, --Jungle Stalker Pauldrons
 		{ itemID = 415071 }, --Hunting Spear
-		{ itemID = 415072 }, --Mosh'Ogg Stave
-		{ itemID = 415073 }, --Kal'ai Jewel
-		{ itemID = 415074 }, --Ravaged Shoulderpads
-		{ itemID = 415075 }, --Bloodscalper
-		{ itemID = 415076 }, --Panther Shredders
-		{ itemID = 415077 }, --Zul'Kunda Tribe Trophy
-		{ itemID = 415078 }, --Wizard Cuffs
-		{ itemID = 415079 }, --Yojamba Hex Skull
-		{ itemID = 415080 }, --Depleted Elemental Lodestone
-		{ itemID = 415081 }, --Zul'Kunda Blood Ring
-		{ itemID = 415082 }, --Bloodscalp Beastmastery Amulet
-		{ itemID = 415083 }, --Zul'Kunda Scout Vest
-		{ itemID = 415084 }, --Bloodscalp Skullpiercer
-		{ itemID = 415085 }, --Jungle Defender
-		{ itemID = 415087 }, --Nesingwary Tracking Boots
-		{ itemID = 415088 }, --Riverheart Crest
-		{ itemID = 415089 }, --Last Guardian
-		{ itemID = 415090 }, --Jungle Medicine Compendium
-		{ itemID = 415091 }, --Jungle Broadblade
-		{ itemID = 415092 }, --The Wrangler
-		{ itemID = 415093 }, --Shiv of Warm Greetings
-		{ itemID = 415094 }, --Witchdoctor Mixing Gloves
-		{ itemID = 415095 }, --Kurzen Eviscerator
-		{ itemID = 415096 }, --Kurzen Madness Blade
-		{ itemID = 415097 }, --Crystallized Shield
-		{ itemID = 415098 }, --Gurubashi Trainee Hatchet
-		{ itemID = 415099 }, --Rebel Runners
-		{ itemID = 415100 }, --Axe Swingers
-		{ itemID = 415101 }, --Splinter Guard
-		{ itemID = 415102 }, --Cogwheel Band
-		{ itemID = 415103 }, --Mosh'Ogg Totem
-		{ itemID = 415104 }, --Mind's Eye Fragment
-		{ itemID = 415105 }, --Fifth Staff of Mosh'Ogg Magic Circle
-		{ itemID = 415106 }, --Thunder Fur Cloak
-		{ itemID = 415107 }, --Skullsplitter Crossbow
-		{ itemID = 415108 }, --Martyr Cross Book
-		{ itemID = 415109 }, --Mystic Druid Idol
-		{ itemID = 415110 }, --Traveler's Lost Bag
-		{ itemID = 415111 }, --Crystallized Amulet
-		{ itemID = 415112 }, --Crystallized Wristguards
-		{ itemID = 415113 }, --The Ironjaw
-		{ itemID = 415114 }, --Stonesplitter
-		{ itemID = 415115 }, --Fallen Gladiator's Shield
-		{ itemID = 415116 }, --Nature's Defiance
-		{ itemID = 415117 }, --Lazy Hat
-		{ itemID = 415118 }, --Jubuwal Witchdoctor Amulet
-		{ itemID = 415119 }, --Ring of Accurate Endeavors
-		{ itemID = 415120 }, --Muckrake's Soup Bowl
-		{ itemID = 415121 }, --Coldridge Crusher
-		{ itemID = 415122 }, --Polished Alteraci Breastplate
-		{ itemID = 415123 }, --Blood Soaked Spike
-		{ itemID = 415124 }, --Syndicate Slicer
-		{ itemID = 415125 }, --Feline's Grasp
-		{ itemID = 415126 }, --Forgotten Warrior's Pauldrons
-		{ itemID = 415127 }, --Ice-Forged Gauntlets
-		{ itemID = 415128 }, --Tracker's Scope
-		{ itemID = 415129 }, --Totem of the Flowing River
-		{ itemID = 415130 }, --Tribal Pads
-		{ itemID = 415131 }, --Safety Gloves
-		{ itemID = 415132 }, --The Rock Binder
-		{ itemID = 415133 }, --Spark of Infernus
-		{ itemID = 415134 }, --Shadowforge Shotgun
-		{ itemID = 415135 }, --Shadowforged Deflector
-		{ itemID = 415136 }, --Toe Hammer
-		{ itemID = 415137 }, --Bloodstained Pendant
-		{ itemID = 415138 }, --Staff of the Earth Guardian
-		{ itemID = 415139 }, --Real Big Bone
-		{ itemID = 415140 }, --Garek's Comfortable Robe
-		{ itemID = 415141 }, --Thorkaf's Prototype
-		{ itemID = 415142 }, --Deflector's Wargreaves
-		{ itemID = 415143 }, --Tomb Seeker
-		{ itemID = 415144 }, --Tombscarred Guardian
-		{ itemID = 415145 }, --Rock Runners
-		{ itemID = 415146 }, --Stonewalker's Totem
-		{ itemID = 415147 }, --Spellpiercing Cloak
-		{ itemID = 415148 }, --Earth Bindings
-		{ itemID = 415149 }, --Ogre Fire Poker
-		{ itemID = 415150 }, --Stonebloom Idol
-		{ itemID = 415151 }, --Ogre Cloth
-		{ itemID = 415152 }, --Duelist Gloves
-		{ itemID = 415153 }, --Dustbringer
-		{ itemID = 415154 }, --Focusing Spirit Band
-		{ itemID = 415155 }, --Bone Carver
-		{ itemID = 415156 }, --Sunscorched Thrower
-		{ itemID = 415157 }, --Ragescorn Circlet
-		{ itemID = 415158 }, --Unearthed Pauldrons
-		{ itemID = 415159 }, --Wind-Worn Longbow
-		{ itemID = 415160 }, --Cowl of the Stone Summoner
-		{ itemID = 415161 }, --Bloodstained Helm
-		{ itemID = 450238 }, --Frostwalker Boots
-		{ itemID = 450239 }, --Spicy Candle
-		{ itemID = 450240 }, --Lost Adventurer's Ring
-		{ itemID = 450241 }, --Forgotten Knapsack
-		{ itemID = 450242 }, --Glinting Necklace
-		{ itemID = 450243 }, --Snow Shovel
-		{ itemID = 450244 }, --Lumber Axe
-		{ itemID = 450245 }, --Lost Mountaineer's Bow
-		{ itemID = 450246 }, --Magnus' Mug
-		{ itemID = 450247 }, --Chilly Pickaxe
-		{ itemID = 450248 }, --Bone Needle
-		{ itemID = 450249 }, --Gnomeregan Spanner
-		{ itemID = 450250 }, --Sailor's Ring
-		{ itemID = 450251 }, --Wendigo Fur Cloak
-		{ itemID = 450252 }, --Frostmane Axe
-		{ itemID = 450253 }, --Frozen Finger
-		{ itemID = 450254 }, --Arctic Imbued Stick
-		{ itemID = 450256 }, --Claw of Vagash
-		{ itemID = 450257 }, --Heavy Ogre Axe
-		{ itemID = 450258 }, --Grizlak's Candle
-		{ itemID = 450259 }, --Large Buzzard Talon
-		{ itemID = 450260 }, --Tunnel Rat Pike
-		{ itemID = 450261 }, --Miner's League Vest
-		{ itemID = 450262 }, --Sword of Stone
-		{ itemID = 450263 }, --Galgosh's Other Bone
-		{ itemID = 450264 }, --Brother's Special Gift
-		{ itemID = 450265 }, --Ol' Blunderbuss
-		{ itemID = 450266 }, --Dark Iron Collar
-		{ itemID = 450267 }, --Ogre Loincloth
-		{ itemID = 450268 }, --Frenzy Fin
-		{ itemID = 450269 }, --Scrap Shield
-		{ itemID = 450270 }, --Lost Traveler's Ring
-		{ itemID = 450271 }, --Frayed Backwrap
-		{ itemID = 450272 }, --Enchanted Scribe's Feather
-		{ itemID = 450273 }, --Crater's Silk Drape
-		{ itemID = 450274 }, --Runed Pantaloons
-		{ itemID = 450275 }, --Charred Greaves
-		{ itemID = 450276 }, --Dusty Sorcerer Hat
-		{ itemID = 450277 }, --Chain of the Forgotten Prisoner
-		{ itemID = 450500 }, --Worn Grunt Axe
-		{ itemID = 450501 }, --Abandoned Peon's Sack
-		{ itemID = 450502 }, --Wristguards of the Elements
-		{ itemID = 450503 }, --Sturdy Peon Blanket
-		{ itemID = 450504 }, --Large Kodo Bone
-		{ itemID = 450505 }, --Stolen Tauren Cloak
-		{ itemID = 450506 }, --Ancestor's Axe
+		{ itemID = 415072, desc = "Stranglethorn Vale (37, 31)" }, --Mosh'Ogg Stave
+		{ itemID = 415073, desc = "Secret Inquisitorial Dungeon (35, 24)" }, --Kal'ai Jewel
+		{ itemID = 415074, desc = "Stranglethorn Vale (32, 17)" }, --Ravaged Shoulderpads
+		{ itemID = 415075, desc = "Stranglethorn Vale (30, 19)" }, --Bloodscalper
+		{ itemID = 415076, desc = "Stranglethorn Vale (28, 15)" }, --Panther Shredders
+		{ itemID = 415077, desc = "Stranglethorn Vale (26, 12)" }, --Zul'Kunda Tribe Trophy
+		{ itemID = 415078, desc = "Stranglethorn Vale (20, 12)" }, --Wizard Cuffs
+		{ itemID = 415079, desc = "Stranglethorn Vale (13, 15)" }, --Yojamba Hex Skull
+		{ itemID = 415080, desc = "Stranglethorn Vale (22, 25)" }, --Depleted Elemental Lodestone
+		{ itemID = 415081, desc = "Stranglethorn Vale (23, 8)" }, --Zul'Kunda Blood Ring
+		{ itemID = 415082, desc = "Stranglethorn Vale (25, 8)" }, --Bloodscalp Beastmastery Amulet
+		{ itemID = 415083, desc = "Stranglethorn Vale (24, 13)" }, --Zul'Kunda Scout Vest
+		{ itemID = 415084, desc = "Stranglethorn Vale (25, 10)" }, --Bloodscalp Skullpiercer
+		{ itemID = 415085, desc = "Stranglethorn Vale (37, 14)" }, --Jungle Defender
+		{ itemID = 415087, desc = "Stranglethorn Vale (35, 10)" }, --Nesingwary Tracking Boots
+		{ itemID = 415088, desc = "Stranglethorn Vale (38, 9)" }, --Riverheart Crest
+		{ itemID = 415089, desc = "Dustwallow Marsh (59, 18)" }, --Last Guardian
+		{ itemID = 415090, desc = "Stranglethorn Vale (44, 9)" }, --Jungle Medicine Compendium
+		{ itemID = 415091, desc = "Stranglethorn Vale (44, 9)" }, --Jungle Broadblade
+		{ itemID = 415092, desc = "Stranglethorn Vale (46, 10)" }, --The Wrangler
+		{ itemID = 415093, desc = "Stranglethorn Vale (46, 8)" }, --Shiv of Warm Greetings
+		{ itemID = 415094, desc = "Stranglethorn Vale (47, 5)" }, --Witchdoctor Mixing Gloves
+		{ itemID = 415095, desc = "Stranglethorn Vale (50, 4)" }, --Kurzen Eviscerator
+		{ itemID = 415096, desc = "Stranglethorn Vale (46, 11)" }, --Kurzen Madness Blade
+		{ itemID = 415097, desc = "Stranglethorn Vale (49, 16)" }, --Crystallized Shield
+		{ itemID = 415098, desc = "Stranglethorn Vale (49, 19)" }, --Gurubashi Trainee Hatchet
+		{ itemID = 415099, desc = "Stranglethorn Vale (39, 4)" }, --Rebel Runners
+		{ itemID = 415100, desc = "Stranglethorn Vale (44, 18)" }, --Axe Swingers
+		{ itemID = 415101, desc = "Stranglethorn Vale (43, 19)" }, --Splinter Guard
+		{ itemID = 415102, desc = "Stranglethorn Vale (42, 19)" }, --Cogwheel Band
+		{ itemID = 415103, desc = "Stranglethorn Vale (49, 27)" }, --Mosh'Ogg Totem
+		{ itemID = 415104, desc = "Stranglethorn Vale (53, 28)" }, --Mind's Eye Fragment
+		{ itemID = 415105, desc = "Stranglethorn Vale (50, 31)" }, --Fifth Staff of Mosh'Ogg Magic Circle
+		{ itemID = 415106, desc = "Stranglethorn Vale (48, 38)" }, --Thunder Fur Cloak
+		{ itemID = 415107, desc = "Stranglethorn Vale (48, 40)" }, --Skullsplitter Crossbow
+		{ itemID = 415108, desc = "Stranglethorn Vale (44, 45)" }, --Martyr Cross Book
+		{ itemID = 415109, desc = "Stranglethorn Vale (42, 36)" }, --Mystic Druid Idol
+		{ itemID = 415110, desc = "Stranglethorn Vale (39, 38)" }, --Traveler's Lost Bag
+		{ itemID = 415111, desc = "Stranglethorn Vale (40, 49)" }, --Crystallized Amulet
+		{ itemID = 415112, desc = "Stranglethorn Vale (41, 52)" }, --Crystallized Wristguards
+		{ itemID = 415113, desc = "Stranglethorn Vale (44, 48)" }, --The Ironjaw
+		{ itemID = 415114, desc = "Stranglethorn Vale (42, 48)" }, --Stonesplitter
+		{ itemID = 415115, desc = "Stranglethorn Vale (30, 49)" }, --Fallen Gladiator's Shield
+		{ itemID = 415116, desc = "Stranglethorn Vale (46, 28)" }, --Nature's Defiance
+		{ itemID = 415117, desc = "Stranglethorn Vale (42, 30)" }, --Lazy Hat
+		{ itemID = 415118, desc = "Stranglethorn Vale (35, 52)" }, --Jubuwal Witchdoctor Amulet
+		{ itemID = 415119, desc = "Stranglethorn Vale (33, 72)" }, --Ring of Accurate Endeavors
+		{ itemID = 415120, desc = "Alterac Mountains (39, 47)" }, --Muckrake's Soup Bowl
+		{ itemID = 415121, desc = "Alterac Mountains (37, 41)" }, --Coldridge Crusher
+		{ itemID = 415122, desc = "Alterac Mountains (40, 45)" }, --Polished Alteraci Breastplate
+		{ itemID = 415123, desc = "Alterac Mountains (58, 68)" }, --Blood Soaked Spike
+		{ itemID = 415124, desc = "Alterac Mountains (48, 82)" }, --Syndicate Slicer
+		{ itemID = 415125, desc = "Alterac Mountains (39, 91)" }, --Feline's Grasp
+		{ itemID = 415126, desc = "Alterac Mountains (47, 46)" }, --Forgotten Warrior's Pauldrons
+		{ itemID = 415127, desc = "Alterac Mountains (42, 65)" }, --Ice-Forged Gauntlets
+		{ itemID = 415128, desc = "Alterac Mountains (63, 57)" }, --Tracker's Scope
+		{ itemID = 415129, desc = "Alterac Mountains (82, 59)" }, --Totem of the Flowing River
+		{ itemID = 415130, desc = "Stranglethorn Vale (37, 34)" }, --Tribal Pads
+		{ itemID = 415131, desc = "Badlands (26, 44)" }, --Safety Gloves
+		{ itemID = 415132, desc = "Badlands (17, 35)" }, --The Rock Binder
+		{ itemID = 415133, desc = "Badlands (42, 27)" }, --Spark of Infernus
+		{ itemID = 415134, desc = "Badlands (40, 27)" }, --Shadowforge Shotgun
+		{ itemID = 415135, desc = "Badlands (41, 26)" }, --Shadowforged Deflector
+		{ itemID = 415136, desc = "Badlands (53, 34)" }, --Toe Hammer
+		{ itemID = 415137, desc = "Badlands (67, 24)" }, --Bloodstained Pendant
+		{ itemID = 415138, desc = "Badlands (77, 56)" }, --Staff of the Earth Guardian
+		{ itemID = 415139, desc = "Badlands (80, 64)" }, --Real Big Bone
+		{ itemID = 415140, desc = "Badlands (63, 54)" }, --Garek's Comfortable Robe
+		{ itemID = 415141, desc = "Badlands (63, 58)" }, --Thorkaf's Prototype
+		{ itemID = 415142, desc = "Badlands (62, 69)" }, --Deflector's Wargreaves
+		{ itemID = 415143, desc = "Badlands (54, 43)" }, --Tomb Seeker
+		{ itemID = 415144, desc = "Badlands (57, 73)" }, --Tombscarred Guardian
+		{ itemID = 415145, desc = "Badlands (56, 82)" }, --Rock Runners
+		{ itemID = 415146, desc = "Badlands (51, 68)" }, --Stonewalker's Totem
+		{ itemID = 415147, desc = "Badlands (51, 77)" }, --Spellpiercing Cloak
+		{ itemID = 415148, desc = "Badlands (45, 85)" }, --Earth Bindings
+		{ itemID = 415149, desc = "Badlands (30, 57)" }, --Ogre Fire Poker
+		{ itemID = 415150, desc = "Badlands (11, 88)" }, --Stonebloom Idol
+		{ itemID = 415151, desc = "Badlands (14, 76)" }, --Ogre Cloth
+		{ itemID = 415152, desc = "Badlands (10, 82)" }, --Duelist Gloves
+		{ itemID = 415153, desc = "Badlands (6, 91)" }, --Dustbringer
+		{ itemID = 415154, desc = "Badlands (8, 96)" }, --Focusing Spirit Band
+		{ itemID = 415155, desc = "Badlands (16, 61)" }, --Bone Carver
+		{ itemID = 415156, desc = "Badlands (42, 53)" }, --Sunscorched Thrower
+		{ itemID = 415157, desc = "Badlands (57, 40)" }, --Ragescorn Circlet
+		{ itemID = 415158, desc = "Badlands (44, 12)" }, --Unearthed Pauldrons
+		{ itemID = 415159, desc = "Badlands (31, 65)" }, --Wind-Worn Longbow
+		{ itemID = 415160, desc = "Badlands (2, 83)" }, --Cowl of the Stone Summoner
+		{ itemID = 415161, desc = "Badlands (67, 23)" }, --Bloodstained Helm
+		{ itemID = 450238, desc = "Coldridge Valley (40, 60)" }, --Frostwalker Boots
+		{ itemID = 450239, desc = "Dun Morogh (33, 72)" }, --Spicy Candle
+		{ itemID = 450240, desc = "Dun Morogh (30, 80)" }, --Lost Adventurer's Ring
+		{ itemID = 450241, desc = "Coldridge Valley (67, 83)" }, --Forgotten Knapsack
+		{ itemID = 450242, desc = "Dun Morogh (35, 69)" }, --Glinting Necklace
+		{ itemID = 450243, desc = "Dun Morogh (51, 53)" }, --Snow Shovel
+		{ itemID = 450244, desc = "Dun Morogh (45, 66)" }, --Lumber Axe
+		{ itemID = 450245, desc = "Dun Morogh (36, 62)" }, --Lost Mountaineer's Bow
+		{ itemID = 450246, desc = "Dun Morogh (47, 53)" }, --Magnus' Mug
+		{ itemID = 450247, desc = "Gol'Bolar Quarry (49, 62)" }, --Chilly Pickaxe
+		{ itemID = 450248, desc = "Dun Morogh (63, 46)" }, --Bone Needle
+		{ itemID = 450249, desc = "Dun Morogh (27, 43)" }, --Gnomeregan Spanner
+		{ itemID = 450250, desc = "Dun Morogh (77, 52)" }, --Sailor's Ring
+		{ itemID = 450251, desc = "The Grizzled Den (45, 61)" }, --Wendigo Fur Cloak
+		{ itemID = 450252, desc = "Dun Morogh (22, 52)" }, --Frostmane Axe
+		{ itemID = 450253, desc = "Dun Morogh (39, 54)" }, --Frozen Finger
+		{ itemID = 450254, desc = "Dun Morogh (23, 52)" }, --Arctic Imbued Stick
+		{ itemID = 450256, desc = "Dun Morogh (63, 46)" }, --Claw of Vagash
+		{ itemID = 450257, desc = "Loch Modan (69, 24)" }, --Heavy Ogre Axe
+		{ itemID = 450258, desc = "Loch Modan (34, 27)" }, --Grizlak's Candle
+		{ itemID = 450259, desc = "Loch Modan (77, 75)" }, --Large Buzzard Talon
+		{ itemID = 450260, desc = "Loch Modan (36, 16)" }, --Tunnel Rat Pike
+		{ itemID = 450261, desc = "Loch Modan (35, 27)" }, --Miner's League Vest
+		{ itemID = 450262, desc = "Loch Modan (37, 61)" }, --Sword of Stone
+		{ itemID = 450263, desc = "Loch Modan (72, 67)" }, --Galgosh's Other Bone
+		{ itemID = 450264, desc = "Loch Modan (52, 69)" }, --Brother's Special Gift
+		{ itemID = 450265, desc = "Loch Modan (48, 15)" }, --Ol' Blunderbuss
+		{ itemID = 450266, desc = "Loch Modan (59, 14)" }, --Dark Iron Collar
+		{ itemID = 450267, desc = "Loch Modan (79, 15)" }, --Ogre Loincloth
+		{ itemID = 450268, desc = "Loch Modan (48, 19)" }, --Frenzy Fin
+		{ itemID = 450269, desc = "Loch Modan (63, 48)" }, --Scrap Shield
+		{ itemID = 450270, desc = "Loch Modan (54, 54)" }, --Lost Traveler's Ring
+		{ itemID = 450271, desc = "Loch Modan (25, 44)" }, --Frayed Backwrap
+		{ itemID = 450272, desc = "Alterac Mountains (44, 41)" }, --Enchanted Scribe's Feather
+		{ itemID = 450273, desc = "Alterac Mountains (22, 64)" }, --Crater's Silk Drape
+		{ itemID = 450274, desc = "Alterac Mountains (15, 75)" }, --Runed Pantaloons
+		{ itemID = 450275, desc = "Alterac Mountains (13, 76)" }, --Charred Greaves
+		{ itemID = 450276, desc = "Alterac Mountains (18, 58)" }, --Dusty Sorcerer Hat
+		{ itemID = 450277, desc = "Alterac Mountains (21, 86)" }, --Chain of the Forgotten Prisoner
+		{ itemID = 450500, desc = "Wailing Caverns (34, 67)" }, --Worn Grunt Axe
+		{ itemID = 450501, desc = "Valley of Trials (54, 49)" }, --Abandoned Peon's Sack
+		{ itemID = 450502, desc = "Durotar (44, 78)" }, --Wristguards of the Elements
+		{ itemID = 450503, desc = "Valley of Trials (58, 55)" }, --Sturdy Peon Blanket
+		{ itemID = 450504, desc = "Mulgore (43, 80)" }, --Large Kodo Bone
+		{ itemID = 450505, desc = "Mulgore (61, 85)" }, --Stolen Tauren Cloak
+		{ itemID = 450506, desc = "Mulgore (59, 90)" }, --Ancestor's Axe
 		{ itemID = 450507 }, --Aloof Tauren's Herb Incense
-		{ itemID = 450508 }, --Burning Blade Ring
-		{ itemID = 450509 }, --Bloodied Torn Bracers
-		{ itemID = 450511 }, --Gem of Fortitude
-		{ itemID = 450512 }, --Defias Special Bucket
-		{ itemID = 450513 }, --Wax Stained Bag
-		{ itemID = 450514 }, --Deadman Walkers
-		{ itemID = 450515 }, --Mother's Loose Fang
-		{ itemID = 450517 }, --Bones to Gnaw
-		{ itemID = 450518 }, --Bones to Munch
-		{ itemID = 450519 }, --Stormwind Memento
-		{ itemID = 450520 }, --Lookout Scope
-		{ itemID = 450522 }, --Murloc Voodoo Doll
-		{ itemID = 450523 }, --Enchanted Straw Appendage
-		{ itemID = 450524 }, --Lexicon Ring
-		{ itemID = 450525 }, --Thunderfall Wand
-		{ itemID = 450526 }, --Thunderfall Hunting Gun
-		{ itemID = 450527 }, --Loop of the Sly Rogue
-		{ itemID = 450528 }, --The Candle
-		{ itemID = 450529 }, --Gnoll Subjugator
-		{ itemID = 450530 }, --Rot Hide Mantle
-		{ itemID = 450531 }, --Ravenous Eye
-		{ itemID = 450532 }, --Alchemy Research Notes
-		{ itemID = 450533 }, --Rot Hide Harness
-		{ itemID = 450534 }, --Stolen Rot Hide Circlet
-		{ itemID = 450535 }, --Thule's Curse Parchment
-		{ itemID = 450536 }, --Grandpa's Scarlet Blade
-		{ itemID = 450537 }, --Arcane Glinting Shard
-		{ itemID = 450538 }, --Ancient Lordaeron Jewel
-		{ itemID = 450539 }, --Sack of Pine Seeds
-		{ itemID = 450540 }, --Ivar's Femur
-		{ itemID = 450541 }, --Nightlash Gown
-		{ itemID = 450542 }, --Small Claw of the Meat Wagon
-		{ itemID = 450543 }, --Poison Unguent Extract
-		{ itemID = 450544 }, --Gilnean Monocle
-		{ itemID = 450545 }, --Grimson Cloak
-		{ itemID = 450546 }, --Fenris Ring
-		{ itemID = 450547 }, --Ravenclaw Bone Necklace
-		{ itemID = 450548 }, --Corroded Quel'thalas Ring
-		{ itemID = 450549 }, --Worn Quel'thalas Heirloom
-		{ itemID = 450550 }, --Old Quel'thalas Brooch
-		{ itemID = 450551 }, --Fisherman's Last Wish
-		{ itemID = 450552 }, --Peculiar Gold Nugget
-		{ itemID = 450553 }, --Mrlrgrl Pitchfork
-		{ itemID = 450554 }, --Rusty Quel'thalas Circlet
-		{ itemID = 450555 }, --Murky Quel'thalas Drape
-		{ itemID = 450556 }, --People's Militia Crossbow
-		{ itemID = 450557 }, --Stolen Thunderbrew Flask
-		{ itemID = 450558 }, --Terrible Defias Mixture
-		{ itemID = 450559 }, --Madness Cursed Notes
-		{ itemID = 450560 }, --Harvest Golem Scythe
-		{ itemID = 450561 }, --People's Militia Badge
-		{ itemID = 450562 }, --Defias Honorcode Memento
-		{ itemID = 450563 }, --Defias Sprig
-		{ itemID = 450564 }, --Old Defias Gun
-		{ itemID = 450565 }, --Defias Assassin Cloak
-		{ itemID = 450566 }, --Ring of the Lexicon
-		{ itemID = 450567 }, --Dirtpaw Trousers
-		{ itemID = 450568 }, --Yowler's Howl
-		{ itemID = 450569 }, --Dragon Matriarch Cloak
-		{ itemID = 450570 }, --Stolen Ilgalar Neckpiece
-		{ itemID = 450571 }, --Blackrock Summoner's Garb
-		{ itemID = 450572 }, --Shadowhide Claw
-		{ itemID = 450573 }, --Blackrock Render
-		{ itemID = 450574 }, --Three Corner Coil
-		{ itemID = 450575 }, --Three Corner Carp
-		{ itemID = 450576 }, --Three Corner Cape
-		{ itemID = 450577 }, --Mrrrllrl Stick
-		{ itemID = 450578 }, --Aqualon's Bolt
-		{ itemID = 450579 }, --Thresher's Tooth
-		{ itemID = 450580 }, --Ribchaser's Loop
-		{ itemID = 450581 }, --Eliza's Pendant
+		{ itemID = 450508, desc = "Burning Blade Coven (14, 44)" }, --Burning Blade Ring
+		{ itemID = 450509, desc = "Mulgore (34, 62)" }, --Bloodied Torn Bracers
+		{ itemID = 450511, desc = "Northshire Valley (39, 17)" }, --Gem of Fortitude
+		{ itemID = 450512, desc = "Elwynn Forest (52, 52)" }, --Defias Special Bucket
+		{ itemID = 450513, desc = "Northshire Valley (37, 31)" }, --Wax Stained Bag
+		{ itemID = 450514, desc = "Northshire Valley (45, 73)" }, --Deadman Walkers
+		{ itemID = 450515, desc = "Elwynn Forest (62, 47)" }, --Mother's Loose Fang
+		{ itemID = 450517, desc = "Elwynn Forest (25, 94)" }, --Bones to Gnaw
+		{ itemID = 450519, desc = "Elwynn Forest (75, 51)" }, --Stormwind Memento
+		{ itemID = 450520, desc = "Elwynn Forest (84, 79)" }, --Lookout Scope
+		{ itemID = 450522, desc = "Elwynn Forest (78, 86)" }, --Murloc Voodoo Doll
+		{ itemID = 450523, desc = "Elwynn Forest (69, 79)" }, --Enchanted Straw Appendage
+		{ itemID = 450524, desc = "Elwynn Forest (65, 70)" }, --Lexicon Ring
+		{ itemID = 450525, desc = " (17.11, 68.64)" }, --Thunderfall Wand
+		{ itemID = 450526, desc = "Elwynn Forest (25, 58)" }, --Thunderfall Hunting Gun
+		{ itemID = 450527, desc = "Elwynn Forest (31, 65)" }, --Loop of the Sly Rogue
+		{ itemID = 450528, desc = "Fargodeep Mine (Upper) (73, 38)" }, --The Candle
+		{ itemID = 450529, desc = "Silverpine Forest (66, 24)" }, --Gnoll Subjugator
+		{ itemID = 450530, desc = "Silverpine Forest (66, 32)" }, --Rot Hide Mantle
+		{ itemID = 450531, desc = "Silverpine Forest (65, 23)" }, --Ravenous Eye
+		{ itemID = 450532, desc = "Silverpine Forest (68, 26)" }, --Alchemy Research Notes
+		{ itemID = 450533, desc = "Silverpine Forest (68, 24)" }, --Rot Hide Harness
+		{ itemID = 450534, desc = "Silverpine Forest (78, 31)" }, --Stolen Rot Hide Circlet
+		{ itemID = 450535, desc = "Silverpine Forest (66, 24)" }, --Thule's Curse Parchment
+		{ itemID = 450536, desc = "Alterac Mountains (32, 33)" }, --Grandpa's Scarlet Blade
+		{ itemID = 450537, desc = "Silverpine Forest (73, 37)" }, --Arcane Glinting Shard
+		{ itemID = 450538, desc = "Silverpine Forest (73, 16)" }, --Ancient Lordaeron Jewel
+		{ itemID = 450539, desc = "Silverpine Forest (56, 13)" }, --Sack of Pine Seeds
+		{ itemID = 450540, desc = "Silverpine Forest (52, 14)" }, --Ivar's Femur
+		{ itemID = 450541, desc = "Silverpine Forest (45, 23)" }, --Nightlash Gown
+		{ itemID = 450542, desc = "Silverpine Forest (36, 15)" }, --Small Claw of the Meat Wagon
+		{ itemID = 450543, desc = "Silverpine Forest (36, 8)" }, --Poison Unguent Extract
+		{ itemID = 450544, desc = "Silverpine Forest (37, 29)" }, --Gilnean Monocle
+		{ itemID = 450545, desc = "Silverpine Forest (58, 45)" }, --Grimson Cloak
+		{ itemID = 450546, desc = "Silverpine Forest (60, 42)" }, --Fenris Ring
+		{ itemID = 450547, desc = "Silverpine Forest (46, 54)" }, --Ravenclaw Bone Necklace
+		{ itemID = 450548, desc = "Westfall (50, 8)" }, --Corroded Quel'thalas Ring
+		{ itemID = 450549, desc = "Westfall (35, 16)" }, --Worn Quel'thalas Heirloom
+		{ itemID = 450550, desc = "Westfall (29, 27)" }, --Old Quel'thalas Brooch
+		{ itemID = 450551, desc = "Westfall (25, 16)" }, --Fisherman's Last Wish
+		{ itemID = 450552, desc = "Westfall (39, 72)" }, --Peculiar Gold Nugget
+		{ itemID = 450553, desc = "Westfall (26, 57)" }, --Mrlrgrl Pitchfork
+		{ itemID = 450554, desc = "Westfall (26, 74)" }, --Rusty Quel'thalas Circlet
+		{ itemID = 450555, desc = "Westfall (34, 87)" }, --Murky Quel'thalas Drape
+		{ itemID = 450556, desc = "Westfall (43, 88)" }, --People's Militia Crossbow
+		{ itemID = 450557, desc = "Westfall (53, 79)" }, --Stolen Thunderbrew Flask
+		{ itemID = 450558, desc = "Westfall (71, 74)" }, --Terrible Defias Mixture
+		{ itemID = 450559, desc = "Westfall (72, 74)" }, --Madness Cursed Notes
+		{ itemID = 450560, desc = "Westfall (45, 36)" }, --Harvest Golem Scythe
+		{ itemID = 450561, desc = "Westfall (46, 19)" }, --People's Militia Badge
+		{ itemID = 450562, desc = "Westfall (40, 68)" }, --Defias Honorcode Memento
+		{ itemID = 450563, desc = "Westfall (42, 72)" }, --Defias Sprig
+		{ itemID = 450564, desc = "Westfall (44, 69)" }, --Old Defias Gun
+		{ itemID = 450565, desc = "Westfall (44, 66)" }, --Defias Assassin Cloak
+		{ itemID = 450566, desc = "Redridge Mountains (81, 49)" }, --Ring of the Lexicon
+		{ itemID = 450567, desc = "Redridge Mountains (19, 14)" }, --Dirtpaw Trousers
+		{ itemID = 450568, desc = "Redridge Mountains (28, 21)" }, --Yowler's Howl
+		{ itemID = 450569, desc = "Redridge Mountains (44, 36)" }, --Dragon Matriarch Cloak
+		{ itemID = 450570, desc = "Redridge Mountains (28, 16)" }, --Stolen Ilgalar Neckpiece
+		{ itemID = 450571, desc = "Redridge Mountains (34, 7)" }, --Blackrock Summoner's Garb
+		{ itemID = 450572, desc = "Redridge Mountains (70, 55)" }, --Shadowhide Claw
+		{ itemID = 450573, desc = "Redridge Mountains (78, 86)" }, --Blackrock Render
+		{ itemID = 450574, desc = "Redridge Mountains (66, 72)" }, --Three Corner Coil
+		{ itemID = 450575, desc = "Redridge Mountains (49, 78)" }, --Three Corner Carp
+		{ itemID = 450576, desc = "Redridge Mountains (19, 96)" }, --Three Corner Cape
+		{ itemID = 450577, desc = "Redridge Mountains (81, 61)" }, --Mrrrllrl Stick
+		{ itemID = 450578, desc = "Redridge Mountains (57, 56)" }, --Aqualon's Bolt
+		{ itemID = 450579, desc = "Redridge Mountains (41, 46)" }, --Thresher's Tooth
+		{ itemID = 450580, desc = "Redridge Mountains (16, 64)" }, --Ribchaser's Loop
+		{ itemID = 450581, desc = "Duskwood (31, 33)" }, --Eliza's Pendant
 		{ itemID = 450582 }, --Fullmoon Howl
 		{ itemID = 450583 }, --Naraxis Fang
-		{ itemID = 450584 }, --Haunted Bouquet
-		{ itemID = 450585 }, --Gutspill Cloak
-		{ itemID = 450586 }, --Sack of Regenerating Provisions
-		{ itemID = 450587 }, --Nightwatch Circlet
-		{ itemID = 450588 }, --Dusty Priest Cloak
-		{ itemID = 450589 }, --Pack Lead Bone Ring
-		{ itemID = 450590 }, --Defias Night Blade
-		{ itemID = 450591 }, --Vul'Gol Torch
-		{ itemID = 450592 }, --Venom Sample
-		{ itemID = 450593 }, --Cursed Toy
-		{ itemID = 450594 }, --The Jitters
-		{ itemID = 450595 }, --Raven Hill Backscratcher
-		{ itemID = 450597 }, --Casket Will
-		{ itemID = 450598 }, --Catacombs Torch
-		{ itemID = 450599 }, --Alchemy Visceral Juice
-		{ itemID = 450600 }, --Ruby Skeletal Ring
-		{ itemID = 450601 }, --Poisoned Pendant
-		{ itemID = 450602 }, --Hazard Mantle
-		{ itemID = 450603 }, --Peculiar Root
-		{ itemID = 450604 }, --Darkest Night Loop
-		{ itemID = 450605 }, --Munitions Delivery Package
-		{ itemID = 450606 }, --Emerald Glinting Scale
-		{ itemID = 450607 }, --Hope for Atonement
-		{ itemID = 450609 }, --Bristleback Staff
-		{ itemID = 450610 }, --Thornmantle Quills
-		{ itemID = 450611 }, --Bristleback Quill
-		{ itemID = 450612 }, --Brambleblade
+		{ itemID = 450584, desc = "Duskwood (79, 72)" }, --Haunted Bouquet
+		{ itemID = 450585, desc = "Duskwood (74, 79)" }, --Gutspill Cloak
+		{ itemID = 450586, desc = "Duskwood (72, 56)" }, --Sack of Regenerating Provisions
+		{ itemID = 450587, desc = "Duskwood (78, 52)" }, --Nightwatch Circlet
+		{ itemID = 450588, desc = "Duskwood (80, 74)" }, --Dusty Priest Cloak
+		{ itemID = 450589, desc = "Duskwood (64, 74)" }, --Pack Lead Bone Ring
+		{ itemID = 450590, desc = "Duskwood (47, 79)" }, --Defias Night Blade
+		{ itemID = 450591, desc = "Duskwood (37, 84)" }, --Vul'Gol Torch
+		{ itemID = 450592, desc = "Duskwood (15, 67)" }, --Venom Sample
+		{ itemID = 450593, desc = "Duskwood (19, 56)" }, --Cursed Toy
+		{ itemID = 450594, desc = "Duskwood (17, 56)" }, --The Jitters
+		{ itemID = 450595, desc = "Duskwood (21, 47)" }, --Raven Hill Backscratcher
+		{ itemID = 450597, desc = "Duskwood (19, 36)" }, --Casket Will
+		{ itemID = 450598, desc = "Duskwood (16, 34)" }, --Catacombs Torch
+		{ itemID = 450599, desc = "Duskwood (16, 34)" }, --Alchemy Visceral Juice
+		{ itemID = 450600, desc = "Duskwood (22, 30)" }, --Ruby Skeletal Ring
+		{ itemID = 450601, desc = "Duskwood (25, 32)" }, --Poisoned Pendant
+		{ itemID = 450602, desc = "Duskwood (24, 31)" }, --Hazard Mantle
+		{ itemID = 450603, desc = "Duskwood (19, 25)" }, --Peculiar Root
+		{ itemID = 450604, desc = "Duskwood (17, 36)" }, --Darkest Night Loop
+		{ itemID = 450605, desc = "Duskwood (48, 63)" }, --Munitions Delivery Package
+		{ itemID = 450606, desc = "Duskwood (47, 64)" }, --Emerald Glinting Scale
+		{ itemID = 450607, desc = "Duskwood (91, 31)" }, --Hope for Atonement
+		{ itemID = 450609, desc = "Mulgore (33, 36)" }, --Bristleback Staff
+		{ itemID = 450610, desc = "Mulgore (64, 77)" }, --Thornmantle Quills
+		{ itemID = 450611, desc = "Mulgore (40, 16)" }, --Bristleback Quill
+		{ itemID = 450612, desc = "Camp Narache (82, 45)" }, --Brambleblade
 		{ itemID = 450613 }, --Feather of the Mother Harpy
-		{ itemID = 450614 }, --Venture Co. Unique Concoction
-		{ itemID = 450615 }, --Fallen Hardwood Plank
-		{ itemID = 450616 }, --Snaggle's Engage Whistle
-		{ itemID = 450617 }, --Long Fishing Spear
-		{ itemID = 450618 }, --Windfury Harpy Claw
-		{ itemID = 450619 }, --Galak Smahser
-		{ itemID = 450620 }, --Venture Co. Ring
-		{ itemID = 450621 }, --Discarded Wagon Wheel
-		{ itemID = 450622 }, --Interloper's Loop
+		{ itemID = 450614, desc = "Mulgore (48, 60)" }, --Venture Co. Unique Concoction
+		{ itemID = 450615, desc = "Mulgore (44, 45)" }, --Fallen Hardwood Plank
+		{ itemID = 450616, desc = "Mulgore (49, 72)" }, --Snaggle's Engage Whistle
+		{ itemID = 450617, desc = "Mulgore (46, 62)" }, --Long Fishing Spear
+		{ itemID = 450618, desc = "Mulgore (66, 69)" }, --Windfury Harpy Claw
+		{ itemID = 450619, desc = "Mulgore (61, 54)" }, --Galak Smahser
+		{ itemID = 450620, desc = "Mulgore (61, 46)" }, --Venture Co. Ring
+		{ itemID = 450621, desc = "Mulgore (62, 41)" }, --Discarded Wagon Wheel
+		{ itemID = 450622, desc = "Mulgore (62, 22)" }, --Interloper's Loop
 		{ itemID = 450623 }, --Lyrath's Pan Flute
 		{ itemID = 450624 }, --Amani Relic Amulet
 		{ itemID = 450625 }, --Sin'dorei Battle Staff
@@ -1064,166 +1063,166 @@ function AtlasLoot:InitializeDatabases()
 		{ itemID = 450636 }, --Ancient Amani Shield
 		{ itemID = 450637 }, --An'owyn Fragment
 		{ itemID = 450638 }, --Lost Bone Necklace
-		{ itemID = 450639 }, --Loded Ring
-		{ itemID = 450640 }, --Vial of Dread Water
-		{ itemID = 450641 }, --Honor Blade
-		{ itemID = 450642 }, --Wailing Sapphire Gem
-		{ itemID = 450643 }, --Stylish Cloak
-		{ itemID = 450644 }, --Bloody Wedding Ring
-		{ itemID = 450645 }, --Northwatch Hand Cannon
-		{ itemID = 450646 }, --Affray Cuirras
-		{ itemID = 450647 }, --Captain's Spyglass
-		{ itemID = 450648 }, --Overwatch Bow
-		{ itemID = 450649 }, --Special Excavation Lantern
-		{ itemID = 450650 }, --Burial Wraps
-		{ itemID = 450652 }, --Grave Restoration Mixture
-		{ itemID = 450653 }, --All Natural Herbal Potion
-		{ itemID = 450654 }, --Recruit's Life Saving Potion
+		{ itemID = 450639, desc = "The Barrens (60, 3)" }, --Loded Ring
+		{ itemID = 450640, desc = "The Barrens (48, 19)" }, --Vial of Dread Water
+		{ itemID = 450641, desc = "The Barrens (40, 25)" }, --Honor Blade
+		{ itemID = 450642, desc = "Wailing Caverns (Entrance) (25, 88)" }, --Wailing Sapphire Gem
+		{ itemID = 450643, desc = "The Barrens (42, 39)" }, --Stylish Cloak
+		{ itemID = 450644, desc = "The Barrens (49, 50)" }, --Bloody Wedding Ring
+		{ itemID = 450645, desc = "The Barrens (62, 53)" }, --Northwatch Hand Cannon
+		{ itemID = 450646, desc = "The Barrens (69, 48)" }, --Affray Cuirras
+		{ itemID = 450647, desc = "The Barrens (65, 45)" }, --Captain's Spyglass
+		{ itemID = 450648, desc = "The Barrens (43, 78)" }, --Overwatch Bow
+		{ itemID = 450649, desc = "The Barrens (49, 86)" }, --Special Excavation Lantern
+		{ itemID = 450650, desc = "Tirisfal Glades (31, 62)" }, --Burial Wraps
+		{ itemID = 450652, desc = "Deathknell (57, 30)" }, --Grave Restoration Mixture
+		{ itemID = 450653, desc = "Camp Narache (67, 36)" }, --All Natural Herbal Potion
+		{ itemID = 450654, desc = "Valley of Trials (34, 65)" }, --Recruit's Life Saving Potion
 		{ itemID = 450655 }, --Sunstrider Wraps
 		{ itemID = 450656 }, --Arcane Tinged Water
-		{ itemID = 450657 }, --Water Wraps
-		{ itemID = 450658 }, --Worn Shovel
-		{ itemID = 450659 }, --Patrolman's Sword
-		{ itemID = 450670 }, --Drumstick
-		{ itemID = 450672 }, --Mossy Bag
-		{ itemID = 450673 }, --Moonbathed Necklace
-		{ itemID = 450674 }, --Glen Guardian
-		{ itemID = 450675 }, --Lily Corsage
-		{ itemID = 450676 }, --Tracker's Dagger
-		{ itemID = 450677 }, --Webbed Cloak
-		{ itemID = 450678 }, --Dripping Fang
+		{ itemID = 450657, desc = "Stranglethorn Vale (16, 16)" }, --Water Wraps
+		{ itemID = 450658, desc = "Elwynn Forest (29, 70)" }, --Worn Shovel
+		{ itemID = 450659, desc = "Northshire Valley (67, 75)" }, --Patrolman's Sword
+		{ itemID = 450670, desc = "Coldridge Valley (34, 78)" }, --Drumstick
+		{ itemID = 450672, desc = "Shadowglen (44, 10)" }, --Mossy Bag
+		{ itemID = 450673, desc = "Teldrassil (59, 33)" }, --Moonbathed Necklace
+		{ itemID = 450674, desc = "Shadowglen (44, 10)" }, --Glen Guardian
+		{ itemID = 450675, desc = "Shadowglen (43, 51)" }, --Lily Corsage
+		{ itemID = 450676, desc = "Shadowglen (57, 35)" }, --Tracker's Dagger
+		{ itemID = 450677, desc = "Teldrassil (57, 26)" }, --Webbed Cloak
+		{ itemID = 450678, desc = "Shadowthread Cave (43, 32)" }, --Dripping Fang
 		{ itemID = 450679 }, --Crystal Collecting Sack
 		{ itemID = 450680 }, --Novice's Regenerating Concoction
-		{ itemID = 450681 }, --Rabbit's Paw
-		{ itemID = 450682 }, --Spine Hammer
-		{ itemID = 450683 }, --Edan's Stripe
-		{ itemID = 450684 }, --Salvaged Cannon
-		{ itemID = 450685 }, --Dark Iron Vest
-		{ itemID = 450686 }, --Thawed Boots
-		{ itemID = 450687 }, --Voodoo Kilt
-		{ itemID = 450689 }, --Centaur Axe
-		{ itemID = 450691 }, --Treasured Cutlass
-		{ itemID = 450692 }, --Logsplitter
-		{ itemID = 450694 }, --Skull Sword
-		{ itemID = 450696 }, --Quilbow
-		{ itemID = 450697 }, --Raptorscale Cloak
-		{ itemID = 450700 }, --Gardening Gloves
-		{ itemID = 450701 }, --Defias Cowl
-		{ itemID = 450703 }, --Silky Spaulders
-		{ itemID = 450705 }, --Dustrunner Bindings
-		{ itemID = 450706 }, --Field Rations
-		{ itemID = 450707 }, --Assassin's Crossbow
-		{ itemID = 450709 }, --Harpy Hunter
-		{ itemID = 450711 }, --Sailor's Gambeson
-		{ itemID = 450712 }, --Margoz' Spare Stompers
-		{ itemID = 450713 }, --Farm Hands
-		{ itemID = 450717 }, --Conscript's Wraps
-		{ itemID = 450718 }, --Sailor's Cuffs
-		{ itemID = 450720 }, --Retired Grunt's Chainmail
-		{ itemID = 450721 }, --Heavy Boots
-		{ itemID = 450724 }, --Grunt's Chain Leggings
-		{ itemID = 450729 }, --Enchanted Kobold Lantern
-		{ itemID = 450740 }, --Skull Ring
-		{ itemID = 450741 }, --Bramble Shield
-		{ itemID = 450744 }, --Throwing Rock
-		{ itemID = 450745 }, --Southfury Totem
-		{ itemID = 450746 }, --Burning Blade Mark
-		{ itemID = 450748 }, --Defias Handshake
-		{ itemID = 450750 }, --Totem Charged Mace
-		{ itemID = 450751 }, --Retired Shadow Blade
-		{ itemID = 450752 }, --Warsong Timbercleaver
-		{ itemID = 450753 }, --Orcish Fishing Device
-		{ itemID = 450755 }, --Scalper's Sack
-		{ itemID = 450756 }, --Maestra's Training Longbow
-		{ itemID = 450757 }, --Thistlefur Fur Shroud
-		{ itemID = 450758 }, --Old Arcanus Robe
-		{ itemID = 450762 }, --Warm Whoolies
-		{ itemID = 450767 }, --Poacher's Crossbow
-		{ itemID = 450768 }, --Thunder Hide Tailspike
-		{ itemID = 450771 }, --Padded Vest
-		{ itemID = 450773 }, --Flexible Gloves
-		{ itemID = 450775 }, --Field Trousers
-		{ itemID = 450780 }, --Claw Scarred Mail
-		{ itemID = 450782 }, --Miner Handwraps
-		{ itemID = 450788 }, --String of Ears
-		{ itemID = 450799 }, --Apprentice's Harpoon
-		{ itemID = 450803 }, --Stormwitch Staff
-		{ itemID = 450805 }, --Furbolg War Drum
-		{ itemID = 450806 }, --Jar of Spiders
-		{ itemID = 450807 }, --Bathran's Cursed Twig
-		{ itemID = 450809 }, --Jack's Toothpicker
-		{ itemID = 450812 }, --Ironbeard's Axe
-		{ itemID = 450815 }, --Ravine Sack
-		{ itemID = 450816 }, --Silverwing Grovekeeper's Bow
-		{ itemID = 450822 }, --Party Pants
-		{ itemID = 450825 }, --Wizard Wraps
+		{ itemID = 450681, desc = "Dun Morogh (35, 43)" }, --Rabbit's Paw
+		{ itemID = 450682, desc = "Gol'Bolar Quarry (49, 36)" }, --Spine Hammer
+		{ itemID = 450683, desc = "The Grizzled Den (36, 36)" }, --Edan's Stripe
+		{ itemID = 450684, desc = "Dun Morogh (41, 66)" }, --Salvaged Cannon
+		{ itemID = 450685, desc = "Dun Morogh (77, 61)" }, --Dark Iron Vest
+		{ itemID = 450686, desc = "Dun Morogh (57, 45)" }, --Thawed Boots
+		{ itemID = 450687, desc = "Durotar (61, 66)" }, --Voodoo Kilt
+		{ itemID = 450689, desc = "Durotar (48, 77)" }, --Centaur Axe
+		{ itemID = 450691, desc = "Durotar (63, 57)" }, --Treasured Cutlass
+		{ itemID = 450692, desc = "Durotar (44, 30)" }, --Logsplitter
+		{ itemID = 450694, desc = "Skull Rock (27, 64)" }, --Skull Sword
+		{ itemID = 450696, desc = "Durotar (49, 49)" }, --Quilbow
+		{ itemID = 450697, desc = "Durotar (65, 74)" }, --Raptorscale Cloak
+		{ itemID = 450700, desc = "Elwynn Forest (40, 48)" }, --Gardening Gloves
+		{ itemID = 450701, desc = "Elwynn Forest (53, 59)" }, --Defias Cowl
+		{ itemID = 450703, desc = "Duskwood (86, 47)" }, --Silky Spaulders
+		{ itemID = 450705, desc = "Durotar (57, 53)" }, --Dustrunner Bindings
+		{ itemID = 450706, desc = "Elwynn Forest (48, 87)" }, --Field Rations
+		{ itemID = 450707, desc = "Azshara (0, 0)" }, --Assassin's Crossbow
+		{ itemID = 450709, desc = "Durotar (49, 33)" }, --Harpy Hunter
+		{ itemID = 450711, desc = "Dustwallow Marsh (57, 53)" }, --Sailor's Gambeson
+		{ itemID = 450712, desc = "Durotar (60, 48)" }, --Margoz' Spare Stompers
+		{ itemID = 450713, desc = "Durotar (48, 16)" }, --Farm Hands
+		{ itemID = 450717, desc = "The Barrens (61, 21)" }, --Conscript's Wraps
+		{ itemID = 450718, desc = "Durotar (62, 45)" }, --Sailor's Cuffs
+		{ itemID = 450720, desc = "Durotar (41, 35)" }, --Retired Grunt's Chainmail
+		{ itemID = 450721, desc = "Westfall (46, 59)" }, --Heavy Boots
+		{ itemID = 450724, desc = "The Barrens (39, 11)" }, --Grunt's Chain Leggings
+		{ itemID = 450729, desc = "Elwynn Forest (65, 56)" }, --Enchanted Kobold Lantern
+		{ itemID = 450740, desc = "Stillpine Hold (39, 79)" }, --Skull Ring
+		{ itemID = 450741, desc = "Durotar (43, 39)" }, --Bramble Shield
+		{ itemID = 450744, desc = "Dun Morogh (84, 38)" }, --Throwing Rock
+		{ itemID = 450745, desc = "Durotar (37, 58)" }, --Southfury Totem
+		{ itemID = 450746, desc = "Dustwind Cave (38, 24)" }, --Burning Blade Mark
+		{ itemID = 450748, desc = "Westfall (61, 58)" }, --Defias Handshake
+		{ itemID = 450750, desc = "Durotar (38, 59)" }, --Totem Charged Mace
+		{ itemID = 450751, desc = "Durotar (56, 34)" }, --Retired Shadow Blade
+		{ itemID = 450752, desc = "The Barrens (47, 8)" }, --Warsong Timbercleaver
+		{ itemID = 450753, desc = "Durotar (37, 23)" }, --Orcish Fishing Device
+		{ itemID = 450755, desc = "Durotar (69, 72)" }, --Scalper's Sack
+		{ itemID = 450756, desc = "Ashenvale (27, 41)" }, --Maestra's Training Longbow
+		{ itemID = 450757, desc = "Ashenvale (38, 34)" }, --Thistlefur Fur Shroud
+		{ itemID = 450758, desc = "Tirisfal Glades (68, 42)" }, --Old Arcanus Robe
+		{ itemID = 450762, desc = "Dun Morogh (44, 57)" }, --Warm Whoolies
+		{ itemID = 450767, desc = "Elwynn Forest (24, 80)" }, --Poacher's Crossbow
+		{ itemID = 450768, desc = "Azeroth (44, 24)" }, --Thunder Hide Tailspike
+		{ itemID = 450771, desc = "Deathknell (51, 39)" }, --Padded Vest
+		{ itemID = 450773, desc = "Westfall (28, 60)" }, --Flexible Gloves
+		{ itemID = 450775, desc = "Westfall (56, 32)" }, --Field Trousers
+		{ itemID = 450780, desc = "Dun Morogh (39, 44)" }, --Claw Scarred Mail
+		{ itemID = 450782, desc = "Wetlands (70, 34)" }, --Miner Handwraps
+		{ itemID = 450788, desc = "Durotar (68, 83)" }, --String of Ears
+		{ itemID = 450799, desc = "Durotar (53, 81)" }, --Apprentice's Harpoon
+		{ itemID = 450803, desc = "Durotar (51, 20)" }, --Stormwitch Staff
+		{ itemID = 450805, desc = "Teldrassil (66, 64)" }, --Furbolg War Drum
+		{ itemID = 450806, desc = "Teldrassil (56, 26)" }, --Jar of Spiders
+		{ itemID = 450807, desc = "Ashenvale (32, 21)" }, --Bathran's Cursed Twig
+		{ itemID = 450809, desc = "Elwynn Forest (89, 80)" }, --Jack's Toothpicker
+		{ itemID = 450812, desc = "Wetlands (45, 25)" }, --Ironbeard's Axe
+		{ itemID = 450815, desc = "Durotar (49, 29)" }, --Ravine Sack
+		{ itemID = 450816, desc = "Ashenvale (62, 83)" }, --Silverwing Grovekeeper's Bow
+		{ itemID = 450822, desc = "Elwynn Forest (24, 73)" }, --Party Pants
+		{ itemID = 450825, desc = "Westfall (41, 48)" }, --Wizard Wraps
 		{ itemID = 450826 }, --Arkonite Crystal
-		{ itemID = 450827 }, --Bristlebow
-		{ itemID = 450829 }, --Nightshot
-		{ itemID = 450835 }, --Suspiciously Brown Trousers
-		{ itemID = 450838 }, --Adventurer Gloves
-		{ itemID = 450840 }, --Soldier's Mail
-		{ itemID = 450850 }, --Guide to Elven Restoration - Vol. I
-		{ itemID = 450860 }, --Rosebud Ring
-		{ itemID = 450865 }, --Frostmane Totem
-		{ itemID = 450869 }, --Ulag's Cleaver
-		{ itemID = 450870 }, --Heavy Iron Pan
-		{ itemID = 450871 }, --Murder Machete
-		{ itemID = 450872 }, --Heavy Logsplitter
-		{ itemID = 450873 }, --Woodbreaker Mallet
-		{ itemID = 450874 }, --Butchery Blade
+		{ itemID = 450827, desc = "The Barrens (41, 45)" }, --Bristlebow
+		{ itemID = 450829, desc = "Duskwood (21, 73)" }, --Nightshot
+		{ itemID = 450835, desc = "Duskwood (82, 61)" }, --Suspiciously Brown Trousers
+		{ itemID = 450838, desc = "Tirisfal Glades (73, 26)" }, --Adventurer Gloves
+		{ itemID = 450840, desc = "Westfall (63, 22)" }, --Soldier's Mail
+		{ itemID = 450850, desc = "Ashenvale (26, 22)" }, --Guide to Elven Restoration - Vol. I
+		{ itemID = 450860, desc = "Ashenvale (56, 49)" }, --Rosebud Ring
+		{ itemID = 450865, desc = "Dun Morogh (41, 35)" }, --Frostmane Totem
+		{ itemID = 450869, desc = "Tirisfal Glades (60, 48)" }, --Ulag's Cleaver
+		{ itemID = 450870, desc = "Elwynn Forest (45, 67)" }, --Heavy Iron Pan
+		{ itemID = 450871, desc = "Elwynn Forest (48, 63)" }, --Murder Machete
+		{ itemID = 450872, desc = "Elwynn Forest (82, 64)" }, --Heavy Logsplitter
+		{ itemID = 450873, desc = "Ashenvale (63, 46)" }, --Woodbreaker Mallet
+		{ itemID = 450874, desc = "Tirisfal Glades (67, 45)" }, --Butchery Blade
 		{ itemID = 450876 }, --Fallen Bow
-		{ itemID = 450877 }, --Riding Cloak
-		{ itemID = 450882 }, --Forgotten Trunks
+		{ itemID = 450877, desc = "Elwynn Forest (83, 67)" }, --Riding Cloak
+		{ itemID = 450882, desc = "The Barrens (45, 22)" }, --Forgotten Trunks
 		{ itemID = 450885 }, --Sunbands
-		{ itemID = 450886 }, --The "Kodo Egg"
-		{ itemID = 450909 }, --Liquid Arcane
-		{ itemID = 450910 }, --Tiloa's Flowers
-		{ itemID = 450919 }, --Officer's Pike
-		{ itemID = 450920 }, --Fel Infused Band
-		{ itemID = 450923 }, --Mystral Staff
-		{ itemID = 450930 }, --Haren's Tankard
-		{ itemID = 450931 }, --Burial Blade
-		{ itemID = 450932 }, --Sharpened Chopper
-		{ itemID = 450934 }, --Sentinel's Blade
+		{ itemID = 450886, desc = "Mulgore (48, 63)" }, --The "Kodo Egg"
+		{ itemID = 450909, desc = "Westfall (56, 19)" }, --Liquid Arcane
+		{ itemID = 450910, desc = "Duskwood (77, 36)" }, --Tiloa's Flowers
+		{ itemID = 450919, desc = "Dun Morogh (86, 49)" }, --Officer's Pike
+		{ itemID = 450920, desc = "Ashenvale (83, 70)" }, --Fel Infused Band
+		{ itemID = 450923, desc = "Ashenvale (51, 70)" }, --Mystral Staff
+		{ itemID = 450930, desc = "Loch Modan (66, 39)" }, --Haren's Tankard
+		{ itemID = 450931, desc = "Westfall (57, 80)" }, --Burial Blade
+		{ itemID = 450932, desc = "Westfall (46, 39)" }, --Sharpened Chopper
+		{ itemID = 450934, desc = "Westfall (57, 47)" }, --Sentinel's Blade
 		{ itemID = 450935 }, --Dropped Bag
-		{ itemID = 450946 }, --Untouched Cactus Fruit
-		{ itemID = 450948 }, --Bleakheart Piercer
-		{ itemID = 450979 }, --Boar Harvester
-		{ itemID = 450980 }, --Rider's Ring
-		{ itemID = 450981 }, --Intact Wagon Wheel
-		{ itemID = 450983 }, --Apprentice Staff
-		{ itemID = 450988 }, --Sturdy Fishing Pole
-		{ itemID = 450993 }, --Delicious Dried Corn
-		{ itemID = 451023 }, --Cursed Fire Scar Pendant
-		{ itemID = 451024 }, --Elune Tear Fragment
-		{ itemID = 451025 }, --Bloodtooth Neck
-		{ itemID = 451026 }, --Stinky Necklace
-		{ itemID = 451027 }, --Swashbuckler's Chain
-		{ itemID = 451046 }, --Felforged Meteor Fragment
-		{ itemID = 451047 }, --Echo of Aessina
-		{ itemID = 451048 }, --Ursangous' Claw
-		{ itemID = 451049 }, --Endless Moonwell Chalice
-		{ itemID = 451052 }, --Etched Tablet
-		{ itemID = 451084 }, --Heavy Bone
-		{ itemID = 451085 }, --Stump Biter
-		{ itemID = 451088 }, --The Dark Soul
-		{ itemID = 451096 }, --Garren's Pitchfork
-		{ itemID = 451097 }, --Haunted Ring
-		{ itemID = 451098 }, --Captain's Shield
-		{ itemID = 451099 }, --Murloc Ritual Staff
-		{ itemID = 451102 }, --Peon Motivator
-		{ itemID = 451105 }, --Waterlogged Musket
-		{ itemID = 451107 }, --Travel Sack
-		{ itemID = 451111 }, --Defias Shanker
-		{ itemID = 451114 }, --Sharpened Pike
-		{ itemID = 451117 }, --Defias Magus Staff
-		{ itemID = 451123 }, --Drudger Smash
-		{ itemID = 451125 }, --Lohgan's Best Bag
-		{ itemID = 451129 }, --Defias Toe Knife
-		{ itemID = 451401 }, --Billy Bag
-		{ itemID = 451993 }, --Arcane-Tinged Flower
-		{ itemID = 460000 }, --Dwarven Demolition Kit
+		{ itemID = 450946, desc = "Durotar (49, 57)" }, --Untouched Cactus Fruit
+		{ itemID = 450948, desc = "Ashenvale (81, 50)" }, --Bleakheart Piercer
+		{ itemID = 450979, desc = "Elwynn Forest (34, 83)" }, --Boar Harvester
+		{ itemID = 450980, desc = "Dun Morogh (65, 50)" }, --Rider's Ring
+		{ itemID = 450981, desc = "Dun Morogh (37, 36)" }, --Intact Wagon Wheel
+		{ itemID = 450983, desc = "Elwynn Forest (50, 51)" }, --Apprentice Staff
+		{ itemID = 450988, desc = "Durotar (60, 22)" }, --Sturdy Fishing Pole
+		{ itemID = 450993, desc = "Shadowglen (37, 75)" }, --Delicious Dried Corn
+		{ itemID = 451023, desc = "Ashenvale (25, 60)" }, --Cursed Fire Scar Pendant
+		{ itemID = 451024, desc = "Ashenvale (46, 46)" }, --Elune Tear Fragment
+		{ itemID = 451025, desc = "Ashenvale (55, 80)" }, --Bloodtooth Neck
+		{ itemID = 451026, desc = "Dun Morogh (42, 59)" }, --Stinky Necklace
+		{ itemID = 451027, desc = "The Barrens (62, 45)" }, --Swashbuckler's Chain
+		{ itemID = 451046, desc = "Ashenvale (17, 20)" }, --Felforged Meteor Fragment
+		{ itemID = 451047, desc = "Ashenvale (22, 53)" }, --Echo of Aessina
+		{ itemID = 451048, desc = "Ashenvale (42, 63)" }, --Ursangous' Claw
+		{ itemID = 451049, desc = "Ashenvale (54, 46)" }, --Endless Moonwell Chalice
+		{ itemID = 451052, desc = "Wetlands (35, 49)" }, --Etched Tablet
+		{ itemID = 451084, desc = "Westfall (42, 29)" }, --Heavy Bone
+		{ itemID = 451085, desc = "The Barrens (49, 77)" }, --Stump Biter
+		{ itemID = 451088, desc = "Duskwood (61, 41)" }, --The Dark Soul
+		{ itemID = 451096, desc = "Tirisfal Glades (59, 32)" }, --Garren's Pitchfork
+		{ itemID = 451097, desc = "Tirisfal Glades (55, 43)" }, --Haunted Ring
+		{ itemID = 451098, desc = "Tirisfal Glades (80, 25)" }, --Captain's Shield
+		{ itemID = 451099, desc = "Elwynn Forest (55, 67)" }, --Murloc Ritual Staff
+		{ itemID = 451102, desc = "The Barrens (57, 32)" }, --Peon Motivator
+		{ itemID = 451105, desc = "Wetlands (50, 60)" }, --Waterlogged Musket
+		{ itemID = 451107, desc = "Mulgore (59, 35)" }, --Travel Sack
+		{ itemID = 451111, desc = "Elwynn Forest (46, 75)" }, --Defias Shanker
+		{ itemID = 451114, desc = "The Barrens (48, 6)" }, --Sharpened Pike
+		{ itemID = 451117, desc = "Westfall (39, 58)" }, --Defias Magus Staff
+		{ itemID = 451123, desc = "The Barrens (56, 9)" }, --Drudger Smash
+		{ itemID = 451125, desc = "Duskwood (75, 46)" }, --Lohgan's Best Bag
+		{ itemID = 451129, desc = "Westfall (48, 47)" }, --Defias Toe Knife
+		{ itemID = 451401, desc = "Elwynn Forest (44, 85)" }, --Billy Bag
+		{ itemID = 451993, desc = "Alterac Mountains (28, 61)" }, --Arcane-Tinged Flower
+		{ itemID = 460000, desc = "Wetlands (47, 18)" }, --Dwarven Demolition Kit
 		{ itemID = 500560 }, --Lumberjack's Thick Gloves
 		{ itemID = 500658 }, --Shockzip's Saw Blade
 		{ itemID = 500659 }, --Ironhew's Spare Chopper
@@ -1244,530 +1243,530 @@ function AtlasLoot:InitializeDatabases()
 		{ itemID = 500821 }, --Charstone Warband
 		{ itemID = 500822 }, --Ashen Dreambinder
 		{ itemID = 500823 }, --Verdant Ember Loop
-		{ itemID = 515003 }, --Tarantula Hunter Rifle
-		{ itemID = 515004 }, --Solliden Family Broom
-		{ itemID = 515005 }, --Misplaced Pitchfork
-		{ itemID = 515006 }, --Washed Ashore Bottle
-		{ itemID = 515007 }, --Old Wagon Wheel
-		{ itemID = 515008 }, --Puddle-jumper Dagger
-		{ itemID = 515009 }, --Dalaran Mage Garb
-		{ itemID = 515010 }, --Evil-Infused Cuffs
-		{ itemID = 515011 }, --Deathstalker Cloak
-		{ itemID = 515012 }, --Forsaken Stone Braid
-		{ itemID = 515013 }, --Gravedigger's Delight
-		{ itemID = 515014 }, --Agamand Farmer Trousers
-		{ itemID = 515015 }, --Apothecary's Lantern
-		{ itemID = 515016 }, --Haunted Mace
-		{ itemID = 515017 }, --Faulty Stone Golem
-		{ itemID = 515018 }, --Dwarven Explosive Barrel
-		{ itemID = 515019 }, --Leftover Mining Trousers
-		{ itemID = 515020 }, --Scarlet Insignia
-		{ itemID = 515021 }, --Windshaper Wraps
-		{ itemID = 515022 }, --Old Snapjaw Shell
-		{ itemID = 515023 }, --Timelost Captain Shield
-		{ itemID = 515024 }, --Hillsbrad Shovel
-		{ itemID = 515025 }, --Mudsnout Effigy
-		{ itemID = 515026 }, --Deadman's Dagger
-		{ itemID = 515027 }, --Eroded Pit Fighter Knuckles
-		{ itemID = 515028 }, --Twilight Bands
-		{ itemID = 515029 }, --Furbolg War-drum
-		{ itemID = 515030 }, --Empty Satchel
-		{ itemID = 515031 }, --Suspicious Deathcap
-		{ itemID = 515032 }, --Agamand Walking Stick
-		{ itemID = 515033 }, --Ghostflame Scripture
-		{ itemID = 515034 }, --Moon-gnawed Bone Spire
-		{ itemID = 515035 }, --Blackwood Torch
-		{ itemID = 515036 }, --Hunk of Darkshore Driftwood
-		{ itemID = 515037 }, --Fanatic's Cursed Blade
-		{ itemID = 515038 }, --Ancient Highborne Tome
-		{ itemID = 515039 }, --Ancient Family Heirloom
-		{ itemID = 515040 }, --Uncovered Highborne Scroll
-		{ itemID = 515041 }, --Foreman's Lightcap
-		{ itemID = 515042 }, --Shipwrecked Crate
-		{ itemID = 515043 }, --Waterlogged Sparkler
-		{ itemID = 515044 }, --Docile Night Web Hatchling
-		{ itemID = 515045 }, --Tide Turner
-		{ itemID = 515046 }, --Enchanted Flora Waist
-		{ itemID = 515047 }, --Unpleasant Ring
-		{ itemID = 515143 }, --Moonlight Infused Band
-		{ itemID = 515144 }, --Wild Tracker Bindings
-		{ itemID = 515145 }, --Seamstress Scissors
-		{ itemID = 515146 }, --Heartwood Cleaver
-		{ itemID = 515147 }, --Lakebottom Treads
-		{ itemID = 515148 }, --Shen'dralar Staff
-		{ itemID = 515149 }, --Stolen Highborne Spaulders
-		{ itemID = 515150 }, --Grasping Claw
-		{ itemID = 515151 }, --Tome of the Valiant
-		{ itemID = 515152 }, --Ogre Cleaver
-		{ itemID = 515153 }, --Gordunni Thumbtack
-		{ itemID = 515154 }, --Gnoll-Gnawed Bone Bat
-		{ itemID = 515155 }, --Grim Totem
-		{ itemID = 515156 }, --Grimtotem Outrider’s Vest
-		{ itemID = 515157 }, --Grimtotem Relic
-		{ itemID = 515158 }, --Worn Angler Cord
-		{ itemID = 515159 }, --Savage Crossbow
-		{ itemID = 515160 }, --Gnoll Stompers
-		{ itemID = 515161 }, --Bench Breaker
-		{ itemID = 515162 }, --Secluded Soothsayer's Pipes
-		{ itemID = 515163 }, --Ambercoil Pendant
-		{ itemID = 515164 }, --Silithid Husk Shield
-		{ itemID = 515165 }, --Shimmering Silithid Carapace
-		{ itemID = 515166 }, --Bug Catchers
-		{ itemID = 515167 }, --Beastpile Drape
-		{ itemID = 515168 }, --Long-Clawed Gnoll Paw
-		{ itemID = 515169 }, --Nightfallen Longbow
-		{ itemID = 515170 }, --Denrunner Tomahawk
-		{ itemID = 515171 }, --Torn Hide Spaulders
-		{ itemID = 515172 }, --Woodpaw Greatblade
-		{ itemID = 515173 }, --Orb of Isildien Echoes
-		{ itemID = 515174 }, --Shattered Highborne Blade
-		{ itemID = 515175 }, --Isildien Tender's Wand
-		{ itemID = 515176 }, --Runestone Figurine
-		{ itemID = 515177 }, --Ogre Kneepad
-		{ itemID = 515178 }, --Necklace of the Sunken Empire
-		{ itemID = 515179 }, --Rotted Yolk
-		{ itemID = 515180 }, --Moonwell Drops
-		{ itemID = 515181 }, --Yeti Napkin
-		{ itemID = 515182 }, --Shen'dralar Slicer
-		{ itemID = 515183 }, --Moon-Infused Breeches
-		{ itemID = 515184 }, --Sentinel Wrap
-		{ itemID = 515185 }, --Zapping Rod
-		{ itemID = 515186 }, --Strider Shot
-		{ itemID = 515187 }, --Strider Waist Piece
-		{ itemID = 515188 }, --Band of Scales
-		{ itemID = 515189 }, --Solarsal Pendant
-		{ itemID = 515190 }, --Tidebaron’s Sigil
-		{ itemID = 515191 }, --Hatestrike
-		{ itemID = 515192 }, --Tanner Gloves
-		{ itemID = 515193 }, --Thunderfur Cloak
-		{ itemID = 515194 }, --Crown of Stone
-		{ itemID = 515195 }, --Dormant Dreamscale
-		{ itemID = 515196 }, --Ravenwind Fangblade
-		{ itemID = 515197 }, --Gilded Stone Bulwark
-		{ itemID = 515198 }, --Ancient Elvish Bag
-		{ itemID = 515199 }, --Ravenwind Codex
-		{ itemID = 515200 }, --Zaetar's Lost Heirloom
-		{ itemID = 515201 }, --Staff of Twin Blossoms
-		{ itemID = 515202 }, --Forgotten Wristguards
-		{ itemID = 515203 }, --Night Sentinel's Aim
-		{ itemID = 515204 }, --Bloodscorn Ritual Kris
-		{ itemID = 515205 }, --Accursed Yeti Horn
-		{ itemID = 515206 }, --Buccaneer's Barrier
-		{ itemID = 515207 }, --Durn's Loot Bag
-		{ itemID = 515208 }, --Scorched Bindings
-		{ itemID = 515209 }, --Corrupted Dragon Eye
-		{ itemID = 515210 }, --Greedy Fool's Potion
-		{ itemID = 515211 }, --Blackhoof Warmaul
-		{ itemID = 515212 }, --Missing Apprentice Wand
-		{ itemID = 515213 }, --Venomsilk Spellblade
-		{ itemID = 515214 }, --Mudcrush Shoulders
-		{ itemID = 515215 }, --Singed Flintlock
-		{ itemID = 515216 }, --Deserter's Last Resort
-		{ itemID = 515217 }, --Bloodfen Prowler Vest
-		{ itemID = 515218 }, --Bloodfen Talon
-		{ itemID = 515219 }, --Emberstring Drakebow
-		{ itemID = 515220 }, --Denflame Channeler
-		{ itemID = 515221 }, --Enchanted Dragon Bone
-		{ itemID = 515222 }, --Scalebane Pendant
-		{ itemID = 515223 }, --Emberscale Greatsword
-		{ itemID = 515224 }, --Emberheart Talisman
-		{ itemID = 515225 }, --Wheel of Misfortune
-		{ itemID = 515226 }, --Tidefury Cutlass
-		{ itemID = 515227 }, --Buzzcoil Tongs
-		{ itemID = 515228 }, --Cylla's Endless Potion
-		{ itemID = 515229 }, --Stonemaul Crusher’s Girdle
-		{ itemID = 515230 }, --Marshfall Mantle
-		{ itemID = 515231 }, --Salt Scoured Boarding Axe
-		{ itemID = 515232 }, --Spotter's Rifle
-		{ itemID = 515233 }, --Crokolisk Hunter
-		{ itemID = 515234 }, --Primitive Murloc Skewer
-		{ itemID = 515235 }, --Muck Trudgers
-		{ itemID = 515236 }, --Northpoint Helmet
-		{ itemID = 515237 }, --Brackish Spellweave Robe
-		{ itemID = 515238 }, --Sturdy Coffin Lid
-		{ itemID = 515239 }, --Swamplight Concoction
-		{ itemID = 515240 }, --Bogcaller Totem
-		{ itemID = 515241 }, --Idol of the Brooding Shadow
-		{ itemID = 515242 }, --Tome of Sundered Souls
-		{ itemID = 515243 }, --Shadowsilk Seared Cuirass
-		{ itemID = 515244 }, --Golem Chunk
-		{ itemID = 515245 }, --Shoulderpads of Deep Thinking
-		{ itemID = 515246 }, --Glassweb Ward Shroud
-		{ itemID = 515247 }, --Caravan Crossbow
-		{ itemID = 515248 }, --Dorius' Shield
-		{ itemID = 515249 }, --Stomped Diary
-		{ itemID = 515251 }, --Magma Petting Mittens
-		{ itemID = 515252 }, --Dark Iron Leatherpads
-		{ itemID = 515253 }, --Scorching Lodepebble
-		{ itemID = 515254 }, --Scorched Greatblade
-		{ itemID = 515255 }, --Dark Iron Slippers
-		{ itemID = 515256 }, --Fire Poker
-		{ itemID = 515257 }, --Steam Pressure Totem
-		{ itemID = 515258 }, --Eye of Twilight
-		{ itemID = 515259 }, --Disciplinary Rifle
-		{ itemID = 515260 }, --Contraband Magician Rod
-		{ itemID = 515261 }, --Zamael's Corrupted Twilight
-		{ itemID = 515262 }, --Slave Band
-		{ itemID = 515263 }, --Dark Iron Scorcher
-		{ itemID = 515264 }, --Heavy War Golem Rune
-		{ itemID = 515265 }, --Freedom Falchion
-		{ itemID = 515266 }, --Slave Worker Pantaloons
-		{ itemID = 515267 }, --Break-time Gloves
-		{ itemID = 515268 }, --Dark Iron Loop
-		{ itemID = 515269 }, --Incendosaur Bone String
-		{ itemID = 515270 }, --Dark Iron Legplates
-		{ itemID = 515271 }, --Dark Iron Wristbands
-		{ itemID = 515272 }, --Elder Pipe
-		{ itemID = 515273 }, --Overseer's Mystic Wrench
-		{ itemID = 515274 }, --Molten Fang Tooth
-		{ itemID = 515275 }, --Scorched Mail Tunic
-		{ itemID = 515276 }, --Cogbolt's Special
-		{ itemID = 515277 }, --Burned Blade Shiv
-		{ itemID = 515278 }, --Dark Iron Hood
-		{ itemID = 515279 }, --Sharp Chain Belt
-		{ itemID = 515281 }, --Nethergarde Mining Cap
+		{ itemID = 515003, desc = "Hillsbrad Foothills (32, 66)" }, --Tarantula Hunter Rifle
+		{ itemID = 515004, desc = "Tirisfal Glades (38, 50)" }, --Solliden Family Broom
+		{ itemID = 515005, desc = "Hillsbrad Foothills (61, 28)" }, --Misplaced Pitchfork
+		{ itemID = 515006, desc = "Darkshore (50, 23)" }, --Washed Ashore Bottle
+		{ itemID = 515007, desc = "Tirisfal Glades (53, 58)" }, --Old Wagon Wheel
+		{ itemID = 515008, desc = "Tirisfal Glades (61, 27)" }, --Puddle-jumper Dagger
+		{ itemID = 515009, desc = "Alterac Mountains (18, 83)" }, --Dalaran Mage Garb
+		{ itemID = 515010, desc = "Darkshore (46, 38)" }, --Evil-Infused Cuffs
+		{ itemID = 515011, desc = "Hillsbrad Foothills (21, 49)" }, --Deathstalker Cloak
+		{ itemID = 515012, desc = "Darkshore (44, 61)" }, --Forsaken Stone Braid
+		{ itemID = 515013, desc = "Tirisfal Glades (44, 65)" }, --Gravedigger's Delight
+		{ itemID = 515014, desc = "Tirisfal Glades (50, 36)" }, --Agamand Farmer Trousers
+		{ itemID = 515015, desc = "Tirisfal Glades (44, 40)" }, --Apothecary's Lantern
+		{ itemID = 515016, desc = "Tirisfal Glades (79, 60)" }, --Haunted Mace
+		{ itemID = 515017, desc = "Darkshore (36, 87)" }, --Faulty Stone Golem
+		{ itemID = 515018, desc = "Hillsbrad Foothills (72, 79)" }, --Dwarven Explosive Barrel
+		{ itemID = 515019, desc = "Hillsbrad Foothills (28, 57)" }, --Leftover Mining Trousers
+		{ itemID = 515020, desc = "Tirisfal Glades (52, 68)" }, --Scarlet Insignia
+		{ itemID = 515021, desc = "Darkshore (40, 54)" }, --Windshaper Wraps
+		{ itemID = 515022, desc = "Hillsbrad Foothills (60, 45)" }, --Old Snapjaw Shell
+		{ itemID = 515023, desc = "Hillsbrad Foothills (80, 61)" }, --Timelost Captain Shield
+		{ itemID = 515024, desc = "Hillsbrad Foothills (35, 37)" }, --Hillsbrad Shovel
+		{ itemID = 515025, desc = "Hillsbrad Foothills (60, 61)" }, --Mudsnout Effigy
+		{ itemID = 515026, desc = "Hillsbrad Foothills (67, 47)" }, --Deadman's Dagger
+		{ itemID = 515027, desc = "Hillsbrad Foothills (79, 53)" }, --Eroded Pit Fighter Knuckles
+		{ itemID = 515028, desc = "Darkshore (39, 87)" }, --Twilight Bands
+		{ itemID = 515029, desc = "Darkshore (52, 34)" }, --Furbolg War-drum
+		{ itemID = 515030, desc = "Tirisfal Glades (49, 52)" }, --Empty Satchel
+		{ itemID = 515031, desc = "Darkshore (56, 36)" }, --Suspicious Deathcap
+		{ itemID = 515032, desc = "Tirisfal Glades (53, 26)" }, --Agamand Walking Stick
+		{ itemID = 515033, desc = "Hillsbrad Foothills (16, 82)" }, --Ghostflame Scripture
+		{ itemID = 515034, desc = "Darkshore (43, 68)" }, --Moon-gnawed Bone Spire
+		{ itemID = 515035, desc = "Darkshore (44, 84)" }, --Blackwood Torch
+		{ itemID = 515036, desc = "Darkshore (36, 58)" }, --Hunk of Darkshore Driftwood
+		{ itemID = 515037, desc = "Darkshore (56, 27)" }, --Fanatic's Cursed Blade
+		{ itemID = 515038, desc = "Darkshore (57, 23)" }, --Ancient Highborne Tome
+		{ itemID = 515039, desc = "Darkshore (30, 48)" }, --Ancient Family Heirloom
+		{ itemID = 515040, desc = "Darkshore (38, 45)" }, --Uncovered Highborne Scroll
+		{ itemID = 515041, desc = "Hillsbrad Foothills (31, 59)" }, --Foreman's Lightcap
+		{ itemID = 515042, desc = "Darkshore (40, 27)" }, --Shipwrecked Crate
+		{ itemID = 515043, desc = "Tirisfal Glades (35, 43)" }, --Waterlogged Sparkler
+		{ itemID = 515044, desc = "Tirisfal Glades (88, 51)" }, --Docile Night Web Hatchling
+		{ itemID = 515045, desc = "Darkshore (33, 84)" }, --Tide Turner
+		{ itemID = 515046, desc = "Darkshore (62, 8)" }, --Enchanted Flora Waist
+		{ itemID = 515047, desc = "Darkshore (42, 49)" }, --Unpleasant Ring
+		{ itemID = 515143, desc = "Feralas (89, 39)" }, --Moonlight Infused Band
+		{ itemID = 515144, desc = "Feralas (84, 37)" }, --Wild Tracker Bindings
+		{ itemID = 515145, desc = "Feralas (84, 49)" }, --Seamstress Scissors
+		{ itemID = 515146, desc = "Feralas (81, 39)" }, --Heartwood Cleaver
+		{ itemID = 515147, desc = "Feralas (79, 48)" }, --Lakebottom Treads
+		{ itemID = 515148, desc = "Feralas (76, 37)" }, --Shen'dralar Staff
+		{ itemID = 515149, desc = "Feralas (74, 35)" }, --Stolen Highborne Spaulders
+		{ itemID = 515150, desc = "Feralas (75, 30)" }, --Grasping Claw
+		{ itemID = 515151, desc = "Feralas (80, 34)" }, --Tome of the Valiant
+		{ itemID = 515152, desc = "Feralas (75, 29)" }, --Ogre Cleaver
+		{ itemID = 515153, desc = "Feralas (75, 26)" }, --Gordunni Thumbtack
+		{ itemID = 515154, desc = "Feralas (72, 37)" }, --Gnoll-Gnawed Bone Bat
+		{ itemID = 515155, desc = "Feralas (67, 38)" }, --Grim Totem
+		{ itemID = 515156, desc = "Feralas (70, 39)" }, --Grimtotem Outrider’s Vest
+		{ itemID = 515157, desc = "Feralas (70, 39)" }, --Grimtotem Relic
+		{ itemID = 515158, desc = "Feralas (76, 46)" }, --Worn Angler Cord
+		{ itemID = 515159, desc = "Feralas (77, 54)" }, --Savage Crossbow
+		{ itemID = 515160, desc = "Feralas (74, 55)" }, --Gnoll Stompers
+		{ itemID = 515161, desc = "Feralas (71, 56)" }, --Bench Breaker
+		{ itemID = 515162, desc = "Feralas (77, 65)" }, --Secluded Soothsayer's Pipes
+		{ itemID = 515163, desc = "Feralas (78, 63)" }, --Ambercoil Pendant
+		{ itemID = 515164, desc = "Feralas (79, 63)" }, --Silithid Husk Shield
+		{ itemID = 515165, desc = "Feralas (77, 67)" }, --Shimmering Silithid Carapace
+		{ itemID = 515166, desc = "Feralas (74, 65)" }, --Bug Catchers
+		{ itemID = 515167, desc = "Maraudon (74, 64)" }, --Beastpile Drape
+		{ itemID = 515168, desc = "Maraudon (74, 62)" }, --Long-Clawed Gnoll Paw
+		{ itemID = 515169, desc = "Feralas (68, 61)" }, --Nightfallen Longbow
+		{ itemID = 515170, desc = "Feralas (66, 52)" }, --Denrunner Tomahawk
+		{ itemID = 515171, desc = "Feralas (65, 54)" }, --Torn Hide Spaulders
+		{ itemID = 515172, desc = "Feralas (69, 56)" }, --Woodpaw Greatblade
+		{ itemID = 515173, desc = "Feralas (61, 55)" }, --Orb of Isildien Echoes
+		{ itemID = 515174, desc = "Feralas (61, 74)" }, --Shattered Highborne Blade
+		{ itemID = 515175, desc = "Feralas (57, 69)" }, --Isildien Tender's Wand
+		{ itemID = 515176, desc = "Feralas (59, 71)" }, --Runestone Figurine
+		{ itemID = 515177, desc = "Feralas (59, 68)" }, --Ogre Kneepad
+		{ itemID = 515178, desc = "Feralas (53, 76)" }, --Necklace of the Sunken Empire
+		{ itemID = 515179, desc = "Feralas (54, 65)" }, --Rotted Yolk
+		{ itemID = 515180, desc = "Feralas (54, 55)" }, --Moonwell Drops
+		{ itemID = 515181, desc = "Feralas (52, 61)" }, --Yeti Napkin
+		{ itemID = 515182, desc = "Feralas (55, 48)" }, --Shen'dralar Slicer
+		{ itemID = 515183, desc = "Feralas (60, 46)" }, --Moon-Infused Breeches
+		{ itemID = 515184, desc = "Swamp of Sorrows (46, 55)" }, --Sentinel Wrap
+		{ itemID = 515185, desc = "Feralas (45, 43)" }, --Zapping Rod
+		{ itemID = 515186, desc = "Feralas (40, 34)" }, --Strider Shot
+		{ itemID = 515187, desc = "Maraudon (37, 35)" }, --Strider Waist Piece
+		{ itemID = 515188, desc = "Feralas (29, 51)" }, --Band of Scales
+		{ itemID = 515189, desc = "Feralas (26, 52)" }, --Solarsal Pendant
+		{ itemID = 515190, desc = "Feralas (25, 66)" }, --Tidebaron’s Sigil
+		{ itemID = 515191, desc = "Feralas (29, 71)" }, --Hatestrike
+		{ itemID = 515192, desc = "Feralas (51, 34)" }, --Tanner Gloves
+		{ itemID = 515193, desc = "Feralas (40, 67)" }, --Thunderfur Cloak
+		{ itemID = 515194, desc = "Feralas (40, 23)" }, --Crown of Stone
+		{ itemID = 515195, desc = "Feralas (51, 20)" }, --Dormant Dreamscale
+		{ itemID = 515196, desc = "Feralas (44, 10)" }, --Ravenwind Fangblade
+		{ itemID = 515197, desc = "Feralas (41, 12)" }, --Gilded Stone Bulwark
+		{ itemID = 515198, desc = "Feralas (38, 10)" }, --Ancient Elvish Bag
+		{ itemID = 515199, desc = "Feralas (39, 16)" }, --Ravenwind Codex
+		{ itemID = 515200, desc = "Feralas (46, 3)" }, --Zaetar's Lost Heirloom
+		{ itemID = 515201, desc = "Feralas (37, 25)" }, --Staff of Twin Blossoms
+		{ itemID = 515202, desc = "Feralas (55, 56)" }, --Forgotten Wristguards
+		{ itemID = 515203, desc = "Feralas (52, 28)" }, --Night Sentinel's Aim
+		{ itemID = 515204, desc = "Feralas (54, 32)" }, --Bloodscorn Ritual Kris
+		{ itemID = 515205, desc = "Feralas (54, 34)" }, --Accursed Yeti Horn
+		{ itemID = 515206, desc = "Feralas (49, 54)" }, --Buccaneer's Barrier
+		{ itemID = 515207, desc = "Dustwind Cave (58, 77)" }, --Durn's Loot Bag
+		{ itemID = 515208, desc = "Dustwallow Marsh (50, 72)" }, --Scorched Bindings
+		{ itemID = 515209, desc = "Dustwallow Marsh (50, 69)" }, --Corrupted Dragon Eye
+		{ itemID = 515210, desc = "Dustwallow Marsh (54, 16)" }, --Greedy Fool's Potion
+		{ itemID = 515211, desc = "Dustwallow Marsh (43, 16)" }, --Blackhoof Warmaul
+		{ itemID = 515212, desc = "Dustwallow Marsh (36, 21)" }, --Missing Apprentice Wand
+		{ itemID = 515213, desc = "Dustwallow Marsh (31, 20)" }, --Venomsilk Spellblade
+		{ itemID = 515214, desc = "Dustwallow Marsh (35, 38)" }, --Mudcrush Shoulders
+		{ itemID = 515215, desc = "Dustwallow Marsh (30, 49)" }, --Singed Flintlock
+		{ itemID = 515216, desc = "Dustwallow Marsh (36, 54)" }, --Deserter's Last Resort
+		{ itemID = 515217, desc = "Dustwallow Marsh (32, 66)" }, --Bloodfen Prowler Vest
+		{ itemID = 515218, desc = "Dustwallow Marsh (31, 66)" }, --Bloodfen Talon
+		{ itemID = 515219, desc = "Dustwallow Marsh (39, 65)" }, --Emberstring Drakebow
+		{ itemID = 515220, desc = "Dustwallow Marsh (37, 69)" }, --Denflame Channeler
+		{ itemID = 515221, desc = "Dustwallow Marsh (44, 78)" }, --Enchanted Dragon Bone
+		{ itemID = 515222, desc = "Dustwallow Marsh (54, 84)" }, --Scalebane Pendant
+		{ itemID = 515223, desc = "Dustwallow Marsh (55, 85)" }, --Emberscale Greatsword
+		{ itemID = 515224, desc = "Dustwallow Marsh (56, 75)" }, --Emberheart Talisman
+		{ itemID = 515225, desc = "Dustwallow Marsh (60, 69)" }, --Wheel of Misfortune
+		{ itemID = 515226, desc = "Dustwallow Marsh (56, 63)" }, --Tidefury Cutlass
+		{ itemID = 515227, desc = "Dustwallow Marsh (54, 56)" }, --Buzzcoil Tongs
+		{ itemID = 515228, desc = "Dustwallow Marsh (56, 67)" }, --Cylla's Endless Potion
+		{ itemID = 515229, desc = "Dustwallow Marsh (44, 67)" }, --Stonemaul Crusher’s Girdle
+		{ itemID = 515230, desc = "Dustwallow Marsh (36, 41)" }, --Marshfall Mantle
+		{ itemID = 515231, desc = "Dustwallow Marsh (59, 46)" }, --Salt Scoured Boarding Axe
+		{ itemID = 515232, desc = "Dustwallow Marsh (57, 56)" }, --Spotter's Rifle
+		{ itemID = 515233, desc = "Dustwallow Marsh (34, 34)" }, --Crokolisk Hunter
+		{ itemID = 515234, desc = "Dustwallow Marsh (58, 16)" }, --Primitive Murloc Skewer
+		{ itemID = 515235, desc = "The Barrens (63, 59)" }, --Muck Trudgers
+		{ itemID = 515236, desc = "Dustwallow Marsh (49, 18)" }, --Northpoint Helmet
+		{ itemID = 515237, desc = "Dustwallow Marsh (62, 32)" }, --Brackish Spellweave Robe
+		{ itemID = 515238, desc = "Dustwallow Marsh (64, 43)" }, --Sturdy Coffin Lid
+		{ itemID = 515239, desc = "Dustwallow Marsh (56, 26)" }, --Swamplight Concoction
+		{ itemID = 515240, desc = "Stillpine Hold (41, 11)" }, --Bogcaller Totem
+		{ itemID = 515241, desc = "Darkshore (64, 69)" }, --Idol of the Brooding Shadow
+		{ itemID = 515242, desc = "The Hinterlands (68, 78)" }, --Tome of Sundered Souls
+		{ itemID = 515243, desc = "Searing Gorge (59, 30)" }, --Shadowsilk Seared Cuirass
+		{ itemID = 515244, desc = "Searing Gorge (69, 34)" }, --Golem Chunk
+		{ itemID = 515245, desc = "Searing Gorge (71, 18)" }, --Shoulderpads of Deep Thinking
+		{ itemID = 515246, desc = "Searing Gorge (66, 45)" }, --Glassweb Ward Shroud
+		{ itemID = 515247, desc = "Searing Gorge (76, 56)" }, --Caravan Crossbow
+		{ itemID = 515248, desc = "Searing Gorge (64, 61)" }, --Dorius' Shield
+		{ itemID = 515249, desc = "Searing Gorge (74, 74)" }, --Stomped Diary
+		{ itemID = 515251, desc = "Searing Gorge (56, 81)" }, --Magma Petting Mittens
+		{ itemID = 515252, desc = "Searing Gorge (51, 67)" }, --Dark Iron Leatherpads
+		{ itemID = 515253, desc = "Searing Gorge (39, 73)" }, --Scorching Lodepebble
+		{ itemID = 515254, desc = "Searing Gorge (35, 82)" }, --Scorched Greatblade
+		{ itemID = 515255, desc = "Searing Gorge (21, 80)" }, --Dark Iron Slippers
+		{ itemID = 515256, desc = "Searing Gorge (23, 55)" }, --Fire Poker
+		{ itemID = 515257, desc = "Searing Gorge (14, 35)" }, --Steam Pressure Totem
+		{ itemID = 515258, desc = "Searing Gorge (26, 39)" }, --Eye of Twilight
+		{ itemID = 515259, desc = "Searing Gorge (49, 55)" }, --Disciplinary Rifle
+		{ itemID = 515260, desc = "Searing Gorge (35, 52)" }, --Contraband Magician Rod
+		{ itemID = 515261, desc = "Searing Gorge (30, 26)" }, --Zamael's Corrupted Twilight
+		{ itemID = 515262, desc = "Searing Gorge (41, 58)" }, --Slave Band
+		{ itemID = 515263, desc = "Searing Gorge (55, 48)" }, --Dark Iron Scorcher
+		{ itemID = 515264, desc = "Searing Gorge (32, 51)" }, --Heavy War Golem Rune
+		{ itemID = 515265, desc = "Searing Gorge (28, 64)" }, --Freedom Falchion
+		{ itemID = 515266, desc = "Searing Gorge (40, 54)" }, --Slave Worker Pantaloons
+		{ itemID = 515267, desc = "Searing Gorge (46, 49)" }, --Break-time Gloves
+		{ itemID = 515268, desc = "Searing Gorge (37, 41)" }, --Dark Iron Loop
+		{ itemID = 515269, desc = "Searing Gorge (49, 24)" }, --Incendosaur Bone String
+		{ itemID = 515270, desc = "Searing Gorge (42, 31)" }, --Dark Iron Legplates
+		{ itemID = 515271, desc = "Searing Gorge (41, 22)" }, --Dark Iron Wristbands
+		{ itemID = 515272, desc = "Searing Gorge (39, 38)" }, --Elder Pipe
+		{ itemID = 515273, desc = "Searing Gorge (44, 36)" }, --Overseer's Mystic Wrench
+		{ itemID = 515274, desc = "Searing Gorge (48, 20)" }, --Molten Fang Tooth
+		{ itemID = 515275, desc = "Searing Gorge (38, 55)" }, --Scorched Mail Tunic
+		{ itemID = 515276, desc = "Searing Gorge (41, 49)" }, --Cogbolt's Special
+		{ itemID = 515277, desc = "Searing Gorge (42, 44)" }, --Burned Blade Shiv
+		{ itemID = 515278, desc = "Searing Gorge (43, 52)" }, --Dark Iron Hood
+		{ itemID = 515279, desc = "Searing Gorge (45, 39)" }, --Sharp Chain Belt
+		{ itemID = 515281, desc = "Blasted Lands (63, 4)" }, --Nethergarde Mining Cap
 		{ itemID = 515282 }, --Mo'arg Saw Shield
-		{ itemID = 515283 }, --Nethergarde Foreman Chest
-		{ itemID = 515284 }, --Runed Ogre Wrap
-		{ itemID = 515285 }, --Ogre Finger Sleeve
-		{ itemID = 515286 }, --Old War Wraps
-		{ itemID = 515287 }, --Orcish Demon Slayer
-		{ itemID = 515288 }, --Elvish Demon Reaver
-		{ itemID = 515289 }, --Demon Claw
-		{ itemID = 515290 }, --Evoker's Twisted Coil
-		{ itemID = 515291 }, --Shadowsworn Reaper
-		{ itemID = 515292 }, --Collector's Junk
-		{ itemID = 515293 }, --Dreadweaver
-		{ itemID = 515294 }, --Dreadmaul Head Smasher
-		{ itemID = 515295 }, --Charred Slicer
-		{ itemID = 515296 }, --Demon Kickers
-		{ itemID = 515297 }, --Crude Voodoo Doll
-		{ itemID = 515298 }, --Doomlord Slasher
-		{ itemID = 515299 }, --Pauldron of the First War
-		{ itemID = 515300 }, --Cursed Drape
-		{ itemID = 515301 }, --Ancient Dragonmaw Token
-		{ itemID = 515302 }, --Fallen Soldier's Shank
-		{ itemID = 515303 }, --Doom Pendant
-		{ itemID = 515304 }, --Bloodmage Coil
-		{ itemID = 515305 }, --Lost Faith
-		{ itemID = 515306 }, --Portal Fragment
-		{ itemID = 515312 }, --Ror's Wrecker
-		{ itemID = 515313 }, --Timelost Vestments
-		{ itemID = 515314 }, --Emerald Circle Charm
-		{ itemID = 515315 }, --Jadefire Bone Breaker
-		{ itemID = 515316 }, --Lost Shipment Wristguards
-		{ itemID = 515317 }, --Jadefire Piercer
-		{ itemID = 515318 }, --Felhound Tendril
-		{ itemID = 515319 }, --Bubbling Fel Mixture
-		{ itemID = 515320 }, --Silverhand Spaulders
-		{ itemID = 515321 }, --Xorothian Slippers
-		{ itemID = 515322 }, --Jaednar Spire
-		{ itemID = 515323 }, --Bottled Oozeling
-		{ itemID = 515324 }, --Infernal Tender
-		{ itemID = 515325 }, --Highborne Carver
-		{ itemID = 515326 }, --Niby's Training Collar
-		{ itemID = 515327 }, --Umbral Stalker's Tarp
-		{ itemID = 515328 }, --Fallen Sentinel's Leggings
-		{ itemID = 515329 }, --Ironwood Cap
-		{ itemID = 515330 }, --Sindelle's Fuzzy Cuffs
-		{ itemID = 515331 }, --Heart of the Warpwood
-		{ itemID = 515333 }, --Crystal of Cruel Corruption
-		{ itemID = 515334 }, --Talonbranch Sweeper
-		{ itemID = 515336 }, --Timbermaw Defender
-		{ itemID = 515337 }, --Timbermaw Girdle
-		{ itemID = 515338 }, --Ring of Purity
-		{ itemID = 515340 }, --Acid Bolter
-		{ itemID = 515341 }, --Fel Cleaver
-		{ itemID = 515342 }, --Bitterbranch Claymore
-		{ itemID = 515343 }, --Rotwood Sabre
-		{ itemID = 515354 }, --Dinosaur Tranquilizer
-		{ itemID = 515355 }, --Boom-Bling Choker
-		{ itemID = 515356 }, --Cenarion Dreamcatcher
-		{ itemID = 515357 }, --Marsh Shooter
-		{ itemID = 515358 }, --Mystic Geode
-		{ itemID = 515360 }, --Bug Repellant
-		{ itemID = 515361 }, --Bonechipper Dagger
-		{ itemID = 515362 }, --Jane's Lucky Hat
-		{ itemID = 515363 }, --Silverback Cape
-		{ itemID = 515364 }, --Tongs of Miscalibration
-		{ itemID = 515365 }, --Pylon Charged Staff
-		{ itemID = 515366 }, --Lost Fighter's Crossbow
-		{ itemID = 515367 }, --Talon Ripper
-		{ itemID = 515368 }, --Brand New Bikini
-		{ itemID = 515369 }, --Idol of the Terror Claw
-		{ itemID = 515370 }, --Dino Wacker
-		{ itemID = 515371 }, --Wrangler's Cord
-		{ itemID = 515372 }, --Thunderstomp Scale
-		{ itemID = 515373 }, --Doomfall Spark
-		{ itemID = 515374 }, --Retired Hero's Helm
-		{ itemID = 515375 }, --Pterrodax Scale Cloak
-		{ itemID = 515376 }, --Shifting Form
-		{ itemID = 515377 }, --Serpent Spine Pauldrons
-		{ itemID = 515378 }, --Sparkshard Necklace
-		{ itemID = 515379 }, --Egg Thief's Handwraps
-		{ itemID = 515380 }, --Qiraji Stinger
-		{ itemID = 515381 }, --Cindersguard Saber
-		{ itemID = 515382 }, --Ringo's Star
-		{ itemID = 515383 }, --One Ring to Flame Them All
-		{ itemID = 515384 }, --Ember Crown
-		{ itemID = 515385 }, --Blaze Runners
-		{ itemID = 515386 }, --Totem of Scorching Sparks
-		{ itemID = 515387 }, --Molten Fang
-		{ itemID = 515388 }, --Slightly Sticky Cloak
-		{ itemID = 515389 }, --Golakka Scoured Legguards
-		{ itemID = 515390 }, --Ballast Laden Pauldrons
-		{ itemID = 515391 }, --Campsite Shrapnel
-		{ itemID = 515392 }, --Carapace Plated Chest
-		{ itemID = 515393 }, --Carapace Cracker
-		{ itemID = 515394 }, --Crystal Fused Carapace
-		{ itemID = 515395 }, --Gorishi Antenna
-		{ itemID = 515396 }, --Cord of Living Vines
-		{ itemID = 515397 }, --Elegantly Designed Cuffs
-		{ itemID = 515398 }, --Silithid Ritual Robe
-		{ itemID = 515399 }, --Ravasaur Talon
-		{ itemID = 515400 }, --Tawana's Spare Axe
-		{ itemID = 515401 }, --Caravaneer's Machete
-		{ itemID = 515402 }, --Marsh Treaders
-		{ itemID = 515403 }, --Caravan Utility Hammer
-		{ itemID = 515404 }, --Jungle String Bow
-		{ itemID = 515405 }, --Lucky Fisherman's Breeches
-		{ itemID = 515406 }, --Water Dredger's Wrap
-		{ itemID = 515407 }, --Expedition Bracers
-		{ itemID = 515408 }, --Hidden Stash
-		{ itemID = 515409 }, --Hexweave Gloves
-		{ itemID = 515410 }, --Fossilized Smasher
-		{ itemID = 515411 }, --Goblin Plant Slicer
+		{ itemID = 515283, desc = "Blasted Lands (54, 12)" }, --Nethergarde Foreman Chest
+		{ itemID = 515284, desc = "Blasted Lands (45, 16)" }, --Runed Ogre Wrap
+		{ itemID = 515285, desc = "Blasted Lands (44, 13)" }, --Ogre Finger Sleeve
+		{ itemID = 515286, desc = "Blasted Lands (57, 26)" }, --Old War Wraps
+		{ itemID = 515287, desc = "Blasted Lands (58, 55)" }, --Orcish Demon Slayer
+		{ itemID = 515288, desc = "Blasted Lands (59, 56)" }, --Elvish Demon Reaver
+		{ itemID = 515289, desc = "Blasted Lands (65, 34)" }, --Demon Claw
+		{ itemID = 515290, desc = "Blasted Lands (68, 29)" }, --Evoker's Twisted Coil
+		{ itemID = 515291, desc = "Blasted Lands (53, 84)" }, --Shadowsworn Reaper
+		{ itemID = 515292, desc = "Stranglethorn Vale (52, 36)" }, --Collector's Junk
+		{ itemID = 515293, desc = "Blasted Lands (39, 32)" }, --Dreadweaver
+		{ itemID = 515294, desc = "Blasted Lands (48, 43)" }, --Dreadmaul Head Smasher
+		{ itemID = 515295, desc = "Blasted Lands (48, 30)" }, --Charred Slicer
+		{ itemID = 515296, desc = "Blasted Lands (51, 85)" }, --Demon Kickers
+		{ itemID = 515297, desc = "Blasted Lands (50, 84)" }, --Crude Voodoo Doll
+		{ itemID = 515298, desc = "Blasted Lands (37, 75)" }, --Doomlord Slasher
+		{ itemID = 515299, desc = "Stranglethorn Vale (55, 39)" }, --Pauldron of the First War
+		{ itemID = 515300, desc = "Blasted Lands (43, 42)" }, --Cursed Drape
+		{ itemID = 515301, desc = "Blasted Lands (52, 49)" }, --Ancient Dragonmaw Token
+		{ itemID = 515302, desc = "Blasted Lands (51, 55)" }, --Fallen Soldier's Shank
+		{ itemID = 515303, desc = "Blasted Lands (44, 72)" }, --Doom Pendant
+		{ itemID = 515304, desc = "Blasted Lands (50, 14)" }, --Bloodmage Coil
+		{ itemID = 515305, desc = "Blasted Lands (43, 28)" }, --Lost Faith
+		{ itemID = 515306, desc = "Blasted Lands (58, 50)" }, --Portal Fragment
+		{ itemID = 515312, desc = "Felwood (48, 94)" }, --Ror's Wrecker
+		{ itemID = 515313, desc = "Felwood (57, 86)" }, --Timelost Vestments
+		{ itemID = 515314, desc = "Felwood (51, 81)" }, --Emerald Circle Charm
+		{ itemID = 515315, desc = "Felwood (39, 83)" }, --Jadefire Bone Breaker
+		{ itemID = 515316, desc = "Felwood (45, 73)" }, --Lost Shipment Wristguards
+		{ itemID = 515317, desc = "Felwood (33, 67)" }, --Jadefire Piercer
+		{ itemID = 515318, desc = "Felwood (39, 62)" }, --Felhound Tendril
+		{ itemID = 515319, desc = "Felwood (35, 61)" }, --Bubbling Fel Mixture
+		{ itemID = 515320, desc = "Felwood (48, 31)" }, --Silverhand Spaulders
+		{ itemID = 515321, desc = "Felwood (36, 44)" }, --Xorothian Slippers
+		{ itemID = 515322, desc = "Felwood (37, 54)" }, --Jaednar Spire
+		{ itemID = 515323, desc = "Felwood (42, 47)" }, --Bottled Oozeling
+		{ itemID = 515324, desc = "Felwood (41, 41)" }, --Infernal Tender
+		{ itemID = 515325, desc = "Felwood (38, 53)" }, --Highborne Carver
+		{ itemID = 515326, desc = "Felwood (41, 45)" }, --Niby's Training Collar
+		{ itemID = 515327, desc = "Felwood (45, 34)" }, --Umbral Stalker's Tarp
+		{ itemID = 515328, desc = "Felwood (39, 22)" }, --Fallen Sentinel's Leggings
+		{ itemID = 515329, desc = "Felwood (49, 25)" }, --Ironwood Cap
+		{ itemID = 515330, desc = "Felwood (48, 40)" }, --Sindelle's Fuzzy Cuffs
+		{ itemID = 515331, desc = "Felwood (58, 18)" }, --Heart of the Warpwood
+		{ itemID = 515333, desc = "Felwood (56, 6)" }, --Crystal of Cruel Corruption
+		{ itemID = 515334, desc = "Felwood (61, 24)" }, --Talonbranch Sweeper
+		{ itemID = 515336, desc = "Felwood (65, 8)" }, --Timbermaw Defender
+		{ itemID = 515337, desc = "Felwood (65, 4)" }, --Timbermaw Girdle
+		{ itemID = 515338, desc = "Felwood (55, 26)" }, --Ring of Purity
+		{ itemID = 515340, desc = "Felwood (48, 84)" }, --Acid Bolter
+		{ itemID = 515341, desc = "Felwood (48, 29)" }, --Fel Cleaver
+		{ itemID = 515342, desc = "Felwood (41, 28)" }, --Bitterbranch Claymore
+		{ itemID = 515343, desc = "Feralas (43, 15)" }, --Rotwood Sabre
+		{ itemID = 515354, desc = "Valley of Trials (70, 84)" }, --Dinosaur Tranquilizer
+		{ itemID = 515355, desc = "Valley of Trials (69, 85)" }, --Boom-Bling Choker
+		{ itemID = 515356, desc = "UnGoro Crater (32, 15)" }, --Cenarion Dreamcatcher
+		{ itemID = 515357, desc = "Un'Goro Crater (72, 74)" }, --Marsh Shooter
+		{ itemID = 515358, desc = "Un'Goro Crater (81, 61)" }, --Mystic Geode
+		{ itemID = 515360, desc = "Un'Goro Crater (39, 66)" }, --Bug Repellant
+		{ itemID = 515361, desc = "Un'Goro Crater (69, 35)" }, --Bonechipper Dagger
+		{ itemID = 515362, desc = "Un'Goro Crater (69, 16)" }, --Jane's Lucky Hat
+		{ itemID = 515363, desc = "UnGoro Crater (66, 18)" }, --Silverback Cape
+		{ itemID = 515364, desc = "UnGoro Crater (67, 17)" }, --Tongs of Miscalibration
+		{ itemID = 515365, desc = "UnGoro Crater (56, 12)" }, --Pylon Charged Staff
+		{ itemID = 515366, desc = "Un'Goro Crater (46, 14)" }, --Lost Fighter's Crossbow
+		{ itemID = 515367, desc = "Un'Goro Crater (47, 81)" }, --Talon Ripper
+		{ itemID = 515368, desc = "Un'Goro Crater (26, 51)" }, --Brand New Bikini
+		{ itemID = 515369, desc = "Un'Goro Crater (20, 58)" }, --Idol of the Terror Claw
+		{ itemID = 515370, desc = "Un'Goro Crater (31, 78)" }, --Dino Wacker
+		{ itemID = 515371, desc = "Un'Goro Crater (48, 84)" }, --Wrangler's Cord
+		{ itemID = 515372, desc = "Un'Goro Crater (39, 75)" }, --Thunderstomp Scale
+		{ itemID = 515373, desc = "Un'Goro Crater (44, 91)" }, --Doomfall Spark
+		{ itemID = 515374, desc = "Un'Goro Crater (50, 86)" }, --Retired Hero's Helm
+		{ itemID = 515375, desc = "Un'Goro Crater (57, 91)" }, --Pterrodax Scale Cloak
+		{ itemID = 515376, desc = "Un'Goro Crater (69, 57)" }, --Shifting Form
+		{ itemID = 515377, desc = "Un'Goro Crater (80, 50)" }, --Serpent Spine Pauldrons
+		{ itemID = 515378, desc = "Un'Goro Crater (77, 50)" }, --Sparkshard Necklace
+		{ itemID = 515379, desc = "Un'Goro Crater (62, 57)" }, --Egg Thief's Handwraps
+		{ itemID = 515380, desc = "Valley of Trials (50, 76)" }, --Qiraji Stinger
+		{ itemID = 515381, desc = "Un'Goro Crater (50, 56)" }, --Cindersguard Saber
+		{ itemID = 515382, desc = "Un'Goro Crater (52, 50)" }, --Ringo's Star
+		{ itemID = 515383, desc = "Valley of Trials (49, 47)" }, --One Ring to Flame Them All
+		{ itemID = 515384, desc = "Un'Goro Crater (50, 82)" }, --Ember Crown
+		{ itemID = 515385, desc = "Un'Goro Crater (50, 45)" }, --Blaze Runners
+		{ itemID = 515386, desc = "Un'Goro Crater (53, 53)" }, --Totem of Scorching Sparks
+		{ itemID = 515387, desc = "Un'Goro Crater (49, 44)" }, --Molten Fang
+		{ itemID = 515388, desc = "UnGoro Crater (48, 36)" }, --Slightly Sticky Cloak
+		{ itemID = 515389, desc = "Un'Goro Crater (31, 50)" }, --Golakka Scoured Legguards
+		{ itemID = 515390, desc = "Un'Goro Crater (33, 56)" }, --Ballast Laden Pauldrons
+		{ itemID = 515391, desc = "UnGoro Crater (68, 37)" }, --Campsite Shrapnel
+		{ itemID = 515392, desc = "Un'Goro Crater (55, 69)" }, --Carapace Plated Chest
+		{ itemID = 515393, desc = "The Slithering Scar (49, 85)" }, --Carapace Cracker
+		{ itemID = 515394, desc = "Un'Goro Crater (46, 79)" }, --Crystal Fused Carapace
+		{ itemID = 515395, desc = "The Venture Co. Mine (45, 87)" }, --Gorishi Antenna
+		{ itemID = 515396, desc = "Un'Goro Crater (32, 40)" }, --Cord of Living Vines
+		{ itemID = 515397, desc = "Un'Goro Crater (37, 51)" }, --Elegantly Designed Cuffs
+		{ itemID = 515398, desc = "Valley of Trials (44, 75)" }, --Silithid Ritual Robe
+		{ itemID = 515399, desc = "Swamp of Sorrows (46, 55)" }, --Ravasaur Talon
+		{ itemID = 515400, desc = "Un'Goro Crater (52, 82)" }, --Tawana's Spare Axe
+		{ itemID = 515401, desc = "Un'Goro Crater (59, 49)" }, --Caravaneer's Machete
+		{ itemID = 515402, desc = "Un'Goro Crater (63, 69)" }, --Marsh Treaders
+		{ itemID = 515403, desc = "Un'Goro Crater (45, 62)" }, --Caravan Utility Hammer
+		{ itemID = 515404, desc = "Un'Goro Crater (63, 82)" }, --Jungle String Bow
+		{ itemID = 515405, desc = "UnGoro Crater (35, 25)" }, --Lucky Fisherman's Breeches
+		{ itemID = 515406, desc = "Un'Goro Crater (46, 43)" }, --Water Dredger's Wrap
+		{ itemID = 515407, desc = "Un'Goro Crater (38, 34)" }, --Expedition Bracers
+		{ itemID = 515408, desc = "Un'Goro Crater (63, 41)" }, --Hidden Stash
+		{ itemID = 515409, desc = "Valley of Trials (55, 77)" }, --Hexweave Gloves
+		{ itemID = 515410, desc = "UnGoro Crater (65, 23)" }, --Fossilized Smasher
+		{ itemID = 515411, desc = "UnGoro Crater (60, 32)" }, --Goblin Plant Slicer
 		{ itemID = 515412 }, --Friendly Sludgemonster
-		{ itemID = 515413 }, --Spring Shard
-		{ itemID = 515414 }, --Libram of Ancient Warding
-		{ itemID = 515415 }, --Prancefin Ring
-		{ itemID = 515425 }, --Nightsong Waraxe
-		{ itemID = 515426 }, --Mystral Compass
-		{ itemID = 515427 }, --Fine Silk Wraps
-		{ itemID = 515428 }, --Teldrassil Begonias
-		{ itemID = 515429 }, --Torn Spellbook Page
-		{ itemID = 515430 }, --Arlithrien Moon Orb
-		{ itemID = 515431 }, --Lunar Tome
-		{ itemID = 515432 }, --Whisperwind Boots
-		{ itemID = 515433 }, --Timberling Dagger
-		{ itemID = 515434 }, --Starfall Edge
-		{ itemID = 515435 }, --Blade of the Submerged Moon
-		{ itemID = 515436 }, --Whisperwind Heirloom
-		{ itemID = 515437 }, --Timberbane Axe
-		{ itemID = 515438 }, --Lifesap Blade
-		{ itemID = 515439 }, --Spirited Cane
-		{ itemID = 515440 }, --Blade of Severed Souls
-		{ itemID = 515441 }, --Abandoned Fishing Rod
-		{ itemID = 515442 }, --Rock Smasher
-		{ itemID = 515444 }, --Dirge of the Dead
-		{ itemID = 515466 }, --Alchemist's Ladel
-		{ itemID = 515502 }, --Failed Parachute
-		{ itemID = 515503 }, --Forgotten Pauldron
-		{ itemID = 515504 }, --Grimtotem Darkblade
-		{ itemID = 515505 }, --Centaur Mining Axe
-		{ itemID = 515506 }, --Galak Chicken Smasher
-		{ itemID = 515507 }, --Wyvern Trapper Spear
-		{ itemID = 515508 }, --Highperch Necklace
-		{ itemID = 515509 }, --Darkcloud Braid
-		{ itemID = 515510 }, --Deadman's Signet
-		{ itemID = 515511 }, --Drowned Diver's Ring
-		{ itemID = 515512 }, --Grimtotem Jaw Smasher
-		{ itemID = 515513 }, --Galak Shortbow
-		{ itemID = 515514 }, --Cursed Elemental Scepter
-		{ itemID = 515515 }, --Slightly Magical Kodo Bone
-		{ itemID = 515516 }, --Darkcloud Totem
-		{ itemID = 515517 }, --Highlands Vest
-		{ itemID = 515518 }, --Caravaner's Bracers
-		{ itemID = 515519 }, --Pack Kodo Satchel
-		{ itemID = 515520 }, --Cloud Serpent Feather
-		{ itemID = 515524 }, --Scuba Slayer's Blade
-		{ itemID = 515525 }, --Drowned Diver's Helm
-		{ itemID = 515528 }, --Tahonda Gauntlets
-		{ itemID = 515529 }, --Pirate's Mail
-		{ itemID = 515530 }, --Abandoned Moonshine
-		{ itemID = 515531 }, --Pip's Rad Stone
-		{ itemID = 515532 }, --Survivor's Trousers
-		{ itemID = 515533 }, --Kodo War Drum
-		{ itemID = 515534 }, --Silithid Bug Blaster
-		{ itemID = 515535 }, --Isolated Inventor's Bulk
-		{ itemID = 515536 }, --Runway Scraper
-		{ itemID = 515537 }, --U.L.T.R.A Racing Goggles
+		{ itemID = 515413, desc = "Un'Goro Crater (41, 50)" }, --Spring Shard
+		{ itemID = 515414, desc = "Un'Goro Crater (46, 8)" }, --Libram of Ancient Warding
+		{ itemID = 515415, desc = "Un'Goro Crater (63, 62)" }, --Prancefin Ring
+		{ itemID = 515425, desc = "Ashenvale (84, 64)" }, --Nightsong Waraxe
+		{ itemID = 515426, desc = "Ashenvale (53, 71)" }, --Mystral Compass
+		{ itemID = 515427, desc = "Ashenvale (61, 39)" }, --Fine Silk Wraps
+		{ itemID = 515428, desc = "Teldrassil (73, 61)" }, --Teldrassil Begonias
+		{ itemID = 515429, desc = "Teldrassil (51, 71)" }, --Torn Spellbook Page
+		{ itemID = 515430, desc = "Teldrassil (43, 67)" }, --Arlithrien Moon Orb
+		{ itemID = 515431, desc = "Teldrassil (66, 59)" }, --Lunar Tome
+		{ itemID = 515432, desc = "Teldrassil (60, 68)" }, --Whisperwind Boots
+		{ itemID = 515433, desc = "Teldrassil (54, 75)" }, --Timberling Dagger
+		{ itemID = 515434, desc = "Teldrassil (36, 55)" }, --Starfall Edge
+		{ itemID = 515435, desc = "Teldrassil (57, 56)" }, --Blade of the Submerged Moon
+		{ itemID = 515436, desc = "Teldrassil (44, 17)" }, --Whisperwind Heirloom
+		{ itemID = 515437, desc = "Teldrassil (47, 27)" }, --Timberbane Axe
+		{ itemID = 515438, desc = "Teldrassil (34, 28)" }, --Lifesap Blade
+		{ itemID = 515439, desc = "Teldrassil (59, 43)" }, --Spirited Cane
+		{ itemID = 515440, desc = "Ashenvale (76, 75)" }, --Blade of Severed Souls
+		{ itemID = 515441, desc = "Ashenvale (37, 46)" }, --Abandoned Fishing Rod
+		{ itemID = 515442, desc = "Ashenvale (54, 64)" }, --Rock Smasher
+		{ itemID = 515444, desc = "Ashenvale (32, 23)" }, --Dirge of the Dead
+		{ itemID = 515466, desc = "Stranglethorn Vale (38, 62)" }, --Alchemist's Ladel
+		{ itemID = 515502, desc = "Thousand Needles (32, 25)" }, --Failed Parachute
+		{ itemID = 515503, desc = "Thousand Needles (66, 49)" }, --Forgotten Pauldron
+		{ itemID = 515504, desc = "Thousand Needles (39, 42)" }, --Grimtotem Darkblade
+		{ itemID = 515505, desc = "Thousand Needles (44, 33)" }, --Centaur Mining Axe
+		{ itemID = 515506, desc = "Thousand Needles (19, 21)" }, --Galak Chicken Smasher
+		{ itemID = 515507, desc = "Thousand Needles (11, 41)" }, --Wyvern Trapper Spear
+		{ itemID = 515508, desc = "Thousand Needles (18, 41)" }, --Highperch Necklace
+		{ itemID = 515509, desc = "Thousand Needles (36, 35)" }, --Darkcloud Braid
+		{ itemID = 515510, desc = "Thousand Needles (37, 56)" }, --Deadman's Signet
+		{ itemID = 515511, desc = "Thousand Needles (42, 34)" }, --Drowned Diver's Ring
+		{ itemID = 515512, desc = "Thousand Needles (33, 35)" }, --Grimtotem Jaw Smasher
+		{ itemID = 515513, desc = "Thousand Needles (40, 36)" }, --Galak Shortbow
+		{ itemID = 515514, desc = "Thousand Needles (39, 27)" }, --Cursed Elemental Scepter
+		{ itemID = 515515, desc = "Thousand Needles (21, 38)" }, --Slightly Magical Kodo Bone
+		{ itemID = 515516, desc = "Thousand Needles (38, 35)" }, --Darkcloud Totem
+		{ itemID = 515517, desc = "Thousand Needles (54, 73)" }, --Highlands Vest
+		{ itemID = 515518, desc = "Thousand Needles (23, 25)" }, --Caravaner's Bracers
+		{ itemID = 515519, desc = "Thousand Needles (21, 33)" }, --Pack Kodo Satchel
+		{ itemID = 515520, desc = "Thousand Needles (56, 49)" }, --Cloud Serpent Feather
+		{ itemID = 515524, desc = "Thousand Needles (42, 33)" }, --Scuba Slayer's Blade
+		{ itemID = 515525, desc = "Thousand Needles (42, 34)" }, --Drowned Diver's Helm
+		{ itemID = 515528, desc = "Thousand Needles (79, 89)" }, --Tahonda Gauntlets
+		{ itemID = 515529, desc = "Thousand Needles (82, 55)" }, --Pirate's Mail
+		{ itemID = 515530, desc = "Thousand Needles (72, 73)" }, --Abandoned Moonshine
+		{ itemID = 515531, desc = "Thousand Needles (79, 63)" }, --Pip's Rad Stone
+		{ itemID = 515532, desc = "Thousand Needles (88, 66)" }, --Survivor's Trousers
+		{ itemID = 515533, desc = "Thousand Needles (68, 65)" }, --Kodo War Drum
+		{ itemID = 515534, desc = "Thousand Needles (64, 87)" }, --Silithid Bug Blaster
+		{ itemID = 515535, desc = "Thousand Needles (84, 82)" }, --Isolated Inventor's Bulk
+		{ itemID = 515536, desc = "Thousand Needles (82, 62)" }, --Runway Scraper
+		{ itemID = 515537, desc = "Thousand Needles (74, 58)" }, --U.L.T.R.A Racing Goggles
 		{ itemID = 515538 }, --Giant Wood Splinter
-		{ itemID = 515539 }, --Ancient Jeweler's Staff
-		{ itemID = 515540 }, --Goblin Racing Boots
-		{ itemID = 515541 }, --The Tickler
-		{ itemID = 515542 }, --Sizzling Potion
-		{ itemID = 515599 }, --Sacrificial Carver
-		{ itemID = 515600 }, --Legashi Bracers
-		{ itemID = 515601 }, --Eldara's Stargazer
-		{ itemID = 515602 }, --Gauntlets of the Overlook
-		{ itemID = 515603 }, --Cliffwalker Legplates
-		{ itemID = 515604 }, --Lyre of the Grand Scribe
-		{ itemID = 515605 }, --The Wrath of Arkkoroc
-		{ itemID = 515606 }, --Idol of the Ocean's Depths
-		{ itemID = 515607 }, --Hydraxian Staff
-		{ itemID = 515608 }, --Ravencrest Signet
-		{ itemID = 515609 }, --Spitelash Waistguards
-		{ itemID = 515610 }, --Vanessa's Eyepatch
-		{ itemID = 515611 }, --Hydra Hide Belt
-		{ itemID = 515612 }, --Cilkeck's Gloves
-		{ itemID = 515613 }, --Necklace of Unbroken Waves
-		{ itemID = 515614 }, --Shahiar's Lost Horn
-		{ itemID = 515615 }, --Deep Hydra's Scales
-		{ itemID = 515616 }, --Scalebeard's Old Shell
-		{ itemID = 515617 }, --Stormslicer
-		{ itemID = 515618 }, --Thalassian Circlet
-		{ itemID = 515619 }, --Azure Will
-		{ itemID = 515620 }, --Crystalized Shield
-		{ itemID = 515621 }, --Imitation of Zin-Eldari
-		{ itemID = 515622 }, --Claws of the Lion
-		{ itemID = 515623 }, --Might of Azshara
-		{ itemID = 515624 }, --Beth'Amara Shard
-		{ itemID = 515625 }, --Markri Turret
-		{ itemID = 515626 }, --Shoulderguards of Zin-Malor
-		{ itemID = 515627 }, --Claws of the Bear
-		{ itemID = 515628 }, --The Bear Feet
-		{ itemID = 515629 }, --Spitelash Warbanner
-		{ itemID = 515630 }, --Burning Band
-		{ itemID = 515631 }, --Ruinbreaker
-		{ itemID = 515632 }, --Hand of the Cliffs
-		{ itemID = 515633 }, --Elune's Glow
-		{ itemID = 515634 }, --Ish'thel Falesh, Gaze of Eldara
-		{ itemID = 515676 }, --The Compliance Crusher
-		{ itemID = 515677 }, --Salma's Summer Dress
-		{ itemID = 515678 }, --Field Boots
-		{ itemID = 515679 }, --Pumpkin Smashers
-		{ itemID = 515680 }, --Gnoll Cleaver
-		{ itemID = 515681 }, --Harvester’s Aegis
-		{ itemID = 515682 }, --Defias Throwing Knife
-		{ itemID = 515683 }, --Blessed Mail Wraps
-		{ itemID = 515684 }, --Defias Apothecary Pants
-		{ itemID = 515685 }, --Quarry Sledge
-		{ itemID = 515686 }, --Harvest Scythe
-		{ itemID = 515687 }, --Rower's Jerkin
-		{ itemID = 515688 }, --Featherbeard’s Bulwark Blaster
-		{ itemID = 515689 }, --Zun’watha Cleaver
-		{ itemID = 515690 }, --Overwatch Longrifle
-		{ itemID = 515691 }, --Dwarven Drinking Pants
-		{ itemID = 515692 }, --Anchorfoot Greaves
-		{ itemID = 515693 }, --Highvale Wellband
-		{ itemID = 515694 }, --Highvale Ranger Bow
-		{ itemID = 515695 }, --Zipcoil’s Zapper Cap
-		{ itemID = 515696 }, --Hide Piercer
-		{ itemID = 515697 }, --Hexweave Robes
-		{ itemID = 515698 }, --Idol of the Broodmother
-		{ itemID = 515699 }, --Brood Caller’s Raiment
-		{ itemID = 515700 }, --Broodsilk Gloves
-		{ itemID = 515701 }, --Floodworn Shoulderguards
-		{ itemID = 515702 }, --Aerie Faith Vambraces
-		{ itemID = 515703 }, --Ooze Cleansed Shoulderpads
-		{ itemID = 515704 }, --Drowned Link Belt
-		{ itemID = 515705 }, --Soothsayer Shroud
-		{ itemID = 515706 }, --Elder Highpeak’s Keepsake
-		{ itemID = 515707 }, --Hexcall Gavel
-		{ itemID = 515708 }, --Blood Keeper's Staff
-		{ itemID = 515709 }, --Zul Warder’s Cloak
-		{ itemID = 515710 }, --Ring of the Sunken Courier
-		{ itemID = 515711 }, --Slime Coated Cloak
-		{ itemID = 515712 }, --Sludge Hammer
-		{ itemID = 515713 }, --Fort Defender Band
-		{ itemID = 515714 }, --Vilebranch Beastlance
-		{ itemID = 515715 }, --Shadowpounce Cowl
-		{ itemID = 515716 }, --Terrapine Carapace
-		{ itemID = 515717 }, --Idol of the Aerie
-		{ itemID = 515718 }, --Revantusk Hide Steppers
-		{ itemID = 515719 }, --Seabreeze Hauberk
-		{ itemID = 515720 }, --Trapper’s Lone Band
-		{ itemID = 515721 }, --Bloodthread Leggings
-		{ itemID = 515722 }, --Oozling Thoughtcore
-		{ itemID = 515723 }, --Treads of the Verdant Threshold
-		{ itemID = 515724 }, --Vilebranch Warthrower
-		{ itemID = 515725 }, --Fleshcarver Athame
-		{ itemID = 515726 }, --The Blood Talon
-		{ itemID = 515727 }, --Shellsplitter Girdle
-		{ itemID = 515728 }, --Flayer's Edge
-		{ itemID = 515729 }, --Highnest Repeater
-		{ itemID = 515730 }, --Blood Drinker
-		{ itemID = 515731 }, --Vilebranch Ritual Dagger
-		{ itemID = 515732 }, --Libram of Resolute Light
-		{ itemID = 515733 }, --Wand of the Broodbound
-		{ itemID = 515734 }, --High Cascade Cord
-		{ itemID = 515735 }, --Desperate Defense
-		{ itemID = 515736 }, --Tiki Shield
-		{ itemID = 515737 }, --Dive's Instruction Manual
-		{ itemID = 515738 }, --Inventor's Sand Band
-		{ itemID = 515739 }, --Sandfury Blade
-		{ itemID = 515740 }, --Time Stream Slasher
-		{ itemID = 515741 }, --Ancestral Warblade
-		{ itemID = 515742 }, --Wastewander Alchemist’s Robe
-		{ itemID = 515743 }, --Betrayer's Blade
-		{ itemID = 515744 }, --Sandswept Binding
-		{ itemID = 515745 }, --Deadman Gauntlets
-		{ itemID = 515747 }, --Dustwhisper Legguards
-		{ itemID = 515748 }, --Sand Cover
+		{ itemID = 515539, desc = "Thousand Needles (71, 85)" }, --Ancient Jeweler's Staff
+		{ itemID = 515540, desc = "Thousand Needles (84, 82)" }, --Goblin Racing Boots
+		{ itemID = 515541, desc = "Thousand Needles (26, 56)" }, --The Tickler
+		{ itemID = 515542, desc = "Thousand Needles (88, 66)" }, --Sizzling Potion
+		{ itemID = 515599, desc = "Azshara (61, 25)" }, --Sacrificial Carver
+		{ itemID = 515600, desc = "Azshara (66, 17)" }, --Legashi Bracers
+		{ itemID = 515601, desc = "Azshara (54, 11)" }, --Eldara's Stargazer
+		{ itemID = 515602, desc = "Azshara (77, 34)" }, --Gauntlets of the Overlook
+		{ itemID = 515603, desc = "Azshara (84, 17)" }, --Cliffwalker Legplates
+		{ itemID = 515604, desc = "Azshara (90, 35)" }, --Lyre of the Grand Scribe
+		{ itemID = 515605, desc = "Azshara (77, 44)" }, --The Wrath of Arkkoroc
+		{ itemID = 515606, desc = "Azshara (76, 40)" }, --Idol of the Ocean's Depths
+		{ itemID = 515607, desc = "Azshara (66, 41)" }, --Hydraxian Staff
+		{ itemID = 515608, desc = "Azshara (72, 85)" }, --Ravencrest Signet
+		{ itemID = 515609, desc = "Azshara (66, 77)" }, --Spitelash Waistguards
+		{ itemID = 515610, desc = "Azshara (54, 88)" }, --Vanessa's Eyepatch
+		{ itemID = 515611, desc = "Azshara (62, 94)" }, --Hydra Hide Belt
+		{ itemID = 515612, desc = "Azshara (45, 91)" }, --Cilkeck's Gloves
+		{ itemID = 515613, desc = "Azshara (56, 71)" }, --Necklace of Unbroken Waves
+		{ itemID = 515614, desc = "Azshara (64, 39)" }, --Shahiar's Lost Horn
+		{ itemID = 515615, desc = "Azshara (57, 52)" }, --Deep Hydra's Scales
+		{ itemID = 515616, desc = "Azshara (55, 48)" }, --Scalebeard's Old Shell
+		{ itemID = 515617, desc = "Azshara (59, 41)" }, --Stormslicer
+		{ itemID = 515618, desc = "Azshara (63, 35)" }, --Thalassian Circlet
+		{ itemID = 515619, desc = "Azshara (42, 84)" }, --Azure Will
+		{ itemID = 515620, desc = "Azshara (53, 79)" }, --Crystalized Shield
+		{ itemID = 515621, desc = "Azshara (37, 76)" }, --Imitation of Zin-Eldari
+		{ itemID = 515622, desc = "Azshara (26, 77)" }, --Claws of the Lion
+		{ itemID = 515623, desc = "Azshara (32, 51)" }, --Might of Azshara
+		{ itemID = 515624, desc = "Azshara (61, 39)" }, --Beth'Amara Shard
+		{ itemID = 515625, desc = "Azshara (40, 46)" }, --Markri Turret
+		{ itemID = 515626, desc = "Azshara (40, 53)" }, --Shoulderguards of Zin-Malor
+		{ itemID = 515627, desc = "Azshara (25, 66)" }, --Claws of the Bear
+		{ itemID = 515628, desc = "Azshara (36, 36)" }, --The Bear Feet
+		{ itemID = 515629, desc = "Eastern Plaguelands (14, 66)" }, --Spitelash Warbanner
+		{ itemID = 515630, desc = "Azshara (49, 42)" }, --Burning Band
+		{ itemID = 515631, desc = "Azshara (29, 81)" }, --Ruinbreaker
+		{ itemID = 515632, desc = "Azshara (74, 26)" }, --Hand of the Cliffs
+		{ itemID = 515633, desc = "Azshara (49, 47)" }, --Elune's Glow
+		{ itemID = 515634, desc = "Azshara (44, 45)" }, --Ish'thel Falesh, Gaze of Eldara
+		{ itemID = 515676, desc = "Stranglethorn Vale (40, 17)" }, --The Compliance Crusher
+		{ itemID = 515677, desc = "Westfall (56, 30)" }, --Salma's Summer Dress
+		{ itemID = 515678, desc = "Westfall (60, 19)" }, --Field Boots
+		{ itemID = 515679, desc = "Westfall (49, 20)" }, --Pumpkin Smashers
+		{ itemID = 515680, desc = "Westfall (45, 13)" }, --Gnoll Cleaver
+		{ itemID = 515681, desc = "Westfall (45, 27)" }, --Harvester’s Aegis
+		{ itemID = 515682, desc = "Westfall (51, 40)" }, --Defias Throwing Knife
+		{ itemID = 515683, desc = "Westfall (59, 43)" }, --Blessed Mail Wraps
+		{ itemID = 515684, desc = "Westfall (70, 75)" }, --Defias Apothecary Pants
+		{ itemID = 515685, desc = "Westfall (31, 44)" }, --Quarry Sledge
+		{ itemID = 515686, desc = "Westfall (45, 35)" }, --Harvest Scythe
+		{ itemID = 515687, desc = "Westfall (36, 90)" }, --Rower's Jerkin
+		{ itemID = 515688, desc = "The Hinterlands (13, 55)" }, --Featherbeard’s Bulwark Blaster
+		{ itemID = 515689, desc = "Westfall (23, 59)" }, --Zun’watha Cleaver
+		{ itemID = 515690, desc = "The Hinterlands (28, 49)" }, --Overwatch Longrifle
+		{ itemID = 515691, desc = "The Hinterlands (27, 49)" }, --Dwarven Drinking Pants
+		{ itemID = 515692, desc = "The Hinterlands (30, 45)" }, --Anchorfoot Greaves
+		{ itemID = 515693, desc = "The Hinterlands (30, 49)" }, --Highvale Wellband
+		{ itemID = 515694, desc = "The Hinterlands (32, 43)" }, --Highvale Ranger Bow
+		{ itemID = 515695, desc = "Darkshore (34, 38)" }, --Zipcoil’s Zapper Cap
+		{ itemID = 515696, desc = "The Hinterlands (32, 58)" }, --Hide Piercer
+		{ itemID = 515697, desc = "The Hinterlands (25, 66)" }, --Hexweave Robes
+		{ itemID = 515698, desc = "The Hinterlands (34, 73)" }, --Idol of the Broodmother
+		{ itemID = 515699, desc = "The Hinterlands (32, 67)" }, --Brood Caller’s Raiment
+		{ itemID = 515700, desc = "The Hinterlands (40, 66)" }, --Broodsilk Gloves
+		{ itemID = 515701, desc = "The Hinterlands (41, 59)" }, --Floodworn Shoulderguards
+		{ itemID = 515702, desc = "The Hinterlands (46, 39)" }, --Aerie Faith Vambraces
+		{ itemID = 515703, desc = "The Hinterlands (45, 42)" }, --Ooze Cleansed Shoulderpads
+		{ itemID = 515704, desc = "The Hinterlands (48, 36)" }, --Drowned Link Belt
+		{ itemID = 515705, desc = "The Hinterlands (53, 39)" }, --Soothsayer Shroud
+		{ itemID = 515706, desc = "The Hinterlands (50, 49)" }, --Elder Highpeak’s Keepsake
+		{ itemID = 515707, desc = "The Hinterlands (49, 53)" }, --Hexcall Gavel
+		{ itemID = 515708, desc = "The Hinterlands (49, 68)" }, --Blood Keeper's Staff
+		{ itemID = 515709, desc = "The Hinterlands (47, 70)" }, --Zul Warder’s Cloak
+		{ itemID = 515710, desc = "The Hinterlands (58, 61)" }, --Ring of the Sunken Courier
+		{ itemID = 515711, desc = "The Hinterlands (58, 43)" }, --Slime Coated Cloak
+		{ itemID = 515712, desc = "The Hinterlands (58, 43)" }, --Sludge Hammer
+		{ itemID = 515713, desc = "The Hinterlands (66, 44)" }, --Fort Defender Band
+		{ itemID = 515714, desc = "The Hinterlands (71, 48)" }, --Vilebranch Beastlance
+		{ itemID = 515715, desc = "The Hinterlands (73, 54)" }, --Shadowpounce Cowl
+		{ itemID = 515716, desc = "The Hinterlands (80, 55)" }, --Terrapine Carapace
+		{ itemID = 515717, desc = "The Hinterlands (86, 59)" }, --Idol of the Aerie
+		{ itemID = 515718, desc = "The Hinterlands (75, 86)" }, --Revantusk Hide Steppers
+		{ itemID = 515719, desc = "The Hinterlands (79, 71)" }, --Seabreeze Hauberk
+		{ itemID = 515720, desc = "The Hinterlands (66, 53)" }, --Trapper’s Lone Band
+		{ itemID = 515721, desc = "The Hinterlands (63, 60)" }, --Bloodthread Leggings
+		{ itemID = 515722, desc = "The Hinterlands (65, 65)" }, --Oozling Thoughtcore
+		{ itemID = 515723, desc = "Tanaris (26, 54)" }, --Treads of the Verdant Threshold
+		{ itemID = 515724, desc = "The Hinterlands (63, 66)" }, --Vilebranch Warthrower
+		{ itemID = 515725, desc = "The Hinterlands (59, 67)" }, --Fleshcarver Athame
+		{ itemID = 515726, desc = "The Hinterlands (53, 67)" }, --The Blood Talon
+		{ itemID = 515727, desc = "Tanaris (50, 85)" }, --Shellsplitter Girdle
+		{ itemID = 515728, desc = "The Hinterlands (60, 67)" }, --Flayer's Edge
+		{ itemID = 515729, desc = "The Hinterlands (67, 80)" }, --Highnest Repeater
+		{ itemID = 515730, desc = "The Hinterlands (64, 84)" }, --Blood Drinker
+		{ itemID = 515731, desc = "The Hinterlands (60, 78)" }, --Vilebranch Ritual Dagger
+		{ itemID = 515732, desc = "The Hinterlands (57, 84)" }, --Libram of Resolute Light
+		{ itemID = 515733, desc = "The Hinterlands (58, 87)" }, --Wand of the Broodbound
+		{ itemID = 515734, desc = "The Hinterlands (45, 30)" }, --High Cascade Cord
+		{ itemID = 515735, desc = "Arathi Highlands (90, 72)" }, --Desperate Defense
+		{ itemID = 515736, desc = "The Hinterlands (85, 41)" }, --Tiki Shield
+		{ itemID = 515737, desc = "Dustwallow Marsh (51, 78)" }, --Dive's Instruction Manual
+		{ itemID = 515738, desc = "Tanaris (70, 52)" }, --Inventor's Sand Band
+		{ itemID = 515739, desc = "Tanaris (35, 23)" }, --Sandfury Blade
+		{ itemID = 515740, desc = "Tanaris (64, 52)" }, --Time Stream Slasher
+		{ itemID = 515741, desc = "Tanaris (63, 48)" }, --Ancestral Warblade
+		{ itemID = 515742, desc = "Tanaris (59, 39)" }, --Wastewander Alchemist’s Robe
+		{ itemID = 515743, desc = "Tanaris (56, 34)" }, --Betrayer's Blade
+		{ itemID = 515744, desc = "Tanaris (44, 40)" }, --Sandswept Binding
+		{ itemID = 515745, desc = "Tanaris (49, 36)" }, --Deadman Gauntlets
+		{ itemID = 515747, desc = "Tanaris (34, 60)" }, --Dustwhisper Legguards
+		{ itemID = 515748, desc = "Tanaris (38, 68)" }, --Sand Cover
 		{ itemID = 515749 }, --Notice of Urgent Delivery
-		{ itemID = 515750 }, --Watcher's Mantle
-		{ itemID = 515755 }, --Explorer's Last Wish
-		{ itemID = 515764 }, --Tender's Hat
-		{ itemID = 515765 }, --Sky Guard's Cuirass
-		{ itemID = 515767 }, --Hivebreakers’ Ward
-		{ itemID = 515769 }, --Venom-Infused Screwdriver
-		{ itemID = 515770 }, --Lid of the Dead
-		{ itemID = 515771 }, --Cyclok's Sanity
-		{ itemID = 515772 }, --Dunemaul Warbelt
-		{ itemID = 515773 }, --Treasure Seeker's Gloves
-		{ itemID = 515775 }, --Carapace Carver
-		{ itemID = 515781 }, --Hazzali Antenna
-		{ itemID = 515782 }, --Last Stand
-		{ itemID = 515783 }, --Chitinous Chest
-		{ itemID = 515791 }, --Ancient Wagon Wheel
-		{ itemID = 515797 }, --Blister Chain
-		{ itemID = 515798 }, --Desert Trader's Pants
-		{ itemID = 515800 }, --Treasure Seeking Lodestone
-		{ itemID = 515801 }, --The Wingman
-		{ itemID = 515822 }, --Sun Cover
-		{ itemID = 515823 }, --Winkey's Misplaced Wrench
-		{ itemID = 515824 }, --Water Binder
-		{ itemID = 515825 }, --Diving Boots
-		{ itemID = 515826 }, --Sea Legs
-		{ itemID = 515827 }, --Hull Wood Hunk
-		{ itemID = 515828 }, --Captain's Compass
-		{ itemID = 515829 }, --Southsea Raider Gloves
-		{ itemID = 515830 }, --Wave Wraps
-		{ itemID = 515834 }, --Fisher's Misfortune
-		{ itemID = 515835 }, --Lens of Questionable Visions
-		{ itemID = 515836 }, --Noon's Shade Relic
-		{ itemID = 515837 }, --Desert Gambeson
-		{ itemID = 515838 }, --Dunemaul Crusher
-		{ itemID = 515839 }, --Stylish Racing Hat
-		{ itemID = 515840 }, --Sandfury Ritual Mace
-		{ itemID = 515841 }, --Sandfury Boomerang
-		{ itemID = 515842 }, --Sorrow Bolter
-		{ itemID = 515843 }, --Southmoon Amulet
-		{ itemID = 515844 }, --Seed of Overgrowth
-		{ itemID = 515900 }, --Sand Stompers
-		{ itemID = 515902 }, --Duneshot Armguards
-		{ itemID = 515903 }, --High Seas Axe
-		{ itemID = 515904 }, --Sand Polished Pauldrons
-		{ itemID = 515906 }, --Executioner's Axe
-		{ itemID = 515909 }, --Dunecaller's Spire
-		{ itemID = 515954 }, --Minstrel's Magic
-		{ itemID = 516037 }, --Sturdy Spectral Ring
+		{ itemID = 515750, desc = "Tanaris (38, 82)" }, --Watcher's Mantle
+		{ itemID = 515755, desc = "Tanaris (25, 83)" }, --Explorer's Last Wish
+		{ itemID = 515764, desc = "Tanaris (52, 88)" }, --Tender's Hat
+		{ itemID = 515765, desc = "Tanaris (30, 74)" }, --Sky Guard's Cuirass
+		{ itemID = 515767, desc = "Tanaris (29, 59)" }, --Hivebreakers’ Ward
+		{ itemID = 515769, desc = "Tanaris (56, 12)" }, --Venom-Infused Screwdriver
+		{ itemID = 515770, desc = "Tanaris (41, 41)" }, --Lid of the Dead
+		{ itemID = 515771, desc = "Tanaris (41, 54)" }, --Cyclok's Sanity
+		{ itemID = 515772, desc = "Tanaris (39, 52)" }, --Dunemaul Warbelt
+		{ itemID = 515773, desc = "Tanaris (47, 65)" }, --Treasure Seeker's Gloves
+		{ itemID = 515775, desc = "Tanaris (50, 69)" }, --Carapace Carver
+		{ itemID = 515781, desc = "The Gaping Chasm (72, 26)" }, --Hazzali Antenna
+		{ itemID = 515782, desc = "Tanaris (54, 72)" }, --Last Stand
+		{ itemID = 515783, desc = "Tanaris (56, 77)" }, --Chitinous Chest
+		{ itemID = 515791, desc = "Tanaris (59, 62)" }, --Ancient Wagon Wheel
+		{ itemID = 515797, desc = "Tanaris (49, 53)" }, --Blister Chain
+		{ itemID = 515798, desc = "Tanaris (54, 54)" }, --Desert Trader's Pants
+		{ itemID = 515800, desc = "Tanaris (55, 91)" }, --Treasure Seeking Lodestone
+		{ itemID = 515801, desc = "Tanaris (57, 91)" }, --The Wingman
+		{ itemID = 515822, desc = "Tanaris (63, 71)" }, --Sun Cover
+		{ itemID = 515823, desc = "Tanaris (66, 64)" }, --Winkey's Misplaced Wrench
+		{ itemID = 515824, desc = "Tanaris (70, 50)" }, --Water Binder
+		{ itemID = 515825, desc = "Tanaris (76, 45)" }, --Diving Boots
+		{ itemID = 515826, desc = "Tanaris (76, 46)" }, --Sea Legs
+		{ itemID = 515827, desc = "Tanaris (74, 48)" }, --Hull Wood Hunk
+		{ itemID = 515828, desc = "Tanaris (72, 47)" }, --Captain's Compass
+		{ itemID = 515829, desc = "Tanaris (72, 44)" }, --Southsea Raider Gloves
+		{ itemID = 515830, desc = "Tanaris (68, 43)" }, --Wave Wraps
+		{ itemID = 515834, desc = "Tanaris (68, 23)" }, --Fisher's Misfortune
+		{ itemID = 515835, desc = "Tanaris (65, 19)" }, --Lens of Questionable Visions
+		{ itemID = 515836, desc = "Tanaris (60, 23)" }, --Noon's Shade Relic
+		{ itemID = 515837, desc = "Tanaris (53, 33)" }, --Desert Gambeson
+		{ itemID = 515838, desc = "Tanaris (41, 58)" }, --Dunemaul Crusher
+		{ itemID = 515839, desc = "Tanaris (48, 25)" }, --Stylish Racing Hat
+		{ itemID = 515840, desc = "Tanaris (40, 29)" }, --Sandfury Ritual Mace
+		{ itemID = 515841, desc = "Tanaris (37, 25)" }, --Sandfury Boomerang
+		{ itemID = 515842, desc = "Tanaris (42, 23)" }, --Sorrow Bolter
+		{ itemID = 515843, desc = "Tanaris (41, 74)" }, --Southmoon Amulet
+		{ itemID = 515844, desc = "Dustwallow Marsh (35, 43)" }, --Seed of Overgrowth
+		{ itemID = 515900, desc = "Tanaris (49, 43)" }, --Sand Stompers
+		{ itemID = 515902, desc = "Tanaris (64, 40)" }, --Duneshot Armguards
+		{ itemID = 515903, desc = "Tanaris (66, 25)" }, --High Seas Axe
+		{ itemID = 515904, desc = "Tanaris (43, 49)" }, --Sand Polished Pauldrons
+		{ itemID = 515906, desc = "Tanaris (54, 28)" }, --Executioner's Axe
+		{ itemID = 515909, desc = "Tanaris (31, 78)" }, --Dunecaller's Spire
+		{ itemID = 515954, desc = "Felwood (43, 78)" }, --Minstrel's Magic
+		{ itemID = 516037, desc = "Blasted Lands (52, 5)" }, --Sturdy Spectral Ring
 		{ itemID = 518943 }, --Billy's Life Savings
-		{ itemID = 521000 }, --Rootbark Girdle
-		{ itemID = 521001 }, --Patched Verdant Cloak
-		{ itemID = 521002 }, --Moonwell Cane
-		{ itemID = 521003 }, --Timber Maul
-		{ itemID = 521004 }, --Saplingweave Handwraps
-		{ itemID = 521005 }, --Thornpaw Trousers
-		{ itemID = 521007 }, --Gnarlpine Jerkin
-		{ itemID = 521008 }, --Nightbreeze Armguards
-		{ itemID = 521009 }, --Groveprowler Gloves
-		{ itemID = 521010 }, --Chipped Sentinel Blade
-		{ itemID = 521011 }, --Dewleaf Piercer
-		{ itemID = 521012 }, --Bloodfeather Wand
-		{ itemID = 521013 }, --Harpy Feather Drape
-		{ itemID = 521014 }, --Trickster's Signet
+		{ itemID = 521000, desc = "Teldrassil (67, 57)" }, --Rootbark Girdle
+		{ itemID = 521001, desc = "Teldrassil (69, 53)" }, --Patched Verdant Cloak
+		{ itemID = 521002, desc = "Teldrassil (63, 58)" }, --Moonwell Cane
+		{ itemID = 521003, desc = "Teldrassil (54, 70)" }, --Timber Maul
+		{ itemID = 521004, desc = "Teldrassil (43, 35)" }, --Saplingweave Handwraps
+		{ itemID = 521005, desc = "Teldrassil (39, 80)" }, --Thornpaw Trousers
+		{ itemID = 521007, desc = "Teldrassil (38, 67)" }, --Gnarlpine Jerkin
+		{ itemID = 521008, desc = "Ban'ethil Barrow Den (Lower) (71, 85)" }, --Nightbreeze Armguards
+		{ itemID = 521009, desc = "Teldrassil (51, 46)" }, --Groveprowler Gloves
+		{ itemID = 521010, desc = "Teldrassil (46, 51)" }, --Chipped Sentinel Blade
+		{ itemID = 521011, desc = "Teldrassil (43, 42)" }, --Dewleaf Piercer
+		{ itemID = 521012, desc = "Teldrassil (34, 35)" }, --Bloodfeather Wand
+		{ itemID = 521013, desc = "Teldrassil (37, 43)" }, --Harpy Feather Drape
+		{ itemID = 521014, desc = "Teldrassil (16, 60)" }, --Trickster's Signet
 		{ itemID = 521015 }, --Featherlight Bow
 		{ itemID = 521016 }, --Starfall Splitter
 		{ itemID = 521017 }, --Glenwhisper Robes
@@ -1778,20 +1777,20 @@ function AtlasLoot:InitializeDatabases()
 		{ itemID = 521022 }, --Duskrunner Shield
 		{ itemID = 521023 }, --Thornrunner Throwing Star
 		{ itemID = 521024 }, --Gloomrider Rifle
-		{ itemID = 521026 }, --Wildwood Shortbow
-		{ itemID = 521027 }, --Faded Gravecloth Cuffs
-		{ itemID = 521028 }, --Old Waterlogged Boots
-		{ itemID = 521029 }, --Agamand Sharpshooter
-		{ itemID = 521030 }, --Nightfallen Jerkin
-		{ itemID = 521031 }, --Rattlecage Warplate
-		{ itemID = 521033 }, --Maggot Eye Musket
-		{ itemID = 521034 }, --Ghostmoor Cloak
+		{ itemID = 521026, desc = "Teldrassil (46, 46)" }, --Wildwood Shortbow
+		{ itemID = 521027, desc = "Tirisfal Glades (75, 72)" }, --Faded Gravecloth Cuffs
+		{ itemID = 521028, desc = "Tirisfal Glades (69, 51)" }, --Old Waterlogged Boots
+		{ itemID = 521029, desc = "Tirisfal Glades (46, 30)" }, --Agamand Sharpshooter
+		{ itemID = 521030, desc = "Tirisfal Glades (66, 59)" }, --Nightfallen Jerkin
+		{ itemID = 521031, desc = "Tirisfal Glades (50, 43)" }, --Rattlecage Warplate
+		{ itemID = 521033, desc = "Tirisfal Glades (59, 31)" }, --Maggot Eye Musket
+		{ itemID = 521034, desc = "Tirisfal Glades (57, 50)" }, --Ghostmoor Cloak
 		{ itemID = 521035 }, --Duskbat Crossbow
-		{ itemID = 521036 }, --Coastline Vest
+		{ itemID = 521036, desc = "Tirisfal Glades (67, 26)" }, --Coastline Vest
 		{ itemID = 521037 }, --Handcrafted Scalemail
 		{ itemID = 521038 }, --Pious Wristwraps
 		{ itemID = 521039 }, --Bow of Zealotry
-		{ itemID = 521040 }, --Wailing Sash
+		{ itemID = 521040, desc = "Tirisfal Glades (71, 64)" }, --Wailing Sash
 		{ itemID = 521041 }, --Hermit's Leggings
 		{ itemID = 521042 }, --Farstrider’s Grips
 		{ itemID = 521043 }, --Crude Grimscale Sash
@@ -1810,36 +1809,36 @@ function AtlasLoot:InitializeDatabases()
 		{ itemID = 521056 }, --Faded Sunfeather Wraps
 		{ itemID = 521057 }, --Dawnsworn Pendant
 		{ itemID = 521058 }, --Apprentice Vestments
-		{ itemID = 521059 }, --Dakota Steppe Greaves
-		{ itemID = 521060 }, --Windstamp Gloves
+		{ itemID = 521059, desc = "Mulgore (62, 64)" }, --Dakota Steppe Greaves
+		{ itemID = 521060, desc = "Mulgore (63, 71)" }, --Windstamp Gloves
 		{ itemID = 521061 }, --Softbrush Sash
 		{ itemID = 521062 }, --Stonebull Cloth
-		{ itemID = 521063 }, --Palemane Threads
-		{ itemID = 521064 }, --Thunderwalk Breastplate
+		{ itemID = 521063, desc = "Palemane Rock (29, 56)" }, --Palemane Threads
+		{ itemID = 521064, desc = "Mulgore (51, 21)" }, --Thunderwalk Breastplate
 		{ itemID = 521065 }, --Cloudchaser Pendant
-		{ itemID = 521066 }, --Bael'dun Waraxe
-		{ itemID = 521067 }, --Pilfered Bloodhoof Bow
-		{ itemID = 521068 }, --Golden Plains Crossbow
-		{ itemID = 521069 }, --Kodo Beast Idol
-		{ itemID = 521071 }, --Plainsblade
-		{ itemID = 521072 }, --Skychaser Wand
-		{ itemID = 521073 }, --Sunchaser Blade
-		{ itemID = 521074 }, --Swiftfoot Slippers
-		{ itemID = 521075 }, --Hawkrunner Bracers
-		{ itemID = 521076 }, --Steppereaver Hatchet
+		{ itemID = 521066, desc = "Mulgore (31, 49)" }, --Bael'dun Waraxe
+		{ itemID = 521067, desc = "Mulgore (33, 47)" }, --Pilfered Bloodhoof Bow
+		{ itemID = 521068, desc = "Mulgore (29, 23)" }, --Golden Plains Crossbow
+		{ itemID = 521069, desc = "Mulgore (51, 39)" }, --Kodo Beast Idol
+		{ itemID = 521071, desc = "Mulgore (42, 56)" }, --Plainsblade
+		{ itemID = 521072, desc = "Mulgore (28, 21)" }, --Skychaser Wand
+		{ itemID = 521073, desc = "Mulgore (36, 42)" }, --Sunchaser Blade
+		{ itemID = 521074, desc = "Mulgore (35, 16)" }, --Swiftfoot Slippers
+		{ itemID = 521075, desc = "Mulgore (52, 29)" }, --Hawkrunner Bracers
+		{ itemID = 521076, desc = "Mulgore (43, 14)" }, --Steppereaver Hatchet
 		{ itemID = 521078 }, --Windhoof Totem
-		{ itemID = 521079 }, --Bloodtalon Vestments
-		{ itemID = 521080 }, --Kul Tiras Handwraps
-		{ itemID = 521081 }, --Redrock Sash
-		{ itemID = 521082 }, --Kul Tiras Armplates
-		{ itemID = 521083 }, --Charred Battlegreaves
-		{ itemID = 521084 }, --Grunt's Old Knife
+		{ itemID = 521079, desc = "Durotar (60, 90)" }, --Bloodtalon Vestments
+		{ itemID = 521080, desc = "Durotar (63, 98)" }, --Kul Tiras Handwraps
+		{ itemID = 521081, desc = "Durotar (53, 74)" }, --Redrock Sash
+		{ itemID = 521082, desc = "Maraudon (60, 59)" }, --Kul Tiras Armplates
+		{ itemID = 521083, desc = "Durotar (59, 45)" }, --Charred Battlegreaves
+		{ itemID = 521084, desc = "Durotar (59, 56)" }, --Grunt's Old Knife
 		{ itemID = 521086 }, --Tiragarde Drape
 		{ itemID = 521087 }, --Rocktusk Poker
 		{ itemID = 521088 }, --Crocolisk Deterrent
-		{ itemID = 521089 }, --Earthshatterer Gavel
+		{ itemID = 521089, desc = "Durotar (59, 50)" }, --Earthshatterer Gavel
 		{ itemID = 521090 }, --Searing Sands Focus
-		{ itemID = 521092 }, --Champion's Band
+		{ itemID = 521092, desc = "Durotar (38, 46)" }, --Champion's Band
 		{ itemID = 521093 }, --Waterlogged Warbelt
 		{ itemID = 521094 }, --Rusty Greaves
 		{ itemID = 521095 }, --Stillpine Jerkin
@@ -1860,53 +1859,53 @@ function AtlasLoot:InitializeDatabases()
 		{ itemID = 521110 }, --Ancient Highborne Choker
 		{ itemID = 521111 }, --Azuremoon Band
 		{ itemID = 521112 }, --Silt Shore Hammer
-		{ itemID = 521115 }, --Eastvale Buckler
-		{ itemID = 521116 }, --Mauled Armplates
-		{ itemID = 521118 }, --Plundered Goldshire Vanguard
-		{ itemID = 521121 }, --Decayed Breeches
-		{ itemID = 521122 }, --Traveler's Forest Cloak
-		{ itemID = 521123 }, --Smuggled Stormwind Choker
+		{ itemID = 521115, desc = "Elwynn Forest (85, 70)" }, --Eastvale Buckler
+		{ itemID = 521116, desc = "Elwynn Forest (72, 65)" }, --Mauled Armplates
+		{ itemID = 521118, desc = "Elwynn Forest (36, 66)" }, --Plundered Goldshire Vanguard
+		{ itemID = 521121, desc = "Elwynn Forest (39, 60)" }, --Decayed Breeches
+		{ itemID = 521122, desc = "Elwynn Forest (71, 71)" }, --Traveler's Forest Cloak
+		{ itemID = 521123, desc = "Elwynn Forest (57, 79)" }, --Smuggled Stormwind Choker
 		{ itemID = 521124 }, --Stolen Greatsword
 		{ itemID = 521125 }, --Murloc Piercer
 		{ itemID = 521126 }, --Westfall Family Heirloom
-		{ itemID = 521127 }, --The Vanishing Strap
-		{ itemID = 521128 }, --Fisherman's Jerkin
+		{ itemID = 521127, desc = "Elwynn Forest (25, 72)" }, --The Vanishing Strap
+		{ itemID = 521128, desc = "Elwynn Forest (35, 64)" }, --Fisherman's Jerkin
 		{ itemID = 521129 }, --Pilfered Heirloom
-		{ itemID = 521130 }, --Old Valgan Slippers
-		{ itemID = 521131 }, --Darkstrand Kilt
-		{ itemID = 521132 }, --Chain Belt of the Elements
-		{ itemID = 521133 }, --Lordamere Cuffs
+		{ itemID = 521130, desc = "Silverpine Forest (53, 25)" }, --Old Valgan Slippers
+		{ itemID = 521131, desc = "Silverpine Forest (44, 22)" }, --Darkstrand Kilt
+		{ itemID = 521132, desc = "Silverpine Forest (37, 43)" }, --Chain Belt of the Elements
+		{ itemID = 521133, desc = "Silverpine Forest (60, 34)" }, --Lordamere Cuffs
 		{ itemID = 521134 }, --Feral Stitched Boots
 		{ itemID = 521135 }, --Ravenclaw Infantry Gloves
 		{ itemID = 521136 }, --Dalaran Robes
 		{ itemID = 521137 }, --Dalaran Hatchet
-		{ itemID = 521139 }, --Gilnean Lance
-		{ itemID = 521140 }, --Gilnean Bolter
-		{ itemID = 521142 }, --Mountaineer Hatchet
-		{ itemID = 521143 }, --Dwarven Sandals
-		{ itemID = 521144 }, --Tattered Shoulders
-		{ itemID = 521145 }, --Stolen Mountaineer Chest
-		{ itemID = 521146 }, --Old Stitched Bindings
-		{ itemID = 521147 }, --Vermin Staff
+		{ itemID = 521139, desc = "Silverpine Forest (44, 52)" }, --Gilnean Lance
+		{ itemID = 521140, desc = "Silverpine Forest (57, 17)" }, --Gilnean Bolter
+		{ itemID = 521142, desc = "Loch Modan (25, 18)" }, --Mountaineer Hatchet
+		{ itemID = 521143, desc = "Loch Modan (18, 83)" }, --Dwarven Sandals
+		{ itemID = 521144, desc = "Loch Modan (47, 65)" }, --Tattered Shoulders
+		{ itemID = 521145, desc = "Loch Modan (35, 77)" }, --Stolen Mountaineer Chest
+		{ itemID = 521146, desc = "Loch Modan (40, 39)" }, --Old Stitched Bindings
+		{ itemID = 521147, desc = "Loch Modan (26, 32)" }, --Vermin Staff
 		{ itemID = 521148 }, --Farstrider Crossbow
 		{ itemID = 521149 }, --Thelsamar Hood
-		{ itemID = 521150 }, --Dwarven Mail Gauntlets
-		{ itemID = 521151 }, --Abandoned Greatsword
+		{ itemID = 521150, desc = "Loch Modan (26, 57)" }, --Dwarven Mail Gauntlets
+		{ itemID = 521151, desc = "Loch Modan (63, 77)" }, --Abandoned Greatsword
 		{ itemID = 521152 }, --Grawmug's Cape
-		{ itemID = 521153 }, --Earthenwind Band
-		{ itemID = 521154 }, --Drowned Pendant
-		{ itemID = 521155 }, --Spider Silk Vestments
-		{ itemID = 521156 }, --Sinter Wive's Rope
-		{ itemID = 521157 }, --Stoneflow Handwraps
-		{ itemID = 521158 }, --Twilight Vale
-		{ itemID = 521159 }, --Blackwood Jerkin
-		{ itemID = 521160 }, --Shorebreeze Sabatons
-		{ itemID = 521161 }, --Highborne Trousers
-		{ itemID = 521162 }, --Auberdine Scimitar
-		{ itemID = 521163 }, --Wild Longbow
-		{ itemID = 521164 }, --Relicseeker Staff
-		{ itemID = 521165 }, --Stormscale Guard
-		{ itemID = 521166 }, --Moonrest Slippers
+		{ itemID = 521153, desc = "Loch Modan (55, 27)" }, --Earthenwind Band
+		{ itemID = 521154, desc = "Loch Modan (58, 29)" }, --Drowned Pendant
+		{ itemID = 521155, desc = "Loch Modan (80, 52)" }, --Spider Silk Vestments
+		{ itemID = 521156, desc = "Loch Modan (55, 39)" }, --Sinter Wive's Rope
+		{ itemID = 521157, desc = "Loch Modan (78, 43)" }, --Stoneflow Handwraps
+		{ itemID = 521158, desc = "Darkshore (38, 95)" }, --Twilight Vale
+		{ itemID = 521159, desc = "Darkshore (45, 87)" }, --Blackwood Jerkin
+		{ itemID = 521160, desc = "Darkshore (36, 78)" }, --Shorebreeze Sabatons
+		{ itemID = 521161, desc = "Darkshore (41, 62)" }, --Highborne Trousers
+		{ itemID = 521162, desc = "Darkshore (41, 72)" }, --Auberdine Scimitar
+		{ itemID = 521163, desc = "Darkshore (41, 74)" }, --Wild Longbow
+		{ itemID = 521164, desc = "Darkshore (39, 33)" }, --Relicseeker Staff
+		{ itemID = 521165, desc = "Darkshore (59, 23)" }, --Stormscale Guard
+		{ itemID = 521166, desc = "Darkshore (37, 65)" }, --Moonrest Slippers
 		{ itemID = 521167 }, --Bristle Pads
 		{ itemID = 521168 }, --Silt Blade
 		{ itemID = 521169 }, --Mystwood Glaive
@@ -1924,379 +1923,124 @@ function AtlasLoot:InitializeDatabases()
 		{ itemID = 521183 }, --Tormentor’s Boots
 		{ itemID = 521184 }, --Old Lordaeron Cape
 		{ itemID = 521185 }, --Sunseeker Libram
-		{ itemID = 521188 }, --Venture Co. Spaulders
-		{ itemID = 521189 }, --Waterlogged Gloves
-		{ itemID = 521190 }, --Venture Co. Boots
-		{ itemID = 521191 }, --Steelrider Girdle
-		{ itemID = 521192 }, --Bramblestaff
-		{ itemID = 521193 }, --Stormcall Totem
-		{ itemID = 521194 }, --Venture Co. Dirk
-		{ itemID = 521195 }, --Giant Qiraji Scale
-		{ itemID = 521196 }, --Malgin's Barback
-		{ itemID = 521197 }, --Takar's Old Wand
-		{ itemID = 521198 }, --Bristleback Thorn
-		{ itemID = 521199 }, --Blackthorn Splitter
-		{ itemID = 521200 }, --Razorthorn Claymore
-		{ itemID = 521201 }, --Thornweaver Mace
+		{ itemID = 521188, desc = "The Barrens (53, 11)" }, --Venture Co. Spaulders
+		{ itemID = 521189, desc = "The Barrens (55, 42)" }, --Waterlogged Gloves
+		{ itemID = 521190, desc = "The Barrens (61, 5)" }, --Venture Co. Boots
+		{ itemID = 521191, desc = "The Barrens (56, 20)" }, --Steelrider Girdle
+		{ itemID = 521192, desc = "The Barrens (52, 23)" }, --Bramblestaff
+		{ itemID = 521193, desc = "The Barrens (48, 58)" }, --Stormcall Totem
+		{ itemID = 521194, desc = "The Barrens (55, 6)" }, --Venture Co. Dirk
+		{ itemID = 521195, desc = "The Barrens (44, 73)" }, --Giant Qiraji Scale
+		{ itemID = 521196, desc = "The Barrens (50, 84)" }, --Malgin's Barback
+		{ itemID = 521197, desc = "The Barrens (50, 57)" }, --Takar's Old Wand
+		{ itemID = 521198, desc = "The Barrens (53, 54)" }, --Bristleback Thorn
+		{ itemID = 521199, desc = "The Barrens (46, 83)" }, --Blackthorn Splitter
+		{ itemID = 521200, desc = "The Barrens (43, 90)" }, --Razorthorn Claymore
+		{ itemID = 521201, desc = "The Barrens (45, 51)" }, --Thornweaver Mace
 		{ itemID = 521202 }, --Dustdevil Cape
-		{ itemID = 521203 }, --Plainstalker Vest
-		{ itemID = 521204 }, --Venture Co. Sabatons
-		{ itemID = 521205 }, --Savannah Cowl
-		{ itemID = 521206 }, --Kodo Stompers
-		{ itemID = 521208 }, --Gnoll Crafted Spaulder
-		{ itemID = 521209 }, --Gnoll Cap
-		{ itemID = 521210 }, --Alther's Chain Wrap
-		{ itemID = 521211 }, --Stonewatch Handwraps
-		{ itemID = 521212 }, --Tharil'zun's Trek Boots
-		{ itemID = 521213 }, --Old Redridge Buckler
-		{ itemID = 521214 }, --Mongrel Blade
-		{ itemID = 521215 }, --Everstill Claymore
-		{ itemID = 521216 }, --Blackrock Waraxe
-		{ itemID = 521217 }, --Rusty Redridge Rifle
-		{ itemID = 521218 }, --Adventurer's Crossbow
-		{ itemID = 521219 }, --Tidecaller's Hammer
-		{ itemID = 521220 }, --Old War Tome
-		{ itemID = 521222 }, --Red Mage Wand
-		{ itemID = 521223 }, --Charred Spaulders
-		{ itemID = 521224 }, --Cliffwalker Cuffs
+		{ itemID = 521203, desc = "The Barrens (44, 30)" }, --Plainstalker Vest
+		{ itemID = 521204, desc = "The Barrens (43, 23)" }, --Venture Co. Sabatons
+		{ itemID = 521205, desc = "The Barrens (48, 33)" }, --Savannah Cowl
+		{ itemID = 521206, desc = "The Barrens (47, 67)" }, --Kodo Stompers
+		{ itemID = 521208, desc = "Redridge Mountains (17, 63)" }, --Gnoll Crafted Spaulder
+		{ itemID = 521209, desc = "Redridge Mountains (38, 37)" }, --Gnoll Cap
+		{ itemID = 521210, desc = "Redridge Mountains (51, 39)" }, --Alther's Chain Wrap
+		{ itemID = 521211, desc = "Redridge Mountains (68, 54)" }, --Stonewatch Handwraps
+		{ itemID = 521212, desc = "Redridge Mountains (69, 57)" }, --Tharil'zun's Trek Boots
+		{ itemID = 521213, desc = "Redridge Mountains (88, 73)" }, --Old Redridge Buckler
+		{ itemID = 521214, desc = "Redridge Mountains (43, 71)" }, --Mongrel Blade
+		{ itemID = 521215, desc = "Redridge Mountains (44, 51)" }, --Everstill Claymore
+		{ itemID = 521216, desc = "Redridge Mountains (48, 33)" }, --Blackrock Waraxe
+		{ itemID = 521217, desc = "Redridge Mountains (21, 55)" }, --Rusty Redridge Rifle
+		{ itemID = 521218, desc = "Redridge Mountains (53, 36)" }, --Adventurer's Crossbow
+		{ itemID = 521219, desc = "Redridge Mountains (58, 52)" }, --Tidecaller's Hammer
+		{ itemID = 521220, desc = "Redridge Mountains (32, 63)" }, --Old War Tome
+		{ itemID = 521222, desc = "Redridge Mountains (18, 76)" }, --Red Mage Wand
+		{ itemID = 521223, desc = "Stonetalon Mountains (37, 67)" }, --Charred Spaulders
+		{ itemID = 521224, desc = "Stonetalon Mountains (45, 47)" }, --Cliffwalker Cuffs
 		{ itemID = 521225 }, --Sunsown Grips
-		{ itemID = 521226 }, --Huntress Threads
-		{ itemID = 521227 }, --Deepmoss Fang
-		{ itemID = 521228 }, --Windsong Shortbow
+		{ itemID = 521226, desc = "Stonetalon Mountains (60, 67)" }, --Huntress Threads
+		{ itemID = 521227, desc = "Stonetalon Mountains (64, 61)" }, --Deepmoss Fang
+		{ itemID = 521228, desc = "Stonetalon Mountains (30, 74)" }, --Windsong Shortbow
 		{ itemID = 521229 }, --Crossroads Short Sword
-		{ itemID = 521230 }, --Talon Idol
-		{ itemID = 521231 }, --Grimtotem Striker
-		{ itemID = 521233 }, --Wyvern Vest
-		{ itemID = 521234 }, --Helcular's Pendant
-		{ itemID = 521235 }, --Darrow Silverband
-		{ itemID = 521237 }, --Camouflaged Bow
-		{ itemID = 521238 }, --Oracle's Fishy Staff
-		{ itemID = 521239 }, --Ray's Farmhand
-		{ itemID = 521240 }, --Daggerspine Rod
-		{ itemID = 521241 }, --Bear Decapitator
+		{ itemID = 521230, desc = "Stonetalon Mountains (79, 46)" }, --Talon Idol
+		{ itemID = 521231, desc = "Stonetalon Mountains (84, 86)" }, --Grimtotem Striker
+		{ itemID = 521233, desc = "Stonetalon Mountains (54, 44)" }, --Wyvern Vest
+		{ itemID = 521234, desc = "Hillsbrad Foothills (44, 27)" }, --Helcular's Pendant
+		{ itemID = 521235, desc = "Hillsbrad Foothills (30, 42)" }, --Darrow Silverband
+		{ itemID = 521237, desc = "Hillsbrad Foothills (56, 35)" }, --Camouflaged Bow
+		{ itemID = 521238, desc = "Hillsbrad Foothills (37, 69)" }, --Oracle's Fishy Staff
+		{ itemID = 521239, desc = "Hillsbrad Foothills (33, 35)" }, --Ray's Farmhand
+		{ itemID = 521240, desc = "Hillsbrad Foothills (57, 67)" }, --Daggerspine Rod
+		{ itemID = 521241, desc = "Hillsbrad Foothills (45, 54)" }, --Bear Decapitator
 		{ itemID = 521242 }, --Brazie’s Gauntlets
-		{ itemID = 521243 }, --Syndicate Treads
-		{ itemID = 521244 }, --Ancient Durnholde Girdle
-		{ itemID = 521245 }, --Mismatched Shoulderpads
-		{ itemID = 521246 }, --Heisen’s Loop
-		{ itemID = 521248 }, --Old Dragonmaw Cleaver
-		{ itemID = 521249 }, --Borrowed Dark Iron Signet
-		{ itemID = 521250 }, --Crude Bluegill Totem
-		{ itemID = 521251 }, --Dragonmaw Ritual Staff
-		{ itemID = 521252 }, --Dark Iron Harvester
-		{ itemID = 521253 }, --Pilfered Stormpike Polearm
-		{ itemID = 521254 }, --Swiftgear Sniper
-		{ itemID = 521255 }, --Thelsamar Bow
-		{ itemID = 521256 }, --Old Dragon Bone
-		{ itemID = 521257 }, --Arakor Mace
-		{ itemID = 521258 }, --Mirefin Belt
-		{ itemID = 521259 }, --Raptor-Gnawed Cap
-		{ itemID = 521260 }, --Vestments of the Unbound
-		{ itemID = 521261 }, --Stubborn Dwarf Slippers
-		{ itemID = 521264 }, --Hunter's Tunic
-		{ itemID = 521265 }, --Malorne's Girdle
-		{ itemID = 521266 }, --Rehomed Belt
-		{ itemID = 521267 }, --Leyline Channeling Rod
-		{ itemID = 521268 }, --Coldhewn Tanning Gloves
-		{ itemID = 521318 }, --Roland's Striker
-		{ itemID = 521319 }, --Infiltrator's Shield
-		{ itemID = 521320 }, --Stardust Scoured Helmet
-		{ itemID = 521321 }, --Honed Steel Axe
+		{ itemID = 521243, desc = "Hillsbrad Foothills (78, 47)" }, --Syndicate Treads
+		{ itemID = 521244, desc = "Hillsbrad Foothills (61, 33)" }, --Ancient Durnholde Girdle
+		{ itemID = 521245, desc = "Hillsbrad Foothills (69, 24)" }, --Mismatched Shoulderpads
+		{ itemID = 521246, desc = "Alterac Mountains (60, 44)" }, --Heisen’s Loop
+		{ itemID = 521248, desc = "Wetlands (65, 46)" }, --Old Dragonmaw Cleaver
+		{ itemID = 521249, desc = "Wetlands (64, 64)" }, --Borrowed Dark Iron Signet
+		{ itemID = 521250, desc = "Wetlands (15, 39)" }, --Crude Bluegill Totem
+		{ itemID = 521251, desc = "Wetlands (49, 46)" }, --Dragonmaw Ritual Staff
+		{ itemID = 521252, desc = "Wetlands (64, 78)" }, --Dark Iron Harvester
+		{ itemID = 521253, desc = "Wetlands (53, 27)" }, --Pilfered Stormpike Polearm
+		{ itemID = 521254, desc = "Wetlands (28, 22)" }, --Swiftgear Sniper
+		{ itemID = 521255, desc = "Wetlands (49, 32)" }, --Thelsamar Bow
+		{ itemID = 521256, desc = "Wetlands (25, 39)" }, --Old Dragon Bone
+		{ itemID = 521257, desc = "Wetlands (27, 41)" }, --Arakor Mace
+		{ itemID = 521258, desc = "Wetlands (56, 41)" }, --Mirefin Belt
+		{ itemID = 521259, desc = "Wetlands (24, 53)" }, --Raptor-Gnawed Cap
+		{ itemID = 521260, desc = "Wetlands (48, 26)" }, --Vestments of the Unbound
+		{ itemID = 521261, desc = "Wetlands (58, 53)" }, --Stubborn Dwarf Slippers
+		{ itemID = 521264, desc = "Ashenvale (76, 58)" }, --Hunter's Tunic
+		{ itemID = 521265, desc = "Ashenvale (51, 55)" }, --Malorne's Girdle
+		{ itemID = 521266, desc = "Westfall (57, 67)" }, --Rehomed Belt
+		{ itemID = 521267, desc = "Westfall (36, 37)" }, --Leyline Channeling Rod
+		{ itemID = 521268, desc = "Dun Morogh (64, 58)" }, --Coldhewn Tanning Gloves
+		{ itemID = 521318, desc = "Duskwood (74, 79)" }, --Roland's Striker
+		{ itemID = 521319, desc = "Ashenvale (77, 75)" }, --Infiltrator's Shield
+		{ itemID = 521320, desc = "Ashenvale (34, 67)" }, --Stardust Scoured Helmet
+		{ itemID = 521321, desc = "Duskwood (37, 85)" }, --Honed Steel Axe
 		{ itemID = 521322 }, --Splinter Fist Cowl
-		{ itemID = 521323 }, --Brightwood Gloves
+		{ itemID = 521323, desc = "Duskwood (58, 30)" }, --Brightwood Gloves
 		{ itemID = 666451 }, --Young Plaguebat
 		{ itemID = 666603 }, --Recipe: Vi'el's Unstable Fel Potion
 		{ itemID = 734931 }, --Recipe: Weaver's Embrace
-		{ itemID = 824378 }, --Ancient Femur
-		{ itemID = 824379 }, --Voodoo Guardian
-		{ itemID = 824380 }, --Triad's Spear
-		{ itemID = 824381 }, --Sinister Garb
-		{ itemID = 824382 }, --Old Northshire Bolter
-		{ itemID = 824383 }, --Old Gardening Gloves
-		{ itemID = 824384 }, --Shadewell Stabber
-		{ itemID = 824385 }, --Forsaken Tome
-		{ itemID = 824386 }, --Grimtotem Bow
-		{ itemID = 824387 }, --Traitor's Last Kiss
-		{ itemID = 824388 }, --Sun Touched Club
-		{ itemID = 824389 }, --Ceremonial Gloves
-		{ itemID = 824390 }, --Decayed Sharpshot
-		{ itemID = 824391 }, --Sturdy Arrow
-		{ itemID = 824392 }, --Cain's Oathblade
-		{ itemID = 824393 }, --Deadman’s Cover
-		{ itemID = 824394 }, --Radiant Rifle
-		{ itemID = 824395 }, --Ancient Battleaxe
-		{ itemID = 824396 }, --Radiant Fanatic Helmet
-		{ itemID = 824397 }, --Rocket Shrapnel
-		{ itemID = 824398 }, --Vulture Cult Idol
-		{ itemID = 824399 }, --Disciple String
-		{ itemID = 824400 }, --Nest Thorn
-		{ itemID = 824401 }, --Carrion Eye
-		{ itemID = 903016 }, --Fel Dust
-		{ itemID = 1262811 }, --Abomination Hook
+		{ itemID = 824378, desc = "Sinister Lair (50, 82)" }, --Ancient Femur
+		{ itemID = 824379, desc = "Durotar (39, 60)" }, --Voodoo Guardian
+		{ itemID = 824380, desc = "Valley of Trials (31, 50)" }, --Triad's Spear
+		{ itemID = 824381, desc = "Sinister Lair (69, 36)" }, --Sinister Garb
+		{ itemID = 824382, desc = "Elwynn Forest (56, 37)" }, --Old Northshire Bolter
+		{ itemID = 824383, desc = "Northshire Valley (52, 38)" }, --Old Gardening Gloves
+		{ itemID = 824384, desc = "Winterspring (60, 71)" }, --Shadewell Stabber
+		{ itemID = 824385, desc = "Secret Inquisitorial Dungeon (37, 24)" }, --Forsaken Tome
+		{ itemID = 824386, desc = "Camp Narache (49, 67)" }, --Grimtotem Bow
+		{ itemID = 824387, desc = "Camp Narache (66, 66)" }, --Traitor's Last Kiss
+		{ itemID = 824388, desc = "Camp Narache (50, 66)" }, --Sun Touched Club
+		{ itemID = 824389, desc = "Camp Narache (49, 66)" }, --Ceremonial Gloves
+		{ itemID = 824390, desc = "Deathknell (15, 46)" }, --Decayed Sharpshot
+		{ itemID = 824391, desc = "Deathknell (40, 34)" }, --Sturdy Arrow
+		{ itemID = 824392, desc = "Deathknell (16, 67)" }, --Cain's Oathblade
+		{ itemID = 824393, desc = "Deathknell (17, 65)" }, --Deadman’s Cover
+		{ itemID = 824394, desc = "Coldridge Valley (44, 63)" }, --Radiant Rifle
+		{ itemID = 824395, desc = "Coldridge Valley (37, 35)" }, --Ancient Battleaxe
+		{ itemID = 824396, desc = "Coldridge Valley (57, 19)" }, --Radiant Fanatic Helmet
+		{ itemID = 824397, desc = "Coldridge Valley (37, 52)" }, --Rocket Shrapnel
+		{ itemID = 824398, desc = "Moonlit Ossuary (40, 73)" }, --Vulture Cult Idol
+		{ itemID = 824399, desc = "Shadowglen (62, 30)" }, --Disciple String
+		{ itemID = 824400, desc = "Teldrassil (66, 30)" }, --Nest Thorn
+		{ itemID = 824401, desc = "Shadowglen (67, 21)" }, --Carrion Eye
+		{ itemID = 903016, desc = "Winterspring (54, 87)" }, --Fel Dust
+		{ itemID = 1262811, desc = "Western Plaguelands (39, 68)" }, --Abomination Hook
 		{ itemID = 2088888 }, --Prophet's Divine Staff
-		{ itemID = 4050651 }, --Sunken Zoram Spear
-		{ itemID = 4050652 }, --Elven Militia Crown
-		{ itemID = 4050653 }, --Pristine Tortoise Carapace
-		{ itemID = 1378384 }, --Charred Slicer
-		{ itemID = 1378523 }, --Havenfire Crown
-		{ itemID = 1379000 }, --Thistlefur Fur Shroud
-		{ itemID = 1379001 }, --Old Arcanus Robe
-		{ itemID = 1379002 }, --Warm Whoolies
-		{ itemID = 1379003 }, --Poacher's Crossbow
-		{ itemID = 1379004 }, --Thunder Hide Tailspike
-		{ itemID = 1379005 }, --Padded Vest
-		{ itemID = 1379006 }, --Flexible Gloves
-		{ itemID = 1379007 }, --Field Trousers
-		{ itemID = 1379008 }, --Claw Scarred Mail
-		{ itemID = 1379009 }, --Miner Handwraps
-		{ itemID = 1379010 }, --String of Ears
+		{ itemID = 4050651, desc = "Ashenvale (7, 13)" }, --Sunken Zoram Spear
+		{ itemID = 4050652, desc = "Ashenvale (9, 27)" }, --Elven Militia Crown
+		{ itemID = 4050653, desc = "Ashenvale (14, 28)" }, --Pristine Tortoise Carapace
 		{ itemID = 1379011 }, --Firestarter
-		{ itemID = 1379012 }, --Apprentice's Harpoon
-		{ itemID = 1379013 }, --Stormwitch Staff
-		{ itemID = 1379014 }, --Furbolg War Drum
-		{ itemID = 1379015 }, --Jar of Spiders
-		{ itemID = 1379016 }, --Bathran's Cursed Twig
-		{ itemID = 1379017 }, --Jack's Toothpicker
-		{ itemID = 1379018 }, --Ironbeard's Axe
-		{ itemID = 1379020 }, --Silverwing Grovekeeper's Bow
-		{ itemID = 1379021 }, --Party Pants
-		{ itemID = 1379022 }, --Wizard Wraps
-		{ itemID = 1379024 }, --Bristlebow
-		{ itemID = 1379025 }, --Nightshot
-		{ itemID = 1379026 }, --Suspiciously Brown Trousers
-		{ itemID = 1379027 }, --Adventurer Gloves
-		{ itemID = 1379028 }, --Soldier's Mail
-		{ itemID = 1379029 }, --Guide to Elven Restoration - Vol. I
-		{ itemID = 1379030 }, --Rosebud Ring
-		{ itemID = 1379031 }, --Frostmane Totem
-		{ itemID = 1379032 }, --Ulag's Cleaver
-		{ itemID = 1379033 }, --Heavy Iron Pan
-		{ itemID = 1379034 }, --Murder Machete
-		{ itemID = 1379035 }, --Heavy Logsplitter
-		{ itemID = 1379036 }, --Woodbreaker Mallet
-		{ itemID = 1379037 }, --Butchery Blade
-		{ itemID = 1379038 }, --Fallen Bow
-		{ itemID = 1379039 }, --Riding Cloak
-		{ itemID = 1379040 }, --Forgotten Trunks
-		{ itemID = 1379041 }, --Sunbands
-		{ itemID = 1379043 }, --Liquid Arcane
-		{ itemID = 1379044 }, --Tiloa's Flowers
-		{ itemID = 1379045 }, --Officer's Pike
-		{ itemID = 1379046 }, --Fel Infused Band
-		{ itemID = 1379047 }, --Mystral Staff
-		{ itemID = 1379048 }, --Haren's Tankard
-		{ itemID = 1379049 }, --Burial Blade
-		{ itemID = 1379050 }, --Sharpened Chopper
-		{ itemID = 1379051 }, --Sentinel's Blade
-		{ itemID = 1379054 }, --Bleakheart Piercer
-		{ itemID = 1379055 }, --Boar Harvester
-		{ itemID = 1379056 }, --Rider's Ring
-		{ itemID = 1379057 }, --Intact Wagon Wheel
-		{ itemID = 1379058 }, --Apprentice Staff
-		{ itemID = 1379059 }, --Sturdy Fishing Pole
-		{ itemID = 1379061 }, --Cursed Fire Scar Pendant
-		{ itemID = 1379062 }, --Elune Tear Fragment
-		{ itemID = 1379063 }, --Bloodtooth Neck
-		{ itemID = 1379064 }, --Stinky Necklace
-		{ itemID = 1379065 }, --Swashbuckler's Chain
-		{ itemID = 1379066 }, --Felforged Meteor Fragment
-		{ itemID = 1379067 }, --Echo of Aessina
-		{ itemID = 1379068 }, --Ursangous' Claw
-		{ itemID = 1379069 }, --Endless Moonwell Chalice
-		{ itemID = 1379070 }, --Etched Tablet
-		{ itemID = 1379071 }, --Heavy Bone
-		{ itemID = 1379072 }, --Stump Biter
-		{ itemID = 1379073 }, --The Dark Soul
-		{ itemID = 1379075 }, --Garren's Pitchfork
-		{ itemID = 1379076 }, --Haunted Ring
-		{ itemID = 1379077 }, --Captain's Shield
-		{ itemID = 1379078 }, --Murloc Ritual Staff
-		{ itemID = 1379079 }, --Peon Motivator
-		{ itemID = 1379080 }, --Waterlogged Musket
-		{ itemID = 1379082 }, --Defias Shanker
-		{ itemID = 1379083 }, --Sharpened Pike
-		{ itemID = 1379084 }, --Defias Magus Staff
-		{ itemID = 1379085 }, --Drudger Smash
-		{ itemID = 1379087 }, --Defias Toe Knife
-		{ itemID = 1379090 }, --Dwarven Demolition Kit
-		{ itemID = 1379091 }, --Tarantula Hunter Rifle
-		{ itemID = 1379092 }, --Solliden Family Broom
-		{ itemID = 1379093 }, --Misplaced Pitchfork
-		{ itemID = 1379094 }, --Washed Ashore Bottle
-		{ itemID = 1379095 }, --Old Wagon Wheel
-		{ itemID = 1379096 }, --Puddle-jumper Dagger
-		{ itemID = 1379097 }, --Dalaran Mage Garb
-		{ itemID = 1379098 }, --Evil-Infused Cuffs
-		{ itemID = 1379099 }, --Deathstalker Cloak
-		{ itemID = 1379100 }, --Forsaken Stone Braid
-		{ itemID = 1379101 }, --Gravedigger's Delight
-		{ itemID = 1379102 }, --Agamand Farmer Trousers
-		{ itemID = 1379103 }, --Apothecary's Lantern
-		{ itemID = 1379104 }, --Haunted Mace
-		{ itemID = 1379105 }, --Faulty Stone Golem
-		{ itemID = 1379106 }, --Dwarven Explosive Barrel
-		{ itemID = 1379107 }, --Leftover Mining Trousers
-		{ itemID = 1379108 }, --Scarlet Insignia
-		{ itemID = 1379109 }, --Windshaper Wraps
-		{ itemID = 1379110 }, --Old Snapjaw Shell
-		{ itemID = 1379111 }, --Timelost Captain Shield
-		{ itemID = 1379112 }, --Hillsbrad Shovel
-		{ itemID = 1379113 }, --Mudsnout Effigy
-		{ itemID = 1379114 }, --Deadman's Dagger
-		{ itemID = 1379115 }, --Eroded Pit Fighter Knuckles
-		{ itemID = 1379116 }, --Twilight Bands
-		{ itemID = 1379117 }, --Furbolg War-drum
-		{ itemID = 1379120 }, --Agamand Walking Stick
-		{ itemID = 1379123 }, --Blackwood Torch
-		{ itemID = 1379124 }, --Hunk of Darkshore Driftwood
-		{ itemID = 1379125 }, --Fanatic's Cursed Blade
-		{ itemID = 1379126 }, --Ancient Highborne Tome
-		{ itemID = 1379127 }, --Ancient Family Heirloom
-		{ itemID = 1379129 }, --Foreman's Lightcap
-		{ itemID = 1379131 }, --Waterlogged Sparkler
-		{ itemID = 1379133 }, --Tide Turner
-		{ itemID = 1379134 }, --Enchanted Flora Waist
-		{ itemID = 1379135 }, --Unpleasant Ring
-		{ itemID = 1379136 }, --Moonlight Infused Band
-		{ itemID = 1379137 }, --Wild Tracker Bindings
-		{ itemID = 1379138 }, --Seamstress Scissors
-		{ itemID = 1379139 }, --Heartwood Cleaver
-		{ itemID = 1379140 }, --Lakebottom Treads
-		{ itemID = 1379141 }, --Shen'dralar Staff
-		{ itemID = 1379142 }, --Stolen Highborne Spaulders
-		{ itemID = 1379143 }, --Grasping Claw
-		{ itemID = 1379144 }, --Tome of the Valiant
-		{ itemID = 1379145 }, --Ogre Cleaver
-		{ itemID = 1379146 }, --Gordunni Thumbtack
-		{ itemID = 1379147 }, --Gnoll-Gnawed Bone Bat
-		{ itemID = 1379148 }, --Grim Totem
-		{ itemID = 1379149 }, --Grimtotem Outrider’s Vest
-		{ itemID = 1379150 }, --Grimtotem Relic
-		{ itemID = 1379151 }, --Worn Angler Cord
-		{ itemID = 1379152 }, --Savage Crossbow
-		{ itemID = 1379153 }, --Gnoll Stompers
-		{ itemID = 1379154 }, --Bench Breaker
-		{ itemID = 1379155 }, --Secluded Soothsayer's Pipes
-		{ itemID = 1379156 }, --Ambercoil Pendant
-		{ itemID = 1379157 }, --Silithid Husk Shield
-		{ itemID = 1379159 }, --Bug Catchers
-		{ itemID = 1379160 }, --Beastpile Drape
-		{ itemID = 1379161 }, --Long-Clawed Gnoll Paw
-		{ itemID = 1379162 }, --Nightfallen Longbow
-		{ itemID = 1379163 }, --Denrunner Tomahawk
-		{ itemID = 1379164 }, --Torn Hide Spaulders
-		{ itemID = 1379165 }, --Woodpaw Greatblade
-		{ itemID = 1379166 }, --Orb of Isildien Echoes
-		{ itemID = 1379167 }, --Shattered Highborne Blade
-		{ itemID = 1379168 }, --Isildien Tender's Wand
-		{ itemID = 1379169 }, --Runestone Figurine
-		{ itemID = 1379170 }, --Ogre Kneepad
-		{ itemID = 1379171 }, --Necklace of the Sunken Empire
-		{ itemID = 1379174 }, --Yeti Napkin
-		{ itemID = 1379177 }, --Sentinel Wrap
-		{ itemID = 1379178 }, --Zapping Rod
-		{ itemID = 1379179 }, --Strider Shot
-		{ itemID = 1379181 }, --Band of Scales
-		{ itemID = 1379182 }, --Solarsal Pendant
-		{ itemID = 1379183 }, --Tidebaron’s Sigil
-		{ itemID = 1379184 }, --Hatestrike
-		{ itemID = 1379186 }, --Thunderfur Cloak
-		{ itemID = 1379195 }, --Forgotten Wristguards
-		{ itemID = 1379201 }, --Scorched Bindings
-		{ itemID = 1379202 }, --Corrupted Dragon Eye
-		{ itemID = 1379204 }, --Blackhoof Warmaul
-		{ itemID = 1379205 }, --Missing Apprentice Wand
-		{ itemID = 1379206 }, --Venomsilk Spellblade
-		{ itemID = 1379207 }, --Mudcrush Shoulders
-		{ itemID = 1379208 }, --Singed Flintlock
-		{ itemID = 1379209 }, --Deserter's Last Resort
-		{ itemID = 1379210 }, --Bloodfen Prowler Vest
-		{ itemID = 1379211 }, --Bloodfen Talon
-		{ itemID = 1379212 }, --Emberstring Drakebow
-		{ itemID = 1379213 }, --Denflame Channeler
-		{ itemID = 1379214 }, --Enchanted Dragon Bone
-		{ itemID = 1379215 }, --Scalebane Pendant
-		{ itemID = 1379216 }, --Emberscale Greatsword
-		{ itemID = 1379217 }, --Emberheart Talisman
-		{ itemID = 1379218 }, --Wheel of Misfortune
-		{ itemID = 1379219 }, --Tidefury Cutlass
-		{ itemID = 1379220 }, --Buzzcoil Tongs
-		{ itemID = 1379221 }, --Cylla's Endless Potion
-		{ itemID = 1379222 }, --Stonemaul Crusher’s Girdle
-		{ itemID = 1379223 }, --Marshfall Mantle
-		{ itemID = 1379224 }, --Salt Scoured Boarding Axe
-		{ itemID = 1379225 }, --Spotter's Rifle
-		{ itemID = 1379226 }, --Crokolisk Hunter
-		{ itemID = 1379227 }, --Primitive Murloc Skewer
-		{ itemID = 1379228 }, --Muck Trudgers
-		{ itemID = 1379229 }, --Northpoint Helmet
-		{ itemID = 1379230 }, --Brackish Spellweave Robe
-		{ itemID = 1379231 }, --Sturdy Coffin Lid
-		{ itemID = 1379232 }, --Swamplight Concoction
-		{ itemID = 1379233 }, --Bogcaller Totem
-		{ itemID = 1379237 }, --Golem Chunk
-		{ itemID = 1379238 }, --Shoulderpads of Deep Thinking
-		{ itemID = 1379239 }, --Glassweb Ward Shroud
-		{ itemID = 1379240 }, --Caravan Crossbow
-		{ itemID = 1379241 }, --Dorius' Shield
-		{ itemID = 1379242 }, --Stomped Diary
-		{ itemID = 1379243 }, --Magma Petting Mittens
-		{ itemID = 1379244 }, --Dark Iron Leatherpads
-		{ itemID = 1379245 }, --Scorching Lodepebble
-		{ itemID = 1379250 }, --Eye of Twilight
-		{ itemID = 1379252 }, --Contraband Magician Rod
-		{ itemID = 1379253 }, --Zamael's Corrupted Twilight
-		{ itemID = 1379254 }, --Slave Band
-		{ itemID = 1379258 }, --Slave Worker Pantaloons
-		{ itemID = 1379271 }, --Sharp Chain Belt
-		{ itemID = 1379274 }, --Nethergarde Foreman Chest
-		{ itemID = 1379275 }, --Runed Ogre Wrap
-		{ itemID = 1379277 }, --Old War Wraps
-		{ itemID = 1379280 }, --Demon Claw
-		{ itemID = 1379285 }, --Dreadmaul Head Smasher
-		{ itemID = 1379293 }, --Fallen Soldier's Shank
-		{ itemID = 1379295 }, --Bloodmage Coil
-		{ itemID = 1379297 }, --Portal Fragment
-		{ itemID = 1379300 }, --Emerald Circle Charm
-		{ itemID = 1379304 }, --Felhound Tendril
-		{ itemID = 1379317 }, --Heart of the Warpwood
 		{ itemID = 1379323 }, --Necklace of Purity
-		{ itemID = 1379330 }, --Cenarion Dreamcatcher
-		{ itemID = 1379331 }, --Marsh Shooter
-		{ itemID = 1379332 }, --Mystic Geode
-		{ itemID = 1379336 }, --Silverback Cape
-		{ itemID = 1379339 }, --Lost Fighter's Crossbow
-		{ itemID = 1379342 }, --Idol of the Terror Claw
-		{ itemID = 1379346 }, --Doomfall Spark
-		{ itemID = 1379359 }, --Totem of Scorching Sparks
-		{ itemID = 1379362 }, --Golakka Scoured Legguards
-		{ itemID = 1379372 }, --Ravasaur Talon
-		{ itemID = 1379374 }, --Caravaneer's Machete
-		{ itemID = 1379375 }, --Marsh Treaders
-		{ itemID = 1379376 }, --Caravan Utility Hammer
-		{ itemID = 1379379 }, --Water Dredger's Wrap
-		{ itemID = 1379380 }, --Expedition Bracers
-		{ itemID = 1379382 }, --Hexweave Gloves
-		{ itemID = 1379384 }, --Goblin Plant Slicer
-		{ itemID = 1379386 }, --Spring Shard
-		{ itemID = 1379389 }, --Nightsong Waraxe
-		{ itemID = 1379390 }, --Mystral Compass
-		{ itemID = 1379391 }, --Fine Silk Wraps
-		{ itemID = 1379392 }, --Teldrassil Begonias
-		{ itemID = 1379393 }, --Torn Spellbook Page
-		{ itemID = 1379394 }, --Arlithrien Moon Orb
-		{ itemID = 1379395 }, --Lunar Tome
-		{ itemID = 1379396 }, --Whisperwind Boots
-		{ itemID = 1388163 }, --Blade of Dread
-		{ itemID = 1388171 }, --Diving Boots
+		{ itemID = 1388163, desc = "Desolace (76, 35)" }, --Blade of Dread
 		{ itemID = 1388274 }, --Bones to Munch
-		{ itemID = 1388377 }, --Alchemist's Ladel
-		{ itemID = 1388677 }, --Fire Poker
-		{ itemID = 1388739 }, --Firestarter
 		{ itemID = 1389111 }, --Sandstalker
-		{ itemID = 1389229 }, --Honed Steel Axe
-		{ itemID = 1389231 }, --Splinter Fist Cowl
-		{ itemID = 1389232 }, --Brightwood Gloves
 		{ itemID = 1389339 }, --Tracker's Blade
 		{ itemID = 1389377 }, --Dwarven Crossbow
 	}

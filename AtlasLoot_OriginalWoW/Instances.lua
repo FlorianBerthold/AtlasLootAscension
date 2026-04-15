@@ -2659,6 +2659,11 @@ AtlasLoot:AddItemData({
 			{ itemID = 1559487 }, --Hi-tech Supergun
 			{ itemID = 1559488 }, --Oscillating Power Hammer
 		},
+		{
+			{ icon = "INV_Box_01", name = "Techbot" },
+			{ itemID = 171244 }, --\"Mage-Eye\" Blunderbuss
+			{ itemID = 171319 }, --BKP \"Sparrow\" Smallbore
+		},
 	},
 	["KarazhanCrypts"] = {
 		{
@@ -6034,173 +6039,30 @@ AtlasLoot:AddItemData({
 	----------------------------
 	["WorldBossesCLASSIC"] = {
 		{
-			{ itemID = 20581 }, --Staff of Rampant Growth
-			{ itemID = 17070 }, --Fang of the Mystics
-			{ itemID = 19130 }, --Cold Snap
-			{ itemID = 17113 }, --Amberseal Keeper
-			{ itemID = 20636 }, --Hibernation Crystal
-			{ itemID = 20582 }, --Trance Stone
-			{ itemID = 18665 }, --The Eye of Shadow
-			{ itemID = 18704 }, --Mature Blue Dragon Sinew
-			{ itemID = 18714 }, --Ancient Sinew Wrapped Lamina
-			{ itemID = 20580 }, --Hammer of Bestial Fury
-			{ itemID = 20599 }, --Polished Ironwood Crossbow
-			{ itemID = 18202 }, --Eskhandar's Left Claw
-			{ itemID = 20577 }, --Nightmare Blade
-			{ itemID = 20578 }, --Emerald Dragonfang
-			{ itemID = 17112 }, --Empyrean Demolisher
-			{ itemID = 18542 }, --Typhoon
-			{ itemID = 20644 }, --Nightmare Engulfed Object
-			{ itemID = 20600 }, --Malfurion's Signet Ring
-		},
-		{
-			{ itemID = 20623 }, --Circlet of Restless Dreams
-			{ itemID = 20615 }, --Dragonspur Wraps
-			{ itemID = 122884 }, --Wristguards of the Shifting Sands
-			{ itemID = 122885 }, --Waistguard of the Shifting Sands
-			{ itemID = 18544 }, --Doomhide Gauntlets
-			{ itemID = 20627 }, --Dark Heart Pants
-			{ itemID = 20633 }, --Unnatural Leather Spaulders
-			{ itemID = 20617 }, --Ancient Corroded Leggings
-			{ itemID = 20624 }, --Ring of the Unliving
-			{ itemID = 20622 }, --Dragonheart Necklace
-			{ itemID = 18541 }, --Puissant Cape
-			{ itemID = 18204 }, --Eskhandar's Pelt
-		},
-		{
-			{itemID = 19132 }, --Crystal Adorned Crown
-			{ itemID = 18546 }, --Infernal Headcage
-			{ itemID = 20628 }, --Deviate Growth Cap
-			{ itemID = 18545 }, --Leggings of Arcane Supremacy
-			{ itemID = 19133 }, --Fel Infused Leggings
-			{ itemID = 20638 }, --Leggings of the Demented Mind
-			{ itemID = 20639 }, --Strangely Glyphed Legplates
-			{ itemID = 19131 }, --Snowblind Shoes
-			{ itemID = 20631 }, --Mendicant's Slippers
-			{ itemID = 20634 }, --Boots of Fright
-			{ itemID = 20621 }, --Boots of the Endless Moor
-			{ itemID = 20629 }, --Malignant Footguards
-			{ itemID = 20630 }, --Gauntlets of the Shining Light
-			{ itemID = 20618 }, --Gloves of Delusional Power
-			{ itemID = 20635 }, --Jade Inlaid Vestments
-			{ itemID = 19135 }, --Blacklight Bracer
-			{ itemID = 122886 }, --Bracers of the Sand Prince
-			{ itemID = 20626 }, --Black Bark Wristbands
-			{ itemID = 122887 }, --Belt of the Sand Prince
-			{ itemID = 19134 }, --Flayed Doomguard Belt
-			{ itemID = 20625 }, --Belt of the Dark Bog
-			{ itemID = 20579 }, --Green Dragonskin Cloak
-			{ itemID = 18208 }, --Drape of Benediction
-			{ itemID = 20632 }, --Mindtear Band
-			{ itemID = 18543 }, --Ring of Entropy
-		},
-		{
-			{ itemID = 18547 }, --Unmelting Ice Girdle
-			{ itemID = 20616 }, --Dragonbone Wristguards
-			{ itemID = 20619 }, --Acid Inscribed Greaves
-			{ itemID = 20637 }, --Acid Inscribed Pauldrons
-		},
-		{
-			{ icon = "INV_Box_01", name = "Atal'zul, the Soulreaver" },
-			{ itemID = 11329 }, --Talisman of Soul Theft
-			{ itemID = 11330 }, --Signet of the Soulflayer
-			{ itemID = 11425 }, --Band of the Dead
-			{ itemID = 11426 }, --Shroud of Sacrifice
-			{ itemID = 11427 }, --Soulrender Rifle
-			{ itemID = 11428 }, --Skullcrusher
-			{ itemID = 11429 }, --Desecrator
-			{ itemID = 11430 }, --Soul Essence Vial
-		},
-		{
 			{ icon = "INV_Box_01", name = "Azuregos" },
-			{ itemID = 316257 }, --Eskhandar's Left Claw
-			{ itemID = 316284 }, --Drape of Benediction
-			{ itemID = 316624 }, --Typhoon
-			{ itemID = 317120 }, --Crystal Adorned Crown
-			{ itemID = 316627 }, --Leggings of Arcane Supremacy
-			{ itemID = 317085 }, --Snowblind Shoes
-			{ itemID = 316088 }, --Fang of the Mystics
-			{ itemID = 316609 }, --Puissant Cape
-			{ itemID = 316772 }, --Cold Snap
-			{ itemID = 316771 }, --Unmelting Ice Girdle
-		},
-		{
-			{ icon = "INV_Box_01", name = "Emeriss" },
-			{ itemID = 17424 }, --Polished Ironwood Crossbow
-			{ itemID = 17484 }, --Boots of the Endless Moor
-			{ itemID = 17485 }, --Dragonheart Necklace
-			{ itemID = 17486 }, --Circlet of Restless Dreams
-			{ itemID = 17487 }, --Ring of the Unliving
-		},
-		{
-			{ icon = "INV_Box_01", name = "Lethon" },
-			{ itemID = 17488 }, --Belt of the Dark Bog
-			{ itemID = 17489 }, --Black Bark Wristbands
-			{ itemID = 17490 }, --Dark Heart Pants
-			{ itemID = 17510 }, --Deviate Growth Cap
-			{ itemID = 17511 }, --Malignant Footguards
-			{ itemID = 17512 }, --Gauntlets of the Shining Light
+			{ itemID = 18202 }, --Eskhandar's Left Claw
+			{ itemID = 18208 }, --Drape of Benediction
+			{ itemID = 18542 }, --Typhoon
+			{ itemID = 19132 }, --Crystal Adorned Crown
+			{ itemID = 18545 }, --Leggings of Arcane Supremacy
+			{ itemID = 19131 }, --Snowblind Shoes
+			{ itemID = 17070 }, --Fang of the Mystics
+			{ itemID = 18541 }, --Puissant Cape
+			{ itemID = 19130 }, --Cold Snap
+			{ itemID = 18547 }, --Unmelting Ice Girdle
 		},
 		{
 			{ icon = "INV_Box_01", name = "Lord Kazzak" },
+			{ itemID = 17112 }, --Empyrean Demolisher
+			{ itemID = 18204 }, --Eskhandar's Pelt
+			{ itemID = 18543 }, --Ring of Entropy
+			{ itemID = 19135 }, --Blacklight Bracer
+			{ itemID = 17113 }, --Amberseal Keeper
 			{ itemID = 16089 }, --Blazefury Medallion
-			{ itemID = 316193 }, --Empyrean Demolisher
-			{ itemID = 316258 }, --Eskhandar's Pelt
-			{ itemID = 316625 }, --Ring of Entropy
-			{ itemID = 317226 }, --Blacklight Bracer
-			{ itemID = 316256 }, --Amberseal Keeper
-			{ itemID = 317225 }, --Flayed Doomguard Belt
-			{ itemID = 316770 }, --Infernal Headcage
-			{ itemID = 316626 }, --Doomhide Gauntlets
-			{ itemID = 317164 }, --Fel Infused Leggings
-		},
-		{
-			{ icon = "INV_Box_01", name = "Setis" },
-			{ itemID = 122880 }, --Scepter of the Gate Warden
-			{ itemID = 122881 }, --Staff of the Gate Warden
-			{ itemID = 122883 }, --Musket of the Gate Warden
-			{ itemID = 122888 }, --Amulet of the Gate Warden
-			{ itemID = 122889 }, --Amulet of the Sand Prince
-			{ itemID = 122890 }, --Insignia of the Shifting Sands
-			{ itemID = 317334 }, --Wristguards of the Shifting Sands
-			{ itemID = 317356 }, --Waistguard of the Shifting Sands
-			{ itemID = 317357 }, --Bracers of the Sand Prince
-			{ itemID = 317358 }, --Belt of the Sand Prince
-		},
-		{
-			{ icon = "INV_Box_01", name = "Snowgrave" },
-			{ itemID = 17304 }, --Crystalized Water Spike
-			{ itemID = 17663 }, --Frostbound Bulwark
-			{ itemID = 17664 }, --Glaciermind Spellfocus
-			{ itemID = 17665 }, --Glacierborn Greatsword
-			{ itemID = 17912 }, --Glacierwoven Legwraps
-			{ itemID = 17913 }, --Frostbite Warcloak
-			{ itemID = 18064 }, --Band of Winter's Grasp
-			{ itemID = 18065 }, --Frostwoven Spiritbinder Gloves
-			{ itemID = 18084 }, --Glacierbound Wristguards
-			{ itemID = 18085 }, --Frostbite Spellhammer
-		},
-		{
-			{ icon = "INV_Box_01", name = "Taerar" },
-			{ itemID = 17368 }, --Nightmare Blade
-			{ itemID = 17513 }, --Mendicant's Slippers
-			{ itemID = 17514 }, --Mindtear Band
-			{ itemID = 17524 }, --Unnatural Leather Spaulders
-			{ itemID = 17525 }, --Boots of Fright
-		},
-		{
-			{ icon = "INV_Box_01", name = "The Will of Soggoth" },
-			{ itemID = 11271 }, --Eles'finel
-			{ itemID = 11272 }, --Twilight Faceguard
-			{ itemID = 11273 }, --Visage of Aydreath
-			{ itemID = 11274 }, --Breastplate of the Void's Fury
-			{ itemID = 11275 }, --The Darkened Gaze
-			{ itemID = 11276 }, --Treads of Twilight Shadow
-			{ itemID = 11277 }, --Thorn of Aydreath
-			{ itemID = 11326 }, --The Dreaming Eternity
-			{ itemID = 11327 }, --Shroud of Soothing Twilight
-			{ itemID = 11328 }, --Guidance of the Old Gods
-			{ itemID = 11431 }, --The Deceiving Refraction
+			{ itemID = 19134 }, --Flayed Doomguard Belt
+			{ itemID = 18546 }, --Infernal Headcage
+			{ itemID = 18544 }, --Doomhide Gauntlets
+			{ itemID = 19133 }, --Fel Infused Leggings
 		},
 		{
 			{ icon = "INV_Box_01", name = "Ysondre" },
@@ -6219,6 +6081,90 @@ AtlasLoot:AddItemData({
 			{ itemID = 17627 }, --Acid Inscribed Pauldrons
 			{ itemID = 17645 }, --Leggings of the Demented Mind
 			{ itemID = 17646 }, --Strangely Glyphed Legplates
+		},
+		{
+			{ icon = "INV_Box_01", name = "Lethon" },
+			{ itemID = 17488 }, --Belt of the Dark Bog
+			{ itemID = 17489 }, --Black Bark Wristbands
+			{ itemID = 17490 }, --Dark Heart Pants
+			{ itemID = 17510 }, --Deviate Growth Cap
+			{ itemID = 17511 }, --Malignant Footguards
+			{ itemID = 17512 }, --Gauntlets of the Shining Light
+		},
+		{
+			{ icon = "INV_Box_01", name = "Emeriss" },
+			{ itemID = 17424 }, --Polished Ironwood Crossbow
+			{ itemID = 17484 }, --Boots of the Endless Moor
+			{ itemID = 17485 }, --Dragonheart Necklace
+			{ itemID = 17486 }, --Circlet of Restless Dreams
+			{ itemID = 17487 }, --Ring of the Unliving
+		},
+		{
+			{ icon = "INV_Box_01", name = "Taerar" },
+			{ itemID = 17368 }, --Nightmare Blade
+			{ itemID = 17513 }, --Mendicant's Slippers
+			{ itemID = 17514 }, --Mindtear Band
+			{ itemID = 17524 }, --Unnatural Leather Spaulders
+			{ itemID = 17525 }, --Boots of Fright
+		},
+		{
+			{ icon = "INV_Box_01", name = "Setis" },
+			{ itemID = 122880 }, --Scepter of the Gate Warden
+			{ itemID = 122881 }, --Staff of the Gate Warden
+			{ itemID = 122883 }, --Musket of the Gate Warden
+			{ itemID = 122884 }, --Wristguards of the Shifting Sands
+			{ itemID = 122885 }, --Waistguard of the Shifting Sands
+			{ itemID = 122886 }, --Bracers of the Sand Prince
+			{ itemID = 122887 }, --Belt of the Sand Prince
+			{ itemID = 122888 }, --Amulet of the Gate Warden
+			{ itemID = 122889 }, --Amulet of the Sand Prince
+			{ itemID = 122890 }, --Insignia of the Shifting Sands
+		},
+		{
+			{ icon = "INV_Box_01", name = "Snowgrave" },
+			{ itemID = 17304 }, --Crystalized Water Spike
+			{ itemID = 17663 }, --Frostbound Bulwark
+			{ itemID = 17664 }, --Glaciermind Spellfocus
+			{ itemID = 17665 }, --Glacierborn Greatsword
+			{ itemID = 17912 }, --Glacierwoven Legwraps
+			{ itemID = 17913 }, --Frostbite Warcloak
+			{ itemID = 18064 }, --Band of Winter's Grasp
+			{ itemID = 18065 }, --Frostwoven Spiritbinder Gloves
+			{ itemID = 18084 }, --Glacierbound Wristguards
+			{ itemID = 18085 }, --Frostbite Spellhammer
+		},
+		{
+			{ icon = "INV_Box_01", name = "The Will of Soggoth" },
+			{ itemID = 11271 }, --Eles'finel
+			{ itemID = 11272 }, --Twilight Faceguard
+			{ itemID = 11273 }, --Visage of Aydreath
+			{ itemID = 11274 }, --Breastplate of the Void's Fury
+			{ itemID = 11275 }, --The Darkened Gaze
+			{ itemID = 11276 }, --Treads of Twilight Shadow
+			{ itemID = 11277 }, --Thorn of Aydreath
+			{ itemID = 11326 }, --The Dreaming Eternity
+			{ itemID = 11327 }, --Shroud of Soothing Twilight
+			{ itemID = 11328 }, --Guidance of the Old Gods
+			{ itemID = 11431 }, --The Deceiving Refraction
+		},
+		{
+			{ icon = "INV_Box_01", name = "Atal'zul, the Soulreaver" },
+			{ itemID = 11329 }, --Talisman of Soul Theft
+			{ itemID = 11330 }, --Signet of the Soulflayer
+			{ itemID = 11425 }, --Band of the Dead
+			{ itemID = 11426 }, --Shroud of Sacrifice
+			{ itemID = 11427 }, --Soulrender Rifle
+			{ itemID = 11428 }, --Skullcrusher
+			{ itemID = 11429 }, --Desecrator
+			{ itemID = 11430 }, --Soul Essence Vial
+		},
+		{
+			{ icon = "INV_Box_01", name = "Quest Items" },
+			{ itemID = 18665 }, --The Eye of Shadow
+			{ itemID = 18704 }, --Mature Blue Dragon Sinew
+			{ itemID = 18714 }, --Ancient Sinew Wrapped Lamina
+			{ itemID = 20600 }, --Malfurion's Signet Ring
+			{ itemID = 20644 }, --Nightmare Engulfed Object
 		},
 	},
 })

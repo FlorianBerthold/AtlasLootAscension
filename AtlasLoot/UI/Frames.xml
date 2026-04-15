@@ -150,6 +150,7 @@
     <Script file="Menus\Factions.lua"/>
     <Script file="Menus\Pvp.lua"/>
     <Script file="Menus\Collections.lua"/>
+    <Script file="Menus\MysticEnchants.lua"/>
     <Script file="UI.lua"/>
     <Script file="UI_Functions.lua"/>
     <Script file="Search_UI.lua"/>

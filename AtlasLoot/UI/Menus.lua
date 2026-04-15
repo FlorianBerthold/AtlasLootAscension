@@ -123,14 +123,16 @@ function AtlasLoot:InitializeMenus()
 	--This is a multi-layer table defining the main loot listing.
 	--Entries have the text to display, loot table or sub table to link to and if the link is to a loot table or sub table
 	menus.modules = {
-		{"Dungeons and Raids", "Dungeons and Raids", 2},
-		{"Crafting", "Crafting" },
-		{"Sets/Collections", "Collections" },
-		{"PvP Rewards", "PVP" },
-		{"Vanity", "Vanity" },
 		{"Ascension Vanity Collection", "CollectionsAscension" },
+		{"Crafting", "Crafting" },
+		{"Dungeons and Raids", "Dungeons and Raids", 2},
 		{"Factions", "Factions" },
+		{"Mystic Enchants", "MysticEnchants" },
+		{"PvP Rewards", "PVP" },
+		{"Sets/Collections", "Collections" },
+		{"Vanity", "Vanity" },
 		{"World Events", "WorldEvents" },
+		{"Worldforged", "Worldforged" },
 	}
 
 	menus.expansion = {
@@ -315,7 +317,6 @@ function AtlasLoot:InitializeMenus()
 		{ "MarkOfTriumph" },
 		{ "VendorClassic" },
 		{ "QuestRewardsCLASSIC" },
-		{ "WorldforgedClassic", OnDamand = {"WorldforgedClassic", false, "Worldforged Items"}},
 		{ "TONE", Header = "Dungeon Sets" },
 		{ "DungeonSetsCLASSIC" },
 		{ "DungeonSetsUpgradedCLASSIC" },
@@ -362,6 +363,36 @@ function AtlasLoot:InitializeMenus()
 		{ "TNINE" },
 		{ "TTEN" },
 	}
+
+	------------------------------------- Worldforged Menus -------------------------------------
+	collection.WorldforgedCLASSIC = {
+		Module = "AtlasLoot_OriginalWoW",
+		{ "WorldforgedClassic", OnDamand = {"WorldforgedClassic", false, "Worldforged Items"}},
+	}
+	collection.WorldforgedTBC = collection.WorldforgedCLASSIC
+	collection.WorldforgedWRATH = collection.WorldforgedCLASSIC
+
+	------------------------------------- Mystic Enchants Menus -------------------------------------
+	-- Ascension's in-game UI bundles Mystic Scrolls and Legendary Glyphs
+	-- under one "Mystic Enchants" tab; we match that here. Each class page
+	-- inside the data file is split by a header row so scrolls show on
+	-- top and glyphs below. Row keys must match the data keys emitted by
+	-- bisbeard/convert_mystic_enchants.py (display class name stripped of
+	-- spaces and prefixed with `MysticEnchants`).
+	collection.MysticEnchantsCLASSIC = {
+		Module = "AtlasLoot_OriginalWoW",
+		{ "MysticEnchantsDruid" },
+		{ "MysticEnchantsHunter" },
+		{ "MysticEnchantsMage" },
+		{ "MysticEnchantsPaladin" },
+		{ "MysticEnchantsPriest" },
+		{ "MysticEnchantsRogue" },
+		{ "MysticEnchantsShaman" },
+		{ "MysticEnchantsWarlock" },
+		{ "MysticEnchantsWarrior" },
+	}
+	collection.MysticEnchantsTBC = collection.MysticEnchantsCLASSIC
+	collection.MysticEnchantsWRATH = collection.MysticEnchantsCLASSIC
 
 	------------------------------------- Vanity Menus -------------------------------------
 	collection.VanityCLASSIC = {

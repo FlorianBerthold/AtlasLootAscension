@@ -28,12 +28,19 @@ end
 --[[
 GetItemDifficultyID(id, difficulty)
 Finds the Ids of other difficulties based on the normal id of the item and the difficulty parameter given.
+
+Merges the two sources per-slot: a manual entry in
+ItemIDsDatabaseCorrectedIDs wins when it supplies a value for the
+requested difficulty, but the scanner-populated ItemIDsDatabase is
+still consulted for any slots the fix table left nil. This matters
+for items whose fix-table entry only populates slot [3] and would
+otherwise mask real upgrade ids entirely.
 ]]
 function GetItemDifficultyID(id, difficulty)
 	if not difficulty or difficulty == 3 then return id end
-	local correctID = ItemIDsDatabaseCorrectedIDs[id] or ItemIDsDatabase[id]
-	if correctID and correctID[difficulty] then
-		return correctID[difficulty]
-	end
+	local fixed = ItemIDsDatabaseCorrectedIDs[id]
+	local scanned = ItemIDsDatabase[id]
+	local val = (fixed and fixed[difficulty]) or (scanned and scanned[difficulty])
+	if val then return val end
 	return id
 end

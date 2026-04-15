@@ -21,3 +21,4 @@ Instances.lua
 Factions.lua
 Pvp.lua
 Collections.lua
+MysticEnchants.lua

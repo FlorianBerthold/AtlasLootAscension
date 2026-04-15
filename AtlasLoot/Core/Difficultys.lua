@@ -29,12 +29,12 @@ AtlasLoot.Difficulties = {
     },
     WorldforgedClassic = {
         {"Base Item", 3},
-        {"Dungeon Upgrade", 4},
+        {"Lvl60 Upgrade", 4},
         {"ZG Upgrade", 5},
-        {"Tier 1 Upgrade", 6},
-        {"Tier 2 Upgrade", 7},
+        {"MC Upgrade", 6},
+        {"BWL Upgrade", 7},
         {"AQ Upgrade", 8},
-        {"Tier 3 Upgrade", 9},
+        {"Nax Upgrade", 9},
         Max = 9
     },
     ClassicDungeonExt = {

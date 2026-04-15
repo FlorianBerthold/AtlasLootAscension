@@ -8,12 +8,28 @@ AtlasLoot_Data = {
 	}
 }
 
+-- Patterns matched against each item's tooltip description during
+-- /atlasloot updatecache to classify upgrade variants. First match
+-- wins, so put longer / more specific strings first (otherwise
+-- "Heroic" would eat "Heroic Bloodforged"). Tier numbers correspond
+-- to the difficulty slots used by ItemIDsDatabaseCorrectedIDs and
+-- the sliders in Core/Difficultys.lua.
 local difficultys = {
 	{"Heroic Bloodforged", 2},
 	{"Bloodforged", 1},
 	{"Superior", 4},
 	{"Heroic", 4},
-	{"Ascended", 6}
+	{"Ascended", 6},
+	-- Worldforged upgrade tiers. Without these entries the scanner
+	-- silently drops every WF upgrade variant it encounters, which
+	-- is why items like Emberstring Drakebow never get real upgrade
+	-- ids populated no matter what range is scanned.
+	{"Dungeon Upgrade", 4},
+	{"ZG Upgrade", 5},
+	{"Tier 1 Upgrade", 6},
+	{"Tier 2 Upgrade", 7},
+	{"AQ Upgrade", 8},
+	{"Tier 3 Upgrade", 9},
 }
 
 local function getNormalLevel(discription)
@@ -164,10 +180,18 @@ function AtlasLoot:UpdateItemIDsDatabase(firstID, lastID)
 		end
         startTime = debugprofilestop()
         while (firstID ~= lastID) do
-			local item = GetItemInfoInstant(firstID)
-			local difficulty, difficultyNum = self:GetDifficultyFromDescription(item)
-			if item and difficulty and difficultyNum then
-				checkID(item, difficulty, difficultyNum)
+			-- Wrap each id in pcall so a single bad item (malformed
+			-- server response, unexpected nil field, etc.) just skips
+			-- forward instead of halting the whole scan.
+			local ok, err = pcall(function()
+				local item = GetItemInfoInstant(firstID)
+				local difficulty, difficultyNum = self:GetDifficultyFromDescription(item)
+				if item and difficulty and difficultyNum then
+					checkID(item, difficulty, difficultyNum)
+				end
+			end)
+			if not ok and self.DebugMessages then
+				DEFAULT_CHAT_FRAME:AddMessage("AtlasLoot scan skip id "..firstID..": "..tostring(err))
 			end
 			firstID = firstID + 1
             AtlasLootDbUpdateText:SetText("Updating AtlasLoot Item Cache\n"..firstID.." / ".. lastID)
@@ -190,6 +214,15 @@ On the form of {ID, {bloodforged, heroic bloodforged, normal, heroic, mythic, my
 ]]
 function AtlasLoot:GetItemDifficultyID(id, difficulty)
 	if not difficulty or difficulty == 3 then return id end
+	-- Bags can't actually be upgraded in-game, but Ascension's server
+	-- still returns phantom "upgraded" item rows for them — which
+	-- GetItemInfo happily resolves, so the upgrade slider ends up
+	-- showing a second copy of every bag at every non-base tier.
+	-- Force bags to stay on their base id regardless of the tier.
+	local _, _, _, _, _, _, _, _, equipLoc = self:GetItemInfo(id)
+	if equipLoc == "INVTYPE_BAG" then
+		return id
+	end
 	local correctID = GetItemDifficultyID(id, difficulty)
 	if correctID and self:GetItemInfo(correctID) then
 		return correctID

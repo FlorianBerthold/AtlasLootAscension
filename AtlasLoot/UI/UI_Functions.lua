@@ -29,7 +29,39 @@ function AtlasLoot:InitializeUIFunctions()
             self.moduleName = lastboss[6]
             self:IsLootTableAvailable(lastboss[4])
             self.ui.moduelMenuButton:SetText(self.moduleName)
-            self:ShowItemsFrame(lastboss[1], "AtlasLoot_Data", lastboss[3], lastboss[7])
+            -- Use lastboss[2] (the actual dataSource_backup that was
+            -- stored when this boss was last viewed) instead of the
+            -- hardcoded "AtlasLoot_Data". Worldforged and any other
+            -- OnDemand/Data_Cache table stores its own backup key,
+            -- and passing "AtlasLoot_Data" here used to produce the
+            -- "No data for this category" error on Loot-tab click.
+            local backup = lastboss[2] or "AtlasLoot_Data"
+            if backup == "AtlasLoot_OnDemand" and self.data.onDemand and self.data.onDemand[lastboss[1]] then
+                self:ShowItemsFrame(lastboss[1], backup, lastboss[3], lastboss[7])
+            elseif backup == "AtlasLoot_Data_Cache" and AtlasLoot_Data_Cache and AtlasLoot_Data_Cache[lastboss[1]] then
+                self:ShowItemsFrame(lastboss[1], backup, lastboss[3], lastboss[7])
+            elseif backup == "AtlasLoot_Data" then
+                self:ShowItemsFrame(lastboss[1], backup, lastboss[3], lastboss[7])
+            else
+                -- Cached onDemand data was wiped or never built —
+                -- trigger a rebuild by replaying the collection's
+                -- first OnDamand row if one exists.
+                local coll = AtlasLoot.ui.menus.collection[self.currentTable]
+                local firstOnDamand
+                if coll then
+                    for _, entry in ipairs(coll) do
+                        if type(entry) == "table" and entry.OnDamand then
+                            firstOnDamand = entry.OnDamand
+                            break
+                        end
+                    end
+                end
+                if firstOnDamand then
+                    self:CreateOnDemandLootTable(firstOnDamand[1], firstOnDamand[2], firstOnDamand[3])
+                else
+                    self:ShowItemsFrame(lastboss[1], backup, lastboss[3], lastboss[7])
+                end
+            end
         else
             self:ShowItemsFrame("EmptyTable", "AtlasLoot_Data", 1, 1)
         end
@@ -79,7 +111,29 @@ function AtlasLoot:InitializeUIFunctions()
             if lasttable then
                 self:ShowItemsFrame(lasttable[1], lasttable[2], lasttable[3], lasttable[7])
             else
-                self:ShowItemsFrame(tablename, "AtlasLoot_Data", tablenum, 1)
+                -- If the first row is an OnDemand loader (e.g. the
+                -- Worldforged module, whose only entry is a lazy-loaded
+                -- table rather than a regular AtlasLoot_Data key), fire
+                -- it directly. Otherwise ShowItemsFrame would fail with
+                -- "No data for this category" because the collection
+                -- key itself isn't registered as a data table.
+                local firstRow = AtlasLoot.ui.menus.collection[tablename][tablenum]
+                if firstRow and firstRow.OnDamand then
+                    self:CreateOnDemandLootTable(firstRow.OnDamand[1], firstRow.OnDamand[2], firstRow.OnDamand[3])
+                elseif not self.ui.menus.data[tablename]
+                    and firstRow and firstRow[1]
+                    and self.ui.menus.data[firstRow[1]] then
+                    -- tablename is a collection-only key (e.g.
+                    -- "MysticEnchantsCLASSIC") that isn't registered
+                    -- as a loot table itself. Resolve to the row's
+                    -- first sub-entry so ShowItemsFrame gets a real
+                    -- data id, matching expansionMenuClick.
+                    local subname = firstRow[1]
+                    local subnum = self.ui.menus.data[subname].Loadfirst or 1
+                    self:ShowItemsFrame(subname, "AtlasLoot_Data", subnum, 1)
+                else
+                    self:ShowItemsFrame(tablename, "AtlasLoot_Data", tablenum, 1)
+                end
             end
     end
 
@@ -156,10 +210,13 @@ function AtlasLoot:InitializeUIFunctions()
             self.currentTable = cleanDataID(self.currentTable, 1) .. self.Expac
             self:IsLootTableAvailable(AtlasLoot.ui.menus.collection[self.currentTable].Module)
             local tablename
+            local firstOnDamand
             for _, entry in ipairs(AtlasLoot.ui.menus.collection[self.currentTable]) do
                 if type(entry) == "table" and not entry.Header and not entry.OnDamand then
                     tablename = entry[1]
                     break
+                elseif type(entry) == "table" and entry.OnDamand and not firstOnDamand then
+                    firstOnDamand = entry.OnDamand
                 end
             end
             local lasttable = self.db.profile.savedState[self.currentTable]
@@ -168,6 +225,10 @@ function AtlasLoot:InitializeUIFunctions()
             elseif tablename and self.ui.menus.data[tablename] then
                 local tablenum = self.ui.menus.data[tablename].Loadfirst or 1
                 self:ShowItemsFrame(tablename, "AtlasLoot_Data", tablenum, 1)
+            elseif firstOnDamand then
+                -- Module has only OnDemand entries (e.g. Worldforged) —
+                -- fire the loader so switching expansion still renders.
+                self:CreateOnDemandLootTable(firstOnDamand[1], firstOnDamand[2], firstOnDamand[3])
             end
         end
     end
