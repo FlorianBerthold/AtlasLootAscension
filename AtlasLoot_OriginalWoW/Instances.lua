@@ -5796,6 +5796,7 @@ AtlasLoot:AddItemData({
 			{ itemID = 18126 }, --Infernos, the Extinguished
 			{ itemID = 18548 }, --Wyrmguard Talisman
 			{ itemID = 18906 }, --Obsidian Heartseeker
+			{ itemID = 18210 }, --Draconic Effigy
 		},
 		{
 			{ icon = "INV_Box_01", name = "Onyxia" },
@@ -5814,7 +5815,6 @@ AtlasLoot:AddItemData({
 			{ itemID = 18403 }, --Dragonslayer's Signet
 			{ itemID = 18406 }, --Onyxia Blood Talisman
 			{ itemID = 18813 }, --Ring of Binding
-			{ itemID = 18210 }, --Draconic Effigy
 			{ itemID = 18215 }, --Insignia of the Dragon
 			{ itemID = 18216 }, --Neltharion's Badge
 		},
