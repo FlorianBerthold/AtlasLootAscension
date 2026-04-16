@@ -602,9 +602,8 @@ function AtlasLoot:InitializeSearch()
                 end
             elseif itemID then
                 local function nextItem(item)
-                    self:ItemsLoading(-1)
                     local itemDetails = {getItemDetails(itemID)}
-                    itemDetails[1] = item:GetName()
+                    itemDetails[1] = item and item:GetName() or nil
                     if not itemDetails[1] then return end
                     if itemMatchesAllTerms(searchTerms, itemDetails) then
                         addItemToSearchResult(itemData, "AtlasLoot_Data", dataID, tableNum)
@@ -616,15 +615,23 @@ function AtlasLoot:InitializeSearch()
                         end
                     end
                 end
+                -- Decrement once per dispatched item, regardless of
+                -- whether Item:CreateFromID returns nil or the async
+                -- ContinueOnLoad callback ever fires. The old path
+                -- only decremented inside nextItem, so invalid or
+                -- deleted item ids leaked the counter and the search
+                -- hung waiting forever. This also sidesteps the
+                -- pre-existing double-nextItem call in the relational
+                -- branch.
+                self:ItemsLoading(-1)
                 local item = Item:CreateFromID(itemID)
                 if item then
-                    if searchTerms.relational and not item:GetInfo() then
-                        item:ContinueOnLoad(function(item)
-                            nextItem(item)
-                        end)
+                    if item:GetInfo() then
                         nextItem(item)
                     else
-                        nextItem(item)
+                        item:ContinueOnLoad(function(loaded)
+                            nextItem(loaded)
+                        end)
                     end
                 end
             end
