@@ -1596,73 +1596,34 @@ AtlasLoot:AddItemData({
 	---------------------------------------
 	["MoltenCore"] = {
 		{
-			{ itemID = 2522362, sourcePage = {"TONEWRIST","Token"} }, --Molten Wristguards
+			{ icon = "INV_Box_01", name = "Lucifron" },
 			{ itemID = 17329 }, --Hand of Lucifron
+			{ itemID = 12599 }, --Flameguard Legguards
+			{ itemID = 12910 }, --Molten Slugtosser
+			{ itemID = 15958 }, --The Water Duke's Stolen Totem
+			{ itemID = 2522362, sourcePage = {"TONEWRIST","Token"} }, --Molten Wristguards
 		},
 		{
+			{ icon = "INV_Box_01", name = "Magmadar" },
+			{ itemID = 12573 }, --Corebound Shoulders
+			{ itemID = 12598 }, --Flametouched Leggings
+			{ itemID = 15959 }, --Idol of the Magma Beast
 			{ itemID = 2522359, sourcePage = {"TONELEGS","Token"} }, --Molten Leggaurds
 		},
 		{
-			{ itemID = 2522364, sourcePage = {"TONEHAND","Token"} }, --Molten Girdle
+			{ icon = "INV_Box_01", name = "Gehennas" },
 			{ itemID = 17331 }, --Hand of Gehennas
-		},
-		{
-			{ itemID = 2522360, sourcePage = {"TONEHEAD","Token"} }, --Molten Headpiece
-			{ itemID = 18564 }, --Bindings of the Windseeker
-			{ itemID = 19019 }, --Thunderfury, Blessed Blade of the Windseeker
-			{ itemID = 17782 }, --Talisman of Binding Shard
-			{ itemID = 11879 }, --Medallion of Binding Shard
-		},
-		{
-			{ itemID = 2522361, sourcePage = {"TONESHOULDER","Token"} }, --Molten Spaulders
-			{ itemID = 18563 }, --Bindings of the Windseeker
-			{ itemID = 19019 }, --Thunderfury, Blessed Blade of the Windseeker
-		},
-		{
-			{ itemID = 2522363, sourcePage = {"TONEWAIST","Token"} }, --Molten Handgaurds
-			{ itemID = 17332 }, --Hand of Shazzrah
-		},
-		{
-			{ itemID = 2522350, sourcePage = {"TONECHEST","Token"} }, --Molten Tunic
-			{ itemID = 17203 }, --Sulfuron Ingot
-			{ itemID = 17182 }, --Sulfuras, Hand of Ragnaros
-		},
-		{
-			{ itemID = 2522365, sourcePage = {"TONEFEET","Token"} }, --Molten Boots
-			{ itemID = 17330 }, --Hand of Sulfuron
-		},
-		{
-		},
-		{
-			{ itemID = 2522459, sourcePage = {"TTWOLEGS","Token"} }, --Chromatic Leggaurds
-			{ itemID = 21110 }, --Draconic for Dummies
-			{ itemID = 17204 }, --Eye of Sulfuras
-			{ itemID = 17182 }, --Sulfuras, Hand of Ragnaros
-			{ itemID = 19017 }, --Essence of the Firelord
-			{ itemID = 19019 }, --Thunderfury, Blessed Blade of the Windseeker
-			{ itemID = 102107, minDifficulty = "Heroic" }, -- Reins of the Magmatic Steed
-		},
-		{
-			{ itemID = 17010 }, --Fiery Core
-			{ itemID = 17011 }, --Lava Core
-			{ itemID = 11382 }, --Blood of the Mountain
-			{ itemID = 17012 }, --Core Leather
-		},
-		{
-			{ itemID = 18264, contentsPreview = {18262} }, --Plans: Elemental Sharpening Stone
-			{ itemID = 18292, contentsPreview = {18282} }, --Schematic: Core Marksman Rifle
-			{ itemID = 18291, contentsPreview = {18168} }, --Schematic: Force Reactive Disk
-			{ itemID = 18290, contentsPreview = {18290} }, --Schematic: Biznicks 247x128 Accurascope
-			{ itemID = 18259 }, --Formula: Enchant Weapon - Spell Power
-			{ itemID = 18260 }, --Formula: Enchant Weapon - Healing Power
-			{ itemID = 18252, contentsPreview = {18251} }, --Pattern: Core Armor Kit
-			{ itemID = 18265, contentsPreview = {18263} }, --Pattern: Flarecore Wraps
-			{ itemID = 21371, contentsPreview = {21342} }, --Pattern: Core Felcloth Bag
-			{ itemID = 18257, contentsPreview = {18257} }, --Recipe: Major Rejuvenation Potion
-		},
-		{
-			{ icon = "INV_Box_01", name = "Baron Geddon" },
-			{ itemID = 10531 }, --Stoneclad Libram
+			{ itemID = 10533 }, --Tome of Burning Passion
+			{ itemID = 12594 }, --Flamewalker Shoulderguards
+			{ itemID = 17077 }, --Crimson Shocker
+			{ itemID = 18821 }, --Quick Strike Ring
+			{ itemID = 18832 }, --Brutality Blade
+			{ itemID = 18861 }, --Flamewaker Legplates
+			{ itemID = 18878 }, --Sorcerous Dagger
+			{ itemID = 19142 }, --Fire Runed Grimoire
+			{ itemID = 19143 }, --Flameguard Gauntlets
+			{ itemID = 19144 }, --Sabatons of the Flamewalker
+			{ itemID = 2522364, sourcePage = {"TONEHAND","Token"} }, --Molten Girdle
 		},
 		{
 			{ icon = "INV_Box_01", name = "Garr" },
@@ -1677,23 +1638,29 @@ AtlasLoot:AddItemData({
 			{ itemID = 18870 }, --Helm of the Lifegiver
 			{ itemID = 18879 }, --Heavy Dark Iron Ring
 			{ itemID = 311879 }, --Medallion of Binding Shard
-			{ itemID = 317782 }, --Talisman of Binding Shard
+			{ itemID = 18564 }, --Bindings of the Windseeker
+			{ itemID = 19019 }, --Thunderfury, Blessed Blade of the Windseeker
+			{ itemID = 17782 }, --Talisman of Binding Shard
+			{ itemID = 11879 }, --Medallion of Binding Shard
+			{ itemID = 2522360, sourcePage = {"TONEHEAD","Token"} }, --Molten Headpiece
 		},
 		{
-			{ icon = "INV_Box_01", name = "Gehennas" },
-			{ itemID = 10533 }, --Tome of Burning Passion
-			{ itemID = 12594 }, --Flamewalker Shoulderguards
-			{ itemID = 17077 }, --Crimson Shocker
-			{ itemID = 18821 }, --Quick Strike Ring
-			{ itemID = 18832 }, --Brutality Blade
-			{ itemID = 18861 }, --Flamewaker Legplates
-			{ itemID = 18878 }, --Sorcerous Dagger
-			{ itemID = 19142 }, --Fire Runed Grimoire
-			{ itemID = 19143 }, --Flameguard Gauntlets
-			{ itemID = 19144 }, --Sabatons of the Flamewalker
+			{ icon = "INV_Box_01", name = "Baron Geddon" },
+			{ itemID = 10531 }, --Stoneclad Libram
+			{ itemID = 18563 }, --Bindings of the Windseeker
+			{ itemID = 19019 }, --Thunderfury, Blessed Blade of the Windseeker
+			{ itemID = 2522361, sourcePage = {"TONESHOULDER","Token"} }, --Molten Spaulders
 		},
 		{
-			{ icon = "INV_Box_01", name = "Golemagg" },
+			{ icon = "INV_Box_01", name = "Shazzrah" },
+			{ itemID = 17332 }, --Hand of Shazzrah
+			{ itemID = 10470 }, --Eternal Flame Artifact
+			{ itemID = 12597 }, --Embercloth Robe
+			{ itemID = 12909 }, --Embercloth Wraps
+			{ itemID = 2522363, sourcePage = {"TONEWAIST","Token"} }, --Molten Handgaurds
+		},
+		{
+			{ icon = "INV_Box_01", name = "Golemagg the Incinerator" },
 			{ itemID = 10532 }, --Codex of War Arts
 			{ itemID = 12908 }, --Magma Forged Walkers
 			{ itemID = 17072 }, --Blastershot Launcher
@@ -1705,18 +1672,26 @@ AtlasLoot:AddItemData({
 			{ itemID = 18872 }, --Manastorm Leggings
 			{ itemID = 19136 }, --Mana Igniting Cord
 			{ itemID = 19146 }, --Wristguards of Stability
+			{ itemID = 17203 }, --Sulfuron Ingot
+			{ itemID = 17182 }, --Sulfuras, Hand of Ragnaros
+			{ itemID = 2522350, sourcePage = {"TONECHEST","Token"} }, --Molten Tunic
 		},
 		{
-			{ icon = "INV_Box_01", name = "Lucifron" },
-			{ itemID = 12599 }, --Flameguard Legguards
-			{ itemID = 12910 }, --Molten Slugtosser
-			{ itemID = 15958 }, --The Water Duke's Stolen Totem
-		},
-		{
-			{ icon = "INV_Box_01", name = "Magmadar" },
-			{ itemID = 12573 }, --Corebound Shoulders
-			{ itemID = 12598 }, --Flametouched Leggings
-			{ itemID = 15959 }, --Idol of the Magma Beast
+			{ icon = "INV_Box_01", name = "Sulfuron Harbinger" },
+			{ itemID = 17330 }, --Hand of Sulfuron
+			{ itemID = 12595 }, --Flamebound Harness
+			{ itemID = 12872 }, --Blazing Slippers
+			{ itemID = 12911 }, --Magma-forged Throwing Knife
+			{ itemID = 16010 }, --Eclipsing Rune of the Herald
+			{ itemID = 17069 }, --Striker's Mark
+			{ itemID = 17074 }, --Shadowstrike
+			{ itemID = 17103 }, --Azuresong Mageblade
+			{ itemID = 17109 }, --Choker of Enlightenment
+			{ itemID = 18820 }, --Talisman of Ephemeral Power
+			{ itemID = 18875 }, --Salamander Scale Pants
+			{ itemID = 19145 }, --Robe of Volatile Power
+			{ itemID = 19147 }, --Ring of Spell Power
+			{ itemID = 2522365, sourcePage = {"TONEFEET","Token"} }, --Molten Boots
 		},
 		{
 			{ icon = "INV_Box_01", name = "Majordomo Executus" },
@@ -1738,16 +1713,6 @@ AtlasLoot:AddItemData({
 			{ itemID = 19140 }, --Cauterizing Band
 		},
 		{
-			{ icon = "INV_Box_01", name = "Molten Core" },
-			{ itemID = 15957 }, --Overloaded Totem
-			{ itemID = 16011 }, --Burned Idol of the Earth
-			{ itemID = 17223 }, --Thunderstrike
-			{ itemID = 11572 }, --Blazing Fury
-			{ itemID = 11573 }, --Obsidian Glass Shard
-			{ itemID = 15816 }, --Firelord Totem
-			{ itemID = 318113 }, --Emberforged Wristbands
-		},
-		{
 			{ icon = "INV_Box_01", name = "Ragnaros" },
 			{ itemID = 12572 }, --Veil of Flame Worshipper
 			{ itemID = 15712 }, --Pyroclasmic Longbow
@@ -1767,27 +1732,43 @@ AtlasLoot:AddItemData({
 			{ itemID = 19138 }, --Band of Sulfuras
 			{ itemID = 317182 }, --Sulfuras, Hand of Ragnaros
 			{ itemID = 319019 }, --Thunderfury, Blessed Blade of the Windseeker
+			{ itemID = 21110 }, --Draconic for Dummies
+			{ itemID = 17204 }, --Eye of Sulfuras
+			{ itemID = 17182 }, --Sulfuras, Hand of Ragnaros
+			{ itemID = 19017 }, --Essence of the Firelord
+			{ itemID = 19019 }, --Thunderfury, Blessed Blade of the Windseeker
+			{ itemID = 102107, minDifficulty = "Heroic" }, -- Reins of the Magmatic Steed
+			{ itemID = 2522459, sourcePage = {"TTWOLEGS","Token"} }, --Chromatic Leggaurds
 		},
 		{
-			{ icon = "INV_Box_01", name = "Shazzrah" },
-			{ itemID = 10470 }, --Eternal Flame Artifact
-			{ itemID = 12597 }, --Embercloth Robe
-			{ itemID = 12909 }, --Embercloth Wraps
+			{ icon = "INV_Box_01", name = "Molten Core" },
+			{ itemID = 15957 }, --Overloaded Totem
+			{ itemID = 16011 }, --Burned Idol of the Earth
+			{ itemID = 17223 }, --Thunderstrike
+			{ itemID = 11572 }, --Blazing Fury
+			{ itemID = 11573 }, --Obsidian Glass Shard
+			{ itemID = 15816 }, --Firelord Totem
+			{ itemID = 318113 }, --Emberforged Wristbands
 		},
 		{
-			{ icon = "INV_Box_01", name = "Sulfuron" },
-			{ itemID = 12595 }, --Flamebound Harness
-			{ itemID = 12872 }, --Blazing Slippers
-			{ itemID = 12911 }, --Magma-forged Throwing Knife
-			{ itemID = 16010 }, --Eclipsing Rune of the Herald
-			{ itemID = 17069 }, --Striker's Mark
-			{ itemID = 17074 }, --Shadowstrike
-			{ itemID = 17103 }, --Azuresong Mageblade
-			{ itemID = 17109 }, --Choker of Enlightenment
-			{ itemID = 18820 }, --Talisman of Ephemeral Power
-			{ itemID = 18875 }, --Salamander Scale Pants
-			{ itemID = 19145 }, --Robe of Volatile Power
-			{ itemID = 19147 }, --Ring of Spell Power
+			{ icon = "INV_Box_01", name = "Random Boss Drops" },
+			{ itemID = 17010 }, --Fiery Core
+			{ itemID = 17011 }, --Lava Core
+			{ itemID = 11382 }, --Blood of the Mountain
+			{ itemID = 17012 }, --Core Leather
+		},
+		{
+			{ icon = "INV_Box_01", name = "Trash Mobs" },
+			{ itemID = 18264, contentsPreview = {18262} }, --Plans: Elemental Sharpening Stone
+			{ itemID = 18292, contentsPreview = {18282} }, --Schematic: Core Marksman Rifle
+			{ itemID = 18291, contentsPreview = {18168} }, --Schematic: Force Reactive Disk
+			{ itemID = 18290, contentsPreview = {18290} }, --Schematic: Biznicks 247x128 Accurascope
+			{ itemID = 18259 }, --Formula: Enchant Weapon - Spell Power
+			{ itemID = 18260 }, --Formula: Enchant Weapon - Healing Power
+			{ itemID = 18252, contentsPreview = {18251} }, --Pattern: Core Armor Kit
+			{ itemID = 18265, contentsPreview = {18263} }, --Pattern: Flarecore Wraps
+			{ itemID = 21371, contentsPreview = {21342} }, --Pattern: Core Felcloth Bag
+			{ itemID = 18257, contentsPreview = {18257} }, --Recipe: Major Rejuvenation Potion
 		},
 	},
 	------------------------------------------

@@ -1,6 +1,9 @@
 
 local AtlasLoot = LibStub("AceAddon-3.0"):GetAddon("AtlasLoot")
 local patchNotes = {
+    {"Version 8.0.10", "25th April, 2026"},
+    "Merged duplicate Molten Core boss entries into one entry per boss",
+    "Each MC boss page now combines tier-token and boss-loot items",
     {"Version 8.0.9", "25th April, 2026"},
     "Removed duplicate Ragnaros entries from Molten Core menu",
     "Cleaned up Ragnaros loot table by removing Band of Sulfuras random suffix variants",
