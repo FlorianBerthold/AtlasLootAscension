@@ -1,6 +1,10 @@
 
 local AtlasLoot = LibStub("AceAddon-3.0"):GetAddon("AtlasLoot")
 local patchNotes = {
+    {"Version 8.0.9", "25th April, 2026"},
+    "Removed duplicate Ragnaros entries from Molten Core menu",
+    "Cleaned up Ragnaros loot table by removing Band of Sulfuras random suffix variants",
+    "Added missing Band of Accuria and Shard of the Flame to Ragnaros loot",
     {"Version 8.0.7", "12th April, 2026"},
     "Fixed crash when viewing Worldforged items (string.rep collision)",
     "Fixed WishList Sort crashing due to missing argument",

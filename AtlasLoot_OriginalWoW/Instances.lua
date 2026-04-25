@@ -1751,7 +1751,9 @@ AtlasLoot:AddItemData({
 			{ icon = "INV_Box_01", name = "Ragnaros" },
 			{ itemID = 12572 }, --Veil of Flame Worshipper
 			{ itemID = 15712 }, --Pyroclasmic Longbow
+			{ itemID = 17063 }, --Band of Accuria
 			{ itemID = 17076 }, --Bonereaver's Edge
+			{ itemID = 17082 }, --Shard of the Flame
 			{ itemID = 17083 }, --Blade of Dragon Bone
 			{ itemID = 17102 }, --Cloak of the Shrouded Mists
 			{ itemID = 17104 }, --Spinal Reaper
@@ -1761,169 +1763,8 @@ AtlasLoot:AddItemData({
 			{ itemID = 18815 }, --Essence of the Pure Flame
 			{ itemID = 18816 }, --Perdition's Blade
 			{ itemID = 18817 }, --Crown of Destruction
-			{ itemID = 19138 }, --Band of Sulfuras
-			{ itemID = 19138100 }, --Band of Sulfuras of Intellect
-			{ itemID = 19138101 }, --Band of Sulfuras of the Owl
-			{ itemID = 19138103 }, --Band of Sulfuras of the Seer
-			{ itemID = 19138104 }, --Band of Sulfuras of the Magus
-			{ itemID = 19138105 }, --Band of Sulfuras of the Arcane
-			{ itemID = 19138108 }, --Band of Sulfuras of Restoration
-			{ itemID = 19138109 }, --Band of Sulfuras of Prophecy
-			{ itemID = 19138110 }, --Band of Sulfuras of the Piercing Mind
-			{ itemID = 19138112 }, --Band of Sulfuras of the Battle-Sage
-			{ itemID = 19138113 }, --Band of Sulfuras of the Battle-Mage
-			{ itemID = 19138114 }, --Band of Sulfuras of the Swift Weaver
-			{ itemID = 19138118 }, --Band of Sulfuras of the Elder
-			{ itemID = 19138121 }, --Band of Sulfuras of the Wise
-			{ itemID = 19138122 }, --Band of Sulfuras of the Sage
-			{ itemID = 19138123 }, --Band of Sulfuras of the Battle-Caster
-			{ itemID = 19138124 }, --Band of Sulfuras of the Spellbinder
-		},
-		{
-			{ icon = "INV_Box_01", name = "Ragnaros" },
-			{ itemID = 19138125 }, --Band of Sulfuras of Firestorm
-			{ itemID = 19138126 }, --Band of Sulfuras of the Mana Weaver
-			{ itemID = 19138128 }, --Band of Sulfuras of the Spell Breaker
-			{ itemID = 19138129 }, --Band of Sulfuras of Spirit
-			{ itemID = 19138131 }, --Band of Sulfuras of the Diligent
-			{ itemID = 19138132 }, --Band of Sulfuras of the Soothsayer
-			{ itemID = 19138133 }, --Band of Sulfuras of the Oracle
-			{ itemID = 19138137 }, --Band of Sulfuras of the Soulweaver
-			{ itemID = 19138140 }, --Band of Sulfuras of the Grove Guardian
-			{ itemID = 19138141 }, --Band of Sulfuras of the Spirit Walker
-			{ itemID = 19138142 }, --Band of Sulfuras of the Swift Spirit
-			{ itemID = 19138145 }, --Band of Sulfuras of Natural Recovery
-			{ itemID = 19138146 }, --Band of Sulfuras of the Ancient Spirit
-			{ itemID = 19138148 }, --Band of Sulfuras of Spirit Rending
-			{ itemID = 19138149 }, --Band of Sulfuras of the Spirit Sage
-			{ itemID = 19138150 }, --Band of Sulfuras of Accurate Spirit
-			{ itemID = 19138151 }, --Band of Sulfuras of Spirit's Precision
-			{ itemID = 19138152 }, --Band of Sulfuras of Spiritual Swiftness
-			{ itemID = 19138153 }, --Band of Sulfuras of Spirit's Recovery
-			{ itemID = 19138155 }, --Band of Sulfuras of Spirit's Force
-			{ itemID = 19138156 }, --Band of Sulfuras of Stamina
-			{ itemID = 19138157 }, --Band of Sulfuras of the Steadfast
-			{ itemID = 19138158 }, --Band of Sulfuras of the Unyielding
-			{ itemID = 19138159 }, --Band of Sulfuras of Quick Defense
-			{ itemID = 19138162 }, --Band of Sulfuras of Vital Recovery
-			{ itemID = 19138163 }, --Band of Sulfuras of Magical Fortitude
-			{ itemID = 19138164 }, --Band of Sulfuras of Vital Regeneration
-			{ itemID = 19138166 }, --Band of Sulfuras of the War-Seeker
-			{ itemID = 19138167 }, --Band of Sulfuras of the War-Mender
-		},
-		{
-			{ icon = "INV_Box_01", name = "Ragnaros" },
-			{ itemID = 19138168 }, --Band of Sulfuras of the Undertow
-			{ itemID = 19138169 }, --Band of Sulfuras of Battle Recovery
-			{ itemID = 19138171 }, --Band of Sulfuras of Battle Breaking
-			{ itemID = 19138172 }, --Band of Sulfuras of Spell Power
-			{ itemID = 19138173 }, --Band of Sulfuras of Arcane Precision
-			{ itemID = 19138174 }, --Band of Sulfuras of the Wildfire
-			{ itemID = 19138175 }, --Band of Sulfuras of Spellfire
-			{ itemID = 19138176 }, --Band of Sulfuras of Arcane Dominance
-			{ itemID = 19138177 }, --Band of Sulfuras of Swift Destruction
-			{ itemID = 19138178 }, --Band of Sulfuras of Spell Breaking
-			{ itemID = 19138179 }, --Band of Sulfuras of Swift Spells
-			{ itemID = 19138180 }, --Band of Sulfuras of the Feverflare
-			{ itemID = 19138181 }, --Band of Sulfuras of the Spellweaver
-			{ itemID = 19138182 }, --Band of Sulfuras of Agility
-			{ itemID = 19138183 }, --Band of Sulfuras of Agile Health
-			{ itemID = 19138184 }, --Band of Sulfuras of the Monkey
-			{ itemID = 19138185 }, --Band of Sulfuras of the Falcon
-			{ itemID = 19138186 }, --Band of Sulfuras of the Tiger
-			{ itemID = 19138187 }, --Band of Sulfuras of Accurate Strikes
-			{ itemID = 19138188 }, --Band of Sulfuras of Sharp Strikes
-			{ itemID = 19138189 }, --Band of Sulfuras of Swift Strikes
-			{ itemID = 19138190 }, --Band of Sulfuras of Expert Strikes
-			{ itemID = 19138191 }, --Band of Sulfuras of the Beast
-			{ itemID = 19138192 }, --Band of Sulfuras of Rending
-			{ itemID = 19138193 }, --Band of Sulfuras of the Shadowstalker
-			{ itemID = 19138194 }, --Band of Sulfuras of the Nightstalker
-			{ itemID = 19138195 }, --Band of Sulfuras of the Moonstalker
-			{ itemID = 19138196 }, --Band of Sulfuras of the Ironhawk
-			{ itemID = 19138197 }, --Band of Sulfuras of the Striker
-		},
-		{
-			{ icon = "INV_Box_01", name = "Ragnaros" },
-			{ itemID = 19138198 }, --Band of Sulfuras of the Slayer
-			{ itemID = 19138199 }, --Band of Sulfuras of the Swift Hunter
-			{ itemID = 19138200 }, --Band of Sulfuras of the Blade Dancer
-			{ itemID = 19138201 }, --Band of Sulfuras of the Bandit
-			{ itemID = 19138202 }, --Band of Sulfuras of the Sentinel
-			{ itemID = 19138203 }, --Band of Sulfuras of the Shadow Walker
-			{ itemID = 19138204 }, --Band of Sulfuras of the Duelist
-			{ itemID = 19138205 }, --Band of Sulfuras of the Warden
-			{ itemID = 19138206 }, --Band of Sulfuras of the Deathstrike
-			{ itemID = 19138207 }, --Band of Sulfuras of the Razorwind
-			{ itemID = 19138208 }, --Band of Sulfuras of the Hawkeye
-			{ itemID = 19138209 }, --Band of Sulfuras of the Shadowhunter
-			{ itemID = 19138210 }, --Band of Sulfuras of the Windrunner
-			{ itemID = 19138211 }, --Band of Sulfuras of the Blademaster
-			{ itemID = 19138212 }, --Band of Sulfuras of Arcane Acceleration
-			{ itemID = 19138213 }, --Band of Sulfuras of Accurate Power
-			{ itemID = 19138214 }, --Band of Sulfuras of Sharp Power
-			{ itemID = 19138215 }, --Band of Sulfuras of Expert Power
-			{ itemID = 19138216 }, --Band of Sulfuras of Swift Power
-			{ itemID = 19138217 }, --Band of Sulfuras of the Ravager
-			{ itemID = 19138218 }, --Band of Sulfuras of the Deathblow
-			{ itemID = 19138219 }, --Band of Sulfuras of the Stormblast
-			{ itemID = 19138220 }, --Band of Sulfuras of the Perfect Strike
-			{ itemID = 19138221 }, --Band of Sulfuras of the Sundering
-			{ itemID = 19138222 }, --Band of Sulfuras of the Swift Blade
-			{ itemID = 19138223 }, --Band of Sulfuras of the Blade Lord
-			{ itemID = 19138224 }, --Band of Sulfuras of the Weapon Master
-			{ itemID = 19138225 }, --Band of Sulfuras of the Iron Blade
-			{ itemID = 19138226 }, --Band of Sulfuras of Strength
-		},
-		{
-			{ icon = "INV_Box_01", name = "Ragnaros" },
-			{ itemID = 19138227 }, --Band of Sulfuras of the Bear
-			{ itemID = 19138228 }, --Band of Sulfuras of the Shield Wall
-			{ itemID = 19138229 }, --Band of Sulfuras of the Ironborn
-			{ itemID = 19138230 }, --Band of Sulfuras of the Warborn
-			{ itemID = 19138231 }, --Band of Sulfuras of the Stormborn
-			{ itemID = 19138232 }, --Band of Sulfuras of the Swiftborn
-			{ itemID = 19138233 }, --Band of Sulfuras of the Bladeborn
-			{ itemID = 19138234 }, --Band of Sulfuras of the Battle Lord
-			{ itemID = 19138235 }, --Band of Sulfuras of the Defender
-			{ itemID = 19138236 }, --Band of Sulfuras of the Evasive
-			{ itemID = 19138237 }, --Band of Sulfuras of the Guardian
-			{ itemID = 19138238 }, --Band of Sulfuras of the Bulwark
-			{ itemID = 19138239 }, --Band of Sulfuras of the Bloodseeker
-			{ itemID = 19138240 }, --Band of Sulfuras of Precise Might
-			{ itemID = 19138241 }, --Band of Sulfuras of Critical Might
-			{ itemID = 19138242 }, --Band of Sulfuras of Swift Might
-			{ itemID = 19138243 }, --Band of Sulfuras of the Sundered
-			{ itemID = 19138244 }, --Band of Sulfuras of the Rushing Storm
-			{ itemID = 19138245 }, --Band of Sulfuras of the Breaker
-			{ itemID = 19138246 }, --Band of Sulfuras of the Weapon Sage
-			{ itemID = 19138248 }, --Band of Sulfuras of the Champion's Mind
-			{ itemID = 19138250 }, --Band of Sulfuras of Expert Might
-			{ itemID = 19138251 }, --Band of Sulfuras of the Champion
-			{ itemID = 19138252 }, --Band of Sulfuras of the Battle Sage
-			{ itemID = 19138254 }, --Band of Sulfuras of Defense
-			{ itemID = 19138255 }, --Band of Sulfuras of Dodging
-			{ itemID = 19138256 }, --Band of Sulfuras of Parrying
-			{ itemID = 19138257 }, --Band of Sulfuras of Blocking
-			{ itemID = 19138258 }, --Band of Sulfuras of Protection
-		},
-		{
-			{ icon = "INV_Box_01", name = "Ragnaros" },
-			{ itemID = 19138259 }, --Band of Sulfuras of the Agile Defender
-			{ itemID = 19138260 }, --Band of Sulfuras of Swashbuckling
-			{ itemID = 19138261 }, --Band of Sulfuras of the Guardian's Defense
-			{ itemID = 19138262 }, --Band of Sulfuras of the Bulwark's Defense
-			{ itemID = 19138265 }, --Band of Sulfuras of Critical Spells
-			{ itemID = 19138266 }, --Band of Sulfuras of Flowing Spells
-			{ itemID = 19138268 }, --Band of Sulfuras of Arcane Fortitude
-			{ itemID = 19138275 }, --Band of Sulfuras of Piercing Haste
-			{ itemID = 19138276 }, --Band of Sulfuras of Swift Defense
-			{ itemID = 19138277 }, --Band of Sulfuras of the Predator
-			{ itemID = 19138278 }, --Band of Sulfuras of the Veilstalker
-			{ itemID = 19138279 }, --Band of Sulfuras of the Pathfinder
-			{ itemID = 17063 }, --Band of Accuria
-			{ itemID = 17082 }, --Shard of the Flame
 			{ itemID = 19137 }, --Onslaught Girdle
+			{ itemID = 19138 }, --Band of Sulfuras
 			{ itemID = 317182 }, --Sulfuras, Hand of Ragnaros
 			{ itemID = 319019 }, --Thunderfury, Blessed Blade of the Windseeker
 		},
