@@ -1,10 +1,6 @@
 
 local AtlasLoot = LibStub("AceAddon-3.0"):GetAddon("AtlasLoot")
 local patchNotes = {
-    {"Version 8.0.12", "1st May, 2026"},
-    "Cleaned up Zul'Gurub menu - removed duplicate boss entries and Page 10..15 placeholders",
-    "Merged ZG mounts and unique drops into the matching boss pages",
-    "Added Edge of Madness, Bijous & Coins, and World Drops as proper pages",
     {"Version 8.0.11", "1st May, 2026"},
     "Fixed Onyxia's Lair Basalthane and Onyxia pages showing no items",
     "Merged Onyxia head/scale/mount drops into the Onyxia boss page",
