@@ -4992,152 +4992,8 @@ AtlasLoot:AddItemData({
 	-----------------
 	["ZulGurub"] = {
 		{
-			{ icon = "INV_Banner_01", name = "ZG Sets", sourcePage = {{"ZGSets", "	", 1},"Source"} },
-			{ itemID = 19943 }, --Massive Mojo
-			{ itemID = 19881 }, --Channeler's Head
-		},
-		{
-			{ icon = "INV_Banner_01", name = "ZG Sets", sourcePage = {{"ZGSets", "	", 1},"Source"} },
-			{ itemID = 19943 }, --Massive Mojo
-			{ itemID = 19881 }, --Channeler's Head
-			{ itemID = 22216 }, --Venoxis's Venom Sac
-		},
-		{
-			{ icon = "INV_Banner_01", name = "ZG Sets", sourcePage = {{"ZGSets", "	", 1},"Source"} },
-			{ itemID = 19943 }, --Massive Mojo
-			{ itemID = 19881 }, --Channeler's Head
-		},
-		{
-				{ itemID = 19872 }, --Swift Razzashi Raptor
-			{ icon = "INV_Banner_01", name = "ZG Sets", sourcePage = {{"ZGSets", "	", 1},"Source"} },
-			{ itemID = 22637 }, --Primal Hakkari Idol
-			{ itemID = 19943 }, --Massive Mojo
-		},
-		{
-			{ icon = "INV_Box_01", name = "Gri'lek" },
-			{ itemID = 19961 }, --Gri'lek's Grinder
-			{ itemID = 19962 }, --Gri'lek's Carver
-			{ itemID = 19939 }, --Gri'lek's Blood
-			{ icon = "INV_Box_01", name = "Hazza'rah" },
-			{ itemID = 19968 }, --Fiery Retributer
-			{ itemID = 19967 }, --Thoughtblighter
-			{ itemID = 19942 }, --Hazza'rah's Dream Thread
-			{ icon = "INV_Box_01", name = "Renataki" },
-			{ itemID = 19964 }, --Renataki's Soul Conduit
-			{ itemID = 19963 }, --Pitchfork of Madness
-			{ itemID = 19940 }, --Renataki's Tooth
-			{ icon = "INV_Box_01", name = "Wushoolay" },
-			{ itemID = 19965 }, --Wushoolay's Poker
-			{ itemID = 19993 }, --Hoodoo Hunting Bow
-			{ itemID = 19941 }, --Wushoolay's Mane
-		},
-		{
-			{ itemID = 19945 }, --Foror's Eyepatch
-			{ itemID = 19944 }, --Nat Pagle's Fish Terminator
-			{ itemID = 19947 }, --Nat Pagle's Broken Reel
-			{ itemID = 19946 }, --Tigule's Harpoon
-			{ itemID = 22739 }, --Tome of Polymorph: Turtle
-		},
-		{
-			{ itemID = 19902 }, --Swift Zulian Tiger
-			{ icon = "INV_Banner_01", name = "ZG Sets", sourcePage = {{"ZGSets", "	", 1},"Source"} },
-			{ itemID = 19943 }, --Massive Mojo
-			{ itemID = 19881 }, --Channeler's Head
-			{ itemID = 60101, droprate = "1%" }, --Pet Sigil
-		},
-		{
-			{ itemID = 19914 }, --Panther Hide Sack
-			{ icon = "INV_Banner_01", name = "ZG Sets", sourcePage = {{"ZGSets", "	", 1},"Source"} },
-			{ itemID = 19943 }, --Massive Mojo
-			{ itemID = 19881 }, --Channeler's Head
-		},
-		{
-			{ icon = "INV_Banner_01", name = "ZG Sets", sourcePage = {{"ZGSets", "	", 1},"Source"} },
-			{ itemID = 22637 }, --Primal Hakkari Idol
-			{ itemID = 19943 }, --Massive Mojo
-		},
-		{
-			{ itemID = 19802 }, --Heart of Hakkar
-			{ itemID = 19950 }, --Zandalarian Hero Charm
-			{ itemID = 19949 }, --Zandalarian Hero Medallion
-			{ itemID = 19948 }, --Zandalarian Hero Badge
-			{ itemID = 19943 }, --Massive Mojo
-		},
-		{
-			{ itemID = 19975 }, --Zulian Mudskunk
-		},
-		{
-			{ itemID = 22721 }, --Band of Servitude
-			{ itemID = 22722 }, --Seal of the Gurubashi Berserker
-			{ itemID = 22711 }, --Cloak of the Hakkari Worshipers
-			{ itemID = 22712 }, --Might of the Tribe
-			{ itemID = 22720 }, --Zulian Headdress
-			{ itemID = 22716 }, --Belt of Untapped Power
-			{ itemID = 22718 }, --Blooddrenched Mask
-			{ itemID = 22715 }, --Gloves of the Tormented
-			{ itemID = 22714 }, --Sacrificial Gauntlets
-			{ itemID = 22713 }, --Zulian Scepter of Rites
-		},
-		{
-			{ itemID = 20259 }, --Shadow Panther Hide Gloves
-			{ itemID = 20261 }, --Shadow Panther Hide Belt
-			{ itemID = 20263 }, --Gurubashi Helm
-			{ itemID = 19908 }, --Sceptre of Smiting
-			{ itemID = 19921 }, --Zulian Hacker
-			{ itemID = 20258 }, --Zulian Ceremonial Staff
-			{ itemID = 19727 }, --Blood Scythe
-			{ itemID = 48126 }, --Razzashi Hatchling
-			{ itemID = 19726 }, --Bloodvine
-			{ itemID = 19774 }, --Souldarite
-			{ itemID = 19767 }, --Primal Bat Leather
-			{ itemID = 19768 }, --Primal Tiger Leather
-			{ itemID = 19821 }, --Punctured Voodoo Doll
-			{ itemID = 19816 }, --Punctured Voodoo Doll
-			{ itemID = 19818 }, --Punctured Voodoo Doll
-			{ itemID = 19815 }, --Punctured Voodoo Doll
-			{ itemID = 19820 }, --Punctured Voodoo Doll
-			{ itemID = 19814 }, --Punctured Voodoo Doll
-			{ itemID = 19817 }, --Punctured Voodoo Doll
-			{ itemID = 19819 }, --Punctured Voodoo Doll
-			{ itemID = 19813 }, --Punctured Voodoo Doll
-		},
-		{
-			{ itemID = 19708 }, --Blue Hakkari Bijou
-			{ itemID = 19713 }, --Bronze Hakkari Bijou
-			{ itemID = 19715 }, --Gold Hakkari Bijou
-			{ itemID = 19711 }, --Green Hakkari Bijou
-			{ itemID = 19710 }, --Orange Hakkari Bijou
-			{ itemID = 19712 }, --Purple Hakkari Bijou
-			{ itemID = 19707 }, --Red Hakkari Bijou
-			{ itemID = 19714 }, --Silver Hakkari Bijou
-			{ itemID = 19709 }, --Yellow Hakkari Bijou
-			{ itemID = 19706 }, --Bloodscalp Coin
-			{ itemID = 19701 }, --Gurubashi Coin
-			{ itemID = 19700 }, --Hakkari Coin
-			{ itemID = 19699 }, --Razzashi Coin
-			{ itemID = 19704 }, --Sandfury Coin
-			{ itemID = 19705 }, --Skullsplitter Coin
-			{ itemID = 19702 }, --Vilebranch Coin
-			{ itemID = 19703 }, --Witherbark Coin
-			{ itemID = 19698 }, --Zulian Coin
-		},
-		{
-			{ itemID = 19790 }, --Animist's Caress
-			{ itemID = 19785 }, --Falcon's Call
-			{ itemID = 19787 }, --Presence of Sight
-			{ itemID = 19783 }, --Syncretist's Sigil
-			{ itemID = 19789 }, --Prophetic Aura
-			{ itemID = 19784 }, --Death's Embrace
-			{ itemID = 19786 }, --Vodouisant's Vigilant Embrace
-			{ itemID = 19788 }, --Hoodoo Hex
-			{ itemID = 19782 }, --Presence of Might
-			{ itemID = 20077 }, --Zandalar Signet of Might
-			{ itemID = 20076 }, --Zandalar Signet of Mojo
-			{ itemID = 20078 }, --Zandalar Signet of Serenity
-			{ itemID = 22635 }, --Savage Guard
-		},
-		{
 			{ icon = "INV_Box_01", name = "Bloodlord Mandokir" },
+			{ itemID = 19872 }, --Swift Razzashi Raptor
 			{ itemID = 19863 }, --Primalist's Seal
 			{ itemID = 19866 }, --Warblade of the Hakkari
 			{ itemID = 19867 }, --Bloodlord's Defender
@@ -5158,9 +5014,15 @@ AtlasLoot:AddItemData({
 			{ itemID = 319946 }, --Tigule's Harpoon
 			{ itemID = 319947 }, --Nat Pagle's Broken Reel
 			{ itemID = 320259 }, --Shadow Panther Hide Gloves
+			{ itemID = 22739 }, --Tome of Polymorph: Turtle
+			{ itemID = 19944 }, --Nat Pagle's Fish Terminator (vanilla)
+			{ itemID = 19945 }, --Foror's Eyepatch (vanilla)
+			{ itemID = 19946 }, --Tigule's Harpoon (vanilla)
+			{ itemID = 19947 }, --Nat Pagle's Broken Reel (vanilla)
 		},
 		{
 			{ icon = "INV_Box_01", name = "Hakkar" },
+			{ itemID = 19802 }, --Heart of Hakkar
 			{ itemID = 19852 }, --Ancient Hakkari Manslayer
 			{ itemID = 19854 }, --Zin'rokh, Destroyer of Worlds
 			{ itemID = 19855 }, --Bloodsoaked Legplates
@@ -5191,6 +5053,7 @@ AtlasLoot:AddItemData({
 		},
 		{
 			{ icon = "INV_Box_01", name = "High Priest Venoxis" },
+			{ itemID = 22216 }, --Venoxis's Venom Sac
 			{ itemID = 19900 }, --Zulian Stone Axe
 			{ itemID = 19903 }, --Fang of Venoxis
 			{ itemID = 19904 }, --Runed Bloodstained Hauberk
@@ -5200,6 +5063,8 @@ AtlasLoot:AddItemData({
 		},
 		{
 			{ icon = "INV_Box_01", name = "High Priestess Arlokk" },
+			{ itemID = 19902 }, --Swift Zulian Tiger
+			{ itemID = 60101, droprate = "1%" }, --Pet Sigil
 			{ itemID = 19909 }, --Will of Arlokk
 			{ itemID = 19910 }, --Arlokk's Grasp
 			{ itemID = 19912 }, --Overlord's Onyx Band
@@ -5227,6 +5092,7 @@ AtlasLoot:AddItemData({
 		},
 		{
 			{ icon = "INV_Box_01", name = "Jin'do the Hexxer" },
+			{ itemID = 19914 }, --Panther Hide Sack
 			{ itemID = 19875 }, --Bloodstained Coif
 			{ itemID = 19884 }, --Jin'do's Judgement
 			{ itemID = 19885 }, --Jin'do's Evil Eye
@@ -5239,6 +5105,24 @@ AtlasLoot:AddItemData({
 			{ itemID = 19892 }, --Animist's Boots
 			{ itemID = 19894 }, --Bloodsoaked Gauntlets
 			{ itemID = 19929 }, --Bloodtinged Gloves
+		},
+		{
+			{ icon = "INV_Box_01", name = "Gri'lek" },
+			{ itemID = 19961 }, --Gri'lek's Grinder
+			{ itemID = 19962 }, --Gri'lek's Carver
+			{ itemID = 19939 }, --Gri'lek's Blood
+			{ icon = "INV_Box_01", name = "Hazza'rah" },
+			{ itemID = 19968 }, --Fiery Retributer
+			{ itemID = 19967 }, --Thoughtblighter
+			{ itemID = 19942 }, --Hazza'rah's Dream Thread
+			{ icon = "INV_Box_01", name = "Renataki" },
+			{ itemID = 19964 }, --Renataki's Soul Conduit
+			{ itemID = 19963 }, --Pitchfork of Madness
+			{ itemID = 19940 }, --Renataki's Tooth
+			{ icon = "INV_Box_01", name = "Wushoolay" },
+			{ itemID = 19965 }, --Wushoolay's Poker
+			{ itemID = 19993 }, --Hoodoo Hunting Bow
+			{ itemID = 19941 }, --Wushoolay's Mane
 		},
 		{
 			{ icon = "INV_Box_01", name = "Madness" },
@@ -5263,9 +5147,23 @@ AtlasLoot:AddItemData({
 			{ itemID = 322720 }, --Zulian Headdress
 			{ itemID = 322721 }, --Band of Servitude
 			{ itemID = 322722 }, --Seal of the Gurubashi Berserker
+			{ itemID = 22711 }, --Cloak of the Hakkari Worshipers (vanilla)
+			{ itemID = 22712 }, --Might of the Tribe (vanilla)
+			{ itemID = 22713 }, --Zulian Scepter of Rites (vanilla)
+			{ itemID = 22714 }, --Sacrificial Gauntlets (vanilla)
+			{ itemID = 22715 }, --Gloves of the Tormented (vanilla)
+			{ itemID = 22716 }, --Belt of Untapped Power (vanilla)
+			{ itemID = 22718 }, --Blooddrenched Mask (vanilla)
+			{ itemID = 22720 }, --Zulian Headdress (vanilla)
+			{ itemID = 22721 }, --Band of Servitude (vanilla)
+			{ itemID = 22722 }, --Seal of the Gurubashi Berserker (vanilla)
 		},
 		{
 			{ icon = "INV_Box_01", name = "Zul'Gurub" },
+			{ icon = "INV_Banner_01", name = "ZG Sets", sourcePage = {{"ZGSets", "	", 1},"Source"} },
+			{ itemID = 22637 }, --Primal Hakkari Idol
+			{ itemID = 19943 }, --Massive Mojo
+			{ itemID = 19881 }, --Channeler's Head
 			{ itemID = 10529 }, --Elemental Attuned Blade
 		},
 		{
@@ -5276,6 +5174,65 @@ AtlasLoot:AddItemData({
 			{ itemID = 320261 }, --Shadow Panther Hide Belt
 			{ itemID = 320263 }, --Gurubashi Helm
 			{ itemID = 1320259 }, --Shadow Panther Hide Gloves
+			{ itemID = 19908 }, --Sceptre of Smiting (vanilla)
+			{ itemID = 19921 }, --Zulian Hacker (vanilla)
+			{ itemID = 20258 }, --Zulian Ceremonial Staff (vanilla)
+			{ itemID = 20259 }, --Shadow Panther Hide Gloves (vanilla)
+			{ itemID = 20261 }, --Shadow Panther Hide Belt (vanilla)
+			{ itemID = 20263 }, --Gurubashi Helm (vanilla)
+			{ itemID = 19727 }, --Blood Scythe
+			{ itemID = 48126 }, --Razzashi Hatchling
+			{ itemID = 19726 }, --Bloodvine
+			{ itemID = 19774 }, --Souldarite
+			{ itemID = 19767 }, --Primal Bat Leather
+			{ itemID = 19768 }, --Primal Tiger Leather
+			{ itemID = 19821 }, --Punctured Voodoo Doll
+			{ itemID = 19816 }, --Punctured Voodoo Doll
+			{ itemID = 19818 }, --Punctured Voodoo Doll
+			{ itemID = 19815 }, --Punctured Voodoo Doll
+			{ itemID = 19820 }, --Punctured Voodoo Doll
+			{ itemID = 19814 }, --Punctured Voodoo Doll
+			{ itemID = 19817 }, --Punctured Voodoo Doll
+			{ itemID = 19819 }, --Punctured Voodoo Doll
+			{ itemID = 19813 }, --Punctured Voodoo Doll
+		},
+		{
+			{ icon = "INV_Box_01", name = "Bijous & Coins" },
+			{ itemID = 19708 }, --Blue Hakkari Bijou
+			{ itemID = 19713 }, --Bronze Hakkari Bijou
+			{ itemID = 19715 }, --Gold Hakkari Bijou
+			{ itemID = 19711 }, --Green Hakkari Bijou
+			{ itemID = 19710 }, --Orange Hakkari Bijou
+			{ itemID = 19712 }, --Purple Hakkari Bijou
+			{ itemID = 19707 }, --Red Hakkari Bijou
+			{ itemID = 19714 }, --Silver Hakkari Bijou
+			{ itemID = 19709 }, --Yellow Hakkari Bijou
+			{ itemID = 19706 }, --Bloodscalp Coin
+			{ itemID = 19701 }, --Gurubashi Coin
+			{ itemID = 19700 }, --Hakkari Coin
+			{ itemID = 19699 }, --Razzashi Coin
+			{ itemID = 19704 }, --Sandfury Coin
+			{ itemID = 19705 }, --Skullsplitter Coin
+			{ itemID = 19702 }, --Vilebranch Coin
+			{ itemID = 19703 }, --Witherbark Coin
+			{ itemID = 19698 }, --Zulian Coin
+		},
+		{
+			{ icon = "INV_Box_01", name = "World Drops" },
+			{ itemID = 19975 }, --Zulian Mudskunk
+			{ itemID = 19790 }, --Animist's Caress
+			{ itemID = 19785 }, --Falcon's Call
+			{ itemID = 19787 }, --Presence of Sight
+			{ itemID = 19783 }, --Syncretist's Sigil
+			{ itemID = 19789 }, --Prophetic Aura
+			{ itemID = 19784 }, --Death's Embrace
+			{ itemID = 19786 }, --Vodouisant's Vigilant Embrace
+			{ itemID = 19788 }, --Hoodoo Hex
+			{ itemID = 19782 }, --Presence of Might
+			{ itemID = 20077 }, --Zandalar Signet of Might
+			{ itemID = 20076 }, --Zandalar Signet of Mojo
+			{ itemID = 20078 }, --Zandalar Signet of Serenity
+			{ itemID = 22635 }, --Savage Guard
 		},
 	},
 	-----------------
