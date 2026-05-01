@@ -5590,16 +5590,6 @@ AtlasLoot:AddItemData({
 	--- Onyxia's Lair 60 ---
 	------------------------
 	["Onyxia60"] = {
-		{},
-		{
-			{ itemID = 2522460, sourcePage = {"TTWOHEAD","Token"} }, --Chromatic Headpiece
-			{ itemID = 97269, contentsPreview = {18404,18403,18406} }, --Head of Onyxia
-			{ itemID = 15410 }, -- Scale of Onyxia
-			{ itemID = 17966 }, --Onyxia Hide Backpack
-			{ itemID = 53140, droprate = 5 }, --Formula: Enchant Cloak - Dragon Fire
-			{ itemID = 1180299 }, -- Draconic Warhorn: Onyxia
-			{ itemID = 49636, minDifficulty = "Heroic" }, -- Reins of the Onyxian Drake
-		},
 		{
 			{ icon = "INV_Box_01", name = "Basalthane" },
 			{ itemID = 18086 }, --Dreadshot
@@ -5622,6 +5612,13 @@ AtlasLoot:AddItemData({
 		},
 		{
 			{ icon = "INV_Box_01", name = "Onyxia" },
+			{ itemID = 2522460, sourcePage = {"TTWOHEAD","Token"} }, --Chromatic Headpiece
+			{ itemID = 97269, contentsPreview = {18404,18403,18406} }, --Head of Onyxia
+			{ itemID = 15410 }, -- Scale of Onyxia
+			{ itemID = 17966 }, --Onyxia Hide Backpack
+			{ itemID = 53140, droprate = 5 }, --Formula: Enchant Cloak - Dragon Fire
+			{ itemID = 1180299 }, -- Draconic Warhorn: Onyxia
+			{ itemID = 49636, minDifficulty = "Heroic" }, -- Reins of the Onyxian Drake
 			{ itemID = 18404 }, --Onyxia Tooth Pendant
 			{ itemID = 11571 }, --Flame-Infused Sceptre
 			{ itemID = 12596 }, --Charred Breastplate
